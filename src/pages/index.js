@@ -13,7 +13,7 @@ export default () =>
   <main className="space-below-m">
     <div className="card">
       <div>
-        <img className="profile" src={ bioPic } alt="jules" />>
+        <img className="profile" src={ bioPic } alt="jules" />
       </div>
       <div className="cards">
         <div className="card-content">
