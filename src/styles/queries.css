@@ -1,0 +1,49 @@
+/* $landscape: 1279px;
+$portrait: 968px;
+$mobile: 792px; */
+
+/* https://material.io/guidelines/layout/responsive-ui.html */
+
+
+
+@media screen and (max-width: 1140px){
+  .card {
+    width: 100%;
+    padding: 2.5%;
+    border-radius: 0px;
+  }
+
+  .card-content {
+    padding: 5px;
+    width: 100%;
+  }
+
+  .profile {
+    margin-right: 30px;
+  }
+
+}
+
+/* ----- mobile & tablet ----- */
+@media screen and (max-width: 840px){
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+    padding: 2.5%;
+    border-radius: 0px;
+  }
+
+  .card-content {
+    padding: 5px;
+    width: 100%;
+  }
+
+
+  .profile {
+    /* display: none; */
+    width: 30%;
+    margin: 20px auto;
+    display: block;
+  }
+}
