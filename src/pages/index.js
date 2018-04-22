@@ -8,7 +8,6 @@ export default () =>
   <header>
     <div className="center space-above space-below">
       <h1>Jules Chevalier</h1>
-      <p>Welcome to my corner of the internet</p>
     </div>
   </header>
   <main className="space-below-m">
