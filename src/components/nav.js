@@ -8,7 +8,7 @@ const Nav = props => {
     <nav>
       <div className="center space-above space-below">
         <h1>Jules Chevalier</h1>
-        <h3 className="sub-heading">Progress not perfection</h3>
+        <h3 className="tag-line">Progress not perfection</h3>
       </div>
       <div className="nav">
         <ul>
