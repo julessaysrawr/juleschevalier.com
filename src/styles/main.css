@@ -1,15 +1,11 @@
 :root {
-  /* Used for text */
   --color-dark-grey: #52524E;
-  /* --color-medium-grey: #9A9B94; */
+  --color-medium-grey: #9A9B94;
+  --color-light-grey: #E9E9E8;
 
-  --color-medium-grey: #F2F3F4;
-  /* --color-primary-grey: #D4D6C8; */
-  /* --color-primary-grey: #D9D9D3; */
-  --color-primary-grey: #F8F9F9;
-  --color-light-grey: #E9E9E5;
+
   --color-white: #f5f5f5;
-  --color-black: #000000;
+  --color-black: #151514;
 }
 
 /* ---------- BASIC SETUP ---------- */
@@ -22,8 +18,7 @@
 
 html,
 body {
-  /* background-color: var(--color-primary-grey); */
-  background-color: #f2f3f4;
+  background-color: var(--color-light-grey);
   font-size: 16px;
 }
 
@@ -73,12 +68,6 @@ ul {
    height: 100px;
  }
 
- .primary-grey {
-   background-color: var(--color-primary-grey);
-   width: 100px;
-   height: 100px;
- }
-
  .light-grey {
    background-color: var(--color-light-grey);
    width: 100px;
@@ -115,8 +104,8 @@ ul {
  /* ---------- NAV --------- */
 .nav {
   width: 700px;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  border-top: 1px solid var(--color-medium-grey);
+  border-bottom: 1px solid var(--color-medium-grey);
   margin: 40px auto;
   padding: 20px 0;
 }
