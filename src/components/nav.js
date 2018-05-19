@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "gatsby-link";
 import '../styles/main.css'
 import '../styles/queries.css'
 
@@ -10,9 +11,9 @@ const Nav = props => {
       </div>
       <div className="nav">
         <ul>
-          <li>Home</li>
-          <li>Blog</li>
-          <li>About</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/about">About</Link></li>
         </ul>
       </div>
     </nav>
@@ -20,3 +21,8 @@ const Nav = props => {
 };
 
 export default Nav;
+
+
+{/* <Link to={post.frontmatter.path}>
+{post.frontmatter.title} ({post.frontmatter.date})
+</Link> */}
