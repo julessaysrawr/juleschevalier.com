@@ -24,6 +24,3 @@ export default () =>
     </div>
   </main>
 </div>
-
-
-// TODO: add nav component
