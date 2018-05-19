@@ -4,7 +4,7 @@ import '../styles/queries.css'
 
 const Now = props => {
   return (
-    <div className="card-content">
+    <div>
       <h3 className="space-below">What I'm doing now</h3>
       <p>Letting go and finding I am happier with less</p>
       <p>Trying to live in the present moment</p>

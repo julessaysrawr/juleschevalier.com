@@ -9,11 +9,7 @@ export default () =>
   <header>
     <Nav />
   </header>
-  <main className="space-below-m">
-    <div className="card">
-      <div className="cards">
-        <Now />
-      </div>
-    </div>
+  <main className="flex-container">
+    <Now />
   </main>
 </div>

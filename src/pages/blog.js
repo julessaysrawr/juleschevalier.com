@@ -11,7 +11,14 @@ const BlogPage = ({
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
 
-  return <div><Nav />{Posts}</div>;
+  return (
+    <div>
+      <Nav />
+      <div className="non-flex-container">
+        {Posts}
+      </div>
+    </div>
+  );
 };
 
 export default BlogPage;

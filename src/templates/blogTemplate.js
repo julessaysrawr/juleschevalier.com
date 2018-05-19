@@ -13,10 +13,10 @@ export default function Template({
   return (
     <div>
       <Nav />
-      <div className="blog-post-container">
+      <div className="flex-container">
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+          <h4>{frontmatter.date}</h4>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}

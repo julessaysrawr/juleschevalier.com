@@ -9,7 +9,10 @@ export default () =>
   <header>
     <Nav />
   </header>
-  <main className="space-below-m">
-    <p>Welcome</p>
-  </main>
+  <div className="flex-container">
+  <p>Welcome</p>
+  </div>
+  {/* <main className="space-below-m">
+    
+  </main> */}
 </div>
