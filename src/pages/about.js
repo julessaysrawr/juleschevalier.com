@@ -7,7 +7,7 @@ import Nav from '../components/nav.js'
 export default () => 
 <div>
   <header>
-    <Nav />
+    <Nav/>
   </header>
   <main className="space-below-m">
     <div className="card">
