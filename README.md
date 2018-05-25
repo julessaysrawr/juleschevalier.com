@@ -7,4 +7,8 @@ gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
 ## Running in development
-`gatsby develop`
+`npm run develop`
+
+
+## Releasing
+`npm run deploy`
