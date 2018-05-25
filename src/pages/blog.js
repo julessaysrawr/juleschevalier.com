@@ -1,6 +1,7 @@
 import React from "react";
 import PostLink from "../components/post-link";
-import Nav from '../components/nav.js'
+import Nav from '../components/nav.js';
+import '../styles/main.css';
 
 const BlogPage = ({
   data: {

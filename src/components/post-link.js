@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "gatsby-link";
+import '../styles/main.css'
 
 const PostLink = ({ post }) => (
-  <div>
+  <div className="blog-list">
     <Link to={post.frontmatter.path}>
-      {post.frontmatter.title} ({post.frontmatter.date})
+      {post.frontmatter.title}
     </Link>
   </div>
 );

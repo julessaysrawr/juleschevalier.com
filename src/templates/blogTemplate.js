@@ -1,22 +1,20 @@
 import React from "react";
 import Nav from '../components/nav.js'
+import '../styles/main.css';
+import '../styles/queries.css'
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {  
   const { markdownRemark } = data; // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark;
-  console.log('data', data);
-  console.log('markdownRemark', markdownRemark);
-  console.log('frontmatter', frontmatter);
-  console.log('html', html);  
+  const { frontmatter, html } = markdownRemark; 
   return (
     <div>
       <Nav />
       <div className="flex-container">
         <div className="blog-post">
-          <h1>{frontmatter.title}</h1>
-          <h4>{frontmatter.date}</h4>
+          <h2 className="blog-title">{frontmatter.title}</h2>
+          <p className="blog-date">{frontmatter.date}</p>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}

@@ -1,7 +1,7 @@
 import React from "react"
 import '../styles/main.css'
 import '../styles/queries.css'
-import bioPic from '../assets/jules.jpg'
+import cover from '../assets/peonies.jpg'
 import Nav from '../components/nav.js'
 
 export default () => 
@@ -10,7 +10,7 @@ export default () =>
     <Nav />
   </header>
   <div className="flex-container">
-  <p>Welcome</p>
+  <img src={cover} className="cover" />
   </div>
   {/* <main className="space-below-m">
     
