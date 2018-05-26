@@ -12,3 +12,18 @@ gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
 
 ## Releasing
 `npm run deploy`
+
+## Listing NPM scripts
+`npm install npm-ls-scripts -g`
+
+`ls-scripts`
+
+```
+NPM - ls scripts
+---
+build   - gatsby build
+deploy  - gatsby build && gh-pages -d public
+develop - gatsby develop
+serve   - gatsby serve
+---
+```
