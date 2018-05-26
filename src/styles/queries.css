@@ -25,3 +25,25 @@ $mobile: 792px; */
     padding: 0 25px;
    }
 }
+
+/* ----- extra small screens ----- */
+@media screen and (max-width: 399px){
+  .nav {
+    width: 300px;
+  }
+
+  .nav ul li {
+    padding: 25px;
+  }
+
+  .flex-container {
+    width: 300px;
+    padding: 0 15px;
+   }
+  
+   .non-flex-container {
+    width: 300px;
+    padding: 0 15px;
+   }
+
+}
