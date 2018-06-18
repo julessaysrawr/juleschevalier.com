@@ -5,8 +5,8 @@
       "component---src-pages-index-js-7d8292425d6fd6cb57e6.js.map"
     ],
     "path---blog": [
-      "path---blog-8ca42a72b2879e9245b8.js",
-      "path---blog-8ca42a72b2879e9245b8.js.map"
+      "path---blog-fa6b9de2fc02e710392f.js",
+      "path---blog-fa6b9de2fc02e710392f.js.map"
     ],
     "path---now": [
       "path---now-a0e39f21c11f6a62c5ab.js",
@@ -26,6 +26,10 @@
       "commons-009933c38a865c0e4e81.js.map",
       "build-js-styles.css.map"
     ],
+    "path---blog-video-games": [
+      "path---blog-video-games-5a99e92934da340a7288.js",
+      "path---blog-video-games-5a99e92934da340a7288.js.map"
+    ],
     "component---src-pages-now-js": [
       "component---src-pages-now-js-b5ef7f544077c4a858ce.js",
       "component---src-pages-now-js-b5ef7f544077c4a858ce.js.map"
@@ -35,8 +39,8 @@
       "component---src-pages-blog-js-d769cf7641414b37f246.js.map"
     ],
     "app": [
-      "app-55dca39c217be8d99538.js",
-      "app-55dca39c217be8d99538.js.map"
+      "app-407cf2f5ab01d406c347.js",
+      "app-407cf2f5ab01d406c347.js.map"
     ],
     "component---src-pages-about-js": [
       "component---src-pages-about-js-78a13c14a0111f5a5c42.js",
