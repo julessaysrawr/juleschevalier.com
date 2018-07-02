@@ -26,18 +26,11 @@ export default () =>
         <p>Interested in helping people.  Creating value that lasts.</p>
       </div>
     </div>
-
-
-
-
-    {/* <div className="">
-      <Now />       
-    </div> */}
   </main>
-    <div className="flex-container space-above-m space-below-m">
+    <div className="flex-container space-above space-below-m">
       <p>To find out what I'm currently up to, you can check out my <Link to='/now'>now page</Link>.</p>
     </div>
-    <div className="non-flex-container space-above-m space-below-m">
+    <div className="non-flex-container space-above space-below-m">
       <h4>Want to get in touch with me?</h4>
       <p>jules says rawr at gmail dot com</p>
     </div>
