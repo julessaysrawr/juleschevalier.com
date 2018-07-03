@@ -2,6 +2,15 @@ import React from 'react';
 import '../styles/main.css'
 import '../styles/queries.css'
 import Nav from '../components/nav.js'
+import MobileDetect from 'mobile-detect';
+
+const md = new MobileDetect(window.navigator.userAgent);
+console.log('md', md);
+console.log('md.mobile', md.mobile());
+console.log('md.phone', md.phone());
+
+
+
 
 function isMobileDevice() {
   if (typeof window.orientation !== "undefined") {
@@ -42,6 +51,8 @@ export default () =>
     <Nav />
   </header>
   <div className="non-flex-container">
+    <p>{md.mobile()}</p>
+    <p>{md.phone()}</p>
     <ul>
       <li><a href="https://www.theminimalists.com" target="_blank">The Minimalists</a></li>
       <li><a href="https://sivers.org/" target="_blank">Derek Sivers</a></li>
