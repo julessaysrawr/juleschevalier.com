@@ -4,7 +4,12 @@ import '../styles/queries.css'
 import Nav from '../components/nav.js'
 
 function isMobileDevice() {
-  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  if (typeof window.orientation !== "undefined") {
+    return true;
+  } else {
+    return false;
+  }
+  // return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 };
 
 function displayWebOrApp() {
