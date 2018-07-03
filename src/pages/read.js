@@ -11,6 +11,7 @@ function displayWebOrApp() {
   if (!isMobileDevice) {
     return (
       <div>
+        <li>Mobile</li>
         <li><a href="medium://">Medium</a></li>
         <li><a href="kindle://">Kindle</a></li>
         <li><a href="audible://">Audible</a></li>
@@ -20,6 +21,7 @@ function displayWebOrApp() {
    } else {
     return (
       <div>
+        <li>Web</li>
         <li><a href="https://medium.com/" target="_blank">Medium</a></li>
         <li><a href="https://read.amazon.com/">Kindle</a></li>
         <li><a href="https://www.audible.com">Audible</a></li>
