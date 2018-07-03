@@ -3,6 +3,32 @@ import '../styles/main.css'
 import '../styles/queries.css'
 import Nav from '../components/nav.js'
 
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
+function displayWebOrApp() {
+  if (!isMobileDevice) {
+    return (
+      <div>
+        <li><a href="medium://">Medium</a></li>
+        <li><a href="kindle://">Kindle</a></li>
+        <li><a href="audible://">Audible</a></li>
+        <li><a href="podcast://">Podcasts</a></li>
+      </div>
+    );
+   } else {
+    return (
+      <div>
+        <li><a href="https://medium.com/" target="_blank">Medium</a></li>
+        <li><a href="https://read.amazon.com/">Kindle</a></li>
+        <li><a href="https://www.audible.com">Audible</a></li>
+        <li>Podcasts</li>
+      </div>
+    );
+  }
+}
+
 export default () => 
 <div>
   <header>
@@ -17,11 +43,7 @@ export default () =>
       <li><a href="http://calnewport.com/blog/" target="_blank">Cal Newport</a></li>
     </ul>
     <ul className="space-above-m">
-    {/* if on iphone, open app, else open website */}
-      <li><a href="https://medium.com/">Medium web</a></li>
-      <li><a href="medium://">Medium app</a></li>
-      <li><a href="kindle://">Kindle</a></li>
-      <li><a href="audible://">Audible</a></li>
+      {displayWebOrApp()}
     </ul>
   </div>
 </div>
