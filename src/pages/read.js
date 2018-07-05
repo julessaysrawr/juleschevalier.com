@@ -22,7 +22,7 @@ function isMobileDevice() {
 };
 
 function displayWebOrApp() {
-  if (!isMobileDevice) {
+  if (!md.mobile) {
     return (
       <div>
         <li>Mobile</li>
@@ -35,11 +35,12 @@ function displayWebOrApp() {
    } else {
     return (
       <div>
-        <li>Web</li>
+        <li><h3>Web</h3></li>
         <li><a href="https://medium.com/" target="_blank">Medium</a></li>
         <li><a href="https://read.amazon.com/">Kindle</a></li>
+        <li><a href="https://read.amazon.com/notebook">Kindle Highlights and Notes</a></li>
         <li><a href="https://www.audible.com">Audible</a></li>
-        <li>Podcasts</li>
+        <li><p>Podcasts</p></li>
       </div>
     );
   }

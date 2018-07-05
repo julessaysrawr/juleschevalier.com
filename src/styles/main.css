@@ -30,13 +30,13 @@ main {
   /* width: 700px; */
 }
 
- h1, h2, h3, h4, h5 {
+ h1, h2, h3, h4, h5, p {
    font-family: 'Raleway', sans-serif;
    /* font-family: 'Lato', sans-serif; */
    color: var(--color-dark-grey);
  }
 
- a, p {
+ a, p, li {
    font-family: 'Open Sans', sans-serif;
    line-height: 1.5;
    margin: 8px 0px;
