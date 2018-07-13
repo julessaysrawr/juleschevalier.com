@@ -18,6 +18,7 @@ export default () =>
           <li><a href="https://www.theminimalists.com" target="_blank">The Minimalists</a></li>
           <li><a href="https://sivers.org/" target="_blank">Derek Sivers</a></li>
           <li><a href="https://zenhabits.net" target="_blank">Zen Habits</a></li>
+          <li><a href="https://exilelifestyle.com" target="_blank">Exile Lifestyle</a></li>
           <li><a href="https://seths.blog" target="_blank">Seth's Blog</a></li>
           <li><a href="http://calnewport.com/blog/" target="_blank">Cal Newport</a></li>
         </ul>
