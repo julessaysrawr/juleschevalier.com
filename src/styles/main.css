@@ -40,6 +40,7 @@ main {
    font-family: 'Open Sans', sans-serif;
    line-height: 1.5;
    margin: 8px 0px;
+   color: var(--color-dark-grey);
  }
 
 ul {
@@ -241,3 +242,11 @@ ul {
    line-height: 1.75;
    margin-bottom: 20px;
  }
+
+ .blog-post-content ul {
+   list-style-type: circle;
+ }
+
+ .blog-post-content ul li{
+  margin-left: 30px;
+}
