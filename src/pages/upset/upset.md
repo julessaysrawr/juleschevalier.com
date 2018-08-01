@@ -19,7 +19,7 @@ Can you take a small or several small steps in the desired direction?
 
 Change can happens little by little, just like habits you build over time.
 
-Somethings you need to slow down, that’s okay.
+Sometimes you need to slow down, that’s okay.
 
 _In order to do any of this, you need to take care of yourself first.  Everything else can wait._
 
