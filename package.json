@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build && cp ./src/favicon/* public/",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && cp ./CNAME public/ && gh-pages -d public"
+    "deploy": "gatsby build && cp ./CNAME public/ && cp ./src/favicon/* public/ && gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^1.9.250",
