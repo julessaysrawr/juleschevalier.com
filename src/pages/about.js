@@ -33,5 +33,6 @@ export default () =>
     <div className="non-flex-container space-above space-below-m">
       <h4>Want to get in touch with me?</h4>
       <p>jules says rawr at gmail dot com</p>
+      <p>&#x25b3;</p>
     </div>
 </div>
