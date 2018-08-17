@@ -9,8 +9,8 @@
       "component---src-pages-index-js-7d8292425d6fd6cb57e6.js.map"
     ],
     "path---blog": [
-      "path---blog-90bd653df9a481efa99f.js",
-      "path---blog-90bd653df9a481efa99f.js.map"
+      "path---blog-236b8d59ee385044bc3c.js",
+      "path---blog-236b8d59ee385044bc3c.js.map"
     ],
     "path---now": [
       "path---now-a0e39f21c11f6a62c5ab.js",
@@ -51,8 +51,8 @@
       "component---src-pages-blog-js-d769cf7641414b37f246.js.map"
     ],
     "app": [
-      "app-67dfc6087a08f95eb491.js",
-      "app-67dfc6087a08f95eb491.js.map"
+      "app-ee84ef50dda99ab6be00.js",
+      "app-ee84ef50dda99ab6be00.js.map"
     ],
     "component---src-pages-about-js": [
       "component---src-pages-about-js-0eca90a0b541da793472.js",
@@ -73,6 +73,10 @@
     "path---blog-first-post": [
       "path---blog-first-post-2f05ad00148650529333.js",
       "path---blog-first-post-2f05ad00148650529333.js.map"
+    ],
+    "path---blog-simple-eating": [
+      "path---blog-simple-eating-bb340541b0f36b4b628b.js",
+      "path---blog-simple-eating-bb340541b0f36b4b628b.js.map"
     ]
   }
 }
