@@ -13,6 +13,7 @@ const Nav = props => {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/photography">Photography</Link></li>
           <li><Link to="/about">About</Link></li>
         </ul>
       </nav>
