@@ -31,6 +31,12 @@ export default () =>
           <li><a href="https://www.audible.com" target="_blank">Audible</a></li>
           <li><p>Podcasts</p></li>
         </ul>
+        <h2 className="space-above-m">Programming</h2>
+        <ul>
+          <li><a href="https://www.reddit.com/r/reactjs/" target="_blank">/r/reactjs</a></li>
+          <li><a href="https://www.reddit.com/r/javascript/" target="_blank">/r/javascript</a></li>
+          
+        </ul>
       </div>
     </div>
 
