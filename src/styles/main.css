@@ -63,6 +63,19 @@ ul {
    border-bottom: 1px solid var(--color-dark-grey);
  }
 
+ /* ---------- BUTTONS --------- */
+
+ .button {
+   background-color: var(--color-dark-grey);
+   padding: 15px 25px;
+   color: var(--color-light-grey);
+   font-family: 'Raleway', sans-serif;
+   font-weight: 1000;
+   font-size: 16px;
+   margin: 10px;
+ }
+
+
  /* ---------- COLORS --------- */
  .dark-grey {
    background-color: var(--color-dark-grey);
@@ -252,3 +265,11 @@ ul {
  .blog-post-content ul li{
   margin-left: 30px;
 }
+
+ /* ---------- HABITS --------- */
+
+ .habit-result {
+   margin: 0px auto;
+   background-color: var(--color-white);
+   padding: 20px 100px;
+ }
