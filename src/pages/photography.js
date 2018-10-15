@@ -2,6 +2,11 @@ import React from "react"
 import '../styles/main.css'
 import '../styles/queries.css'
 import Nav from '../components/nav.js'
+import GalleryItem from '../components/galleryItem'
+import placekitten from '../assets/placekitten230.jpeg'
+import placekittenWide from '../assets/placekitten300x200.jpeg'
+import placekittenTall from '../assets/placekitten200x300.jpeg'
+
 import image1 from '../assets/photography/portriat-1.jpg'
 import image2 from '../assets/photography/portriat-2.jpg'
 import image3 from '../assets/photography/portriat-3.jpg'
@@ -28,43 +33,48 @@ export default () =>
   <header>
     <Nav />
   </header>
-  <div className="non-flex-container">
-    <div>
-      <img src={image2} className="photo" />
+  <div className="flex-container gallery-wrap">
+      {/* <img src={image2} className="photo" />
       <img src={image1} className="photo" />
       <img src={image3} className="photo" />
-
-    </div>
-
-    <div>
       <img src={image8} className="photo" />
       <img src={image7} className="photo" />
       <img src={image9} className="photo" />
-    </div>
-
-
-    <div>
       <img src={image4} className="photo" />
       <img src={image5} className="photo" />
       <img src={image6} className="photo" />
-    </div>
-
-    <div>
       <img src={image14} className="photo" />
       <img src={image13} className="photo" />
       <img src={image15} className="photo" />
-    </div>
-
-    <div>
       <img src={image10} className="photo" />
       <img src={image16} className="photo" />
       <img src={image11} className="photo" />
-    </div>
-
-    <div>
       <img src={image17} className="photo" />
       <img src={image12} className="photo" />
-      <img src={image18} className="photo" />
-    </div>
+      <img src={image18} className="photo" /> */}
+      <GalleryItem src={placekittenWide} layout={'center'} />
+      <GalleryItem src={placekittenTall} layout={'center'} />
+      <GalleryItem src={placekittenWide} layout={'center'} />
+      <GalleryItem src={placekittenTall} layout={'center'} />
+      <GalleryItem src={placekittenWide} layout={'center'} />
+      <GalleryItem src={placekittenTall} layout={'center'} />
+      <GalleryItem src={placekittenWide} layout={'center'} />
+      <GalleryItem src={placekittenTall} layout={'center'} />
+      <GalleryItem src={placekittenWide} layout={'center'} />
+      <GalleryItem src={placekittenTall} layout={'center'} />
+      <GalleryItem src={placekittenWide} layout={'center'} />
+      <GalleryItem src={placekittenTall} layout={'center'} />
+      {/* <img src={placekitten} />
+      <img src={placekitten} />
+      <img src={placekitten} />
+      <img src={placekitten} />
+      <img src={placekitten} />
+      <img src={placekitten} />
+      <img src={placekitten} />
+      <img src={placekitten} />
+      <img src={placekitten} />
+      <img src={placekitten} />
+      <img src={placekitten} />
+      <img src={placekitten} /> */}
   </div>
 </div>
