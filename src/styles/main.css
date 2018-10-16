@@ -73,6 +73,7 @@ ul {
    font-weight: 1000;
    font-size: 16px;
    margin: 10px;
+   width: 150px;
  }
 
 
@@ -138,6 +139,10 @@ ul {
 
 .space-below-m {
   margin-bottom: 50px;
+}
+
+.space-around {
+  justify-content: space-around;
 }
 
 

@@ -21,7 +21,7 @@ class Habits extends Component {
       result: 'What do you want to do?',
       create: ["writing", "photography", "editing", "coding", "learning"],
       relax: ["do nothing", "get bored", "cooking", "friends", "read fiction", "pamper myself"],
-      strongBody: ["stretches", "yoga", "body weight movements", "weight lifting", "walking"],
+      strongBody: ["stretches", "yoga", "body weight movements", "weight lifting", "walking", "handstand progress"],
       clearMind: ["nap", "meditate", "presence", "video games", "reading", "sunshine", "walking"]
     }
   }
@@ -69,7 +69,7 @@ class Habits extends Component {
         <header>
           <Nav />
         </header>
-        <div className="flex-container">
+        <div className="flex-container space-around">
           <button onClick={this.createHandler} className="button">create</button>
           <button onClick={this.relaxHandler} className="button">relax</button>
           <button onClick={this.strongBodyHandler} className="button">strong body</button>
