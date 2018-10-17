@@ -145,6 +145,10 @@ ul {
   justify-content: space-around;
 }
 
+.wrap  {
+  flex-wrap: wrap;
+}
+
 
  /* ---------- NAV --------- */
 .nav {
