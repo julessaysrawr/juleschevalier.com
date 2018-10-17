@@ -4,6 +4,10 @@
       "path---read-a0e39f21c11f6a62c5ab.js",
       "path---read-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---habits": [
+      "path---habits-a0e39f21c11f6a62c5ab.js",
+      "path---habits-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-7d8292425d6fd6cb57e6.js",
       "component---src-pages-index-js-7d8292425d6fd6cb57e6.js.map"
@@ -28,6 +32,10 @@
       "path---blog-upset-0e276d9b93a860ca1e01.js",
       "path---blog-upset-0e276d9b93a860ca1e01.js.map"
     ],
+    "component---src-pages-habits-js": [
+      "component---src-pages-habits-js-616fee2f02098e332cbf.js",
+      "component---src-pages-habits-js-616fee2f02098e332cbf.js.map"
+    ],
     "commons": [
       "commons-009933c38a865c0e4e81.js",
       "build-js-styles.css",
@@ -51,8 +59,8 @@
       "component---src-pages-blog-js-d769cf7641414b37f246.js.map"
     ],
     "app": [
-      "app-ee84ef50dda99ab6be00.js",
-      "app-ee84ef50dda99ab6be00.js.map"
+      "app-ffa4ea2fa99473eceeda.js",
+      "app-ffa4ea2fa99473eceeda.js.map"
     ],
     "component---src-pages-about-js": [
       "component---src-pages-about-js-0eca90a0b541da793472.js",
@@ -63,8 +71,8 @@
       "path---blog-lightning-b4d2b204e012b7ad305f.js.map"
     ],
     "component---src-pages-read-js": [
-      "component---src-pages-read-js-43d1a46752370127aac4.js",
-      "component---src-pages-read-js-43d1a46752370127aac4.js.map"
+      "component---src-pages-read-js-397cdb4fad685af4bc05.js",
+      "component---src-pages-read-js-397cdb4fad685af4bc05.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",
