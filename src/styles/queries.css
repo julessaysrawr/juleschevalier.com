@@ -46,4 +46,8 @@ $mobile: 792px; */
     padding: 0 15px;
    }
 
+   .habit-result {
+    padding: 20px 40px;
+  }
+
 }
