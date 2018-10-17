@@ -8,15 +8,6 @@ class Habits extends Component {
 
   constructor(props) {
     super(props);
-    // this.createHandler = this.createHandler.bind(this);
-    // this.relaxHandler = this.relaxHandler.bind(this);
-    // this.strongBodyHandler = this.strongBodyHandler.bind(this);
-    // this.clearMindHandler = this.clearMindHandler.bind(this);
-
-    // this.randomHandler = this.randomHandler.bind(this);
-
-
-
     this.state = {
       result: 'What do you want to do?',
       create: ["writing", "photography", "editing", "coding", "learning"],
