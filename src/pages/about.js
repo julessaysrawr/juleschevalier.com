@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby";
-import '../styles/main.css'
-import '../styles/queries.css'
+import '../styles/main.scss'
 import bioPic from '../assets/jules.jpg'
 import Nav from '../components/nav.js'
 import Now from '../components/now.js'

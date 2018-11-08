@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import '../styles/main.css'
-import '../styles/queries.css'
+import '../styles/main.scss'
 
 const Nav = props => {
   return (

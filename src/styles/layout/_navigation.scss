@@ -1,0 +1,13 @@
+  /* ---------- LINKS --------- */
+  a:link,
+  a:visited {
+   text-decoration: none;
+   color: $color-dark-grey;
+  }
+ 
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: $color-dark-grey;
+    border-bottom: 1px solid $color-dark-grey;
+  }

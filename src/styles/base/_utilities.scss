@@ -1,0 +1,47 @@
+ /* ---------- SPACING --------- */
+
+ .flex-container {
+  width: 700px;
+  display: flex;
+  /* border: 1px solid black; */
+  margin: 0 auto 30px auto;
+  /* min-height: 300px; */
+ }
+
+ .non-flex-container {
+  width: 700px;
+  margin: 0 auto 30px auto;
+  /* min-height: 300px; */
+ }
+
+.space-above {
+  margin-top: 25px;
+}
+
+.space-below {
+  margin-bottom: 25px;
+}
+
+.space-above-m {
+  margin-top: 50px;
+}
+
+.space-below-m {
+  margin-bottom: 50px;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.wrap  {
+  flex-wrap: wrap;
+}
+
+
+
+
+ /* ---------- CENTERING THINGS --------- */
+.center {
+  text-align: center;
+}

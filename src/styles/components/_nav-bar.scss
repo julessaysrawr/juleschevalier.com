@@ -1,0 +1,28 @@
+ /* ---------- NAV --------- */
+ .nav {
+  width: 700px;
+  border-top: 1px solid $color-medium-grey;
+  border-bottom: 1px solid $color-medium-grey;
+  margin: 20px auto 30px auto;
+  padding: 20px 0;
+}
+
+.nav ul {
+  text-align: center;
+}
+.nav ul li {
+  display: inline;
+  padding: 60px;
+}
+
+.name-plate {
+  font-size: 40px;
+  font-weight: 200;
+}
+.tag-line {
+  color: $color-medium-grey;
+  font-style: italic;
+  font-weight: 80;
+  margin-top: 5px;
+}
+

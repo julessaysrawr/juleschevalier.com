@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import '../styles/main.css'
-import '../styles/queries.css'
+import '../styles/main.scss'
 import Nav from '../components/nav.js'
 import Button from '../components/button';
 
