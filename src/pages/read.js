@@ -19,9 +19,19 @@ export default () =>
           <li><a href="https://www.theminimalists.com" target="_blank">The Minimalists</a></li>
           <li><a href="https://sivers.org/" target="_blank">Derek Sivers</a></li>
           <li><a href="https://zenhabits.net" target="_blank">Zen Habits</a></li>
-          <li><a href="https://exilelifestyle.com" target="_blank">Exile Lifestyle</a></li>
           <li><a href="https://seths.blog" target="_blank">Seth's Blog</a></li>
           <li><a href="http://calnewport.com/blog/" target="_blank">Cal Newport</a></li>
+        </ul>
+        <h2 className="space-above-m">Style</h2>
+        <ul>
+          <li><a href="http://www.uselesswardrobe.dk" target="_blank">Useless</a></li>
+          <li><a href="http://www.stylebee.ca" target="_blank">Stylebee</a></li>
+          <li><a href="http://www.un-fancy.com" target="_blank">Unfancy</a></li>
+        </ul>
+        <h2 className="space-above-m">Programming</h2>
+        <ul>
+          <li><a href="https://www.reddit.com/r/reactjs/" target="_blank">/r/reactjs</a></li>
+          <li><a href="https://www.reddit.com/r/javascript/" target="_blank">/r/javascript</a></li>
         </ul>
         <h2 className="space-above-m">Longform</h2>
         <ul>
@@ -30,12 +40,6 @@ export default () =>
           <li><a href="https://read.amazon.com/notebook" target="_blank">Kindle Highlights and Notes</a></li>
           <li><a href="https://www.audible.com" target="_blank">Audible</a></li>
           <li><p>Podcasts</p></li>
-        </ul>
-        <h2 className="space-above-m">Programming</h2>
-        <ul>
-          <li><a href="https://www.reddit.com/r/reactjs/" target="_blank">/r/reactjs</a></li>
-          <li><a href="https://www.reddit.com/r/javascript/" target="_blank">/r/javascript</a></li>
-          
         </ul>
       </div>
     </div>
