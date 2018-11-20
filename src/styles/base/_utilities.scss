@@ -1,33 +1,30 @@
  /* ---------- SPACING --------- */
 
  .flex-container {
-  width: 700px;
+  width: 70rem;
   display: flex;
-  /* border: 1px solid black; */
-  margin: 0 auto 30px auto;
-  /* min-height: 300px; */
+  margin: 0 auto 3rem auto;
  }
 
  .non-flex-container {
-  width: 700px;
-  margin: 0 auto 30px auto;
-  /* min-height: 300px; */
+  width: 70rem;
+  margin: 0 auto 3rem auto;
  }
 
 .space-above {
-  margin-top: 25px;
+  margin-top: 2.5rem;
 }
 
 .space-below {
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 
 .space-above-m {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .space-below-m {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .space-around {
@@ -44,4 +41,10 @@
  /* ---------- CENTERING THINGS --------- */
 .center {
   text-align: center;
+}
+
+
+::selection {
+  background-color: $color-dark-grey;
+  color: $color-white;
 }

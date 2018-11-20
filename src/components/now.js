@@ -4,7 +4,7 @@ import '../styles/main.scss'
 const Now = props => {
   return (
     <div>
-      <h2 className="space-below">What I'm doing now</h2>
+      <h3 className="space-below">What I'm doing now</h3>
       <p>Letting go and finding I am happier with less</p>
       <p>Trying to live in the present moment</p>
       <p>Focusing on creating: 🖋wrting and 📷photography</p>

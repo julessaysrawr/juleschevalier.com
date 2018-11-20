@@ -11,7 +11,4 @@ export default () =>
   <div className="flex-container">
   <img src={cover} className="cover" />
   </div>
-  {/* <main className="space-below-m">
-    
-  </main> */}
 </div>

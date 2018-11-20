@@ -5,43 +5,16 @@
   flex-direction: column;
  }
 
-.card {
-  display: flex;
-  justify-content: space-between;
-  /* width: 1140px; */
-  /* background-color: var(--color-light-grey); */
-  /* background-color: #f2f3f4; */
-  /* padding: 70px; */
-  margin: 0 auto;
-  border-radius: 10px;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  width: 630px;
-  /* background-color: var(--color-white); */
-  /* background-color: #fafafa; */
-  padding: 50px;
-  border-radius: 5px;
-}
-
-
 .profile-container {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 2rem auto;
 }
 .profile {
-  width: 150px;
+  width: 15rem;
   border-radius: 50%;
   margin: 0 auto;
 
 }
 
 .border {
-  border: 1px solid black;
+  border: 0.1rem solid black;
 }

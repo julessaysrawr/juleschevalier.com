@@ -11,7 +11,7 @@ export default () =>
   <header>
     <Nav/>
   </header>
-  <main className="flex-container space-below-m">
+  <div className="flex-container space-below-m">
     <div className="flex-column">
       <div className="profile-container">
         <img className="profile" src={ bioPic } alt="jules" />
@@ -25,9 +25,9 @@ export default () =>
         <p>Interested in helping people.  Creating value that lasts.</p>
       </div>
     </div>
-  </main>
+  </div>
     <div className="flex-container space-above space-below-m">
-      <p>To find out what I'm currently up to, you can check out my <Link to='/now'>now page</Link>.</p>
+      <p>To find out what I'm currently up to, you can check out my <Link to='/now' className="show-link">now page</Link>.</p>
     </div>
     <div className="non-flex-container space-above space-below-m">
       <h4>Want to get in touch with me?</h4>

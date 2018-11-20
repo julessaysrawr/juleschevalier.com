@@ -8,7 +8,7 @@ export default () =>
   <header>
     <Nav />
   </header>
-  <main className="flex-container">
+  <div className="flex-container">
     <Now />
-  </main>
+  </div>
 </div>

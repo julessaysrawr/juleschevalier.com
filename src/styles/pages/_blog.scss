@@ -1,24 +1,28 @@
  /* ---------- BLOG --------- */
  .blog-list {
-  margin: 10px 0px;
+  margin: 1rem 0rem;
+  font-size: 2rem;
  }
 
  .blog-title {
-  letter-spacing: 1.2px;
+  letter-spacing: 0.12rem;
+  font-size: 3rem;
+  font-weight: 400;
  }
 
  .blog-date {
   font-style: italic;
   color: $color-medium-grey;
+  font-size: 1.6rem;
  }
 
  .blog-post-content {
-   padding-top: 35px;
+   padding-top: 3.5rem;
  }
 
  .blog-post-content p {
    line-height: 1.75;
-   margin-bottom: 20px;
+   margin-bottom: 2rem;
  }
 
  .blog-post-content ul {
@@ -26,5 +30,5 @@
  }
 
  .blog-post-content ul li{
-  margin-left: 30px;
+  margin-left: 3rem;
 }

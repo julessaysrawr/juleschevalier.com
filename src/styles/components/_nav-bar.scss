@@ -1,10 +1,10 @@
  /* ---------- NAV --------- */
  .nav {
-  width: 700px;
-  border-top: 1px solid $color-medium-grey;
-  border-bottom: 1px solid $color-medium-grey;
-  margin: 20px auto 30px auto;
-  padding: 20px 0;
+  width: 70rem;
+  border-top: 0.1rem solid $color-medium-grey;
+  border-bottom: 0.1rem solid $color-medium-grey;
+  margin: 2rem auto 3rem auto;
+  padding: 2rem 0;
 }
 
 .nav ul {
@@ -12,17 +12,19 @@
 }
 .nav ul li {
   display: inline;
-  padding: 60px;
+  padding: 6rem;
+  font-size: $default-font-size;
 }
 
 .name-plate {
-  font-size: 40px;
-  font-weight: 200;
+  font-size: 4rem;
+  font-weight: 400;
 }
 .tag-line {
   color: $color-medium-grey;
+  font-size: 2rem;
   font-style: italic;
-  font-weight: 80;
-  margin-top: 5px;
+  font-weight: 300;
+  margin-top: 0.5rem;
 }
 

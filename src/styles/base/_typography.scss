@@ -1,15 +1,41 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Raleway:400,400i,700);
-@import url(https://fonts.googleapis.com/css?family=Lato|Open+Sans|Raleway);
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700|Montserrat:300,400,500,600');
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, button {
   font-family: 'Raleway', sans-serif;
-  /* font-family: 'Lato', sans-serif; */
   color: $color-dark-grey;
 }
 
 a, p, li {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-  margin: 8px 0px;
   color: $color-dark-grey;
+  font-family: 'Montserrat', sans-serif;  
+  font-size: $default-font-size;
+  line-height: 1.5;
+  margin: 0.8rem 0rem;
 }
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+
+// .header{
+//   &-text {
+//     &:hover, :focus {
+
+//     }
+//   }
+// }
