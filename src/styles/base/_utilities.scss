@@ -4,12 +4,28 @@
   width: 70rem;
   display: flex;
   margin: 0 auto 3rem auto;
- }
+
+  @include respond(tab-port) {
+    width: 85%;
+    padding: 0 2.5rem;
+  }
+
+}
 
  .non-flex-container {
   width: 70rem;
   margin: 0 auto 3rem auto;
- }
+
+  @include respond(tab-port) {
+    width: 40rem;
+    padding: 0 2.5rem;
+  }
+
+  @include respond(phone) {
+    width: 30rem;
+    padding: 0 1.5rem;
+  }
+}
 
 .space-above {
   margin-top: 2.5rem;
@@ -43,7 +59,7 @@
   text-align: center;
 }
 
-
+ /* ---------- TEXT HIGHLIGHT COLOR --------- */
 ::selection {
   background-color: $color-dark-grey;
   color: $color-white;

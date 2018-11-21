@@ -6,4 +6,14 @@
   font-size: 1.6rem;
   margin: 1rem;
   width: 15rem;
+
+  @include respond(tab-port) {
+    width: 25rem;
+    padding: 1.5rem 2rem;
+  }
+
+  @include respond(phone) {
+    width: 30rem;
+    padding: 1.5rem 2rem;
+  }
 }

@@ -5,4 +5,8 @@
   background-color: $color-white;
   padding: 2rem 10rem;
   font-size: 2rem;
+
+  @include respond(phone) {
+    padding: 2rem 4rem;
+  }
 }

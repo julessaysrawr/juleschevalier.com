@@ -1,128 +1,31 @@
 /* https://material.io/guidelines/layout/responsive-ui.html */
 
-
-/* ----- mobile & tablet ----- */
-@media screen and (max-width: 659px){
-  .nav {
-    width: 350px;
-  }
-
-  .nav ul li {
-    padding: 35px;
-  }
-
-  .flex-container {
-    width: 400px;
-    padding: 0 25px;
-   }
-  
-   .non-flex-container {
-    width: 400px;
-    padding: 0 25px;
-   }
-}
-
-/* ----- extra small screens ----- */
-@media screen and (max-width: 399px){
-  .nav {
-    width: 300px;
-  }
-
-  .nav ul li {
-    padding: 25px;
-  }
-
-  .flex-container {
-    width: 300px;
-    padding: 0 15px;
-   }
-  
-   .non-flex-container {
-    width: 300px;
-    padding: 0 15px;
-   }
-
-   .habit-result {
-    padding: 20px 40px;
-  }
-
-}
-
-
-
-
-
-// SCREEN SIZES
-$extra-small-screen: 399px;
-$mobile-and-tablet:659px;
-
-// JONAS
-// media query manager
-// phones 0-600px
-// tablet portrait 600-900px
-// tablet landscape 900-1200px
-// desktop 1200-1800px (where normal styles apply if doing desktop first)
-// big desktop 1800+px
-
-// MEDIA QUERY MANAGER
 /*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply if doing desktop first
-1800px + :      Big desktop
+//SCREEN SIZES
+xs  0-450px     phone
+sm  451-768px   tablet portrait
+md  769-900     tablet landscape
+lg  901-1800px  desktop (where normal styles apply)
+xl  1801px +    big desktop
 
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-1em = 16px
+1em = 16pm
 */
 
-
-
-
-
-// best
-// @mixin respond($breakpoint) {
-//   @if $breakpoint == phone {
-//       @media(max-width: 600px or 37.5em) { @content };
-//   }
-//   @if $breakpoint == tab-port {
-//       @media(max-width: 900px or 56.25em) { @content };
-//   }
-//   @if $breakpoint == tab-land {
-//       @media(max-width: 1200px or 75em) { @content };
-//   }
-//   @if $breakpoint == big-desktop {
-//       @media(mmin-width: 1800px or 112.5em) { @content };
-//   }
-// }
-
-
-// best usage
-// html {
-//   font-size:62.5%;
-
-// //    @include respond(phone) {    //this is not needed. phone are smaller than 900px, so tab-port query will apply
-// //        font-size: 50%;
-// //    }
-
-//   @include respond(tab-land) {    // ORDER MATTERS.  THIS MUST COME BEFORE tab-port
-//       font-size: 56.25%;    // 1rem = 9px, 9/16 = 56.25%
-//   }
-
-//   @include respond(tab-port) {
-//       font-size: 50%;    // 1rem = 8px, 8/16 = 50%
-//   }
-
-// //    @include respond(phone) {    //this is not needed. phone are smaller than 900px, so tab-port query will apply
-// //        font-size: 50%;           // would be needed if unique font-size
-// //    }
-
-//   @include respond(big-desktop) {
-//       font-size: 75%;    // 1rem = 12px, 12/16 = 75%
-//   }
-// }
+// Desktop first appraoch to queries, based on this is mostly a desktop site
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+      @media(max-width: 450px or 28.125em) { @content };
+  }
+  @if $breakpoint == tab-port {
+      @media(max-width: 768px or 48em) { @content };
+  }
+  @if $breakpoint == tab-land {
+      @media(max-width: 900px or 56.25em) { @content };
+  }
+  // @if $breakpoint == desktop {
+  //     @media(max-width: 1200px or 75em) { @content };
+  // }
+  @if $breakpoint == big-desktop {
+      @media(min-width: 1800px or 112.5em) { @content };
+  }
+}
