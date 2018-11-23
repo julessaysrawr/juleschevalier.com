@@ -4,7 +4,7 @@ import '../styles/main.css'
 import '../styles/queries.css'
 import bioPic from '../assets/jules.jpg'
 import Nav from '../components/nav.js'
-import Now from '../components/now.js'
+import Emoji from '../components/emoji'
 
 
 export default () => 
@@ -21,7 +21,7 @@ export default () =>
         <h3 className="">Me in 10 seconds</h3>
         <p>Native nomad.  I currently live in Western Massachusetts with my handsome husband David and our kids: Mr. Gizmo, Lucius, and General Grievous.</p>
         <p>Prospector of adventure and beauty. Mindfulness.  Food is medicine.  Gymnastic strength training.  On a minimalist journey.</p>
-        <p>INTJ, though most would guess I'm an extrovert.  Strategic and analytical, which leads to overthinking 😆</p>
+        <p>INTJ, though most would guess I'm an extrovert.  Strategic and analytical, which leads to overthinking <Emoji symbol="😆" label="Face With Stuck-out Tongue And Tightly-closed Eyes" /></p>
         <p>I'm driven to improve through experiments.  My super power is I'm a growth catalyst.</p>
         <p>Interested in helping people.  Creating value that lasts.</p>
       </div>

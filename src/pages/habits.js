@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import '../styles/main.css'
 import '../styles/queries.css'
 import Nav from '../components/nav.js'
-import Button from '../components/button';
 
 class Habits extends Component {
 
