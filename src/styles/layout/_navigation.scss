@@ -15,8 +15,3 @@
   .show-link {
     border-bottom: 0.1rem solid $color-dark-grey;
   }
-
-
-  .blinking-link {
-    @extend .show-link
-  }

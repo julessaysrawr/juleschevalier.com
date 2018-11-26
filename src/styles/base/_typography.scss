@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700|Montserrat:300,400,500,600');
 
-h1, h2, h3, h4, h5, button {
+@mixin headers() {
   font-family: 'Raleway', sans-serif;
   color: $color-dark-grey;
 }
@@ -14,28 +14,27 @@ a, p, li {
 }
 
 h1 {
+  @include headers;
   font-size: 3rem;
   font-weight: 400;
 }
 h2 {
+  @include headers;
   font-size: 2.5rem;
   font-weight: 600;
 }
 h3 {
+  @include headers;
   font-size: 2rem;
   font-weight: 600;
 }
 
 h4 {
+  @include headers;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-
-// .header{
-//   &-text {
-//     &:hover, :focus {
-
-//     }
-//   }
-// }
+h5 {
+  @include headers;
+}

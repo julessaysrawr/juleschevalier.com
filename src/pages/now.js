@@ -5,10 +5,8 @@ import Now from '../components/now.js'
 
 export default () => 
 <div>
-  <header>
-    <Nav />
-  </header>
-  <div className="flex-container">
+  <Nav />
+  <main className="flex-container">
     <Now />
-  </div>
+  </main>
 </div>

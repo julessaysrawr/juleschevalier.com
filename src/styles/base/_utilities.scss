@@ -5,7 +5,7 @@
   display: flex;
   margin: 0 auto 3rem auto;
 
-  @include respond(tab-port) {
+  @include respond(sm) {
     width: 85%;
     padding: 0 2.5rem;
   }
@@ -16,43 +16,40 @@
   width: 70rem;
   margin: 0 auto 3rem auto;
 
-  @include respond(tab-port) {
-    width: 40rem;
+  @include respond(sm) {
+    width: 85%;
     padding: 0 2.5rem;
   }
+}
 
-  @include respond(phone) {
-    width: 30rem;
-    padding: 0 1.5rem;
+.space {
+
+  &-above {
+    margin-top: 2.5rem;
+
+    &-m {
+      margin-top: 5rem;
+    }
   }
+
+  &-below {
+    margin-bottom: 2.5rem;
+
+    &-m {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &-around {
+    justify-content: space-around;
+  }
+
 }
 
-.space-above {
-  margin-top: 2.5rem;
-}
-
-.space-below {
-  margin-bottom: 2.5rem;
-}
-
-.space-above-m {
-  margin-top: 5rem;
-}
-
-.space-below-m {
-  margin-bottom: 5rem;
-}
-
-.space-around {
-  justify-content: space-around;
-}
 
 .wrap  {
   flex-wrap: wrap;
 }
-
-
-
 
  /* ---------- CENTERING THINGS --------- */
 .center {

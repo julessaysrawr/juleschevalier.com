@@ -16,9 +16,9 @@ const BlogPage = ({
   return (
     <div>
       <Nav />
-      <div className="non-flex-container">
+      <main className="non-flex-container">
         {Posts}
-      </div>
+      </main>
     </div>
   );
 };

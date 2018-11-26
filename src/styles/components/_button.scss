@@ -2,17 +2,20 @@
   background-color: $color-dark-grey;
   padding: 1.5rem 2.5rem;
   color: $color-white;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   margin: 1rem;
   width: 15rem;
 
-  @include respond(tab-port) {
+  // @include headers;
+
+  @include respond(sm) {
     width: 25rem;
     padding: 1.5rem 2rem;
   }
 
-  @include respond(phone) {
+  @include respond(xs) {
     width: 30rem;
     padding: 1.5rem 2rem;
   }

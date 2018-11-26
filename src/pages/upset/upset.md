@@ -17,13 +17,13 @@ What’s your goal?
 
 Can you take a small or several small steps in the desired direction?
 
-Change can happens little by little, just like habits you build over time.
+Change happens little by little, just like habits you build over time.
 
 Sometimes you need to slow down, that’s okay.
 
 _In order to do any of this, you need to take care of yourself first.  Everything else can wait._
 
-![](IMG_2194.jpg)
+![Jules in a white dress, sitting on the wooden floor in a hallway](IMG_2194.jpg)
 
 
 ## Here are ways I change my state:

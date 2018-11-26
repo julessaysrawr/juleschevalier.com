@@ -11,21 +11,48 @@ xl  1801px +    big desktop
 1em = 16pm
 */
 
-// Desktop first appraoch to queries, based on this is mostly a desktop site
+// Desktop first approach to queries, based on this is mostly a desktop site
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
+  @if $breakpoint == xs {
       @media(max-width: 450px or 28.125em) { @content };
   }
-  @if $breakpoint == tab-port {
+  @if $breakpoint == sm {
       @media(max-width: 768px or 48em) { @content };
   }
-  @if $breakpoint == tab-land {
+  @if $breakpoint == md {
       @media(max-width: 900px or 56.25em) { @content };
   }
-  // @if $breakpoint == desktop {
+  // @if $breakpoint == lg {
   //     @media(max-width: 1200px or 75em) { @content };
   // }
-  @if $breakpoint == big-desktop {
+  @if $breakpoint == xl {
       @media(min-width: 1800px or 112.5em) { @content };
   }
 }
+
+
+
+
+// xs   >576        //default query
+// s    576-767
+// m    768-991
+// l    992-1199
+// xl   1200+
+
+// @mixin respond($breakpoint) {
+//   @if $breakpoint == xs {
+//       @media(max-width: 575px) { @content };
+//   }
+//   @if $breakpoint == sm {
+//       @media(min-width: 576px) { @content };
+//   }
+//   @if $breakpoint == md {
+//       @media(min-width: 768px) { @content };
+//   }
+//   // @if $breakpoint == lg {
+//   //     @media(min-width: 992px) { @content };
+//   // }
+//   @if $breakpoint == xl {
+//       @media(min-width: 1200px) { @content };
+//   }
+// }

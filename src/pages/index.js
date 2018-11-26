@@ -5,10 +5,8 @@ import '../styles/main.scss'
 
 export default () => 
 <div>
-  <header>
-    <Nav />
-  </header>
-  <div className="flex-container">
-  <img src={cover} className="cover" alt="White peonies flowers in soft light with a quiet mood"/>
-  </div>
+  <Nav />
+  <main className="flex-container">
+    <img src={cover} className="cover" alt="White peonies flowers in soft light with a quiet mood"/>
+  </main>
 </div>
