@@ -2,6 +2,7 @@
 
 module.exports = {
   plugins: [
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,    // this sources the files from the filesystem
       options: {
@@ -9,7 +10,7 @@ module.exports = {
         name: "markdown-pages",
       },
     },
-   `gatsby-transformer-remark`,    // “transform” the markdown to HTML and the YAML frontmatter to JSON    
+    `gatsby-transformer-remark`,    // “transform” the markdown to HTML and the YAML frontmatter to JSON    
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,

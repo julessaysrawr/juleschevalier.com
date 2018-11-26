@@ -1,0 +1,58 @@
+/* https://material.io/guidelines/layout/responsive-ui.html */
+
+/*
+//SCREEN SIZES
+xs  0-450px     phone
+sm  451-768px   tablet portrait
+md  769-900     tablet landscape
+lg  901-1800px  desktop (where normal styles apply)
+xl  1801px +    big desktop
+
+1em = 16pm
+*/
+
+// Desktop first approach to queries, based on this is mostly a desktop site
+@mixin respond($breakpoint) {
+  @if $breakpoint == xs {
+      @media(max-width: 450px or 28.125em) { @content };
+  }
+  @if $breakpoint == sm {
+      @media(max-width: 768px or 48em) { @content };
+  }
+  @if $breakpoint == md {
+      @media(max-width: 900px or 56.25em) { @content };
+  }
+  // @if $breakpoint == lg {
+  //     @media(max-width: 1200px or 75em) { @content };
+  // }
+  @if $breakpoint == xl {
+      @media(min-width: 1800px or 112.5em) { @content };
+  }
+}
+
+
+
+
+// xs   >576        //default query
+// s    576-767
+// m    768-991
+// l    992-1199
+// xl   1200+
+
+// @mixin respond($breakpoint) {
+//   @if $breakpoint == xs {
+//       @media(max-width: 575px) { @content };
+//   }
+//   @if $breakpoint == sm {
+//       @media(min-width: 576px) { @content };
+//   }
+//   @if $breakpoint == md {
+//       @media(min-width: 768px) { @content };
+//   }
+//   // @if $breakpoint == lg {
+//   //     @media(min-width: 992px) { @content };
+//   // }
+//   @if $breakpoint == xl {
+//       @media(min-width: 1200px) { @content };
+//   }
+// }

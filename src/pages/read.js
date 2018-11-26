@@ -1,18 +1,12 @@
 import React from 'react';
-import '../styles/main.css'
-import '../styles/queries.css'
+import '../styles/main.scss'
 import Nav from '../components/nav.js'
-
-
-
 
 
 export default () => 
     <div>
-      <header>
-        <Nav />
-      </header>
-      <div className="non-flex-container">
+      <Nav />
+      <main className="non-flex-container">
         <h3 className="space-below-m">Currently reading: I Will Teach You To Be Rich</h3>
         <h2>Blogs</h2>
         <ul>
@@ -41,6 +35,6 @@ export default () =>
           <li><a href="https://www.audible.com" target="_blank" rel="noopener noreferrer">Audible</a></li>
           <li><p>Podcasts</p></li>
         </ul>
-      </div>
+      </main>
     </div>
 

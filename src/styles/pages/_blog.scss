@@ -1,0 +1,39 @@
+ .blog {
+
+  &-list {
+    margin: 1rem 0rem;
+    font-size: 2rem;
+  }
+
+  &-title {
+    letter-spacing: 0.12rem;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  &-date {
+    font-style: italic;
+    color: $color-medium-grey;
+  }
+
+  &-post {
+
+    &-content {
+      padding-top: 3.5rem;
+
+      p {
+        line-height: 1.75;
+        margin-bottom: 2rem;
+      }
+
+      ul {
+        list-style-type: circle;
+      }
+
+      ul li {
+        margin-left: 3rem;
+      }
+    }
+  }
+
+}

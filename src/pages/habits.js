@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import '../styles/main.css'
-import '../styles/queries.css'
+import '../styles/main.scss'
 import Nav from '../components/nav.js'
 
 class Habits extends Component {
@@ -10,9 +9,9 @@ class Habits extends Component {
     this.state = {
       result: 'What do you want to do?',
       create: ["writing", "photography", "editing", "coding", "learning"],
-      relax: ["do nothing", "get bored", "cooking", "friends", "read fiction", "pamper myself"],
+      relax: ["do nothing", "get bored", "cooking", "friends", "read fiction", "pamper myself", "sauna"],
       strongBody: ["stretches", "yoga", "body weight movements", "weight lifting", "walking", "handstand progress"],
-      clearMind: ["nap", "meditate", "presence", "video games", "reading", "sunshine", "walking", "do nothing"]
+      clearMind: ["nap", "meditate", "presence", "video games", "reading", "sunshine", "walking", "do nothing", "just breathe"]
     }
   }
 
@@ -31,19 +30,18 @@ class Habits extends Component {
 
     return(
       <div>
-        <header>
-          <Nav />
-        </header>
-        <div className="flex-container space-around wrap">
-          <button onClick={() => this.randomHandler('create')} className="button">create</button>
-          <button onClick={() => this.randomHandler('relax')} className="button">relax</button>
-          <button onClick={() => this.randomHandler('strongBody')} className="button">strong body</button>
-          <button onClick={() => this.randomHandler('clearMind')} className="button">clear mind</button>
-          
-        </div>
-        <div className="flex-container">
-          <p className="habit-result">{this.state.result}</p>
-        </div>
+        <Nav />
+        <main>
+          <div className="flex-container space-around wrap">
+            <button onClick={() => this.randomHandler('create')} className="button">create</button>
+            <button onClick={() => this.randomHandler('relax')} className="button">relax</button>
+            <button onClick={() => this.randomHandler('strongBody')} className="button">strong body</button>
+            <button onClick={() => this.randomHandler('clearMind')} className="button">clear mind</button>
+          </div>
+          <div className="flex-container">
+            <p className="habit-result">{this.state.result}</p>
+          </div>
+        </main>
       </div>
     )
   };

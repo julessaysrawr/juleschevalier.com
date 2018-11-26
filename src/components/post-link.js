@@ -1,6 +1,6 @@
 import React from "react";
-import Link from "gatsby-link";
-import '../styles/main.css'
+import { Link } from "gatsby";
+import '../styles/main.scss'
 
 const PostLink = ({ post }) => (
   <div className="blog-list">

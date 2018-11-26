@@ -1,0 +1,10 @@
+ .habit-result {
+  margin: 0rem auto;
+  background-color: $color-white;
+  padding: 2rem 10rem;
+  font-size: 2rem;
+
+  @include respond(xs) {
+    padding: 2rem 4rem;
+  }
+}
