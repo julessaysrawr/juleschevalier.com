@@ -1,6 +1,5 @@
 import React from "react"
-import '../styles/main.css'
-import '../styles/queries.css'
+import '../styles/main.scss'
 import Nav from '../components/nav.js'
 import GalleryItem from '../components/galleryItem'
 import placekitten from '../assets/placekitten230.jpeg'
