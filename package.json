@@ -11,15 +11,17 @@
   "dependencies": {
     "gatsby": "^2.0.26",
     "gatsby-link": "^2.0.4",
+    "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-sass": "^2.0.1",
-    "gatsby-plugin-sharp": "^2.0.7",
+    "gatsby-plugin-sharp": "^2.0.13",
     "gatsby-remark-images": "^2.0.4",
     "gatsby-source-filesystem": "^2.0.4",
     "gatsby-transformer-remark": "^2.1.8",
     "mobile-detect": "^1.4.3",
     "node-sass": "^4.9.4",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "react-helmet": "^5.2.0"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0"

@@ -1,5 +1,6 @@
 import React from "react";
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import PostLink from "../components/post-link";
 import Nav from '../components/nav.js';
 import '../styles/main.scss';
@@ -15,6 +16,10 @@ const BlogPage = ({
 
   return (
     <div>
+      <Helmet>
+        <title>Blog | Jules Chevalier</title>
+        <meta name="description" content="Blog for Jules Chevalier" />
+      </Helmet>
       <Nav />
       <main className="non-flex-container">
         {Posts}

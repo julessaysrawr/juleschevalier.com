@@ -10,6 +10,7 @@ module.exports = {
         name: "markdown-pages",
       },
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,    // “transform” the markdown to HTML and the YAML frontmatter to JSON    
     `gatsby-plugin-sharp`,
     {

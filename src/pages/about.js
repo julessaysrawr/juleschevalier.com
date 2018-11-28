@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import '../styles/main.scss'
 import bioPic from '../assets/jules.jpg'
@@ -8,6 +9,10 @@ import Emoji from '../components/emoji'
 
 export default () => 
 <div>
+  <Helmet>
+    <title>About | Jule Chevalier</title>
+    <meta name="description" content="About Jules Chevalier" />
+  </Helmet>
   <Nav/>
   <main>
     <div className="flex-container space-below-m">

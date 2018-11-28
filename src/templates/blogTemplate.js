@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from 'gatsby'
 import Nav from '../components/nav.js'
+import SEO from '../components/seo.js'
 import '../styles/main.scss';
 
 export default function Template({
@@ -10,6 +11,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark; 
   return (
     <div>
+      <SEO title={frontmatter.title} />
       <Nav />
       <main className="flex-container">
         <article className="blog-post">
