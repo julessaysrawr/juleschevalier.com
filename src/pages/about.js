@@ -10,7 +10,7 @@ import Emoji from '../components/emoji'
 export default () => 
 <div>
   <Helmet>
-    <title>About | Jule Chevalier</title>
+    <title>About | Jules Chevalier</title>
     <meta name="description" content="About Jules Chevalier" />
   </Helmet>
   <Nav/>

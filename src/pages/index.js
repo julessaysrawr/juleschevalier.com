@@ -10,7 +10,7 @@ class Index extends Component {
     return (
       <div>
         <Helmet>
-          <title>Home | Jule Chevalier</title>
+          <title>Home | Jules Chevalier</title>
           <meta name="description" content="Website for Jules Chevalier" />
           {/* <link rel="canonical" href="http://mysite.com/example" /> */}
         </Helmet>
