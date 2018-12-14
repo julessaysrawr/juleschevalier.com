@@ -12,6 +12,8 @@
 }
 
  .nav {
+  display: flex;
+  // justify-content: space-around;
   width: 70rem;
   border-top: 0.1rem solid $color-medium-grey;
   border-bottom: 0.1rem solid $color-medium-grey;
@@ -23,19 +25,28 @@
   }
 
   ul {
-    text-align: center;
+    // text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
 
     li {
-      display: inline;
-      padding: 6rem;
+      // display: inline;
+      // padding: 1rem 5rem;
+      // padding: 1rem 8%;
+      // display: flex;
+      // justify-content: space-around;
+      // flex-wrap: wrap;
+      margin: 1rem;
       font-size: $default-font-size;
     
       @include respond(sm) {
-        padding: 5rem;
+        // padding: 5rem;
       }
     
       @include respond(xs) {
-        padding: 2.5rem;
+        // padding: 2.5rem;
       }
     }
   }
@@ -44,3 +55,4 @@
 
 
 
+// TODO cleanup this file

@@ -33,3 +33,7 @@ const GalleryItem = (props) => {
 };
 
 export default GalleryItem;
+
+
+
+// TODO what i am doing with this file?
