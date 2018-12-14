@@ -1,0 +1,48 @@
+.white {
+  background-color: $color-white;
+}
+
+.black {
+  background-color: $color-black;
+}
+
+// better names for photo orientations: portrait or landscape?  vertical or horizontal?
+// probably want to change padding between photos at different screen sizes?
+
+
+
+.wide {
+  // width: 30rem;
+  width: 20%;
+  // height: 20rem;
+  // height: 100%;
+  background-color: $color-white;
+  border: 0.1rem solid $color-black;
+  margin: 5rem;
+}
+
+.tall {
+  // width: 20rem;
+  width: 14%;
+  // height: 30rem;
+  background-color: $color-white;
+  border: 0.1rem solid $color-black;
+  margin: 5rem;
+}
+
+
+.photo {
+  // max-width: 20rem;
+  max-height: 15rem;
+  margin: 2.5rem 1rem;
+  // padding: 1rem;
+  border: 0.1rem black solid;
+  display: flex;
+
+ }
+
+ .gallery-wrap {
+  //  background-color: $color-light-grey;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ }

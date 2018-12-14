@@ -33,7 +33,7 @@ export default () =>
     <Nav />
   </header>
   <div className="flex-container gallery-wrap">
-      {/* <img src={image2} className="photo" />
+      <img src={image2} className="photo" />
       <img src={image1} className="photo" />
       <img src={image3} className="photo" />
       <img src={image8} className="photo" />
@@ -50,7 +50,9 @@ export default () =>
       <img src={image11} className="photo" />
       <img src={image17} className="photo" />
       <img src={image12} className="photo" />
-      <img src={image18} className="photo" /> */}
+      <img src={image18} className="photo" />
+      {/* <GalleryItem src={placekittenWide} layout={'center'} /> */}
+      {/* <GalleryItem src={placekittenTall} layout={'center'} />
       <GalleryItem src={placekittenWide} layout={'center'} />
       <GalleryItem src={placekittenTall} layout={'center'} />
       <GalleryItem src={placekittenWide} layout={'center'} />
@@ -60,9 +62,7 @@ export default () =>
       <GalleryItem src={placekittenWide} layout={'center'} />
       <GalleryItem src={placekittenTall} layout={'center'} />
       <GalleryItem src={placekittenWide} layout={'center'} />
-      <GalleryItem src={placekittenTall} layout={'center'} />
-      <GalleryItem src={placekittenWide} layout={'center'} />
-      <GalleryItem src={placekittenTall} layout={'center'} />
+      <GalleryItem src={placekittenTall} layout={'center'} /> */}
       {/* <img src={placekitten} />
       <img src={placekitten} />
       <img src={placekitten} />
