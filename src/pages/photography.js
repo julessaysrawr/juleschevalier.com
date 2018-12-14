@@ -32,26 +32,26 @@ export default () =>
   <header>
     <Nav />
   </header>
-  <div className="flex-container gallery-wrap">
+  <div className="flex-container photo-gallery-wrap">
   {/* TO DO try to break up the visual pattern by repeating orientation row every 3 or 4 */}
-      <img src={image2} className="photo-tall" />
-      <img src={image1} className="photo-wide" />
-      <img src={image3} className="photo-tall" />
-      <img src={image8} className="photo-wide" />
-      <img src={image7} className="photo-tall" />
-      <img src={image9} className="photo-wide" />
-      <img src={image4} className="photo-tall" />
-      <img src={image5} className="photo-wide" />
-      <img src={image6} className="photo-tall" />
-      <img src={image14} className="photo-wide" />
-      <img src={image13} className="photo-tall" />
-      <img src={image15} className="photo-wide" />
-      <img src={image17} className="photo-wide" />
-      <img src={image12} className="photo-tall" />
-      <img src={image18} className="photo-wide" />
-      <img src={image10} className="photo-tall" />
-      <img src={image16} className="photo-wide" />
-      <img src={image11} className="photo-tall" />
+      <img src={image2} className="photo-orientation-portrait" />
+      <img src={image1} className="photo-orientation-landscape" />
+      <img src={image3} className="photo-orientation-portrait" />
+      <img src={image8} className="photo-orientation-landscape" />
+      <img src={image7} className="photo-orientation-portrait" />
+      <img src={image9} className="photo-orientation-landscape" />
+      <img src={image4} className="photo-orientation-portrait" />
+      <img src={image5} className="photo-orientation-landscape" />
+      <img src={image6} className="photo-orientation-portrait" />
+      <img src={image14} className="photo-orientation-landscape" />
+      <img src={image13} className="photo-orientation-portrait" />
+      <img src={image15} className="photo-orientation-landscape" />
+      <img src={image17} className="photo-orientation-landscape" />
+      <img src={image12} className="photo-orientation-portrait" />
+      <img src={image18} className="photo-orientation-landscape" />
+      <img src={image10} className="photo-orientation-portrait" />
+      <img src={image16} className="photo-orientation-landscape" />
+      <img src={image11} className="photo-orientation-portrait" />
 
       {/* <GalleryItem src={placekittenWide} layout={'center'} /> */}
       {/* <GalleryItem src={placekittenTall} layout={'center'} />
