@@ -11,38 +11,87 @@
 
 
 
-.wide {
-  // width: 30rem;
-  width: 20%;
-  // height: 20rem;
-  // height: 100%;
-  background-color: $color-white;
-  border: 0.1rem solid $color-black;
-  margin: 5rem;
-}
+// .wide {
+//   // width: 30rem;
+//   width: 20%;
+//   // height: 20rem;
+//   // height: 100%;
+//   background-color: $color-white;
+//   border: 0.1rem solid $color-black;
+//   margin: 5rem;
+// }
 
-.tall {
-  // width: 20rem;
-  width: 14%;
-  // height: 30rem;
-  background-color: $color-white;
-  border: 0.1rem solid $color-black;
-  margin: 5rem;
-}
+// .tall {
+//   // width: 20rem;
+//   width: 14%;
+//   // height: 30rem;
+//   background-color: $color-white;
+//   border: 0.1rem solid $color-black;
+//   margin: 5rem;
+// }
 
 
-.photo {
-  // max-width: 20rem;
-  max-height: 15rem;
-  margin: 2.5rem 1rem;
-  // padding: 1rem;
-  border: 0.1rem black solid;
-  display: flex;
-
- }
-
- .gallery-wrap {
+.gallery-wrap {
   //  background-color: $color-light-grey;
    flex-wrap: wrap;
    justify-content: space-around;
+   align-items: center;
+
+   @include respond(xs) {
+    //  justify-content: space-between;
+   }
  }
+
+.photo {
+  // max-width: 15rem;
+  // max-height: 15rem;
+  // margin: 2.5rem 1rem;
+  // padding: 1rem;
+  // border: 0.1rem black solid;
+  // display: flex;
+
+  @include respond(xs) {
+    max-height: 9rem;
+    margin: 1rem 0.5rem;
+  }
+
+  &-wide {
+    // max-width: 15rem;
+    max-height: 15rem;
+    margin: 2.5rem 1rem;
+
+
+
+    @include respond(sm) {
+      max-height: 12.6rem;
+      margin: 1.5rem 1rem;
+    }
+
+    @include respond(xs) {
+      max-height: 10.3rem;
+      margin: 1rem 0.5rem;
+    }
+
+
+
+  }
+
+  &-tall {
+    max-height: 24rem;
+    margin: 2.5rem 1rem;
+
+
+
+    @include respond(sm) {
+      max-height: 19rem;
+      margin: 1.5rem 1rem;
+    }
+
+    @include respond(xs) {
+      max-height: 15.5rem;
+      margin: 1.5rem 0.5rem;
+    }
+
+  }
+ }
+

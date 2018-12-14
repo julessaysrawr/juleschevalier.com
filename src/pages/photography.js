@@ -33,24 +33,26 @@ export default () =>
     <Nav />
   </header>
   <div className="flex-container gallery-wrap">
-      <img src={image2} className="photo" />
-      <img src={image1} className="photo" />
-      <img src={image3} className="photo" />
-      <img src={image8} className="photo" />
-      <img src={image7} className="photo" />
-      <img src={image9} className="photo" />
-      <img src={image4} className="photo" />
-      <img src={image5} className="photo" />
-      <img src={image6} className="photo" />
-      <img src={image14} className="photo" />
-      <img src={image13} className="photo" />
-      <img src={image15} className="photo" />
-      <img src={image10} className="photo" />
-      <img src={image16} className="photo" />
-      <img src={image11} className="photo" />
-      <img src={image17} className="photo" />
-      <img src={image12} className="photo" />
-      <img src={image18} className="photo" />
+  {/* TO DO try to break up the visual pattern by repeating orientation row every 3 or 4 */}
+      <img src={image2} className="photo-tall" />
+      <img src={image1} className="photo-wide" />
+      <img src={image3} className="photo-tall" />
+      <img src={image8} className="photo-wide" />
+      <img src={image7} className="photo-tall" />
+      <img src={image9} className="photo-wide" />
+      <img src={image4} className="photo-tall" />
+      <img src={image5} className="photo-wide" />
+      <img src={image6} className="photo-tall" />
+      <img src={image14} className="photo-wide" />
+      <img src={image13} className="photo-tall" />
+      <img src={image15} className="photo-wide" />
+      <img src={image17} className="photo-wide" />
+      <img src={image12} className="photo-tall" />
+      <img src={image18} className="photo-wide" />
+      <img src={image10} className="photo-tall" />
+      <img src={image16} className="photo-wide" />
+      <img src={image11} className="photo-tall" />
+
       {/* <GalleryItem src={placekittenWide} layout={'center'} /> */}
       {/* <GalleryItem src={placekittenTall} layout={'center'} />
       <GalleryItem src={placekittenWide} layout={'center'} />
