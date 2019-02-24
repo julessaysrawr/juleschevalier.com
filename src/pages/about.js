@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import '../styles/main.scss'
-import bioPic from '../assets/jules.jpg'
+import bioPic from '../images/jules.jpg'
 import Nav from '../components/nav.js'
 import Emoji from '../components/emoji'
 

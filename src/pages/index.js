@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import { Helmet } from "react-helmet";
-import cover from '../assets/peonies.jpg'
+import { Helmet } from "react-helmet"
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Nav from '../components/nav.js'
 import '../styles/main.scss'
 
@@ -16,7 +17,7 @@ class Index extends Component {
         </Helmet>
         <Nav />
         <main className="flex-container">
-          <img src={cover} className="cover" alt="White peonies flowers in soft light with a quiet mood"/>
+          <Img fluid={this.props.data.imageOne.childImageSharp.fluid} className="cover" alt="White peonies flowers in soft light with a quiet mood" />
         </main>
       </div>
     )
@@ -24,3 +25,15 @@ class Index extends Component {
 }
 
 export default Index;
+
+export const query = graphql`
+query {
+  imageOne: file(relativePath: { eq: "peonies.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/main.scss'
-import placekitten from '../assets/placekitten230.jpeg'
+import placekitten from '../images/placekitten230.jpeg'
 
 const GalleryItem = (props) => {
 
@@ -14,7 +14,7 @@ const GalleryItem = (props) => {
   
   
   
-  if (props.layout == 'center') {
+  if (props.layout === 'center') {
     const styles = {
       maxWidth: '250px',
       maxHeight: '250px',
