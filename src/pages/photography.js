@@ -1,4 +1,7 @@
 import React from "react"
+import { Helmet } from "react-helmet"
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import '../styles/main.scss'
 import Nav from '../components/nav.js'
 import GalleryItem from '../components/galleryItem'
@@ -27,13 +30,26 @@ import image18 from '../images/photography/portriat-18.jpg'
 
 
 
-export default () => 
+export default (props) => 
 <div>
   <header>
+    <Helmet>
+      <title>Photography | Jules Chevalier</title>
+      <meta name="description" content="Photography by Jules Chevalier" />
+      {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+    </Helmet>
     <Nav />
   </header>
   <div className="flex-container photo-gallery-wrap">
   {/* TO DO try to break up the visual pattern by repeating orientation row every 3 or 4 */}
+    <div className="photo-orientation-portrait">
+      <Img fluid={props.data.imageOne.childImageSharp.fluid}  alt="mr gizmo" />
+    </div>
+    <div className="photo-orientation-landscape">
+      <Img fluid={props.data.imageTwo.childImageSharp.fluid} className="photo-orientation-landscape" alt="man and his dog" />
+    </div>
+
+
       <img src={image2} className="photo-orientation-portrait" />
       <img src={image1} className="photo-orientation-landscape" />
       <img src={image3} className="photo-orientation-portrait" />
@@ -82,3 +98,22 @@ export default () =>
 
 
 // TODO clean up this file
+
+export const query = graphql`
+query {
+  imageOne: file(relativePath: { eq: "photography/portriat-2.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 300) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+  imageTwo: file(relativePath: { eq: "photography/portriat-1.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 300) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`
