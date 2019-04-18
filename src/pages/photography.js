@@ -1,5 +1,5 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+import React from 'react'
+import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import '../styles/main.scss'
@@ -28,29 +28,49 @@ import image16 from '../images/photography/portriat-16.jpg'
 import image17 from '../images/photography/portriat-17.jpg'
 import image18 from '../images/photography/portriat-18.jpg'
 
-
-
-export default (props) => 
-<div>
-  <header>
-    <Helmet>
-      <title>Photography | Jules Chevalier</title>
-      <meta name="description" content="Photography by Jules Chevalier" />
-      {/* <link rel="canonical" href="http://mysite.com/example" /> */}
-    </Helmet>
-    <Nav />
-  </header>
-  <div className="flex-container photo-gallery-wrap">
-  {/* TO DO try to break up the visual pattern by repeating orientation row every 3 or 4 */}
-    <div className="photo-orientation-portrait">
-      <Img fluid={props.data.imageOne.childImageSharp.fluid}  alt="mr gizmo" />
+export default props => (
+  <div>
+    <header>
+      <Helmet>
+        <title>Photography | Jules Chevalier</title>
+        <meta name="description" content="Photography by Jules Chevalier" />
+        {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+      </Helmet>
+      <Nav />
+    </header>
+    <div className="">
+      <Img
+        fluid={props.data.imageOne.childImageSharp.fluid}
+        className="photo-orientation-portrait"
+        alt="mr gizmo"
+      />
+      <Img
+        fluid={props.data.imageTwo.childImageSharp.fluid}
+        className="photo-orientation-landscape"
+        alt="man and his dog"
+      />
     </div>
-    <div className="photo-orientation-landscape">
-      <Img fluid={props.data.imageTwo.childImageSharp.fluid} className="photo-orientation-landscape" alt="man and his dog" />
-    </div>
 
+    <div className="flex-container photo-gallery-wrap">
+      {/* TO DO try to break up the visual pattern by repeating orientation row every 3 or 4 */}
+      <div
+        className="photo-orientation-portrait"
+        style={{ border: '1px solid black', width: '200px', padding: '25px' }}
+      >
+        <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="mr gizmo" />
+      </div>
+      <div
+        className="photo-orientation-landscape"
+        style={{ border: '1px solid black', width: '300px', padding: '25px' }}
+      >
+        <Img
+          fluid={props.data.imageTwo.childImageSharp.fluid}
+          className="photo-orientation-landscape"
+          alt="man and his dog"
+        />
+      </div>
 
-      <img src={image2} className="photo-orientation-portrait" />
+      {/* <img src={image2} className="photo-orientation-portrait" />
       <img src={image1} className="photo-orientation-landscape" />
       <img src={image3} className="photo-orientation-portrait" />
       <img src={image8} className="photo-orientation-landscape" />
@@ -67,7 +87,7 @@ export default (props) =>
       <img src={image18} className="photo-orientation-landscape" />
       <img src={image10} className="photo-orientation-portrait" />
       <img src={image16} className="photo-orientation-landscape" />
-      <img src={image11} className="photo-orientation-portrait" />
+      <img src={image11} className="photo-orientation-portrait" /> */}
 
       {/* <GalleryItem src={placekittenWide} layout={'center'} /> */}
       {/* <GalleryItem src={placekittenTall} layout={'center'} />
@@ -93,27 +113,27 @@ export default (props) =>
       <img src={placekitten} />
       <img src={placekitten} />
       <img src={placekitten} /> */}
+    </div>
   </div>
-</div>
-
+)
 
 // TODO clean up this file
 
 export const query = graphql`
-query {
-  imageOne: file(relativePath: { eq: "photography/portriat-2.jpg" }) {
-    childImageSharp {
-      fluid(maxWidth: 300) {
-        ...GatsbyImageSharpFluid
+  query {
+    imageOne: file(relativePath: { eq: "photography/portriat-2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageTwo: file(relativePath: { eq: "photography/portriat-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }
-  imageTwo: file(relativePath: { eq: "photography/portriat-1.jpg" }) {
-    childImageSharp {
-      fluid(maxWidth: 300) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-}
 `

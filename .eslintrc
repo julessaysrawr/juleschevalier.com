@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "react/prop-types": 0,
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "prettier/prettier": "error",
+    "eqeqeq": ["error", "always", { "null": "ignore" }]
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "plugins": ["prettier"],
+  "settings": {
+    "react": { "version": "detect" }
+  }
+}
