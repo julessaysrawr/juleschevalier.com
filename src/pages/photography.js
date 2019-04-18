@@ -2,31 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import '../styles/main.scss'
 import Nav from '../components/nav.js'
-import GalleryItem from '../components/galleryItem'
-import placekitten from '../images/placekitten230.jpeg'
-import placekittenWide from '../images/placekitten300x200.jpeg'
-import placekittenTall from '../images/placekitten200x300.jpeg'
-
-import image1 from '../images/photography/portriat-1.jpg'
-import image2 from '../images/photography/portriat-2.jpg'
-import image3 from '../images/photography/portriat-3.jpg'
-import image4 from '../images/photography/portriat-4.jpg'
-import image5 from '../images/photography/portriat-5.jpg'
-import image6 from '../images/photography/portriat-6.jpg'
-import image7 from '../images/photography/portriat-7.jpg'
-import image8 from '../images/photography/portriat-8.jpg'
-import image9 from '../images/photography/portriat-9.jpg'
-import image10 from '../images/photography/portriat-10.jpg'
-import image11 from '../images/photography/portriat-11.jpg'
-import image12 from '../images/photography/portriat-12.jpg'
-import image13 from '../images/photography/portriat-13.jpg'
-import image14 from '../images/photography/portriat-14.jpg'
-import image15 from '../images/photography/portriat-15.jpg'
-import image16 from '../images/photography/portriat-16.jpg'
-import image17 from '../images/photography/portriat-17.jpg'
-import image18 from '../images/photography/portriat-18.jpg'
 
 export default props => (
   <div>
@@ -38,81 +14,79 @@ export default props => (
       </Helmet>
       <Nav />
     </header>
-    <div className="">
+    <div className="flex-container photo-gallery-wrap">
       <Img
         fluid={props.data.imageOne.childImageSharp.fluid}
         className="photo-orientation-portrait"
         alt="mr gizmo"
+        style={{ width: '100%', height: '100%' }}
       />
       <Img
         fluid={props.data.imageTwo.childImageSharp.fluid}
         className="photo-orientation-landscape"
         alt="man and his dog"
+        style={{ width: '100%', height: '100%' }}
       />
-    </div>
-
-    <div className="flex-container photo-gallery-wrap">
-      {/* TO DO try to break up the visual pattern by repeating orientation row every 3 or 4 */}
-      <div
+      <Img
+        fluid={props.data.imageThree.childImageSharp.fluid}
         className="photo-orientation-portrait"
-        style={{ border: '1px solid black', width: '200px', padding: '25px' }}
-      >
-        <Img fluid={props.data.imageOne.childImageSharp.fluid} alt="mr gizmo" />
-      </div>
-      <div
+        alt="girl sitting in front of brick wall"
+        style={{ width: '100%', height: '100%' }}
+      />
+      <Img
+        fluid={props.data.imageFour.childImageSharp.fluid}
         className="photo-orientation-landscape"
-        style={{ border: '1px solid black', width: '300px', padding: '25px' }}
-      >
-        <Img
-          fluid={props.data.imageTwo.childImageSharp.fluid}
-          className="photo-orientation-landscape"
-          alt="man and his dog"
-        />
-      </div>
-
-      {/* <img src={image2} className="photo-orientation-portrait" />
-      <img src={image1} className="photo-orientation-landscape" />
-      <img src={image3} className="photo-orientation-portrait" />
-      <img src={image8} className="photo-orientation-landscape" />
-      <img src={image7} className="photo-orientation-portrait" />
-      <img src={image9} className="photo-orientation-landscape" />
-      <img src={image4} className="photo-orientation-portrait" />
-      <img src={image5} className="photo-orientation-landscape" />
-      <img src={image6} className="photo-orientation-portrait" />
-      <img src={image14} className="photo-orientation-landscape" />
-      <img src={image13} className="photo-orientation-portrait" />
-      <img src={image15} className="photo-orientation-landscape" />
-      <img src={image17} className="photo-orientation-landscape" />
-      <img src={image12} className="photo-orientation-portrait" />
-      <img src={image18} className="photo-orientation-landscape" />
-      <img src={image10} className="photo-orientation-portrait" />
-      <img src={image16} className="photo-orientation-landscape" />
-      <img src={image11} className="photo-orientation-portrait" /> */}
-
-      {/* <GalleryItem src={placekittenWide} layout={'center'} /> */}
-      {/* <GalleryItem src={placekittenTall} layout={'center'} />
-      <GalleryItem src={placekittenWide} layout={'center'} />
-      <GalleryItem src={placekittenTall} layout={'center'} />
-      <GalleryItem src={placekittenWide} layout={'center'} />
-      <GalleryItem src={placekittenTall} layout={'center'} />
-      <GalleryItem src={placekittenWide} layout={'center'} />
-      <GalleryItem src={placekittenTall} layout={'center'} />
-      <GalleryItem src={placekittenWide} layout={'center'} />
-      <GalleryItem src={placekittenTall} layout={'center'} />
-      <GalleryItem src={placekittenWide} layout={'center'} />
-      <GalleryItem src={placekittenTall} layout={'center'} /> */}
-      {/* <img src={placekitten} />
-      <img src={placekitten} />
-      <img src={placekitten} />
-      <img src={placekitten} />
-      <img src={placekitten} />
-      <img src={placekitten} />
-      <img src={placekitten} />
-      <img src={placekitten} />
-      <img src={placekitten} />
-      <img src={placekitten} />
-      <img src={placekitten} />
-      <img src={placekitten} /> */}
+        alt="man moving his arms up and down"
+        style={{ width: '100%', height: '100%' }}
+      />
+      <Img
+        fluid={props.data.imageFive.childImageSharp.fluid}
+        className="photo-orientation-portrait"
+        alt="man with a beard"
+        style={{ width: '100%', height: '100%' }}
+      />
+      <Img
+        fluid={props.data.imageSix.childImageSharp.fluid}
+        className="photo-orientation-landscape"
+        alt="Pregnant woman's belly and man's head leaning against it"
+        style={{ width: '100%', height: '100%' }}
+      />
+      <Img
+        fluid={props.data.imageSeven.childImageSharp.fluid}
+        className="photo-orientation-portrait"
+        alt="young woman with lace shadows on her face"
+        style={{ width: '100%', height: '100%' }}
+      />
+      <Img
+        fluid={props.data.imageEight.childImageSharp.fluid}
+        className="photo-orientation-landscape"
+        alt="Pregnant woman's belly and man's head leaning against it"
+        style={{ width: '100%', height: '100%' }}
+      />
+      <Img
+        fluid={props.data.imageNine.childImageSharp.fluid}
+        className="photo-orientation-portrait"
+        alt="young woman with lace shadows on her face"
+        style={{ width: '100%', height: '100%' }}
+      />
+      <Img
+        fluid={props.data.imageTen.childImageSharp.fluid}
+        className="photo-orientation-landscape"
+        alt="man with red zip up hoodie looking up"
+        style={{ width: '100%', height: '100%' }}
+      />
+      <Img
+        fluid={props.data.imageEleven.childImageSharp.fluid}
+        className="photo-orientation-portrait"
+        alt="young man with a fauxhawk"
+        style={{ width: '100%', height: '100%' }}
+      />
+      <Img
+        fluid={props.data.imageTwelve.childImageSharp.fluid}
+        className="photo-orientation-landscape"
+        alt="cat lying on wooden stairs"
+        style={{ width: '100%', height: '100%' }}
+      />
     </div>
   </div>
 )
@@ -129,6 +103,76 @@ export const query = graphql`
       }
     }
     imageTwo: file(relativePath: { eq: "photography/portriat-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageThree: file(relativePath: { eq: "photography/portriat-3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageFour: file(relativePath: { eq: "photography/portriat-5.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageFive: file(relativePath: { eq: "photography/portriat-4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageSix: file(relativePath: { eq: "photography/portriat-8.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageSeven: file(relativePath: { eq: "photography/portriat-6.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageEight: file(relativePath: { eq: "photography/portriat-9.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageNine: file(relativePath: { eq: "photography/portriat-7.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageTen: file(relativePath: { eq: "photography/portriat-15.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageEleven: file(relativePath: { eq: "photography/portriat-10.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageTwelve: file(relativePath: { eq: "photography/portriat-14.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
