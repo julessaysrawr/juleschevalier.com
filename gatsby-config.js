@@ -17,6 +17,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,    // this sources the files from the filesystem
+      options: {
+        name: "photos",
+        path: `${__dirname}/src/images/photos`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,    // “transform” the markdown to HTML and the YAML frontmatter to JSON    
     `gatsby-plugin-sharp`,    // uses sharp image processing library.  node.js build for speed.  converts large images to web-friendly.  you probably won't use this directly,

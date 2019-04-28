@@ -9,6 +9,7 @@
     "deploy": "gatsby build && cp ./CNAME public/ && cp ./src/favicon/* public/ && gh-pages -d public"
   },
   "dependencies": {
+    "@reach/dialog": "^0.2.1",
     "gatsby": "^2.1.4",
     "gatsby-image": "^2.0.29",
     "gatsby-link": "^2.0.4",
@@ -23,7 +24,8 @@
     "node-sass": "^4.9.4",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-images": "^0.5.19"
   },
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",

@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Nav from '../components/nav.js'
+import ContainerLightbox from '../components/container-lightbox'
+
 
 export default props => (
   <div>
@@ -14,6 +16,10 @@ export default props => (
       </Helmet>
       <Nav />
     </header>
+    <div className="flex-container">
+      <ContainerLightbox />
+      {/* <ReactImagesLightbox images={[ one, two, three, four, five, six ]} /> */}
+    </div>
     <div className="flex-container photo-gallery-wrap">
       <Img
         fluid={props.data.imageOne.childImageSharp.fluid}
