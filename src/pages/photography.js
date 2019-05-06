@@ -5,7 +5,6 @@ import Img from 'gatsby-image'
 import Nav from '../components/nav.js'
 import ContainerLightbox from '../components/container-lightbox'
 
-
 export default props => (
   <div>
     <header>
@@ -16,11 +15,11 @@ export default props => (
       </Helmet>
       <Nav />
     </header>
-    <div className="flex-container">
-      <ContainerLightbox />
+    <div className="flex-container photo-gallery-wrap">
+        <ContainerLightbox />
       {/* <ReactImagesLightbox images={[ one, two, three, four, five, six ]} /> */}
     </div>
-    <div className="flex-container photo-gallery-wrap">
+    <div className="flex-container photo-gallery-wrap" style={{border: '1px solid black'}}>
       <Img
         fluid={props.data.imageOne.childImageSharp.fluid}
         className="photo-orientation-portrait"

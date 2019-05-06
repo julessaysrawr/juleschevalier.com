@@ -38,11 +38,20 @@ export default class LightBox extends Component {
   handleClickImage = () => {
     if (this.state.currentImage === this.props.images.length - 1) return
 
-    this.gotoNext();
+    this.gotoNext()
+  }
+
+  detectOrientation = photo => {
+    console.log(photo)
+
+    if (photo.presentationWidth > photo.presentationHeight) {
+      return 'photo-orientation-landscape'
+    }
+
+    return 'photo-orientation-portrait'
   }
 
   render() {
-    console.log('react-image-lightbox this.props', this.props)
     const { images } = this.props
 
     return (
@@ -53,10 +62,15 @@ export default class LightBox extends Component {
             <a
               key={index}
               href={photo.node.childImageSharp.fluid.src}
-              style={{ width: '100%' }}
+              // style={{ width: '20rem' }}
               onClick={event => this.openLightbox(index, event)}
+              className="photo-container"
             >
-              <Img fluid={photo.node.childImageSharp.fluid} />
+              <Img
+                fluid={photo.node.childImageSharp.fluid}
+                style={{ width: '100%', height: '100%' }}
+                className={this.detectOrientation(photo.node.childImageSharp.fluid)}
+              />
             </a>
           )
         })}

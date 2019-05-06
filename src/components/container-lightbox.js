@@ -2,9 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import LightBox from './lightbox.js'
 
-
 const ContainerLightbox = () => (
-
   <StaticQuery
     query={graphql`
       query {
@@ -17,6 +15,8 @@ const ContainerLightbox = () => (
               childImageSharp {
                 fluid(maxWidth: 1000) {
                   ...GatsbyImageSharpFluid
+                  presentationWidth
+                  presentationHeight
                 }
               }
             }
@@ -29,3 +29,6 @@ const ContainerLightbox = () => (
 )
 
 export default ContainerLightbox
+
+
+
