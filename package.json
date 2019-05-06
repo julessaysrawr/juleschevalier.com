@@ -9,7 +9,6 @@
     "deploy": "gatsby build && cp ./CNAME public/ && cp ./src/favicon/* public/ && gh-pages -d public"
   },
   "dependencies": {
-    "@reach/dialog": "^0.2.1",
     "gatsby": "^2.1.4",
     "gatsby-image": "^2.0.29",
     "gatsby-link": "^2.0.4",

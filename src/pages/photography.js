@@ -17,7 +17,6 @@ export default props => (
     </header>
     <div className="flex-container photo-gallery-wrap">
         <ContainerLightbox />
-      {/* <ReactImagesLightbox images={[ one, two, three, four, five, six ]} /> */}
     </div>
     <div className="flex-container photo-gallery-wrap" style={{border: '1px solid black'}}>
       <Img

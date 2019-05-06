@@ -42,8 +42,6 @@ export default class LightBox extends Component {
   }
 
   detectOrientation = photo => {
-    console.log(photo)
-
     if (photo.presentationWidth > photo.presentationHeight) {
       return 'photo-orientation-landscape'
     }
