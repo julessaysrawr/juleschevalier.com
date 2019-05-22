@@ -7,7 +7,7 @@ const ContainerLightbox = () => (
     query={graphql`
       query {
         images: allFile(
-          filter: { sourceInstanceName: { eq: "photos" } }
+          filter: { sourceInstanceName: { eq: "lightbox" } }
           sort: { fields: name, order: ASC }
         ) {
           edges {

@@ -13,22 +13,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,    // this sources the files from the filesystem
       options: {
-        name: "images",
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,    // this sources the files from the filesystem
-      options: {
-        name: "photos",
-        path: `${__dirname}/src/images/photos`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,    // this sources the files from the filesystem
-      options: {
         name: "lightbox",
-        path: `${__dirname}/src/images/lightbox`,
+        path: `${__dirname}/src/images/photography`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,    // this sources the files from the filesystem
+      options: {
+        name: "images",
+        path: `${__dirname}/src/images/`,
       },
     },
     `gatsby-plugin-react-helmet`,

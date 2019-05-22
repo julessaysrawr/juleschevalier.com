@@ -50,7 +50,7 @@ export default class LightBox extends Component {
   }
 
   render() {
-    const { images } = this.props
+    const { images } = this.props    
 
     return (
       <Fragment>
