@@ -6,14 +6,14 @@ const Now = props => {
   return (
     <div>
       <h3 className="space-below">What I'm doing now</h3>
-      <p>Letting go and finding I am happier with less</p>
-      <p>Trying to live in the present moment</p>
-      <p>Focusing on creating: <Emoji symbol="🖋" label="" /> writing and <Emoji symbol="📷" label="" /> photography</p>
-      <p>Playing Elder Scrolls Online on XBox, in my ugly recliner <Emoji symbol="🎮" label="" /></p>
-      <p>Learning that doing nothing is a productivity technique</p>
-      <p>Eating whole foods <Emoji symbol="🥗🥒🍅🥕🍠" label="" />  Keto-ish <Emoji symbol="🍖🍳🥓" label="" /></p>
-      <p>Employed in software engineering </p>
-      <p className="space-above">Updated on: May 25, 2018</p>
+      <p>Contemplating what is essential and removing what isn't ♻️</p>
+      <p>Redefining <Emoji symbol="🤔" label="" />  what success looks like in this phase of life <Emoji symbol="🦋" label="" /> </p>
+      <p>Focusing on my health <Emoji symbol="💪" label="" /> , and prioritizing rest <Emoji symbol="🛌" label="" /> </p>
+      <p>Enjoying more time outdoors <Emoji symbol="🏞" label="" />  and in the sun <Emoji symbol="🌅" label="" /> </p>
+      <p>Spending my creative time doing <Emoji symbol="📷" label="" /> photography and <Emoji symbol="🖋" label="" /> writing</p>
+      <p>Grateful to be a part of the team behind: <Emoji symbol="↣ ↣ ↣" label="" /> <a href="https://be-ingoodcompany.com/">In Good Company</a> <Emoji symbol="↢ ↢ ↢ " label="" /><Emoji symbol="📖📈💰" label="" /> </p>
+      <p>Accepting that video games <Emoji symbol="🎮" label="" />  are an essential part of my self-care</p>
+      <p className="space-above">Updated on: May 27, 2019</p>
     </div>
   );
 };

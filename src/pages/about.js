@@ -1,13 +1,13 @@
 import React from "react"
 import { Helmet } from "react-helmet";
-import { Link } from "gatsby";
+import Img from 'gatsby-image'
+import { Link, graphql } from "gatsby";
 import '../styles/main.scss'
-import bioPic from '../assets/jules.jpg'
 import Nav from '../components/nav.js'
 import Emoji from '../components/emoji'
 
 
-export default () => 
+export default (props) => 
 <div>
   <Helmet>
     <title>About | Jules Chevalier</title>
@@ -18,7 +18,7 @@ export default () =>
     <div className="flex-container space-below-m">
       <div className="flex-column">
         <div className="profile-container">
-          <img className="profile" src={ bioPic } alt="jules smiling and looking off to the side standing in front of green bush" />
+          <Img className="profile" fluid={props.data.imageOne.childImageSharp.fluid} alt="jules smiling and looking off to the side standing in front of green bush" />
         </div>
         <div className="">
           <h3 className="">Me in 10 seconds</h3>
@@ -39,3 +39,17 @@ export default () =>
       </div>
   </main>
 </div>
+
+
+export const query = graphql`
+query {
+  imageOne: file(relativePath: { eq: "IMG_0089.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`
+

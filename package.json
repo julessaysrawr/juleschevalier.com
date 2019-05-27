@@ -9,21 +9,27 @@
     "deploy": "gatsby build && cp ./CNAME public/ && cp ./src/favicon/* public/ && gh-pages -d public"
   },
   "dependencies": {
-    "gatsby": "^2.0.26",
+    "gatsby": "^2.1.4",
+    "gatsby-image": "^2.0.29",
     "gatsby-link": "^2.0.4",
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-sass": "^2.0.1",
-    "gatsby-plugin-sharp": "^2.0.13",
+    "gatsby-plugin-sharp": "^2.0.20",
     "gatsby-remark-images": "^2.0.4",
-    "gatsby-source-filesystem": "^2.0.4",
+    "gatsby-source-filesystem": "^2.0.20",
     "gatsby-transformer-remark": "^2.1.8",
+    "gatsby-transformer-sharp": "^2.1.13",
     "mobile-detect": "^1.4.3",
     "node-sass": "^4.9.4",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-images": "^0.5.19"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0"
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "gh-pages": "^1.2.0",
+    "prettier": "^1.17.0"
   }
 }
