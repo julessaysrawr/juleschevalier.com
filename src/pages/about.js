@@ -43,7 +43,7 @@ export default (props) =>
 
 export const query = graphql`
 query {
-  imageOne: file(relativePath: { eq: "jules.jpg" }) {
+  imageOne: file(relativePath: { eq: "IMG_0089.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 2000) {
         ...GatsbyImageSharpFluid
