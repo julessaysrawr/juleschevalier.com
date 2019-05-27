@@ -1,14 +1,21 @@
 .photo {
 
-
   &-gallery-wrap {
+    width: 70rem;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
+
+    @include respond(sm) {
+      width: 90%;
+    }
 
     @include respond(xs) {
+      width: 100%;
+      max-width: 43rem;
       justify-content: space-evenly;
-      // justify-content: space-between;
     }
 
     .flex-container & .photo-gallery-wrap {
@@ -21,14 +28,14 @@
 
     .photo-container {
       width: 23rem;
-      // border: 1px solid black;
 
       @include respond(sm) {
         width: 20rem;
       }
 
       @include respond(xs) {
-        width: 14.5rem;
+        width: 17rem;
+        // width: 45%;
       }
     }
   }
@@ -37,40 +44,16 @@
     display: flex;
     max-height: 15rem;
     max-width: 24rem;
-    // object-fit: contain;
-    // margin: 2.5rem 1rem;   // before ligthbox
-
-    @include respond(sm) {
-      max-height: 12.6rem;
-      // margin: 1.5rem 1rem;
-    }
-
-    @include respond(xs) {
-      max-height: 10.3rem;
-      // max-height: 100%;
-      // max-width: 100%;
-      // margin: 1.5rem 0.5rem;
-    }
   }
 
   &-orientation-portrait {
     display: flex;
     max-height: 24rem;
     max-width: 15rem;
-    // object-fit: contain;
-    // margin: 2.5rem 1rem;   // before lightbox
-    // margin: 3.8rem;
     margin: 2.5rem auto;
 
     @include respond(sm) {
       max-height: 19rem;
-      margin: 1.5rem auto;
-    }
-
-    @include respond(xs) {
-      max-height: 15.5rem;
-      // max-height: 24rem;
-      // max-height: 100%;
       margin: 1.5rem auto;
     }
   }

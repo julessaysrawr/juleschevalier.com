@@ -13,7 +13,7 @@ export default props => (
       </Helmet>
       <Nav />
     </header>
-    <div className="flex-container photo-gallery-wrap">
+    <div className="photo-gallery-wrap">
         <ContainerLightbox />
     </div>
   </div>
