@@ -1,6 +1,11 @@
 
 
 module.exports = {
+  siteMetadata: {
+    title: `Jules Chevalier`,
+    description: `Jules Chevalier is an artist who creates using code, photography, writing, and design.`,
+    siteUrl: `https://juleschevalier.com/`
+  },
   plugins: [
     `gatsby-plugin-sass`,
     {
@@ -46,6 +51,12 @@ module.exports = {
           },
         ],
       },
-    },  
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-140934886-1`,
+      },
+    }  
   ],
 }
