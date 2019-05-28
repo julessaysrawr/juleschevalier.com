@@ -1,34 +1,28 @@
-import React from "react";
-import { graphql } from 'gatsby';
-import { Helmet } from 'react-helmet';
-import PostLink from "../components/post-link";
-import Nav from '../components/nav.js';
-import '../styles/main.scss';
+import React from 'react'
+import { graphql } from 'gatsby'
+import PostLink from '../components/post-link'
+import '../styles/main.scss'
+import LayoutMain from '../components/layout-main'
 
 const BlogPage = ({
   data: {
-    allMarkdownRemark: { edges },
-  },
+    allMarkdownRemark: { edges }
+  }
 }) => {
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
+    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
   return (
-    <div>
-      <Helmet>
-        <title>Blog | Jules Chevalier</title>
-        <meta name="description" content="Blog for Jules Chevalier" />
-      </Helmet>
-      <Nav />
-      <main className="non-flex-container">
-        {Posts}
-      </main>
-    </div>
-  );
-};
+      <LayoutMain title={'📝 Blog | Jules Chevalier'} description={'Blog for Jules Chevalier'}>
+        <main className="non-flex-container">
+          {Posts}
+        </main>
+      </LayoutMain>
+  )
+}
 
-export default BlogPage;
+export default BlogPage
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -46,4 +40,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

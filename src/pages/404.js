@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import '../styles/main.scss'
-import Nav from '../components/nav.js'
+import LayoutMain from '../components/layout-main'
 import Emoji from '../components/emoji'
 
 export default () => (
-  <div>
-    <Nav />
+  <LayoutMain>
     <main>
       <div className="flex-container space-above-m space-below-m">
         <h1>
@@ -19,5 +18,5 @@ export default () => (
         </Link>
       </div>
     </main>
-  </div>
+  </LayoutMain>
 )
