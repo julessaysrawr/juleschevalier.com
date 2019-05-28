@@ -28,6 +28,7 @@ const LayoutMain = props => {
         />
         <meta name="twitter:image" content="https://juleschevalier.com/thumbnail.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <html lang="en" />
       </Helmet>
       <Nav />
       {props.children}
