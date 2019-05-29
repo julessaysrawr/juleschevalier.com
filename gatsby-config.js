@@ -57,6 +57,13 @@ module.exports = {
       options: {
         trackingId: `UA-140934886-1`,
       },
-    }  
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://juleschevalier.com',
+        policy: [{ userAgent: '*', disallow: ['/habits', '/read' ]}]
+      }
+    }
   ],
 }
