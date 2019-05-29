@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /habits
+Disallow: /read
+Sitemap: https://juleschevalier.com/sitemap.xml
+Host: https://juleschevalier.com
