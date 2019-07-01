@@ -14,6 +14,8 @@ const Now = props => {
       <p>Grateful to be a part of the team behind: <Emoji symbol="↣ ↣ ↣" label="" /> <a href="https://be-ingoodcompany.com/">In Good Company</a> <Emoji symbol="↢ ↢ ↢ " label="" /><Emoji symbol="📖📈💰" label="" /> </p>
       <p>Accepting that video games <Emoji symbol="🎮" label="" />  are an essential part of my self-care</p>
       <p className="space-above">Updated on: May 27, 2019</p>
+
+      <p className="space-above-m">(thanks to <a href="https://sivers.org/">Derek Sivers</a> for this <a href="https://nownownow.com/about">idea</a>)</p>
     </div>
   );
 };

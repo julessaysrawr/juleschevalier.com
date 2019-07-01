@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import '../styles/main.scss'
-import Nav from '../components/nav.js'
+import LayoutMain from '../components/layout-main'
 
 class Habits extends Component {
 
@@ -29,8 +29,7 @@ class Habits extends Component {
   render() {
 
     return(
-      <div>
-        <Nav />
+      <LayoutMain>
         <main>
           <div className="flex-container space-around wrap">
             <button onClick={() => this.randomHandler('create')} className="button">create</button>
@@ -42,7 +41,7 @@ class Habits extends Component {
             <p className="habit-result">{this.state.result}</p>
           </div>
         </main>
-      </div>
+      </LayoutMain>
     )
   };
 }
