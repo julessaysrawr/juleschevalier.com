@@ -3,7 +3,7 @@
   "description": "Gatsby hello world starter",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "build": "gatsby build && cp ./src/favicon/* public/",
     "serve": "gatsby serve",
     "deploy": "gatsby build && cp ./CNAME public/ && cp ./src/favicon/* public/ && gh-pages -d public"
