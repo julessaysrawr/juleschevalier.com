@@ -28,10 +28,15 @@
 
       ul {
         list-style-type: circle;
+        margin-bottom: 2rem;
       }
 
       ul li {
         margin-left: 3rem;
+      }
+
+      li p {
+        margin-bottom: 0;
       }
     }
   }
