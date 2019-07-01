@@ -1,8 +1,8 @@
 ---
 path: "/blog/simple-eating"
 date: "2018-08-10"
-title: "Simple Eating"
-tags: "simple eating"
+title: "Simple Meals"
+tags: "Intentional Living"
 ---
 
 ### Start each meal with:
@@ -17,9 +17,7 @@ Add flavor (optional)
 
 Enjoy and feel good!
 
-.
-
-.
+<br></br>
 
 
 ### Example foods:
@@ -31,20 +29,17 @@ Kale, spinach, arugula, swiss chard, collard greens, broccoli
 
 **Protein sources I use:**
 
-Chicken, Turkey, Beef, Eggs, Tuna, Salmon.  All are well sourced, meaning pasture raised, no hormones or antibiotics, if fish - wild caught.
+Chicken, Turkey, Beef, Eggs.  All are well sourced, meaning pasture raised, no hormones or antibiotics.  _I used to eat wild caught Salmon and Tuna until I discovered I had mercury poisoning._
 
 **Oils & fats:**
 
-Olive oil, coconut oil, avocado oil, avocados, avocado mayo.
+Olive oil, coconut oil, grass-fed butter, avocado oil, avocado mayo.
 
 **Flavors:**
 
-Salt and pepper, lemon juice, coconut aminos (similar to soy sauce), vinegar, spices.
+Salt and pepper, lemon/lime juice, coconut aminos (similar to soy sauce), vinegar, spices.
 
-.
-
-.
-
+<br></br>
 
 ### Tips:
 
