@@ -14,3 +14,17 @@
   margin: 0 auto;
 
 }
+
+.values {
+
+  margin: $spacing-xl 0;
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+    p {
+      margin: $spacing-typography;
+    }
+  }
+}

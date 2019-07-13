@@ -13,6 +13,17 @@ a, p, li {
   margin: 0.8rem 0rem;
 }
 
+figcaption{
+  color: $color-dark-grey;
+  font-family: 'Montserrat', sans-serif;  
+  font-size: $default-font-size;
+  font-size: 1rem;
+
+  a {
+  font-size: 1rem;
+  }
+}
+
 h1 {
   @include headers;
   font-size: 3rem;

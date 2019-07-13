@@ -15,3 +15,8 @@
   .show-link {
     border-bottom: 0.1rem solid $color-dark-grey;
   }
+
+  .show-link:hover {
+    padding-bottom: 0.5rem;
+    transition: 0.3s ease all;
+  }
