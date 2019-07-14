@@ -15,7 +15,7 @@ class Index extends Component {
             className="cover"
             alt="Jules on a sandy path between dune grass"
           />
-          <figcaption>Photo credit: <a href="https:dchevalier.io">David Chevalier</a></figcaption>
+          {/* <figcaption>Photo credit: <a href="https:dchevalier.io">David Chevalier</a></figcaption> */}
           </figure>
 
           <div className="homepage-text">
