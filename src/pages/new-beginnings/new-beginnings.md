@@ -2,6 +2,7 @@
 path: "/blog/new-beginnings"
 date: "2018-07-17"
 title: "New beginnings"
+tags: "Inspired"
 ---
 
 A blank page.

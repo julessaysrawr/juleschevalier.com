@@ -28,11 +28,25 @@
 
       ul {
         list-style-type: circle;
+        margin-bottom: 2rem;
       }
 
       ul li {
         margin-left: 3rem;
       }
+
+      li p {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      border-bottom: 0.1rem solid $color-dark-grey;
+      transition: 0.3s ease all;
+    }
+    a:hover {
+      padding-bottom: 0.5rem;
+      transition: 0.3s ease all;
     }
   }
 

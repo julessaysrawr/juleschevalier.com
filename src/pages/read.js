@@ -5,9 +5,14 @@ import LayoutMain from '../components/layout-main'
 export default () => (
   <LayoutMain>
     <main className="non-flex-container">
-      <h3 className="space-below-m">Currently reading: I Will Teach You To Be Rich</h3>
+      <h3 className="space-below-m">Currently reading: Digital Minimalism</h3>
       <h2>Blogs</h2>
       <ul>
+        <li>
+          <a href="https://m.signalvnoise.com" target="_blank" rel="noopener noreferrer">
+            signal v noise
+          </a>
+        </li>
         <li>
           <a href="https://www.theminimalists.com" target="_blank" rel="noopener noreferrer">
             The Minimalists

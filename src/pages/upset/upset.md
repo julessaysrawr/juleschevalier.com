@@ -2,7 +2,7 @@
 path: "/blog/upset"
 date: "2018-07-31"
 title: "When I feel stuck and upset"
-tags: "self-care"
+tags: "Navigating Emotions"
 ---
 
 What is troubling me?

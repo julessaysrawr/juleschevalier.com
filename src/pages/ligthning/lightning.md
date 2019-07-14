@@ -2,6 +2,7 @@
 path: "/blog/lightning"
 date: "2018-05-25"
 title: "Lightning"
+tags: "Inspired"
 ---
 
 Have you ever seen lightning in the American west?  The sky can be pitch black, no clouds in the sky, and then as if the god of thunder himself appeared, a strike so violent it lights up the sky as if it is daylight.  Suddenly, in an instant, you can see things clear as day.
