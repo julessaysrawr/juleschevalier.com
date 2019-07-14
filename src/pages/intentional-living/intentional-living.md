@@ -1,6 +1,6 @@
 ---
 path: '/blog/intentional-living'
-date: '2019-06-30'
+date: '2019-07-02'
 title: 'Intentional Living'
 tags: 'Intentional Living'
 ---

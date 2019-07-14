@@ -1,6 +1,6 @@
 ---
 path: '/blog/financial-wellness'
-date: '2019-06-30'
+date: '2019-07-01'
 title: 'Financial Wellness'
 tags: 'Intentional Living'
 ---

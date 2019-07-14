@@ -7,9 +7,9 @@ tags: 'Intentional Living'
 
 What is true north?
 
-Success is not the destination
+Success is not the destination.
 
-Because what comes after that? Happiness?
+Because what comes after? Once you are successful will you be happy?
 
 If success is a pit stop on the way to happiness, why not have that now? Everyone is able to achieve that now, privilege is not required.
 

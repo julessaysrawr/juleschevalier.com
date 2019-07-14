@@ -12,7 +12,11 @@ Habits are building blocks of the life we live.  They can be so small, but littl
 
 #### 1: Move for 10 minutes a day
 
+<br>
+
 #### 2: Be creative for 10 minutes a day
+
+<br>
 
 #### 3: Read two pages of a book per day
 
