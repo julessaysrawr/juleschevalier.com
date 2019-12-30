@@ -2,15 +2,26 @@ import React from 'react'
 import '../styles/main.scss'
 import LayoutMain from '../components/layout-main'
 
-export default () => (
+const Read = () => (
   <LayoutMain>
     <main className="non-flex-container">
-      <h3 className="space-below-m">Currently reading: Digital Minimalism</h3>
+      <h3 className="">Currently Reading Fiction: Dune Series</h3>
+      <h3 className="space-below-m">Currently Reading: The Design of Everyday Things</h3>
+
+      <h3 className="space-below-m">On Hold: Digital Minimalism</h3>
+
+      <h3 className="space-below-m">Up Next: Stillness is the Key</h3>
+
       <h2>Blogs</h2>
       <ul>
         <li>
           <a href="https://m.signalvnoise.com" target="_blank" rel="noopener noreferrer">
             signal v noise
+          </a>
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/news/" target="_blank" rel="noopener noreferrer">
+            freeCodeCamp
           </a>
         </li>
         <li>
@@ -99,3 +110,5 @@ export default () => (
     </main>
   </LayoutMain>
 )
+
+export default Read
