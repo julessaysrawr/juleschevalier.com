@@ -3,7 +3,7 @@ import '../styles/main.scss'
 import LayoutMain from '../components/layout-main'
 import Emoji from '../components/emoji'
 
-export default () => (
+const Now = () => (
   <LayoutMain
     title={`What I'm Doing Now | Jules Chevalier`}
     description={`What I'm currently up to. Now page for Jules Chevalier`}
@@ -49,3 +49,5 @@ export default () => (
     </main>
   </LayoutMain>
 )
+
+export default Now
