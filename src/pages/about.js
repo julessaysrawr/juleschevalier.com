@@ -5,7 +5,7 @@ import '../styles/main.scss'
 import Emoji from '../components/emoji'
 import LayoutMain from '../components/layout-main'
 
-export default props => (
+const About = props => (
   <LayoutMain title={'About | Jules Chevalier'} description={'About Jules Chevalier'}>
     <main>
       <div className="flex-container space-below-m">
@@ -77,8 +77,8 @@ export default props => (
               </p>
               <p>I reject the idea of busy, and deprioritize until things feel more sustainable.</p>
               <p>
-                I believe in the practice of removing everything, and choosing only what you want to keep. I
-                aspire to non-attachment.
+                I believe in the practice of removing everything, and choosing only what you want to
+                keep. I aspire to non-attachment.
               </p>
             </div>
           </div>
@@ -101,9 +101,11 @@ export default props => (
   </LayoutMain>
 )
 
+export default About
+
 export const query = graphql`
   query {
-    imageOne: file(relativePath: { eq: "IMG_0089.jpg" }) {
+    imageOne: file(relativePath: { eq: "jules2019.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
