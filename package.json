@@ -9,29 +9,29 @@
     "deploy": "gatsby build && cp ./CNAME public/ && cp ./src/favicon/* public/ && gh-pages -d public"
   },
   "dependencies": {
-    "gatsby": "^2.1.4",
-    "gatsby-image": "^2.0.29",
-    "gatsby-link": "^2.0.4",
-    "gatsby-plugin-google-analytics": "^2.0.20",
-    "gatsby-plugin-react-helmet": "^3.0.2",
-    "gatsby-plugin-robots-txt": "^1.4.0",
-    "gatsby-plugin-sass": "^2.0.1",
-    "gatsby-plugin-sharp": "^2.0.20",
-    "gatsby-remark-images": "^2.0.4",
-    "gatsby-source-filesystem": "^2.0.20",
-    "gatsby-transformer-remark": "^2.1.8",
+    "gatsby": "^2.18.17",
+    "gatsby-image": "^2.2.37",
+    "gatsby-link": "^2.2.27",
+    "gatsby-plugin-google-analytics": "^2.1.31",
+    "gatsby-plugin-react-helmet": "^3.1.18",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sass": "^2.1.26",
+    "gatsby-plugin-sharp": "^2.3.10",
+    "gatsby-remark-images": "^2.0.6",
+    "gatsby-source-filesystem": "^2.1.43",
+    "gatsby-transformer-remark": "^2.6.45",
     "gatsby-transformer-sharp": "^2.1.13",
-    "mobile-detect": "^1.4.3",
-    "node-sass": "^4.9.4",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-helmet": "^5.2.0",
+    "mobile-detect": "^1.4.4",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
     "react-images": "^0.5.19"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "gh-pages": "^1.2.0",
-    "prettier": "^1.17.0"
+    "prettier": "^1.19.1"
   }
 }
