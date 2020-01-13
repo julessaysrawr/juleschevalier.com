@@ -30,16 +30,19 @@ const About = props => (
             </p>
             <p>
               I have{' '}
-              <a href="https://bobsutton.typepad.com/my_weblog/2006/07/strong_opinions.html">
+              <Link
+                type={'basic'}
+                href="https://bobsutton.typepad.com/my_weblog/2006/07/strong_opinions.html"
+              >
                 strong opinions that are weakly held
-              </a>
+              </Link>
               . I will debate the best path forward, and if you convince me I will drop the previous
               approach in an instant.
             </p>
             <p>I am driven by logic, though I value the wisdom in intuition.</p>
             <p>I am observant and hyper self-aware.</p>
             <p>I am highly empathetic, and try to see situations from the other perspectives.</p>
-            <p>I am a defender and don't like to hear you talk down about yourself.</p>
+            <p>I am a defender and don&apos;t like to hear you talk down about yourself.</p>
             <p>I am always looking for ways to be more inclusive and be aware of my privileges.</p>
             <p>I think deeply about problems, and often frameworks of problem solving.</p>
             <p>I am outspoken and can raise the engagement of a room.</p>

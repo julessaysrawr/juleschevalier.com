@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/main.scss'
 import LayoutMain from '../components/layout-main'
+import Link from '../components/link'
 
 const Read = () => (
   <LayoutMain>
@@ -15,93 +16,93 @@ const Read = () => (
       <h2>Blogs</h2>
       <ul>
         <li>
-          <a href="https://m.signalvnoise.com" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://m.signalvnoise.com">
             signal v noise
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://www.freecodecamp.org/news/" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://www.freecodecamp.org/news/">
             freeCodeCamp
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://www.theminimalists.com" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://www.theminimalists.com">
             The Minimalists
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://sivers.org/" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://sivers.org/">
             Derek Sivers
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://zenhabits.net" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://zenhabits.net">
             Zen Habits
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://seths.blog" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://seths.blog">
             Seth's Blog
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="http://calnewport.com/blog/" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="http://calnewport.com/blog/">
             Cal Newport
-          </a>
+          </Link>
         </li>
       </ul>
       <h2 className="space-above-m">Style</h2>
       <ul>
         <li>
-          <a href="http://www.uselesswardrobe.dk" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="http://www.uselesswardrobe.dk">
             Useless
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="http://www.stylebee.ca" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="http://www.stylebee.ca">
             Stylebee
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="http://www.un-fancy.com" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="http://www.un-fancy.com">
             Unfancy
-          </a>
+          </Link>
         </li>
       </ul>
       <h2 className="space-above-m">Programming</h2>
       <ul>
         <li>
-          <a href="https://www.reddit.com/r/reactjs/" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://www.reddit.com/r/reactjs/">
             /r/reactjs
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://www.reddit.com/r/javascript/" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://www.reddit.com/r/javascript/">
             /r/javascript
-          </a>
+          </Link>
         </li>
       </ul>
       <h2 className="space-above-m">Longform</h2>
       <ul>
         <li>
-          <a href="https://medium.com/" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://medium.com/">
             Medium
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://read.amazon.com/" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://read.amazon.com/">
             Kindle
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://read.amazon.com/notebook" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://read.amazon.com/notebook">
             Kindle Highlights and Notes
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://www.audible.com" target="_blank" rel="noopener noreferrer">
+          <Link type={'basic'} href="https://www.audible.com">
             Audible
-          </a>
+          </Link>
         </li>
         <li>
           <p>Podcasts</p>
