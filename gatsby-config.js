@@ -1,5 +1,3 @@
-
-
 module.exports = {
   siteMetadata: {
     title: `Jules Chevalier`,
@@ -9,31 +7,31 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-source-filesystem`,    // this sources the files from the filesystem
+      resolve: `gatsby-source-filesystem`, // this sources the files from the filesystem
       options: {
         path: `${__dirname}/src/pages`,
-        name: "markdown-pages",
-      },
+        name: 'markdown-pages'
+      }
     },
     {
-      resolve: `gatsby-source-filesystem`,    // this sources the files from the filesystem
+      resolve: `gatsby-source-filesystem`, // this sources the files from the filesystem
       options: {
-        name: "lightbox",
-        path: `${__dirname}/src/images/photography`,
-      },
+        name: 'lightbox',
+        path: `${__dirname}/src/images/photography`
+      }
     },
     {
-      resolve: `gatsby-source-filesystem`,    // this sources the files from the filesystem
+      resolve: `gatsby-source-filesystem`, // this sources the files from the filesystem
       options: {
-        name: "images",
-        path: `${__dirname}/src/images/`,
-      },
+        name: 'images',
+        path: `${__dirname}/src/images/`
+      }
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,    // uses sharp image processing library.  node.js build for speed.  converts large images to web-friendly.  you probably won't use this directly,
+    `gatsby-plugin-sharp`, // uses sharp image processing library.  node.js build for speed.  converts large images to web-friendly.  you probably won't use this directly,
     'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-transformer-remark`,  // “transform” the markdown to HTML and the YAML frontmatter to JSON  
+      resolve: `gatsby-transformer-remark`, // “transform” the markdown to HTML and the YAML frontmatter to JSON
       options: {
         plugins: [
           {
@@ -45,24 +43,25 @@ module.exports = {
               maxWidth: 700,
               linkImagesToOriginal: true,
               showCaptions: false,
-              quality: 85,
-            },
+              quality: 85
+            }
           }
-        ],
-      },
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-140934886-1`,
-      },
+        trackingId: `UA-140934886-1`
+      }
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://juleschevalier.com',
-        policy: [{ userAgent: '*', disallow: ['/habits', '/read' ]}]
+        policy: [{ userAgent: '*', disallow: ['/habits', '/read'] }]
       }
     },
-  ],
+    `gatsby-plugin-emotion`
+  ]
 }
