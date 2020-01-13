@@ -1,13 +1,11 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react'
+import { Link } from 'gatsby'
 import '../styles/main.scss'
 
 const PostLink = ({ post }) => (
   <div className="blog-list">
-    <Link to={post.frontmatter.path}>
-      {post.frontmatter.title}
-    </Link>
+    <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
   </div>
-);
+)
 
-export default PostLink;
+export default PostLink
