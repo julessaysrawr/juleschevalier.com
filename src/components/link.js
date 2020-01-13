@@ -5,23 +5,22 @@ import theme from '../theme'
 
 const basic = css`
   transition: 0.3s ease-in all;
-  // background-color: ${theme.color.greyMedium};
-  // color: ${theme.color.white} !important;
   text-decoration: none !important;
-  background-image: linear-gradient(120deg, ${theme.color.primaryOpacity50} 0%, ${theme.color.primary} 100%);
+  background-image: linear-gradient(
+    120deg,
+    ${theme.color.primaryOpacity50} 0%,
+    ${theme.color.primary} 100%
+  );
   background-repeat: no-repeat;
   background-size: 100% 0.15em;
   background-position: 0 88%;
-  // transition: background-size 0.3s ease-in;
   padding-bottom: 0.5rem;
   &:hover,
   &:focus {
     transition: 0.3s ease-in all;
-    // background-color: ${theme.color.greyDark};
     background-size: 100% 88%;
     color: ${theme.color.white} !important;
     padding: 0;
-    // text-decoration: none !important;
   }
 `
 
