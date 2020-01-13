@@ -1,9 +1,10 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import '../styles/main.scss'
 import Emoji from '../components/emoji'
 import LayoutMain from '../components/layout-main'
+import Link from '../components/link'
 
 const About = props => (
   <LayoutMain title={'About | Jules Chevalier'} description={'About Jules Chevalier'}>
@@ -87,15 +88,14 @@ const About = props => (
       <div className="flex-container space-above space-below-m">
         <p>
           To find out what I'm currently up to, you can check out my{' '}
-          <Link to="/now" className="show-link">
-            now page
-          </Link>
-          .
+          <Link hrefLocal={'/now'}>now page</Link>.
         </p>
       </div>
       <div className="non-flex-container space-above space-below-m">
         <h4>Want to get in touch?</h4>
-        <a href="mailto:hellothere@juleschevalier.com">hellothere@juleschevalier.com</a>
+        <Link type={'basic'} href={'mailto:hellothere@juleschevalier.com'}>
+          hellothere@juleschevalier.com
+        </Link>
       </div>
     </main>
   </LayoutMain>
