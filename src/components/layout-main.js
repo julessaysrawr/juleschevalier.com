@@ -9,7 +9,10 @@ const LayoutMain = props => {
         <title> {props.title || 'Jules Chevalier ▲ Progress Not Perfection'}</title>
         <meta
           name="description"
-          content={ props.description || "Jules Chevalier is an artist who creates using code, photography, writing, and design."}
+          content={
+            props.description ||
+            'Jules Chevalier is an artist who creates using code, photography, writing, and design.'
+          }
         />
         {/* Facebook */}
         <meta property="og:title" content="Jules Chevalier ▲ Progress Not Perfection" />

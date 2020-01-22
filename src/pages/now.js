@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/main.scss'
 import LayoutMain from '../components/layout-main'
 import Emoji from '../components/emoji'
+import Link from '../components/link'
 
 const Now = () => (
   <LayoutMain
@@ -27,15 +28,22 @@ const Now = () => (
         </p>
         <p>
           Grateful to be a part of the team behind:{' '}
-          <a className="show-link" href="https://be-ingoodcompany.com/">
+          <Link type={'basic'} href="https://be-ingoodcompany.com/">
             In Good Company
-          </a>
+          </Link>
         </p>
         <p className="space-above">Updated on: January 05, 2020</p>
 
         <p className="space-above-m">
-          (thanks to <a href="https://sivers.org/">Derek Sivers</a> for this{' '}
-          <a href="https://nownownow.com/about">idea</a>)
+          (thanks to{' '}
+          <Link type={'basic'} href="https://sivers.org/">
+            Derek Sivers
+          </Link>{' '}
+          for this{' '}
+          <Link type={'basic'} href="https://nownownow.com/about">
+            idea
+          </Link>
+          )
         </p>
       </div>
     </main>
