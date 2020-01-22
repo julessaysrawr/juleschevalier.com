@@ -6,7 +6,8 @@
     "dev": "gatsby develop",
     "build": "gatsby build && cp ./src/favicon/* public/",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && cp ./CNAME public/ && cp ./src/favicon/* public/ && gh-pages -d public"
+    "deploy": "gatsby build && cp ./CNAME public/ && cp ./src/favicon/* public/ && gh-pages -d public",
+    "ls": "node_modules/.bin/ls-scripts"
   },
   "dependencies": {
     "@emotion/core": "^10.0.27",
@@ -26,6 +27,7 @@
     "gatsby-transformer-sharp": "^2.1.13",
     "mobile-detect": "^1.4.4",
     "node-sass": "^4.13.0",
+    "npm-ls-scripts": "^0.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
