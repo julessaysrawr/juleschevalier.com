@@ -35,6 +35,13 @@ const navigation = css`
 
 `
 
+const button = css`
+  padding: ${theme.buttonPadding.tag};
+  background-color: ${theme.color.primary};
+  color: ${theme.color.white} !important;
+  border-radius: ${theme.borderRadius.rounded};
+`
+
 /**
  * @param {object} props
  * @param { `basic` | `button` | `navigation` }  props.type - The type of link []
@@ -82,6 +89,21 @@ const CustomLink = props => {
       <GatsbyLink
         to={props.hrefLocal}
         css={navigation}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  // BUTTON
+  if (props.type === 'button') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={button}
         aria-label={props.description}
         tabIndex="0"
         onClick={props.onClick}

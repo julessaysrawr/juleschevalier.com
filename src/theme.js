@@ -19,6 +19,7 @@ const color = {
 
 const borderRadius = {
   primary: '3px',
+  rounded: '40px',
   circle: '50%'
 }
 
@@ -36,7 +37,8 @@ const textSizes = {
 }
 
 const buttonPadding = {
-  default: `${'12px 24px'}`
+  default: `${'12px 24px'}`,
+  tag: '8px 16px'
 }
 
 const space = [0, 4, 8, 16, 24, 32, 64, 128, 256]
