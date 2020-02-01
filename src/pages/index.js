@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { css } from '@emotion/core'
+import theme from '../theme'
+
 import '../styles/main.scss'
 import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
@@ -13,14 +16,27 @@ class Index extends Component {
           <figure>
             <Img
               fluid={this.props.data.beach.childImageSharp.fluid}
-              className="cover"
+              styles={css`
+                width: 100%;
+                height: 100%;
+              `}
               alt="Jules on a sandy path between dune grass"
             />
             {/* <figcaption>Photo credit: <a href="https:dchevalier.io">David Chevalier</a></figcaption> */}
           </figure>
 
-          <div className="homepage-text">
-            <h3>Hi, I&apos;m Jules 🦖</h3>
+          <div
+            css={css`
+              margin: calc(${theme.space[6]}px * 1.5) 0;
+            `}
+          >
+            <h3
+              css={css`
+                margin: ${theme.space[6]}px 0 ${theme.space[2]}px;
+              `}
+            >
+              Hi, I&apos;m Jules 🦖
+            </h3>
             <p>
               Here you&apos;ll find information on intentional living, resources to navigate tough
               emotions, and how to get back to flow state. Check out the{' '}
@@ -29,7 +45,7 @@ class Index extends Component {
               </Link>
               .
             </p>
-            <p className="space-above-m">
+            <p>
               I enjoy creating and capturing the beauty in life, and my favorite way to do that is
               with a camera. If you&apos;re interested to create a portrait together, you can see
               some examples of my{' '}
@@ -46,8 +62,18 @@ class Index extends Component {
             alt="White peonies flowers in soft light with a quiet mood"
           /> */}
 
-          <div className="homepage-text">
-            <h3>Me in 10 seconds</h3>
+          <div
+            css={css`
+              margin: calc(${theme.space[6]}px * 1.5) 0;
+            `}
+          >
+            <h3
+              css={css`
+                margin: ${theme.space[6]}px 0 ${theme.space[2]}px;
+              `}
+            >
+              Me in 10 seconds
+            </h3>
             <p>
               I&apos;m a creator: a writer 🖋, photographer 📷, engineer 💻, and designer 📐. My work
               is rooted in empowering others to live according to their values.

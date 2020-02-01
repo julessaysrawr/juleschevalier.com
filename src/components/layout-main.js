@@ -45,7 +45,12 @@ const LayoutMain = props => {
           }
 
           ul {
-          list-style-type: none;
+            list-style-type: none;
+          }
+
+          p {
+            line-height: 1.75;
+            margin-bottom: ${theme.space[4]}px;
           }
         `}
       />
