@@ -43,6 +43,10 @@ const LayoutMain = props => {
             -moz-font-smoothing: antialiased;
             background-color: ${theme.color.white};
           }
+
+          ul {
+          list-style-type: none;
+          }
         `}
       />
       <Helmet>
