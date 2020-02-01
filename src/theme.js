@@ -25,10 +25,10 @@ const borderRadius = {
 
 // currently 30px, 25px, 20px, and 15px
 const headingSizes = {
-  h1: '64px',
-  h2: '48px',
-  h3: '32px',
-  h4: '24px'
+  h1: '48px',
+  h2: '32px',
+  h3: '24px',
+  h4: '20px'
 }
 
 const textSizes = {
