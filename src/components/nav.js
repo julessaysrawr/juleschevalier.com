@@ -53,6 +53,7 @@ const Nav = () => {
         >
           <ul
             css={css`
+              position: relative;
               list-style: none;
               display: flex;
               justify-content: space-around;
@@ -60,7 +61,7 @@ const Nav = () => {
               flex-wrap: wrap;
 
               li {
-                margin: calc(${theme.space[2]}px * 1.5);
+                margin: calc(${theme.space[2]}px * 1.5) ${theme.space[3]}px;
                 font-size: ${theme.textSizes.paragraph};
               }
             `}
@@ -70,7 +71,15 @@ const Nav = () => {
                 Home
               </Link>
             </li> */}
-            <li>
+            <li
+              css={css`
+                postion: relative;
+                display: inline-block;
+                &:hover ul {
+                  display: block;
+                }
+              `}
+            >
               <Link type={'navigation'} hrefLocal={'/blog'}>
                 Blog{' '}
                 <svg
@@ -93,6 +102,41 @@ const Nav = () => {
                   </g>
                 </svg>
               </Link>
+              <ul
+                css={css`
+                  display: none;
+                  position: absolute;
+                  z-index: 1;
+                  background-color: ${theme.color.white};
+                  margin-left: -${theme.space[3]}px;
+                  &:hover li {
+                    &:hover {
+                      // background-color: ${theme.color.errorRedLight};
+                    }
+                  }
+                `}
+              >
+                <li>
+                  <Link type="navigation" hrefLocal={'/tags/intentional-living/'}>
+                    Intentional Living
+                  </Link>
+                </li>
+                <li>
+                  <Link type="navigation" hrefLocal={'/tags/technology/'}>
+                    Technology
+                  </Link>
+                </li>
+                <li>
+                  <Link type="navigation" hrefLocal={'/tags/navigating-emotions/'}>
+                    Navigating Emotions
+                  </Link>
+                </li>
+                <li>
+                  <Link type="navigation" hrefLocal={'/blog'}>
+                    All
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link type={'navigation'} hrefLocal={'/photography'}>

@@ -56,11 +56,6 @@ class Index extends Component {
             </p>
           </div>
           <div />
-          {/* <Img
-            fluid={this.props.data.peonies.childImageSharp.fluid}
-            className="cover"
-            alt="White peonies flowers in soft light with a quiet mood"
-          /> */}
 
           <div
             css={css`
@@ -85,10 +80,10 @@ class Index extends Component {
             </p>
             <p>
               I’ve lived too many places to be &apos;from&apos; anywhere. I&apos;m currently based
-              in Massachusetts with my husband 🧔🏻 and three furballs 🐈🐶🐈.
+              in Massachusetts with my <Link href={'https://dchevalier.io/'}>clever husband</Link>
+              🧔🏻 and three furballs 🐈🐶🐈.
             </p>
           </div>
-          {/* </div> */}
         </main>
       </LayoutMain>
     )
