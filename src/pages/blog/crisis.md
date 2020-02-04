@@ -2,7 +2,7 @@
 path: '/blog/crisis'
 date: '2019-07-10'
 title: 'Finding Your Way Out of Crisis'
-tags: 'Navigating Emotions'
+tags: 'Emotional Wellbeing'
 ---
 
 

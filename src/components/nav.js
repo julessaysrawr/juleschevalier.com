@@ -108,12 +108,8 @@ const Nav = () => {
                   position: absolute;
                   z-index: 1;
                   background-color: ${theme.color.white};
+                  opacity: 0.9;
                   margin-left: -${theme.space[3]}px;
-                  &:hover li {
-                    &:hover {
-                      // background-color: ${theme.color.errorRedLight};
-                    }
-                  }
                 `}
               >
                 <li>
@@ -127,8 +123,8 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link type="navigation" hrefLocal={'/tags/navigating-emotions/'}>
-                    Navigating Emotions
+                  <Link type="navigation" hrefLocal={'/tags/emotional-wellbeing/'}>
+                    Emotional Wellbeing
                   </Link>
                 </li>
                 <li>

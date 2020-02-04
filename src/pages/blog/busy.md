@@ -2,7 +2,7 @@
 path: '/blog/busy'
 date: '2019-07-12'
 title: 'Busy'
-tags: 'Navigating Emotions'
+tags: 'Emotional Wellbeing'
 ---
 
 Feeling busy is a helpful indicator.  It’s not a pleasant feeling.  It can feel emotionally painful.  Humans seek pleasure and seek to avoid pain [according to the Pleasure-Pain Principle](http://changingminds.org/disciplines/psychoanalysis/concepts/pleasure_pain.htm).  When you begin feeling the rushed pain of being ‘busy’ that is a wonderful opportunity to reflect on everything you have going on.  Look at what you have taken on, it is too much.  Your pace is not sustainable.  What can you deprioritize or set back the timelines of?  Perhaps you need to just take a day for yourself and do what makes you happy?
