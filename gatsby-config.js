@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jules Chevalier`,
-    description: `Jules Chevalier is an artist who creates using code, photography, writing, and design.`,
+    description: `Jules Chevalier is an artist who creates using design, code, writing, and photography.`,
     siteUrl: `https://juleschevalier.com/`
   },
   plugins: [
