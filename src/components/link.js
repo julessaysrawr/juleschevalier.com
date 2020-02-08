@@ -43,6 +43,10 @@ const button = css`
   border-radius: ${theme.borderRadius.rounded};
 `
 
+const list = css`
+  text-decoration: none;
+`
+
 /**
  * @param {object} props
  * @param { `basic` | `button` | `navigation` }  props.type - The type of link []
@@ -105,6 +109,21 @@ const CustomLink = props => {
       <GatsbyLink
         to={props.hrefLocal}
         css={button}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  // Articles List
+  if (props.type === 'list') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={list}
         aria-label={props.description}
         tabIndex="0"
         onClick={props.onClick}
