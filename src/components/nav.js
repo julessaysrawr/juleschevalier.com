@@ -1,53 +1,53 @@
 import React from 'react'
 import Link from './link'
+import { Link as GatsbyLink } from 'gatsby'
 import { css } from '@emotion/core'
+import nameplate from '../images/juleschevalier.svg'
 import theme from '../theme'
 import device from '../device'
 
 const Nav = () => {
   return (
     <div>
-      <Link hrefLocal="/">
-        <header
-          css={css`
-            text-align: center;
-            margin: ${theme.space[4]}px 0 ${theme.space[5]}px;
-          `}
-        >
+      <div
+        css={css`
+          display: flex;
+          margin: ${theme.space[3]}px auto ${theme.space[5]}px;
+          width: 900px;
+          justify-content: space-between;
+
+          ${device.tabletPro} {
+            width: 90%;
+          }
+
+          ${device.phone} {
+            flex-direction: column;
+          }
+        `}
+      >
+        <GatsbyLink to={'/'}>
           <p
             css={css`
-              font-size: calc(${theme.headingSizes.h4} * 2);
+              font-size: ${theme.headingSizes.h3};
               font-family: ${theme.fontFamily.raleway};
-              margin-bottom: 0px;
+              padding: 0;
+              margin: 0;
             `}
           >
             Jules Chevalier
           </p>
-          <h3
-            css={css`
-              color: ${theme.color.greyMedium};
-              font-style: italic;
-              font-weight: 300;
-              margin-top: ${theme.space[0]}px;
-            `}
-          >
-            Progress not perfection
-          </h3>
-        </header>
-      </Link>
-      <div style={{ display: 'flex' }}>
+        </GatsbyLink>
         <nav
           css={css`
             display: flex;
-            width: 700px;
-            border-top: 1px solid ${theme.color.greyMedium};
-            border-bottom: 1px solid ${theme.color.greyMedium};
-            margin: 2rem auto 3rem auto;
-            margin: 0 auto ${theme.space[4]}px auto;}
-            padding: 1rem 0;
+            width: 400px;
 
-            ${device.tablet} {
-              width: 85%;
+            ${device.tabletPro} {
+              width: 55%;
+            }
+
+            ${device.phone} {
+              width: 100%;
             }
           `}
         >
@@ -56,21 +56,16 @@ const Nav = () => {
               position: relative;
               list-style: none;
               display: flex;
-              justify-content: space-around;
+              justify-content: space-between;
               width: 100%;
               flex-wrap: wrap;
 
               li {
-                margin: calc(${theme.space[2]}px * 1.5) ${theme.space[3]}px;
                 font-size: ${theme.textSizes.paragraph};
+                padding-top: calc(${theme.space[2]}px * 1.8);
               }
             `}
           >
-            {/* <li>
-              <Link type={'navigation'} hrefLocal={'/'}>
-                Home
-              </Link>
-            </li> */}
             <li
               css={css`
                 postion: relative;
@@ -108,7 +103,7 @@ const Nav = () => {
                   position: absolute;
                   z-index: 1;
                   background-color: ${theme.color.white};
-                  opacity: 0.9;
+                  // opacity: 0.9;
                   margin-left: -${theme.space[3]}px;
                 `}
               >
