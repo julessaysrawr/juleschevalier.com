@@ -1,8 +1,8 @@
 ---
-path: '/blog/intentional-living'
+path: '/articles/intentional-living'
 date: '2019-07-02'
 title: 'Intentional Living'
-tags: 'Intentional Living'
+subject: 'Intentional Living'
 ---
 
 ## What does intentional living mean to me?

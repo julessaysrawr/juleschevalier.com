@@ -1,8 +1,8 @@
 ---
-path: "/blog/simple-meals"
+path: "/articles/simple-meals"
 date: "2018-08-10"
 title: "Simple Meals"
-tags: "Intentional Living"
+subject: "Intentional Living"
 ---
 
 ### Start each meal with:

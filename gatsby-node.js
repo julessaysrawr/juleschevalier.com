@@ -4,8 +4,8 @@ const _ = require('lodash')
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
-  const tagTemplate = path.resolve('src/templates/tags.js')
+  const articleTemplate = path.resolve(`src/templates/articleTemplate.js`)
+  const subjectTemplate = path.resolve('src/templates/subjectTemplate.js')
 
   return await graphql(`
     {
@@ -14,13 +14,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               path
-              tags
+              subject
             }
           }
         }
       }
-      tagsGroup: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___tags) {
+      subjectGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___subject) {
           fieldValue
         }
       }
@@ -37,18 +37,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     posts.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: blogPostTemplate,
+        component: articleTemplate,
         context: {} // additional data can be passed via context
       })
     })
 
-    const tags = result.data.tagsGroup.group
-    tags.forEach(tag => {
+    const subjects = result.data.subjectGroup.group
+    subjects.forEach(subject => {
       createPage({
-        path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-        component: tagTemplate,
+        path: `/articles/${_.kebabCase(subject.fieldValue)}/`,
+        component: subjectTemplate,
         context: {
-          tag: tag.fieldValue
+          subject: subject.fieldValue
         }
       })
     })

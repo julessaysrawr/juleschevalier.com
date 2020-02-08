@@ -25,6 +25,7 @@ const basic = css`
 `
 
 const navigation = css`
+  padding: 0;
   color = ${theme.color.greyDark};
   transition: 0.3s ease all;
   text-decoration: none;

@@ -1,8 +1,8 @@
 ---
-path: '/blog/git'
+path: '/articles/git'
 date: '2020-02-04'
 title: 'Git Favorites'
-tags: 'Technology'
+subject: 'Technology'
 ---
 
 ## What changes have I added?

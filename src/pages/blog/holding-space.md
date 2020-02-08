@@ -1,7 +1,7 @@
 ---
-path: "/blog/holding-space"
+path: "/articles/holding-space"
 date: "2019-12-29"
-title: "Holding Space"
+subject: "Holding Space"
 ---
 
 I seek those who can hold space for me, so I can hold space for others.

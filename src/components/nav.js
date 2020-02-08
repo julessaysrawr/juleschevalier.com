@@ -75,8 +75,8 @@ const Nav = () => {
                 }
               `}
             >
-              <Link type={'navigation'} hrefLocal={'/blog'}>
-                Blog{' '}
+              <Link type={'navigation'} hrefLocal={'/articles'}>
+                Articles{' '}
                 <svg
                   version="1.1"
                   id="Capa_1"
@@ -108,22 +108,32 @@ const Nav = () => {
                 `}
               >
                 <li>
-                  <Link type="navigation" hrefLocal={'/tags/intentional-living/'}>
+                  <Link type="navigation" hrefLocal={'/articles/intentional-living/'}>
                     Intentional Living
                   </Link>
                 </li>
                 <li>
-                  <Link type="navigation" hrefLocal={'/tags/technology/'}>
+                  <Link type="navigation" hrefLocal={'/articles/design/'}>
+                    Design
+                  </Link>
+                </li>
+                <li>
+                  <Link type="navigation" hrefLocal={'/articles/technology/'}>
                     Technology
                   </Link>
                 </li>
                 <li>
-                  <Link type="navigation" hrefLocal={'/tags/emotional-wellbeing/'}>
+                  <Link type="navigation" hrefLocal={'/articles/emotional-wellbeing/'}>
                     Emotional Wellbeing
                   </Link>
                 </li>
                 <li>
-                  <Link type="navigation" hrefLocal={'/blog'}>
+                  <Link type="navigation" hrefLocal={'/articles/personal-essays/'}>
+                    Personal Essays
+                  </Link>
+                </li>
+                <li>
+                  <Link type="navigation" hrefLocal={'/articles'}>
                     All
                   </Link>
                 </li>

@@ -5,21 +5,22 @@ import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
 import theme from '../theme'
 
-const Tags = ({ pageContext, data }) => {
-  const { tag } = pageContext
+const Subject = ({ pageContext, data }) => {
+  const { subject } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
+  // const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
+  const articlesHeader = `Articles about ${subject}`
 
   return (
     <LayoutMain>
       <main className="non-flex-container">
-        <h1
+        <h2
           css={css`
             padding-bottom: ${theme.space[4]}px;
           `}
         >
-          {tagHeader}
-        </h1>
+          {articlesHeader}
+        </h2>
         <ul>
           {edges.map(({ node }) => {
             const { path, title } = node.frontmatter
@@ -30,28 +31,34 @@ const Tags = ({ pageContext, data }) => {
                   padding-bottom: ${theme.space[3]}px;
                 `}
               >
-                <Link type={'button'} hrefLocal={path}>
+                <Link type={'navigation'} hrefLocal={path}>
                   {title}
                 </Link>
               </li>
             )
           })}
         </ul>
-        <Link type={'basic'} hrefLocal="/tags">
-          All tags
-        </Link>
+        <div
+          css={css`
+            margin-top: ${theme.space[6]}px;
+          `}
+        >
+          <Link type={'navigation'} hrefLocal="/articles">
+            All articles
+          </Link>
+        </div>
       </main>
     </LayoutMain>
   )
 }
 
-export default Tags
+export default Subject
 export const pageQuery = graphql`
-  query($tag: String) {
+  query($subject: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { subject: { in: [$subject] } } }
     ) {
       totalCount
       edges {

@@ -6,7 +6,7 @@ import LayoutMain from '../components/layout-main'
 import theme from '../theme'
 import Link from '../components/link'
 
-const TagsPage = ({
+const SubjectsPage = ({
   data: {
     allMarkdownRemark: { group }
   }
@@ -19,7 +19,7 @@ const TagsPage = ({
             padding-bottom: ${theme.space[4]}px;
           `}
         >
-          Tags
+          Subjects
         </h1>
         <ul>
           {group.map(tag => (
@@ -29,7 +29,7 @@ const TagsPage = ({
               `}
               key={tag.fieldValue}
             >
-              <Link type={'button'} hrefLocal={`/tags/${kebabCase(tag.fieldValue)}/`}>
+              <Link type={'button'} hrefLocal={`/articles/${kebabCase(tag.fieldValue)}/`}>
                 {tag.fieldValue} ({tag.totalCount})
               </Link>
             </li>
@@ -40,12 +40,12 @@ const TagsPage = ({
   )
 }
 
-export default TagsPage
+export default SubjectsPage
 
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___tags) {
+      group(field: frontmatter___subject) {
         fieldValue
         totalCount
       }

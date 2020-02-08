@@ -1,7 +1,7 @@
 ---
-path: '/blog/fear'
+path: '/articles/fear'
 date: '2019-12-29'
-title: 'Fear'
+subject: 'Fear'
 ---
 
 ### What helps me when I am afraid:
