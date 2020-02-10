@@ -2,7 +2,7 @@
 path: '/articles/financial-wellness'
 date: '2019-07-01'
 title: 'Financial Wellness'
-subject: 'Intentional Living'
+topic: 'Intentional Living'
 ---
 
 Changing your financial situation is hard. I didn’t always know what to do. I have made big and expensive mistakes along the way, and that helped me to learn a lot that I would like to share with you.

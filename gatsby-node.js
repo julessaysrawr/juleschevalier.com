@@ -5,7 +5,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const articleTemplate = path.resolve(`src/templates/articleTemplate.js`)
-  const subjectTemplate = path.resolve('src/templates/subjectTemplate.js')
+  const topicTemplate = path.resolve('src/templates/topicTemplate.js')
 
   return await graphql(`
     {
@@ -14,13 +14,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               path
-              subject
+              topic
             }
           }
         }
       }
-      subjectGroup: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___subject) {
+      topicGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___topic) {
           fieldValue
         }
       }
@@ -42,13 +42,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       })
     })
 
-    const subjects = result.data.subjectGroup.group
-    subjects.forEach(subject => {
+    const topics = result.data.topicGroup.group
+    topics.forEach(topic => {
       createPage({
-        path: `/articles/${_.kebabCase(subject.fieldValue)}/`,
-        component: subjectTemplate,
+        path: `/articles/${_.kebabCase(topic.fieldValue)}/`,
+        component: topicTemplate,
         context: {
-          subject: subject.fieldValue
+          topic: topic.fieldValue
         }
       })
     })

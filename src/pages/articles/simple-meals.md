@@ -2,7 +2,7 @@
 path: "/articles/simple-meals"
 date: "2018-08-10"
 title: "Simple Meals"
-subject: "Intentional Living"
+topic: "Intentional Living"
 ---
 
 ### Start each meal with:

@@ -2,7 +2,7 @@
 path: "/articles/the-problem-with-weight-loss"
 date: "2020-01-05"
 title: "The Problem with Weight Loss"
-subject: 'Intentional Living'
+topic: 'Intentional Living'
 ---
 
 ## When did we stop trusting ourselves?

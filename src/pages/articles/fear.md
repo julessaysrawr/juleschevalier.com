@@ -2,7 +2,7 @@
 path: '/articles/fear'
 date: '2019-12-29'
 title: 'Fear'
-subject: 'Emotional Wellbeing'
+topic: 'Emotional Wellbeing'
 ---
 
 ### What helps me when I am afraid:

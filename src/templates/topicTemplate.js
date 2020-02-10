@@ -5,11 +5,11 @@ import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
 import theme from '../theme'
 
-const Subject = ({ pageContext, data }) => {
-  const { subject } = pageContext
+const Topic = ({ pageContext, data }) => {
+  const { topic } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   // const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
-  const articlesHeader = `Articles about ${subject}`
+  const pageHeader = `Articles about ${topic}`
 
   return (
     <LayoutMain>
@@ -19,7 +19,7 @@ const Subject = ({ pageContext, data }) => {
             padding-bottom: ${theme.space[4]}px;
           `}
         >
-          {articlesHeader}
+          {pageHeader}
         </h2>
         <ul>
           {edges.map(({ node }) => {
@@ -52,13 +52,13 @@ const Subject = ({ pageContext, data }) => {
   )
 }
 
-export default Subject
+export default Topic
 export const pageQuery = graphql`
-  query($subject: String) {
+  query($topic: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { subject: { in: [$subject] } } }
+      filter: { frontmatter: { topic: { in: [$topic] } } }
     ) {
       totalCount
       edges {

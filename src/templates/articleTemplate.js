@@ -12,7 +12,7 @@ export default function articleTemplate({
     <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`}>
       <main className="flex-container">
         <article className="blog-post">
-          <h2 className="blog-title">{frontmatter.title}</h2>
+          <h1 className="blog-title">{frontmatter.title}</h1>
           <p className="blog-date">{frontmatter.date}</p>
           <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
         </article>

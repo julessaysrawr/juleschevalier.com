@@ -2,7 +2,7 @@
 path: '/articles/intentional-living'
 date: '2019-07-02'
 title: 'Intentional Living'
-subject: 'Intentional Living'
+topic: 'Intentional Living'
 ---
 
 ## What does intentional living mean to me?

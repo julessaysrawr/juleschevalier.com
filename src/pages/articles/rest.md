@@ -2,7 +2,7 @@
 path: '/articles/rest'
 date: '2020-01-21'
 title: 'Rest'
-subject: 'Intentional Living'
+topic: 'Intentional Living'
 ---
 
 Take a rest day.  A real rest day.  The kind where you give yourself permission to do nothing productive.  The kind where you avoid your phone and social media so that you can be with yourself.  You brain needs a break from information overload and the fast paced thinking that our current culture seems to demand. 

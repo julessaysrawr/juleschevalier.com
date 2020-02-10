@@ -2,7 +2,7 @@
 path: '/articles/git'
 date: '2020-02-04'
 title: 'Git Favorites'
-subject: 'Technology'
+topic: 'Technology'
 ---
 
 ## What changes have I added?

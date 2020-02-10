@@ -2,7 +2,7 @@
 path: '/articles/success-is-not-the-goal'
 date: '2019-06-30'
 title: 'Success is Not the Goal'
-subject: 'Intentional Living'
+topic: 'Intentional Living'
 ---
 
 What is true north?

@@ -40,8 +40,8 @@ class Index extends Component {
             <p>
               Here you&apos;ll find information on intentional living, resources to navigate tough
               emotions, and how to get back to flow state. Check out the{' '}
-              <Link type={'basic'} hrefLocal={'/blog'}>
-                blog
+              <Link type={'basic'} hrefLocal={'/articles'}>
+                articles
               </Link>
               .
             </p>

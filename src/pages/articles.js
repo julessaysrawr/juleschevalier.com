@@ -14,7 +14,10 @@ const BlogPage = ({
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
   return (
-    <LayoutMain title={'📝 Blog | Jules Chevalier'} description={'Blog for Jules Chevalier'}>
+    <LayoutMain
+      title={'📝 Articles | Jules Chevalier'}
+      description={'Articles written by Jules Chevalier'}
+    >
       <main className="non-flex-container">{Posts}</main>
     </LayoutMain>
   )

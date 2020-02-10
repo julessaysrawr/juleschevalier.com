@@ -2,7 +2,7 @@
 path: "/articles/upset"
 date: "2018-07-31"
 title: "When I feel stuck and upset"
-subject: 'Emotional Wellbeing'
+topic: 'Emotional Wellbeing'
 ---
 
 What is troubling me?

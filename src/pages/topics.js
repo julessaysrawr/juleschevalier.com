@@ -6,7 +6,7 @@ import LayoutMain from '../components/layout-main'
 import theme from '../theme'
 import Link from '../components/link'
 
-const SubjectsPage = ({
+const TopicssPage = ({
   data: {
     allMarkdownRemark: { group }
   }
@@ -19,7 +19,7 @@ const SubjectsPage = ({
             padding-bottom: ${theme.space[4]}px;
           `}
         >
-          Subjects
+          Article Topics
         </h1>
         <ul>
           {group.map(tag => (
@@ -40,12 +40,12 @@ const SubjectsPage = ({
   )
 }
 
-export default SubjectsPage
+export default TopicssPage
 
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___subject) {
+      group(field: frontmatter___topic) {
         fieldValue
         totalCount
       }

@@ -2,7 +2,7 @@
 path: '/articles/change-your-state'
 date: '2019-07-12'
 title: 'Change Your State'
-subject: 'Emotional Wellbeing'
+topic: 'Emotional Wellbeing'
 ---
 
 ### Signs I need to change my state:
