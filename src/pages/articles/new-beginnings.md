@@ -1,7 +1,7 @@
 ---
 path: "/articles/new-beginnings"
 date: "2018-07-17"
-title: "New beginnings"
+title: "New Beginnings"
 topic: "Personal Essays"
 ---
 

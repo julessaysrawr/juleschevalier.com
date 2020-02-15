@@ -133,16 +133,34 @@ const CustomLink = props => {
     )
   }
 
+  // Default local
+  if (props.hrefLocal) {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={basic}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  // Default external
   return (
-    <GatsbyLink
-      to={props.hrefLocal}
+    <a
+      href={props.href}
+      target={'_blank'}
+      rel="noopener noreferrer"
       css={basic}
       aria-label={props.description}
       tabIndex="0"
       onClick={props.onClick}
     >
       {props.children}
-    </GatsbyLink>
+    </a>
   )
 }
 

@@ -75,7 +75,7 @@ const Nav = () => {
                 }
               `}
             >
-              <Link type={'navigation'} hrefLocal={'/articles'}>
+              <Link type={'navigation'} hrefLocal={'/topics'}>
                 Articles{' '}
                 <svg
                   version="1.1"
@@ -104,7 +104,11 @@ const Nav = () => {
                   z-index: 1;
                   background-color: ${theme.color.white};
                   // opacity: 0.9;
-                  margin-left: -${theme.space[3]}px;
+                  // margin-left: -${theme.space[3]}px;
+                  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+
+                  padding: 0 ${theme.space[3]}px ${theme.space[3]}px;
                 `}
               >
                 <li>

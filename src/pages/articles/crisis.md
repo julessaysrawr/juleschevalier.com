@@ -1,7 +1,7 @@
 ---
 path: '/articles/crisis'
 date: '2019-07-10'
-title: 'Finding Your Way Out of Crisis'
+title: 'Finding Your Way Out Of Crisis'
 topic: 'Emotional Wellbeing'
 ---
 

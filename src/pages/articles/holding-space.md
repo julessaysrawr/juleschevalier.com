@@ -1,7 +1,7 @@
 ---
 path: "/articles/holding-space"
 date: "2019-12-29"
-title: 'Holding space'
+title: 'Holding Space'
 topic: "Intentional Living"
 ---
 

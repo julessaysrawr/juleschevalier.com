@@ -5,6 +5,7 @@ import { css } from '@emotion/core'
 import LayoutMain from '../components/layout-main'
 import theme from '../theme'
 import Link from '../components/link'
+import PostLink from '../components/post-link'
 
 const TopicssPage = ({
   data: {
@@ -14,23 +15,32 @@ const TopicssPage = ({
   return (
     <LayoutMain>
       <main className="non-flex-container">
-        <h1
+        <h2
           css={css`
             padding-bottom: ${theme.space[4]}px;
           `}
         >
           Article Topics
-        </h1>
+        </h2>
         <ul>
-          {group.map(tag => (
+          {group.map(topic => (
             <li
               css={css`
                 padding-bottom: ${theme.space[3]}px;
               `}
-              key={tag.fieldValue}
+              key={topic.fieldValue}
             >
-              <Link type={'button'} hrefLocal={`/articles/${kebabCase(tag.fieldValue)}/`}>
-                {tag.fieldValue} ({tag.totalCount})
+              {/* eslint-disable-next-line */}
+              {console.log('topic: ', topic)}
+              {/* eslint-disable-next-line */}
+              {console.log('topic.fieldValue: ', topic.fieldValue)}
+              {/* <PostLink
+                key={topic.fieldValue}
+                hrefLocal={`/articles/${kebabCase(topic.fieldValue)}/`}
+                title={topic.fieldValue}
+              /> */}
+              <Link hrefLocal={`/articles/${kebabCase(topic.fieldValue)}/`}>
+                {topic.fieldValue} ({topic.totalCount})
               </Link>
             </li>
           ))}
