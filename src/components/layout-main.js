@@ -11,7 +11,7 @@ const LayoutMain = props => {
           name="description"
           content={
             props.description ||
-            'Jules Chevalier is an artist who creates using code, photography, writing, and design.'
+            `Jules Chevalier is an artist who creates using design, code, writing, and photography.`
           }
         />
         {/* Facebook */}
@@ -19,7 +19,7 @@ const LayoutMain = props => {
         <meta property="og:site_name" content="Jules Chevalier ▲ Progress Not Perfection" />
         <meta
           property="og:description"
-          content="Jules Chevalier is an artist who creates using code, photography, writing, and design."
+          content="Jules Chevalier is an artist who creates using design, code, writing, and photography."
         />
         <meta property="og:image" content="https://juleschevalier.com/thumbnail.jpg" />
         <meta property="og:url" content="https://juleschevalier.com/" />
@@ -27,7 +27,7 @@ const LayoutMain = props => {
         <meta name="twitter:title" content="Jules Chevalier ▲ Progress Not Perfection" />
         <meta
           name="twitter:description"
-          content="Jules Chevalier is an artist who creates using code, photography, writing, and design."
+          content="Jules Chevalier is an artist who creates using design, code, writing, and photography."
         />
         <meta name="twitter:image" content="https://juleschevalier.com/thumbnail.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
