@@ -2,6 +2,7 @@
 path: "/blog/holding-space"
 date: "2019-12-29"
 title: "Holding Space"
+topic: "Intentional Living"
 ---
 
 I seek those who can hold space for me, so I can hold space for others.
