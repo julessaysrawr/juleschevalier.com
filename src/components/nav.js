@@ -15,11 +15,6 @@ const Nav = () => {
         <nav className="nav">
           <ul>
             <li>
-              <Link type={'navigation'} hrefLocal={'/'}>
-                Home
-              </Link>
-            </li>
-            <li>
               <Link type={'navigation'} hrefLocal={'/blog'}>
                 Blog
               </Link>
