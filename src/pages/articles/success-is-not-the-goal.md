@@ -1,8 +1,8 @@
 ---
-path: '/blog/success-is-not-the-goal'
+path: '/articles/success-is-not-the-goal'
 date: '2019-06-30'
-title: 'Success is Not the Goal'
-tags: 'Intentional Living'
+title: 'Success Is Not The Goal'
+topic: 'Intentional Living'
 ---
 
 What is true north?

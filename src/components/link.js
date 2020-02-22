@@ -4,35 +4,35 @@ import { css } from '@emotion/core'
 import theme from '../theme'
 
 const basic = css`
-  transition: 0.3s ease-in all;
-  text-decoration: none !important;
-  background-image: linear-gradient(
-    120deg,
-    ${theme.color.primaryOpacity50} 0%,
-    ${theme.color.primary} 100%
-  );
-  background-repeat: no-repeat;
-  background-size: 100% 0.15em;
-  background-position: 0 88%;
-  padding-bottom: 0.5rem;
+  border-bottom: 1px solid ${theme.color.greyDark};
+  transition: 0.3s ease all;
   &:hover,
   &:focus {
-    transition: 0.3s ease-in all;
-    background-size: 100% 88%;
-    color: ${theme.color.white} !important;
-    padding: 0;
+    padding-bottom: 3px;
+    transition: 0.3s ease all;
   }
 `
 
 const navigation = css`
-  color = ${theme.color.greyDark};
-  transition: 0.3s ease all;
+  border-bottom: 0.1rem solid ${theme.color.transparent};
+  transition: border 0.3s ease-in;
   text-decoration: none;
   &:hover {
     border-bottom: 0.1rem solid ${theme.color.greyDark};
-    transition: 0.3s ease all;
+    padding-bottom: 3px;
+    transition: border 0.3s ease-in;
   }
+`
 
+const button = css`
+  padding: ${theme.buttonPadding.tag};
+  background-color: ${theme.color.primary};
+  color: ${theme.color.white} !important;
+  border-radius: ${theme.borderRadius.rounded};
+`
+
+const list = css`
+  text-decoration: none;
 `
 
 /**
@@ -91,16 +91,64 @@ const CustomLink = props => {
     )
   }
 
+  // BUTTON
+  if (props.type === 'button') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={button}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  // Articles List
+  if (props.type === 'list') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={list}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  // Default local
+  if (props.hrefLocal) {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={basic}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  // Default external
   return (
-    <GatsbyLink
-      to={props.hrefLocal}
+    <a
+      href={props.href}
+      target={'_blank'}
+      rel="noopener noreferrer"
       css={basic}
       aria-label={props.description}
       tabIndex="0"
       onClick={props.onClick}
     >
       {props.children}
-    </GatsbyLink>
+    </a>
   )
 }
 

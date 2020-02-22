@@ -1,8 +1,8 @@
 ---
-path: "/blog/new-beginnings"
+path: "/articles/new-beginnings"
 date: "2018-07-17"
-title: "New beginnings"
-tags: "Inspired"
+title: "New Beginnings"
+topic: "Personal Essays"
 ---
 
 A blank page.

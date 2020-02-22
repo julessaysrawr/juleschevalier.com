@@ -1,8 +1,8 @@
 ---
-path: '/blog/change-your-state'
+path: '/articles/change-your-state'
 date: '2019-07-12'
 title: 'Change Your State'
-tags: 'Flow'
+topic: 'Emotional Wellbeing'
 ---
 
 ### Signs I need to change my state:

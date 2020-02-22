@@ -3,21 +3,21 @@ import { graphql } from 'gatsby'
 import '../styles/main.scss'
 import LayoutMain from '../components/layout-main'
 
-export default function Template({
+export default function articleTemplate({
   data // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-      <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`}>
-        <main className="flex-container">
-          <article className="blog-post">
-            <h2 className="blog-title">{frontmatter.title}</h2>
-            <p className="blog-date">{frontmatter.date}</p>
-            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
-          </article>
-        </main>
-      </LayoutMain>
+    <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`}>
+      <main className="flex-container">
+        <article className="blog-post">
+          <h1 className="blog-title">{frontmatter.title}</h1>
+          <p className="blog-date">{frontmatter.date}</p>
+          <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+        </article>
+      </main>
+    </LayoutMain>
   )
 }
 

@@ -1,36 +1,56 @@
-const path = require("path");
+const path = require('path')
+const _ = require('lodash')
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
 
-  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
+  const articleTemplate = path.resolve(`src/templates/articleTemplate.js`)
+  const topicTemplate = path.resolve('src/templates/topicTemplate.js')
 
-  return graphql(`
+  return await graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
         edges {
           node {
             frontmatter {
               path
+              topic
             }
           }
         }
       }
+      topicGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___topic) {
+          fieldValue
+        }
+      }
     }
   `).then(result => {
+    // handle errors
     if (result.errors) {
-      return Promise.reject(result.errors);
+      reporter.panicOnBuild(`Error while running GraphQL query.`)
+      return
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const posts = result.data.allMarkdownRemark.edges
+    // create blog posts pages
+    posts.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: blogPostTemplate,
-        context: {}, // additional data can be passed via context
-      });
-    });
-  });
-};
+        component: articleTemplate,
+        context: {} // additional data can be passed via context
+      })
+    })
+
+    const topics = result.data.topicGroup.group
+    topics.forEach(topic => {
+      createPage({
+        path: `/topics/${_.kebabCase(topic.fieldValue)}/`,
+        component: topicTemplate,
+        context: {
+          topic: topic.fieldValue
+        }
+      })
+    })
+  })
+}

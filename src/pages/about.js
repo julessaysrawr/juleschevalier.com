@@ -15,7 +15,7 @@ const About = props => (
             <Img
               className="profile"
               fluid={props.data.imageOne.childImageSharp.fluid}
-              alt="jules smiling and looking off to the side standing in front of green bush"
+              alt="jules smiling and looking at the camera"
             />
           </div>
           <div className="">

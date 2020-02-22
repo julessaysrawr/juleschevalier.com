@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/main.scss'
+import { css } from '@emotion/core'
 import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
 
@@ -14,7 +14,11 @@ const Read = () => (
       <h3 className="space-below-m">Up Next: Stillness is the Key</h3>
 
       <h2>Blogs</h2>
-      <ul>
+      <ul
+        css={css`
+          list-style-type: none;
+        `}
+      >
         <li>
           <Link type={'basic'} href="https://m.signalvnoise.com">
             signal v noise

@@ -19,15 +19,16 @@ const color = {
 
 const borderRadius = {
   primary: '3px',
+  rounded: '40px',
   circle: '50%'
 }
 
 // currently 30px, 25px, 20px, and 15px
 const headingSizes = {
-  h1: '64px',
-  h2: '48px',
-  h3: '32px',
-  h4: '24px'
+  h1: '48px',
+  h2: '32px',
+  h3: '24px',
+  h4: '20px'
 }
 
 const textSizes = {
@@ -36,7 +37,8 @@ const textSizes = {
 }
 
 const buttonPadding = {
-  default: `${'12px 24px'}`
+  default: `${'12px 24px'}`,
+  tag: '8px 16px'
 }
 
 const space = [0, 4, 8, 16, 24, 32, 64, 128, 256]

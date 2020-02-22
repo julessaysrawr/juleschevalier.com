@@ -1,8 +1,4 @@
 .blog {
-  &-list {
-    margin: 1rem 0rem;
-    font-size: 2rem;
-  }
 
   &-title {
     letter-spacing: 0.12rem;
@@ -19,9 +15,17 @@
     &-content {
       padding-top: 3.5rem;
 
+      h2 {
+        margin: 4rem 0 2rem;
+      }
+
       p {
         line-height: 1.75;
         margin-bottom: 2rem;
+
+        code {
+          background-color: $color-light-grey;
+        }
       }
 
       ul {
@@ -45,21 +49,28 @@
           margin: 0;
         }
       }
+
+      pre {
+        margin: 4rem 0 6rem;
+
+        code {
+          font-size: $default-font-size;
+          background-color: $color-light-grey;
+          padding: 2.4rem;
+          margin: 2rem 0;
+          display: block;
+        }
+      }
+
     }
 
     a {
-      transition: 0.3s ease-in all;
-      text-decoration: none;
-      background-image: linear-gradient(120deg, $color-primary-opacity-50 0%, $color-primary 100%);
-      background-repeat: no-repeat;
-      background-size: 100% 0.15em;
-      background-position: 0 100%;
+      border-bottom: 0.1rem solid $color-dark-grey;
+      transition: 0.3s ease all;
     }
     a:hover {
-      transition: 0.3s ease-in all;
-      background-size: 100% 88%;
-      color: $color-white !important;
-      padding: 0;
+      padding-bottom: 0.3rem;
+      transition: 0.3s ease all;
     }
   }
 }

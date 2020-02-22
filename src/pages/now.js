@@ -13,18 +13,18 @@ const Now = () => (
       <div>
         <h3 className="space-below">What I'm doing now</h3>
         <p>
+          Enjoying being finally out as non-binary <Emoji symbol=" 🏳️‍🌈 ⚧ " label="" />
+        </p>
+        <p>
+          Focusing my creative time on <Emoji symbol=" 🖋 " label="" /> writing
+        </p>
+        <p>
           Beginning to trust my body again by practicing intuitive eating.{' '}
           <Emoji symbol=" 🤔 🍽" label="" />
         </p>
         <p>
-          Learning about accessibility <Emoji symbol=" 🔍" label="" />{' '}
+          Learning about data structures and algorithms <Emoji symbol=" 🔍" label="" />{' '}
           <Emoji symbol="💻" label="" />
-        </p>
-        <p>
-          Reading the sci-fi series Dune <Emoji symbol=" 📖 🤓 📚" label="" />
-        </p>
-        <p>
-          Focusing my creative time on <Emoji symbol=" 🖋 " label="" /> writing
         </p>
         <p>
           Grateful to be a part of the team behind:{' '}
@@ -32,7 +32,7 @@ const Now = () => (
             In Good Company
           </Link>
         </p>
-        <p className="space-above">Updated on: January 05, 2020</p>
+        <p className="space-above">Updated on: February 19, 2020</p>
 
         <p className="space-above-m">
           (thanks to{' '}
