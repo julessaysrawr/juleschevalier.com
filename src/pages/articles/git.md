@@ -5,6 +5,8 @@ title: 'Git Favorites'
 topic: 'Technology'
 ---
 
+Here are a few helpful tricks that I enjoy while using git.  You can read more about the [basics](https://rogerdudler.github.io/git-guide/) if you haven't used git before.
+
 ## What changes have I added?
 You probably know about `git diff` which lets you look at unstanged changes, but did you know that you can look at your staged changes as well?  🙌 Game changer!
 ```
@@ -24,7 +26,12 @@ git diff --staged
 git branch -d feature other-feature bug-fix moar-fixes
 ```
 
-## How I rebase
+## Rebase over merge
+
+*Be careful with this* - it will overwrite history.  I only use this on a branch where I am the only one adding commits.
+
     git pull origin master --rebase  
 
-    git push -f origin feature-branch # this will overwrite history - be careful
+    git push -f origin feature-branch
+
+If you want to read more about rebasing and reasons to use it over merge, this is a great [explanation](https://dev.to/maxwell_dev/the-git-rebase-introduction-i-wish-id-had).

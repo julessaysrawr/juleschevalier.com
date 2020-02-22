@@ -45,7 +45,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const topics = result.data.topicGroup.group
     topics.forEach(topic => {
       createPage({
-        path: `/articles/${_.kebabCase(topic.fieldValue)}/`,
+        path: `/topics/${_.kebabCase(topic.fieldValue)}/`,
         component: topicTemplate,
         context: {
           topic: topic.fieldValue

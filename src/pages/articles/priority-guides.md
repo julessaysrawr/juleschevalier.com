@@ -5,9 +5,9 @@ title: 'Priority Guides: A Content First Approach'
 topic: 'Design'
 ---
 
-If you have ever found yourself in the situation of needing to design a website or an app from scratch, you know it can be a daunting task. What pages do you need? What problems does this site offer solutions for? What content needs to be created? There is a lot to figure out to be able to empathize with and give the most value to your user.
+If you have ever found yourself in the situation of needing to design a website or an app from scratch, you know it can be a daunting task. What pages do you need? What problems does this site offer solutions for? What content needs to be created? There is a lot to figure out to be able to empathize with and give the most value to your users.
 
-When starting a new design project, there is a lot of research and ideation that has to happen before you can begin to refine and down select those ideas. Depending on the size of the project, it is common to have the first deliverable be a wireframe. The challenge there is that focuses on the structural layout and is not good if you don't know what your content is. Even if you have a copywriter on your team, it can involve a chicken or the egg situation just to get started.
+When starting a new design project, there is a lot of research and ideation that has to happen before you can begin to refine and down select those ideas. Depending on the size of the project, it is common to have the first deliverable be a wireframe. The challenge there is that focusing on the structural layout and is not good if you don't know what your content is. Even if you have a copywriter on your team, it can involve a chicken or the egg situation just to get started.
 
 Enter priority guides. [Drew Clemmins introduced this concept](https://www.smashingmagazine.com/2012/05/design-process-responsive-age/) as a solution to challenges of responsive design. Even though today, it is mostly assumed that responsive design is the default, the concept of priority guides seem more relevant than ever.
 

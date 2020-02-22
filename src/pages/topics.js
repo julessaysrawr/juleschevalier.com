@@ -39,12 +39,22 @@ const TopicssPage = ({
                 hrefLocal={`/articles/${kebabCase(topic.fieldValue)}/`}
                 title={topic.fieldValue}
               /> */}
-              <Link hrefLocal={`/articles/${kebabCase(topic.fieldValue)}/`}>
+              <Link hrefLocal={`/topics/${kebabCase(topic.fieldValue)}/`}>
                 {topic.fieldValue} ({topic.totalCount})
               </Link>
             </li>
           ))}
         </ul>
+
+        <div
+          css={css`
+            margin-top: ${theme.space[6]}px;
+          `}
+        >
+          <Link type={'basic'} hrefLocal={'/articles'}>
+            All Articles
+          </Link>
+        </div>
       </main>
     </LayoutMain>
   )
@@ -54,7 +64,7 @@ export default TopicssPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(limit: 2000) {
+    allMarkdownRemark(limit: 2000, sort: { fields: frontmatter___topic, order: ASC }) {
       group(field: frontmatter___topic) {
         fieldValue
         totalCount
