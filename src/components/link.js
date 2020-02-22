@@ -18,6 +18,7 @@ const navigation = css`
   transition: border 0.3s ease-in;
   text-decoration: none;
   &:hover {
+    border-bottom: 0.1rem solid ${theme.color.greyDark};
     padding-bottom: 3px;
     transition: border 0.3s ease-in;
   }
