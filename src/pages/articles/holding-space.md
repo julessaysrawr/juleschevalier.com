@@ -7,11 +7,9 @@ topic: 'Emotional Wellbeing'
 
 ## What Is Holding Space
 
-Holding space is a non-judgemental place for someone to express their emotions and needs into.  It is a place where a person can fall apart without fear or shame.  It is a place for someone to process their emotions and talk things out.
+Holding space is a non-judgmental place for someone to express their emotions and needs into.  It is a place where a person can fall apart without fear or shame.  It is a place for someone to process their emotions and talk things out.
 
 > "Let them (or you) feel what they're feeling and experience it.  Don't judge or try to change it, just let it be.  Be a kind human who listens and seeks understanding." [@sitwithwhit - Whitney Goodman, a Psychotherapist on Instagram](https://www.instagram.com/p/B7EgFsIg8OB/)
-
-<!-- ![Whitney Goodman, a Psychotherapist on Instagram says "Let them (or you) feel what they're feeling and experience it.  Don't judge or try to change it, just let it be.  Be a kind human who listens and seeks understanding."](./sitwithwhit.jpg) -->
 
 
 ## How To Hold Space
@@ -19,7 +17,7 @@ Holding space is a non-judgemental place for someone to express their emotions a
 - Let the other person have whatever experience they are having.  Let them express and feel their feelings.
 - Be fully present.  
 - Open your heart; listen to understand.  Softness is encouraged.
-- Let go of judgement and have unconditional positive regard for the other person.
+- Let go of judgment and have unconditional positive regard for the other person.
 - Do not try to [fix them](/articles/what-to-do-instead-of-fixing) or their situation.
 - Create a safe place for complex emotions, fear, trauma, etc.
 - Trust the other person's intuition and wisdom.
