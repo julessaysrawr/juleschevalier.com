@@ -15,7 +15,7 @@
     &-content {
       padding-top: 3.5rem;
 
-      h2, h3 {
+      h2, h3, h4 {
         margin: 4rem 0 2rem;
       }
 
@@ -30,6 +30,10 @@
 
       ul {
         list-style-type: circle;
+        margin-bottom: 2rem;
+      }
+
+      ol {
         margin-bottom: 2rem;
       }
 
@@ -78,6 +82,10 @@
     a:hover {
       padding-bottom: 0.3rem;
       transition: 0.3s ease all;
+    }
+
+    .gatsby-resp-image-link {
+      border-bottom: none;
     }
   }
 }
