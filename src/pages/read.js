@@ -54,6 +54,11 @@ const Read = () => (
             Cal Newport
           </Link>
         </li>
+        <li>
+          <Link type={'basic'} href="https://www.swyx.io">
+            swyx
+          </Link>
+        </li>
       </ul>
       <h2 className="space-above-m">Style</h2>
       <ul>
