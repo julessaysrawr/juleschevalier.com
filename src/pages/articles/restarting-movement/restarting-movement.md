@@ -24,6 +24,8 @@ Solo or with a partner.  If you’ve been stressed, set that aside and let yours
 #### Set low, low, low expectations
 It’s about starting small and setting yourself up for success.  It doesn’t matter how many pushups you were doing before.  Let go of the expectation that you will pick back up from where you left off.  Set a goal so low it’s almost laughable.  For example: if you have been doing 50 reps of an exercise before, set a goal to do 5.  Even simpler, you can use the [two minute rule](https://jamesclear.com/how-to-stop-procrastinating) to get started.  The idea is to set your goal so small that it is easily achievable and that there is not a mental barrier to get started.  If you are able to succeed with the starter goal: great.  If you feel like you can do more: amazing.  Listen to your body and love yourself along the way.  You deserve to be loved and accepted.  Especially by you.
 
+> Doing anything is better than doing nothing at all
+
 #### It’s about progress, not perfection
 It’s about putting in time and effort, not meeting a target.  Sure, more reps or more weight is nice, but those will come naturally as you are getting back into your movement routine.  Doing anything is better than doing nothing at all, so focus on doing something.  It is better to do something simple and enjoy it that doing an intensive or exhausting activity.  Once you get a small step forward, it is that much easier to do it again, and you can very quickly feel the momentum build.
 
