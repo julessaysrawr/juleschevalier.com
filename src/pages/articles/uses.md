@@ -37,13 +37,14 @@ AirPods Pro
 - Editor: VSCode
 - Terminal: iTerm
 - Shell: zsh with [oh my zsh](https://ohmyz.sh)
-- Browser: Firefox
+- Browser: Firefox for development
 - ToDo: TickTick
 - Notes: Notion
 - Passwords: 1Password
 - Writing: Bear
 - Design: Sketch
 - MacOS Window Management: [SizeUp](http://www.irradiatedsoftware.com/sizeup/)
+- Money: You Need A Budget [YNAB](https://www.youneedabudget.com/)
 
 
 
@@ -56,3 +57,12 @@ Just got the [Peak Design Travel Tripod](https://www.peakdesign.com/products/tra
 
 ### Camera Bag
 [Peak Design Everyday Backpack](https://www.peakdesign.com/products/everyday-backpack?variant=29743300837420).  20L
+
+
+<br />
+<br />
+
+## Explore other uses pages
+- [Kent C. Dodds](https://kentcdodds.com/uses/) 
+- [Wes Bos](https://www.wesbos.com/uses)
+- [awesome-uses](https://github.com/wesbos/awesome-uses)
