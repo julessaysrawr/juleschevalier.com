@@ -30,8 +30,10 @@ git branch -d feature other-feature bug-fix moar-fixes
 
 *Be careful with this* - it will overwrite history.  I only use this on a branch where I am the only one adding commits.
 
-    git pull origin master --rebase  
+    git pull origin main --rebase  
 
     git push -f origin feature-branch
+
+*2020 update: I now use main for the default branch.  You can do that yourself by following [these three steps](/articles/renaming-master-branch)*.
 
 If you want to read more about rebasing and reasons to use it over merge, this is a great [explanation](https://dev.to/maxwell_dev/the-git-rebase-introduction-i-wish-id-had).
