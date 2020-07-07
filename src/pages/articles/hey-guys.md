@@ -2,7 +2,7 @@
 path: '/articles/inclusive-ways-to-say-hey-guys'
 date: '2020-07-06'
 title: 'Inclusive Ways To Say "Hey Guys"'
-topic: 'Intentional Living'
+topic: 'Inclusion'
 ---
 
 The greeting "Hey Guys" assumes male is the default gender.  It says to women, trans and non-binary people that they are second and not important enough to be included in a greeting.  It perpetuates the patriarchy and is also transphobic.  Imagine saying “Hey Guys” to a group that included a trans woman; that would be a micro-aggression.  This begs the question, why does gender need to be a part of a greeting in the first place?
