@@ -17,6 +17,24 @@ const LayoutMain = props => {
             box-sizing: border-box;
           }
 
+          @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Serif&display=swap');
+
+          h1,
+          h2,
+          h3 {
+            font-family: 'IBM Plex Serif', serif;
+          }
+
+          p,
+          a {
+            font-family: 'IBM Plex Sans', sans-serif;
+          }
+
+          code {
+            font-family: 'IBM Plex Mono', monospace;
+
+          }
+
           html,
           body {
             // This defines what 1rem is
