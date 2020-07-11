@@ -3,6 +3,7 @@ const color = {
   white: '#FFFFFF',
   black: '#000000',
   rawUmber: '#94703E',
+  rawUmberLight: '#A98B58',
   primary: '#315937',
   primaryMedium: '#69866D',
   primaryLight: '#A1B3A4',
@@ -43,6 +44,18 @@ const buttonPadding = {
 }
 
 const space = [0, 4, 8, 16, 24, 32, 64, 128, 256]
+/*
+[0] = 0
+[1] = 4
+[2] = 8   // use this for multiples
+[3] = 16
+[4] = 24
+[5] = 32
+[6] = 64
+[7] = 128
+[8] = 256
+calc(${theme.space[2]}px*17) = 136
+*/
 
 const fontFamily = {
   raleway: `'Raleway', Helvetica, Arial, sans-serif`,

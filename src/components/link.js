@@ -31,21 +31,52 @@ const button = css`
   border-radius: ${theme.borderRadius.rounded};
 `
 
+const buttonFixedWidth = css`
+  background-color: ${theme.color.black};
+  text-align: center;
+  padding: 15px 0;
+  color: ${theme.color.white};
+  font-weight: 500;
+  text-decoration: none;
+  width: 214px;
+  height: 58px;
+  transition: 0.3s ease all;
+  &:hover {
+    background-color: ${theme.color.rawUmberLight};
+    transition: 0.3s ease all;
+  }
+`
+const buttonFixedWidthPrimary = css`
+  ${buttonFixedWidth}
+  background-color: ${theme.color.rawUmber};
+`
+
+const inlineWithCaret = css`
+  background-color: ${theme.color.transparent};
+  color: ${theme.color.rawUmber};
+  font-weight: 500;
+  transition: 0.3s ease all;
+  &:hover {
+    color: ${theme.color.rawUmberLight};
+    transition: 0.3s ease all;
+  }
+`
+
 const list = css`
   text-decoration: none;
 `
 
 /**
  * @param {object} props
- * @param { `basic` | `button` | `navigation` }  props.type - The type of link []
- * @param {`primary` | `invert` | `ghost` | `white`} props.color - Button color
+ * @param { `basic` | `button` | `navigation` }  props.type - The type of link []  //TODO: Update this list
+ * @param {`primary` | `invert` | `ghost` | `white`} props.color - Button color  //TODO: Update this list
  * @param {string} props.href - External site to redirect to
  * @param {string} props.hrefLocal - Page within site to redirect to
  * @param {string} props.description - Detail description of where link takes you
  */
 
 const CustomLink = props => {
-  // BASIC LINK
+  // BASIC LINK  //TODO - does regular inline become the default?
   if (props.type === 'basic') {
     if (props.hrefLocal) {
       return (
@@ -75,7 +106,7 @@ const CustomLink = props => {
     )
   }
 
-  // NAVIGATION
+  // NAVIGATION - TODO not sure if this is still used?
 
   if (props.type === 'navigation') {
     return (
@@ -97,6 +128,49 @@ const CustomLink = props => {
       <GatsbyLink
         to={props.hrefLocal}
         css={button}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  if (props.type === 'buttonFixedWidth') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={buttonFixedWidth}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  if (props.type === 'buttonFixedWidthPrimary') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={buttonFixedWidthPrimary}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  // Inline
+  if (props.type === 'inlineWithCaret') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={inlineWithCaret}
         aria-label={props.description}
         tabIndex="0"
         onClick={props.onClick}

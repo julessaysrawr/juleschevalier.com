@@ -9,6 +9,18 @@ import IconGithub from './social-links/github'
 import IconLinkedIn from './social-links/linkedin'
 
 const Nav = () => {
+  const pageLink = css`
+    text-decoration: none;
+    // margin: ${theme.space[2]}px ${theme.space[4]}px 0;
+    margin: 0 ${theme.space[4]}px;
+    padding-top: calc(${theme.space[2]}px*1.5);
+
+    // line-height: 2;
+    &:hover {
+      text-decoration: underline;
+    }
+  `
+
   return (
     <div
       css={css`
@@ -43,50 +55,14 @@ const Nav = () => {
           display: flex;
         `}
       >
-        <Link
-          to="/articles"
-          css={css`
-            text-decoration: none;
-          `}
-        >
-          <p
-            css={css`
-              margin: ${theme.space[2]}px ${theme.space[4]}px 0;
-              text-decoration: none;
-            `}
-          >
-            Writing
-          </p>
+        <Link to="/articles" css={pageLink}>
+          Writing
         </Link>
-        <Link
-          to="/photography"
-          css={css`
-            text-decoration: none;
-          `}
-        >
-          <p
-            css={css`
-              margin: ${theme.space[2]}px ${theme.space[4]}px 0;
-              text-decoration: none;
-            `}
-          >
-            Photography
-          </p>
+        <Link to="/photography" css={pageLink}>
+          Photography
         </Link>
-        <Link
-          to="/about"
-          css={css`
-            text-decoration: none;
-          `}
-        >
-          <p
-            css={css`
-              margin: ${theme.space[2]}px ${theme.space[4]}px 0;
-              text-decoration: none;
-            `}
-          >
-            About
-          </p>
+        <Link to="/about" css={pageLink}>
+          About
         </Link>
       </nav>
       <div
