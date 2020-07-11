@@ -1,13 +1,14 @@
 // COLORS
 const color = {
+  white: '#FFFFFF',
+  black: '#000000',
+  rawUmber: '#94703E',
   primary: '#315937',
   primaryMedium: '#69866D',
   primaryLight: '#A1B3A4',
   greyLight: '#E9E9E8',
   greyMedium: '#9A9B94',
   greyDark: '#52524E',
-  white: '#FAFAFA',
-  black: '#151514',
   errorRed: '#8E2800',
   errorRedLight: '#CDA198',
   transparent: 'transparent',
