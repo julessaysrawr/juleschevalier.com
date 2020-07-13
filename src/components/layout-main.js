@@ -21,15 +21,44 @@ const LayoutMain = props => {
 
           h1,
           h2,
-          h3 {
-            font-family: 'IBM Plex Serif', serif;
+          h3,
+          h4 {
+            font-family: 'IBM Plex Serif', serif; //TODO confirm font-family for h4 - different from design
             color: ${theme.color.black};
           }
 
+          h1 {
+            font-size: 42px; // TODO move this to theme.js
+            // line-height: 1.2px;
+            font-weight: 400;
+          }
+
+          h2 {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.2px;
+          }
+
+          h3 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.25;
+          }
+
+          h4 {
+            font-size: 20px; // TODO confirm - this is a change from design (18px)
+            font-weight: 400;
+            line-height: 1.6;
+          }
+
           p,
-          a {
+          a,
+          li {
             font-family: 'IBM Plex Sans', sans-serif;
             color: ${theme.color.black};
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.6;
           }
 
           code {
@@ -39,37 +68,43 @@ const LayoutMain = props => {
 
           html,
           body {
-            // This defines what 1rem is
-            font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+            // // This defines what 1rem is
+            // font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 
-            @include respond(md) {
-              // width < 1200?
-              font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
-            }
+            // @include respond(md) {
+            //   // width < 1200?
+            //   font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+            // }
 
-            @include respond(sm) {
-              // width < 900?
-              font-size: 50%; //1 rem = 8px, 8/16 = 50%
-            }
+            // @include respond(sm) {
+            //   // width < 900?
+            //   font-size: 50%; //1 rem = 8px, 8/16 = 50%
+            // }
 
-            @include respond(xs) {
-              font-size: 43.75%; //1 rem = 7px, 7/16 = 43.75%
-            }
+            // @include respond(xs) {
+            //   font-size: 43.75%; //1 rem = 7px, 7/16 = 43.75%
+            // }
 
-            @include respond(xl) {
-              font-size: 75%; //1rem = 12, 12/16
-            }
+            // @include respond(xl) {
+            //   font-size: 75%; //1rem = 12, 12/16
+            // }
             -webkit-font-smoothing: antialiased;
             -moz-font-smoothing: antialiased;
             background-color: ${theme.color.white};
           }
 
           ul {
-            list-style-type: none;
+            //https://css-tricks.com/almanac/properties/l/list-style/
+            list-style-type: disc;
+            list-style-position: inside;
+          }
+
+          li {
+            margin-bottom: ${theme.space[3]}px;
           }
 
           p {
-            line-height: 1.75;
+            line-height: 1.6;
             margin-bottom: ${theme.space[4]}px;
           }
         `}

@@ -14,6 +14,7 @@ const Nav = () => {
     // margin: ${theme.space[2]}px ${theme.space[4]}px 0;
     margin: 0 ${theme.space[4]}px;
     padding-top: calc(${theme.space[2]}px*1.5);
+    font-weight: 400;
 
     // line-height: 2;
     &:hover {

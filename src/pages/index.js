@@ -79,7 +79,7 @@ class Index extends Component {
                   `}
                 >
                   <Link
-                    type="inlineWithCaret"
+                    type="inline"
                     hrefLocal="/now"
                     description="What I'm Doing Now"
                     css={css`

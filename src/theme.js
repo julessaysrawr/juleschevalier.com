@@ -57,6 +57,11 @@ const space = [0, 4, 8, 16, 24, 32, 64, 128, 256]
 calc(${theme.space[2]}px*17) = 136
 */
 
+const contentWidths = {
+  copyWidth: 646,
+  pageWidth: 1083
+}
+
 const fontFamily = {
   raleway: `'Raleway', Helvetica, Arial, sans-serif`,
   montserrat: `'Montserrat', Helvetica, Arial, sans-serif`
@@ -69,5 +74,6 @@ export default {
   textSizes,
   buttonPadding,
   space,
+  contentWidths,
   fontFamily
 }
