@@ -4,7 +4,7 @@ import { css } from '@emotion/core'
 import theme from '../theme'
 
 const basic = css`
-  border-bottom: 1px solid ${theme.color.greyDark};
+  // border-bottom: 1px solid ${theme.color.greyDark};
   transition: 0.3s ease all;
   &:hover,
   &:focus {
@@ -13,6 +13,7 @@ const basic = css`
   }
 `
 
+// TODO  - can be removed once topic template is refactored
 const navigation = css`
   border-bottom: 0.1rem solid ${theme.color.transparent};
   transition: border 0.3s ease-in;
@@ -51,7 +52,19 @@ const buttonFixedWidthPrimary = css`
   background-color: ${theme.color.rawUmber};
 `
 
-const inlineWithCaret = css`
+const buttonVariableWidth = css`
+  ${buttonFixedWidth}
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+`
+
+const buttonVariableWidthPrimary = css`
+  ${buttonVariableWidth}
+  background-color: ${theme.color.rawUmber};
+`
+
+const inline = css`
   background-color: ${theme.color.transparent};
   color: ${theme.color.rawUmber};
   font-weight: 500;
@@ -165,12 +178,40 @@ const CustomLink = props => {
     )
   }
 
-  // Inline
-  if (props.type === 'inlineWithCaret') {
+  if (props.type === 'buttonVariableWidth') {
     return (
       <GatsbyLink
         to={props.hrefLocal}
-        css={inlineWithCaret}
+        css={buttonVariableWidth}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  if (props.type === 'buttonVariableWidthPrimary') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={buttonVariableWidthPrimary}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  // Inline
+  if (props.type === 'inline') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={inline}
         aria-label={props.description}
         tabIndex="0"
         onClick={props.onClick}
