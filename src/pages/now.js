@@ -7,6 +7,7 @@ import Emoji from '../components/emoji'
 import Link from '../components/link'
 import GetInTouch from '../components/get-in-touch'
 import nowImage from '../images/Jules-and-Grievy.png'
+import PageContent from '../components/page-content'
 
 const Now = () => (
   <LayoutMain
@@ -16,16 +17,16 @@ const Now = () => (
     <main>
       <div
         css={css`
+        // TODO put this in theme?
           background-image: url(${paper});
           background-repeat: repeat;
           // padding-top: ${theme.space[7]}px;
           padding-top: 214px;
           border-bottom: 2px solid rgba(136, 128, 113, 0.25);
           height: 860px;
-          // height: 214px;
         `}
-      ></div>
-      <div
+      >
+        {/* <div
         css={css`
           background-color: ${theme.color.white};
           max-width: 1083px;
@@ -34,83 +35,85 @@ const Now = () => (
           border: 2px solid rgba(136, 128, 113, 0.25);
           padding: 88px 109px;
         `}
-      >
-        <img
-          src={nowImage}
-          alt=""
-          css={css`
-            width: 865px;
-            height: 468px;
-            margin: 0 auto;
-            border: 2px solid rgba(136, 128, 113, 0.25);
-            object-fit: cover;
-            margin-bottom: 80px;
-          `}
-        />
-        <div
-          css={css`
-            max-width: ${theme.contentWidths.copyWidth}px;
-            margin: 0 auto;
-          `}
-        >
+      > */}
+        <PageContent>
+          <img
+            src={nowImage}
+            alt=""
+            css={css`
+              width: 865px;
+              height: 468px;
+              margin: 0 auto;
+              border: 2px solid rgba(136, 128, 113, 0.25);
+              object-fit: cover;
+              margin-bottom: 80px;
+            `}
+          />
           <div
             css={css`
-              margin-bottom: 56px;
+              max-width: ${theme.contentWidths.copyWidth}px;
+              margin: 0 auto;
             `}
           >
-            <h1
+            <div
               css={css`
-                margin-bottom: ${theme.space[4]}px;
+                margin-bottom: 56px;
               `}
             >
-              What I&apos;m doing now
-            </h1>
-            <p
-              css={css`
-                font-weight: 400;
-              `}
-            >
-              Updated on: July 12th, 2020
-            </p>
+              <h1
+                css={css`
+                  margin-bottom: ${theme.space[4]}px;
+                `}
+              >
+                What I&apos;m doing now
+              </h1>
+              <p
+                css={css`
+                  font-weight: 400;
+                `}
+              >
+                Updated on: July 12th, 2020
+              </p>
 
-            <ul>
-              <li>
-                Refreshing this site thanks to the design effort of this{' '}
-                <Link type="inline" href="dchevalier.io">
-                  talented human
-                </Link>
-                .
-              </li>
-              <li>
-                Grateful for purchasing an exercise bike recently. Doing cardio is what is giving me
-                the motivation to strength train (my favorite type of movement that brings me joy).
-              </li>
-              <li>
-                Black Lives Matter: Learning how to practice allyship. Figuring out what my
-                anti-racism lane looks like.
-              </li>
-              <li>
-                Bringing in rituals as opportunities for intention setting. New & full moon
-                ceremonies for now.
-              </li>
-            </ul>
-          </div>
+              <ul>
+                <li>
+                  Refreshing this site thanks to the design effort of this{' '}
+                  <Link type="inline" href="dchevalier.io">
+                    talented human
+                  </Link>
+                  .
+                </li>
+                <li>
+                  Grateful for purchasing an exercise bike recently. Doing cardio is what is giving
+                  me the motivation to strength train (my favorite type of movement that brings me
+                  joy).
+                </li>
+                <li>
+                  Black Lives Matter: Learning how to practice allyship. Figuring out what my
+                  anti-racism lane looks like.
+                </li>
+                <li>
+                  Bringing in rituals as opportunities for intention setting. New & full moon
+                  ceremonies for now.
+                </li>
+              </ul>
+            </div>
 
-          {/* <p>
+            {/* <p>
           Grateful to be a part of the team behind:{' '}
           <Link type={'basic'} href="https://be-ingoodcompany.com/">
             In Good Company
           </Link>
         </p> */}
-          <Link
-            type="inline"
-            hrefLocal="/about"
-            description="Learn more about me by going to the about page"
-          >
-            Learn More About Me &gt;
-          </Link>
+            <Link
+              type="inline"
+              hrefLocal="/about"
+              description="Learn more about me by going to the about page"
+            >
+              Learn More About Me &gt;
+            </Link>
 
-          {/* <p>
+            {/* <p>
             Thanks to{' '}
             <Link type={'basic'} href="https://sivers.org/">
               Derek Sivers
@@ -120,9 +123,10 @@ const Now = () => (
               now page idea
             </Link>
           </p> */}
-        </div>
+          </div>
+        </PageContent>
+        <GetInTouch />
       </div>
-      <GetInTouch />
     </main>
   </LayoutMain>
 )
