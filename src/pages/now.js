@@ -78,7 +78,7 @@ const Now = () => (
               <ul>
                 <li>
                   Refreshing this site thanks to the design effort of this{' '}
-                  <Link type="inline" href="dchevalier.io">
+                  <Link type="inline" href="https://dchevalier.io">
                     talented human
                   </Link>
                   .

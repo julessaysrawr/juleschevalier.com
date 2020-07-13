@@ -208,16 +208,31 @@ const CustomLink = props => {
 
   // Inline
   if (props.type === 'inline') {
+    if (props.hrefLocal) {
+      return (
+        <GatsbyLink
+          to={props.hrefLocal}
+          css={inline}
+          aria-label={props.description}
+          tabIndex="0"
+          onClick={props.onClick}
+        >
+          {props.children}
+        </GatsbyLink>
+      )
+    }
     return (
-      <GatsbyLink
-        to={props.hrefLocal}
+      <a
+        href={props.href}
+        target={'_blank'}
+        rel="noopener noreferrer"
         css={inline}
         aria-label={props.description}
         tabIndex="0"
         onClick={props.onClick}
       >
         {props.children}
-      </GatsbyLink>
+      </a>
     )
   }
 
