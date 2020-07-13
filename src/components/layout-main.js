@@ -36,7 +36,7 @@ const LayoutMain = props => {
           h2 {
             font-size: 32px;
             font-weight: 400;
-            line-height: 1.2px;
+            // line-height: 1.2px;
           }
 
           h3 {

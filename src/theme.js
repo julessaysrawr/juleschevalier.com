@@ -62,6 +62,11 @@ const contentWidths = {
   pageWidth: 1083
 }
 
+const characterCodes = {
+  apostrophe: '&apos;',
+  caret: '&gt;'
+}
+
 const fontFamily = {
   raleway: `'Raleway', Helvetica, Arial, sans-serif`,
   montserrat: `'Montserrat', Helvetica, Arial, sans-serif`
@@ -75,5 +80,6 @@ export default {
   buttonPadding,
   space,
   contentWidths,
+  characterCodes,
   fontFamily
 }
