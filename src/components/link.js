@@ -25,13 +25,6 @@ const navigation = css`
   }
 `
 
-const button = css`
-  padding: ${theme.buttonPadding.tag};
-  background-color: ${theme.color.primary};
-  color: ${theme.color.white} !important;
-  border-radius: ${theme.borderRadius.rounded};
-`
-
 const buttonFixedWidth = css`
   background-color: ${theme.color.black};
   text-align: center;
@@ -138,21 +131,7 @@ const CustomLink = props => {
     )
   }
 
-  // BUTTON
-  if (props.type === 'button') {
-    return (
-      <GatsbyLink
-        to={props.hrefLocal}
-        css={button}
-        aria-label={props.description}
-        tabIndex="0"
-        onClick={props.onClick}
-      >
-        {props.children}
-      </GatsbyLink>
-    )
-  }
-
+  // BUTTONS
   if (props.type === 'buttonFixedWidth') {
     return (
       <GatsbyLink
