@@ -65,12 +65,15 @@ const buttonVariableWidthPrimary = css`
 `
 
 const inline = css`
+  text-decoration: none;
   background-color: ${theme.color.transparent};
+  border-bottom: 1px solid ${theme.color.rawUmber};
   color: ${theme.color.rawUmber};
   font-weight: 500;
   transition: 0.3s ease all;
   &:hover {
     color: ${theme.color.rawUmberLight};
+    border-bottom: 1px solid ${theme.color.rawUmberLight};
     transition: 0.3s ease all;
   }
 `
