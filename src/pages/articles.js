@@ -8,6 +8,7 @@ import LayoutMain from '../components/layout-main'
 import GetInTouch from '../components/get-in-touch'
 import TopicsNav from '../components/topics-nav'
 import ArticleCard from '../components/article-card'
+import Masonry from 'react-masonry-component'
 
 const BlogPage = ({
   data: {
@@ -26,6 +27,7 @@ const BlogPage = ({
       to={edge.node.frontmatter.path}
     />
   ))
+
   return (
     <LayoutMain
       title={'All Articles | Jules Chevalier'}
@@ -52,19 +54,34 @@ const BlogPage = ({
           <TopicsNav />
           <div
             css={css`
-              max-width: 864px;
+              width: 880px;
               margin: 0 auto 150px;
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
+              // display: flex;
+              // flex-wrap: wrap;
+              // justify-content: space-between;
             `}
           >
-            {/* <ArticleCard
-              title="This is A Temporary Title For Some Testing"
-              topic="This Is A Topic"
-            /> */}
-            {Articles}
-            {/* {Posts} */}
+            <Masonry
+              css={css`
+                // background-color: 'tomato';
+                width: 880px;
+                // width: 864px;
+                // width: ${theme.contentWidths.contentWidth}px;
+                // max-width: ${theme.contentWidths.contentWidth}px;
+                // display: flex;
+                // justify-content: space-between;
+                margin-left: -8px;  // to center the div, based on added margin to the cards
+              `}
+              // gutter={'50px'}
+              // className={'my-gallery-class'} // default ''
+              // elementType={'ul'} // default 'div'
+              // options={masonryOptions} // default {}
+              // disableImagesLoaded={false} // default false
+              // updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+              // imagesLoadedOptions={imagesLoadedOptions} // default {}
+            >
+              {Articles}
+            </Masonry>
           </div>
         </div>
         <GetInTouch />

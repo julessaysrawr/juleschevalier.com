@@ -28,6 +28,7 @@ const ArticleCard = props => {
           height: auto;
           border: 2px solid rgba(136, 128, 113, 0.25);
           margin-bottom: 16px;
+          margin-right: 16px;
           transition: 0.3s;
           &:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

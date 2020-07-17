@@ -49,6 +49,8 @@ calc(${theme.space[2]}px*17) = 136
 
 const contentWidths = {
   copyWidth: 646,
+  contentWidth: 864,
+  contentMasonryWidth: 880,
   pageWidth: 1083
 }
 
