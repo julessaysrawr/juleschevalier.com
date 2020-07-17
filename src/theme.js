@@ -19,23 +19,13 @@ const color = {
   primaryLightOpacity75: 'rgba(161, 179, 164, 0.75)'
 }
 
-const borderRadius = {
-  primary: '3px',
-  rounded: '40px',
-  circle: '50%'
-}
-
-// currently 30px, 25px, 20px, and 15px
-const headingSizes = {
-  h1: '48px',
+const textSizes = {
+  h1: '42px',
   h2: '32px',
   h3: '24px',
-  h4: '20px'
-}
-
-const textSizes = {
-  paragraph: '16px',
-  description: '12px'
+  h4: '20px',
+  paragraph: '18px',
+  code: '16px'
 }
 
 const buttonPadding = {
@@ -67,19 +57,11 @@ const characterCodes = {
   caret: '&gt;'
 }
 
-const fontFamily = {
-  raleway: `'Raleway', Helvetica, Arial, sans-serif`,
-  montserrat: `'Montserrat', Helvetica, Arial, sans-serif`
-}
-
 export default {
   color,
-  borderRadius,
-  headingSizes,
   textSizes,
   buttonPadding,
   space,
   contentWidths,
-  characterCodes,
-  fontFamily
+  characterCodes
 }

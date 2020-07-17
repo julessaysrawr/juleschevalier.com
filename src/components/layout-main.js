@@ -28,25 +28,25 @@ const LayoutMain = props => {
           }
 
           h1 {
-            font-size: 42px; // TODO move this to theme.js
+            font-size: ${theme.textSizes.h1};
             // line-height: 1.2px;
             font-weight: 400;
           }
 
           h2 {
-            font-size: 32px;
+            font-size: ${theme.textSizes.h2};
             font-weight: 400;
             // line-height: 1.2px;
           }
 
           h3 {
-            font-size: 24px;
+            font-size: ${theme.textSizes.h3};
             font-weight: 400;
             line-height: 1.25;
           }
 
           h4 {
-            font-size: 20px; // TODO confirm - this is a change from design (18px)
+            font-size: ${theme.textSizes.h4}; // TODO confirm - this is a change from design (18px)
             font-weight: 400;
             line-height: 1.6;
           }
@@ -56,13 +56,14 @@ const LayoutMain = props => {
           li {
             font-family: 'IBM Plex Sans', sans-serif;
             color: ${theme.color.black};
-            font-size: 18px;
+            font-size: ${theme.textSizes.paragraph};
             font-weight: 300;
             line-height: 1.6;
           }
 
           code {
             font-family: 'IBM Plex Mono', monospace;
+            font-size: ${theme.textSizes.code};
             color: ${theme.color.black};
           }
 
@@ -96,7 +97,11 @@ const LayoutMain = props => {
           ul {
             //https://css-tricks.com/almanac/properties/l/list-style/
             list-style-type: disc;
-            list-style-position: inside;
+            padding-left: ${theme.space[3]}px;
+          }
+
+          ol {
+            padding-left: ${theme.space[3]}px;
           }
 
           li {
