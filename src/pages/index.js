@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import { css } from '@emotion/core'
 import theme from '../theme'
 
@@ -11,6 +11,7 @@ import image1 from '../images/homepage/IMG_6336.png'
 import image2 from '../images/homepage/IMG_6182.png'
 import image3 from '../images/homepage/IMG_6463.png'
 import GetInTouch from '../components/get-in-touch'
+import TopicsList from '../components/topics-list'
 
 class Index extends Component {
   render() {
@@ -122,7 +123,8 @@ class Index extends Component {
               ut bibendum diam iaculis. Sed sollicitudin purus nulla. Fusce vel aliquet nisl. Nunc
               mattis dignissim diam id rhoncus.
             </p>
-            <div
+            <TopicsList />
+            {/* <div
               css={css`
                 display: flex;
                 justify-content: space-between;
@@ -132,28 +134,31 @@ class Index extends Component {
                 margin: 0 auto;
               `}
             >
-              <Link type="buttonFixedWidth" hrefLocal="/" description="">
+              <Link type="buttonFixedWidth" hrefLocal="/topics/personal-essays/" description="">
                 Personal Essays
               </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/" description="">
-                Emotinal Wellness
+              <Link type="buttonFixedWidth" hrefLocal="/topics/emotional-wellbeing/" description="">
+                Emotional Wellbeing
               </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/" description="">
+              <Link type="buttonFixedWidth" hrefLocal="/topics/intentional-living/" description="">
                 Intentional Living
               </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/" description="">
+              <Link type="buttonFixedWidth" hrefLocal="/topics/recipes/" description="">
                 Recipes
               </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/" description="">
+              <Link type="buttonFixedWidth" hrefLocal="/topics/design/" description="">
                 Design
               </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/" description="">
+              <Link type="buttonFixedWidth" hrefLocal="/topics/technology/" description="">
                 Technology
               </Link>
-              <Link type="buttonFixedWidthPrimary" hrefLocal="/" description="">
+              <Link type="buttonFixedWidth" hrefLocal="/topics/inclusion/" description="">
+                Inclusion
+              </Link>
+              <Link type="buttonFixedWidthPrimary" hrefLocal="/articles" description="">
                 All Topics
               </Link>
-            </div>
+            </div> */}
           </div>
           <div
             css={css`
