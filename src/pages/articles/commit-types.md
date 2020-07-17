@@ -67,15 +67,15 @@ So when I have my files staged and ready to commit, i just run `ct` or `commit-t
 I have noticed that there are a few commit types I keep wanting to reach for that don't exist.
 
 > **copy** - for text changes that are not content or CMS driven
-
+>
 > **content**: adding or updating articles or blog posts
-
+>
 > **style**: feels like it should be css changes, not linter changes
-
+>
 > **format**: might be good for linter/prettier changes instead of **style**
 
-<br>
-<br>
+<!-- <br>
+<br> -->
 
 So I updated the commit-types dotfile to include:
 ```
