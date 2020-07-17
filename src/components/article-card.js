@@ -4,27 +4,34 @@ import { Link } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../theme'
 
+/** Renders an article card component with link to the article page
+ * @param {object} props
+ * @param {string} props.to - local url
+ * @param {string} props.title - title of article
+ * @param {string} props.topic - article topic grouping
+ */
+
 const ArticleCard = props => {
   return (
-    <div
+    <Link
+      to={props.to}
       css={css`
-        // flex: auto;
-        background-color: ${theme.color.white};
-        width: 424px;
-        // height: 182px;
-        height: auto;
-        border: 2px solid rgba(136, 128, 113, 0.25);
-        margin-bottom: 16px;
-        transition: 0.3s;
-        &:hover {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
+        text-decoration: none;
       `}
     >
-      <Link
-        to="/"
+      <div
         css={css`
-          text-decoration: none;
+          // flex: auto;
+          background-color: ${theme.color.white};
+          width: 424px;
+          // height: 182px;
+          height: auto;
+          border: 2px solid rgba(136, 128, 113, 0.25);
+          margin-bottom: 16px;
+          transition: 0.3s;
+          &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          }
         `}
       >
         <h3
@@ -37,19 +44,19 @@ const ArticleCard = props => {
           {props.title}
           {/*   TODO: Add link to title */}
         </h3>
-      </Link>
 
-      <p
-        css={css`
-          text-align: center;
-          color: ${theme.color.rawUmber};
-          margin-bottom: 24px;
-        `}
-      >
-        {props.topic}
-        {/*   TODO: Add link to topic */}
-      </p>
-    </div>
+        <p
+          css={css`
+            text-align: center;
+            color: ${theme.color.rawUmber};
+            margin-bottom: 24px;
+          `}
+        >
+          {props.topic}
+          {/*   TODO: Add link to topic */}
+        </p>
+      </div>
+    </Link>
   )
 }
 
