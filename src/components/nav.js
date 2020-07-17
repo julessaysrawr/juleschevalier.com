@@ -42,7 +42,7 @@ const Nav = () => {
           <p
             css={css`
               font-family: 'IBM Plex Serif';
-              font-size: 28px; // TODO: add font size to theme
+              font-size: 28px;
               font-weight: 700;
               margin-bottom: 0;
             `}

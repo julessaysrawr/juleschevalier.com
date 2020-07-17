@@ -1,7 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import '../styles/main.scss'
+import { css } from '@emotion/core'
+import theme from '../theme'
+import paper from '../images/lightpaperfibers_@2x.png'
 import LayoutMain from '../components/layout-main'
+import PageContent from '../components/page-content'
+import GetInTouch from '../components/get-in-touch'
 
 export default function articleTemplate({
   data // this prop will be injected by the GraphQL query below.
@@ -10,12 +14,135 @@ export default function articleTemplate({
   const { frontmatter, html } = markdownRemark
   return (
     <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`}>
-      <main className="flex-container">
-        <article className="blog-post">
-          <h1 className="blog-title">{frontmatter.title}</h1>
-          <p className="blog-date">{frontmatter.date}</p>
-          <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
-        </article>
+      <main>
+        <div
+          css={css`
+        // TODO put this in theme?
+          background-image: url(${paper});
+          background-repeat: repeat;
+          // padding-top: ${theme.space[7]}px;
+          padding-top: 214px;
+          border-bottom: 2px solid rgba(136, 128, 113, 0.25);
+          height: 860px;
+        `}
+        >
+          <PageContent>
+            <div
+              css={css`
+                width: 865px;
+                height: 488px;
+                background-color: ${theme.color.rawUmber};
+                margin: 0 auto 80px;
+              `}
+            />
+
+            <article
+              css={css`
+                max-width: ${theme.contentWidths.copyWidth}px;
+                margin: 0 auto;
+
+                h1,
+                h2,
+                h3,
+                h4 {
+                  margin-bottom: ${theme.space[4]}px;
+                }
+
+                // li h4 {
+                //   display: inline;
+                // }
+
+                li {
+                  margin-left: ${theme.space[3]}px;
+
+                  h4 {
+                    display: inline;
+                  }
+
+                  p {
+                    margin-bottom: ${theme.space[3]}px;
+                  }
+                }
+
+                //should be kept in sync with inline link.js styles
+                a {
+                  text-decoration: none;
+                  background-color: ${theme.color.transparent};
+                  color: ${theme.color.rawUmber};
+                  font-weight: 500;
+                  transition: 0.3s ease all;
+                  border-bottom: 2px solid ${theme.color.rawUmber};
+                  &:hover {
+                    color: ${theme.color.rawUmberLight};
+                    border-bottom: 2px solid ${theme.color.rawUmberLight};
+                    transition: 0.3s ease all;
+                  }
+                }
+
+                .gatsby-resp-image-link {
+                  border: 2px solid transparent;
+                  transition: 0.3s ease all;
+
+                  &:hover {
+                    border: 2px solid ${theme.color.rawUmberLight};
+                    transition: 0.3s ease all;
+                  }
+                }
+
+                blockquote {
+                  border-left: 5px solid ${theme.color.rawUmber};
+                  padding-left: ${theme.space[5]}px;
+                  margin-bottom: ${theme.space[5]}px;
+
+                  p {
+                    margin: 0;
+                  }
+                }
+
+                pre {
+                  // wrap code text
+                  white-space: pre-wrap; /* css-3 */
+                  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+                  white-space: -pre-wrap; /* Opera 4-6 */
+                  white-space: -o-pre-wrap; /* Opera 7 */
+                  word-wrap: break-word;
+
+                  code {
+                    background-color: rgba(148, 112, 62, 0.05);
+                    border: 2px solid rgba(136, 128, 113, 0.25);
+                    padding: ${theme.space[5]}px;
+                    display: block;
+                    margin-bottom: ${theme.space[4]}px;
+                  }
+                }
+
+                p {
+                  code {
+                    background-color: rgba(148, 112, 62, 0.05);
+                    border: 2px solid rgba(136, 128, 113, 0.25);
+                    padding: 4px;
+                  }
+                }
+
+                hr {
+                  color: ${theme.color.rawUmber};
+                  margin-bottom: ${theme.space[5]}px;
+                }
+              `}
+            >
+              <h1>{frontmatter.title}</h1>
+              <p>{frontmatter.date}</p>
+              <div
+                // css={css`
+                //   max-width: ${theme.contentWidths.copyWidth}px;
+                //   margin: 0 auto;
+                // `}
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            </article>
+          </PageContent>
+          <GetInTouch />
+        </div>
       </main>
     </LayoutMain>
   )

@@ -23,11 +23,12 @@ const BlogPage = ({
       key={edge.node.id}
       title={edge.node.frontmatter.title}
       topic={edge.node.frontmatter.topic}
+      to={edge.node.frontmatter.path}
     />
   ))
   return (
     <LayoutMain
-      title={'📝 Articles | Jules Chevalier'}
+      title={'All Articles | Jules Chevalier'}
       description={'Articles written by Jules Chevalier'}
     >
       <main>

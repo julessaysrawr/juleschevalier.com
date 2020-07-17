@@ -1,17 +1,17 @@
 import React from 'react'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../theme'
 import paper from '../images/lightpaperfibers_@2x.png'
-import Emoji from '../components/emoji'
+// import Emoji from '../components/emoji'
 import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
 import PageContent from '../components/page-content'
 import aboutImage from '../images/beach-path.jpg'
 import GetInTouch from '../components/get-in-touch'
 
-const About = props => (
+const About = () => (
   <LayoutMain title={'About | Jules Chevalier'} description={'About Jules Chevalier'}>
     <main>
       <div
