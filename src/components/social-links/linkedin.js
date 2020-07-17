@@ -5,7 +5,7 @@ import theme from '../../theme'
 const IconLinkedIn = () => {
   return (
     <>
-      <a href="">
+      <a href="https://www.linkedin.com/in/jules-chevalier-35587337">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
