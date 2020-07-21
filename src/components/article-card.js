@@ -31,7 +31,8 @@ const ArticleCard = props => {
           margin-right: 16px;
           transition: 0.3s;
           &:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 4px 15px rgba(136, 128, 113, 0.25); //todo use border color
           }
         `}
       >
@@ -51,6 +52,7 @@ const ArticleCard = props => {
             text-align: center;
             color: ${theme.color.rawUmber};
             margin-bottom: 24px;
+            font-weight: 500;
           `}
         >
           {props.topic}
