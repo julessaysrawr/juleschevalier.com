@@ -4,6 +4,8 @@ const color = {
   black: '#000000',
   rawUmber: '#94703E',
   rawUmberLight: '#A98B58',
+  border: 'rgba(136, 128, 113, 0.25)',
+  paperMixin: 'rgba(148, 112, 62, 0.05)',
   primary: '#315937',
   primaryMedium: '#69866D',
   primaryLight: '#A1B3A4',
@@ -18,6 +20,8 @@ const color = {
   primaryLightOpacity50: 'rgba(161, 179, 164, 0.5)',
   primaryLightOpacity75: 'rgba(161, 179, 164, 0.75)'
 }
+
+// border is //#888071  @ 25%
 
 const textSizes = {
   h1: '42px',
@@ -51,7 +55,9 @@ const contentWidths = {
   copyWidth: 646,
   contentWidth: 864,
   contentMasonryWidth: 880,
-  pageWidth: 1083
+  pageWidth: 1083,
+  maxPaperWidth: 1440,
+  paperHeight: 800
 }
 
 const characterCodes = {

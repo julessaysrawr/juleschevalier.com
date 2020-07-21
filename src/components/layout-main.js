@@ -17,7 +17,7 @@ const LayoutMain = props => {
             box-sizing: border-box;
           }
 
-          @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Serif:wght@400;700&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Serif:wght@400;700&display=swap');
 
           h1,
           h2,
@@ -29,26 +29,27 @@ const LayoutMain = props => {
 
           h1 {
             font-size: ${theme.textSizes.h1};
-            // line-height: 1.2px;
+            line-height: 50px;
             font-weight: 400;
+            letter-spacing: -1px;
           }
 
           h2 {
             font-size: ${theme.textSizes.h2};
             font-weight: 400;
-            // line-height: 1.2px;
+            line-height: 38px;
           }
 
           h3 {
             font-size: ${theme.textSizes.h3};
             font-weight: 400;
-            line-height: 1.25;
+            line-height: 30px;
           }
 
           h4 {
             font-size: ${theme.textSizes.h4}; // TODO confirm - this is a change from design (18px)
             font-weight: 400;
-            line-height: 1.6;
+            line-height: 1.7;
           }
 
           p,
@@ -58,11 +59,13 @@ const LayoutMain = props => {
             color: ${theme.color.black};
             font-size: ${theme.textSizes.paragraph};
             font-weight: 300;
-            line-height: 1.6;
+            line-height: 1.7;
           }
 
           code {
             font-family: 'IBM Plex Mono', monospace;
+            font-weight: 300;
+            font-size: 16px;
             font-size: ${theme.textSizes.code};
             color: ${theme.color.black};
           }
@@ -142,7 +145,18 @@ const LayoutMain = props => {
         <meta name="twitter:card" content="summary_large_image" />
         <html lang="en" />
       </Helmet>
-      <Nav />
+      <div
+        css={css`
+          // margin: 0 auto;
+          // display: block;
+          // position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        `}
+      >
+        <Nav />
+      </div>
       {props.children}
     </div>
   )
