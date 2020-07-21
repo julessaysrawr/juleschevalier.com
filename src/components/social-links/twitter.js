@@ -12,8 +12,10 @@ const IconTwitter = () => {
           css={css`
             width: ${theme.space[4]}px;
             height: ${theme.space[4]}px;
+            transition: 0.3s ease all;
             &:hover {
               fill: ${theme.color.rawUmberLight};
+              transition: 0.3s ease all;
             }
           `}
         >
