@@ -28,12 +28,16 @@ class Index extends Component {
         <main>
           <div
             css={css`
-              background-image: url(${paper});
+              background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
+                url(${paper});
               background-repeat: repeat;
-              height: 100vh;
-              // padding-top: 100px;
-              padding-top: ${theme.space[8]}px;
-              border-bottom: 2px solid rgba(136, 128, 113, 0.25);
+              height: ${theme.contentWidths.paperHeight}px;
+              max-width: ${theme.contentWidths.maxPaperWidth}px;
+              border: 2px solid rgba(136, 128, 113, 0.25);
+              border-top: 0;
+              margin: 0 auto;
+
+              padding-top: calc(${theme.space[2]}px*29);
             `}
           >
             <div

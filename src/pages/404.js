@@ -7,12 +7,13 @@ import Link from '../components/link'
 import Emoji from '../components/emoji'
 import image404 from '../images/404-Error-Cute.svg'
 
-export default () => (
+export default function FourOhFour() {
   <LayoutMain>
     <main>
       <div
         css={css`
-          background-image: url(${paper});
+          background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
+            url(${paper});
           background-repeat: repeat;
           // height: 100%;
           // padding-top: 100px;
@@ -43,4 +44,4 @@ export default () => (
       </div>
     </main>
   </LayoutMain>
-)
+}

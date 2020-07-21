@@ -17,13 +17,16 @@ const Now = () => (
     <main>
       <div
         css={css`
-        // TODO put this in theme?
-          background-image: url(${paper});
+          background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
+            url(${paper});
           background-repeat: repeat;
-          // padding-top: ${theme.space[7]}px;
+          height: ${theme.contentWidths.paperHeight}px;
+          max-width: ${theme.contentWidths.maxPaperWidth}px;
+          border: 2px solid rgba(136, 128, 113, 0.25);
+          border-top: 0;
+          margin: 0 auto;
+
           padding-top: 214px;
-          border-bottom: 2px solid rgba(136, 128, 113, 0.25);
-          height: 860px;
         `}
       >
         {/* <div

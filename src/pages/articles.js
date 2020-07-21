@@ -36,7 +36,8 @@ const BlogPage = ({
       <main>
         <div
           css={css`
-            background-image: url(${paper});
+            background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
+              url(${paper});
             background-repeat: repeat;
             padding-top: ${theme.space[8]}px;
             border-bottom: 2px solid rgba(136, 128, 113, 0.25);
