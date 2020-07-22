@@ -16,6 +16,8 @@ const IconLinkedIn = props => {
         css={css`
           ${props.articleSharing ? `border: none !important;` : null}
         `}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

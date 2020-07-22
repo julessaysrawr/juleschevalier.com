@@ -5,7 +5,7 @@ import theme from '../../theme'
 const IconGithub = () => {
   return (
     <>
-      <a href="https://github.com/julessaysrawr">
+      <a href="https://github.com/julessaysrawr" target="_blank" rel="noopener noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 480 512"

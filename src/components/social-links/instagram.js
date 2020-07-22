@@ -5,7 +5,11 @@ import theme from '../../theme'
 const IconInstagram = () => {
   return (
     <>
-      <a href="https://www.instagram.com/jules.a.chevalier/">
+      <a
+        href="https://www.instagram.com/jules.a.chevalier/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"

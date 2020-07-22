@@ -10,6 +10,8 @@ const IconPinterest = props => {
         css={css`
           border: none !important;
         `}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
