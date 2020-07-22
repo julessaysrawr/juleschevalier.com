@@ -13,16 +13,21 @@ const GetInTouch = () => {
     <div
       css={css`
         border: 2px solid rgba(136, 128, 113, 0.25);
-        max-width: 864px;
+        max-width: 800px;
         // height: 346px;
         margin: 0 auto calc(${theme.space[2]}px * 18);
-        background-image: url(${paper});
+        background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
+          url(${paper});
       `}
     >
       <h2
         css={css`
           text-align: center;
           margin: calc(${theme.space[6]}px*1.5) auto ${theme.space[4]}px;
+          font-size: ${theme.textSizes.h1};
+          line-height: 50px;
+          font-weight: 400;
+          letter-spacing: -1px;
         `}
       >
         Get In Touch
@@ -45,11 +50,11 @@ const GetInTouch = () => {
           margin: 0 auto calc(${theme.space[2]}px*9);
         `}
       >
-        <IconEmail />
+        <IconEmail url={'mailto:hellothere@juleschevalier.com'} />
         <IconInstagram />
-        <IconTwitter />
+        <IconTwitter url={'https://twitter.com/julessaysrawr'} />
         <IconGithub />
-        <IconLinkedIn />
+        <IconLinkedIn url={'https://www.linkedin.com/in/jules-chevalier-35587337'} />
       </div>
     </div>
   )

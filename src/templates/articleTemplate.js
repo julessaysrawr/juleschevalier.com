@@ -1,11 +1,12 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../theme'
 import paper from '../images/lightpaperfibers_@2x.png'
 import LayoutMain from '../components/layout-main'
 import PageContent from '../components/page-content'
 import GetInTouch from '../components/get-in-touch'
+import ArticleShare from '../components/article-share'
 
 export default function articleTemplate({
   data // this prop will be injected by the GraphQL query below.
@@ -17,10 +18,18 @@ export default function articleTemplate({
       <main>
         <div
           css={css`
-        // TODO put this in theme?
-          background-image: url(${paper});
+          background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)), url(${paper});
           background-repeat: repeat;
           // padding-top: ${theme.space[7]}px;
+          background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
+          url(${paper});
+        background-repeat: repeat;
+        height: ${theme.contentWidths.paperHeight}px;
+        max-width: ${theme.contentWidths.maxPaperWidth}px;
+        border: 2px solid rgba(136, 128, 113, 0.25);
+        border-top: 0;
+        margin: 0 auto;
+
           padding-top: 214px;
           border-bottom: 2px solid rgba(136, 128, 113, 0.25);
           height: 860px;
@@ -52,8 +61,13 @@ export default function articleTemplate({
                 //   display: inline;
                 // }
 
+                ol,
+                ul {
+                  margin-bottom: 20px;
+                }
                 li {
                   margin-left: ${theme.space[3]}px;
+                  margin-bottom: 0;
 
                   h4 {
                     display: inline;
@@ -61,6 +75,7 @@ export default function articleTemplate({
 
                   p {
                     margin-bottom: ${theme.space[3]}px;
+                    margin-bottom: 0;
                   }
                 }
 
@@ -90,8 +105,10 @@ export default function articleTemplate({
                 }
 
                 blockquote {
-                  border-left: 5px solid ${theme.color.rawUmber};
+                  border-left: 5px solid ${theme.color.border};
                   padding-left: ${theme.space[5]}px;
+                  padding-top: 8px;
+                  padding-bottom: 8px;
                   margin-bottom: ${theme.space[5]}px;
 
                   p {
@@ -121,7 +138,12 @@ export default function articleTemplate({
                     background-color: rgba(148, 112, 62, 0.05);
                     border: 2px solid rgba(136, 128, 113, 0.25);
                     padding: 4px;
+                    word-break: keep-all;
                   }
+                }
+
+                strong {
+                  font-weight: 500;
                 }
 
                 hr {
@@ -131,13 +153,25 @@ export default function articleTemplate({
               `}
             >
               <h1>{frontmatter.title}</h1>
-              <p>{frontmatter.date}</p>
+              <p
+                css={css`
+                  font-weight: 400;
+                `}
+              >
+                {frontmatter.date}
+              </p>
               <div
                 // css={css`
                 //   max-width: ${theme.contentWidths.copyWidth}px;
                 //   margin: 0 auto;
                 // `}
                 dangerouslySetInnerHTML={{ __html: html }}
+              />
+              <ArticleShare
+                props={frontmatter}
+                title={frontmatter.title}
+                slug={frontmatter.path}
+                topic={frontmatter.topic}
               />
             </article>
           </PageContent>
@@ -153,9 +187,10 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM Do, YYYY")
         path
         title
+        topic
       }
     }
   }

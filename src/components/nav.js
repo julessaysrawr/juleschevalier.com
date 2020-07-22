@@ -13,8 +13,11 @@ const Nav = () => {
     text-decoration: none;
     // margin: ${theme.space[2]}px ${theme.space[4]}px 0;
     margin: 0 ${theme.space[4]}px;
-    padding-top: calc(${theme.space[2]}px*1.5);
+    // padding-top: calc(${theme.space[2]}px*1.5);
+    // padding-top: 13px;
+    padding-top: 10px;
     font-weight: 400;
+    font-size: 20px;
 
     // line-height: 2;
     &:hover {
@@ -29,7 +32,16 @@ const Nav = () => {
         justify-content: space-between;
         padding: ${theme.space[6]}px;
         position: absolute;
-        width: 100%;
+        top: 0;
+        // left: 22%;
+        // left: 50%;
+        // margin-left: 656px;
+        // right: 50%;
+        width: 900px;
+        width: 1440px;
+
+        max-width: 1440px;
+        // margin: 0 auto;
       `}
     >
       <Link
@@ -42,9 +54,10 @@ const Nav = () => {
           <p
             css={css`
               font-family: 'IBM Plex Serif';
-              font-size: 28px;
+              font-size: 30px;
               font-weight: 700;
               margin-bottom: 0;
+              letter-spacing: -1px;
             `}
           >
             Jules Chevalier
@@ -54,6 +67,7 @@ const Nav = () => {
       <nav
         css={css`
           display: flex;
+          // margin: 0 336px;
         `}
       >
         <Link to="/articles" css={pageLink}>
@@ -72,13 +86,15 @@ const Nav = () => {
           justify-content: space-between;
           width: 184px;
           padding-top: calc(${theme.space[2]}px*1.5);
+          padding-top: 15px;
+          // padding-top: 13px;
         `}
       >
-        <IconEmail />
+        <IconEmail url={'mailto:hellothere@juleschevalier.com'} />
         <IconInstagram />
-        <IconTwitter />
+        <IconTwitter url={'https://twitter.com/julessaysrawr'} />
         <IconGithub />
-        <IconLinkedIn />
+        <IconLinkedIn url={'https://www.linkedin.com/in/jules-chevalier-35587337'} />
       </div>
     </div>
   )

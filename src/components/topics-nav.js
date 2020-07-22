@@ -15,8 +15,8 @@ const TopicsNav = () => {
         justify-content: center;
 
         a {
-          margin-right: ${theme.space[2]}px;
-          margin-top: ${theme.space[2]}px;
+          margin-right: 12px;
+          margin-top: 12px;
           font-size: 16px;
         }
       `}

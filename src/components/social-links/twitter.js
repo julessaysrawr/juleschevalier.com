@@ -2,14 +2,27 @@ import React from 'react'
 import { css } from '@emotion/core'
 import theme from '../../theme'
 
-const IconTwitter = () => {
+/** Renders a link with the twitter icon
+ * @param {object} props
+ * @param {boolean} props.articleSharing - if sharing is true, fill color changes
+ * @param {string} props.url - url for link
+ */
+
+const IconTwitter = props => {
   return (
     <>
-      <a href="https://twitter.com/julessaysrawr">
+      {/* <a href="https://twitter.com/julessaysrawr"> */}
+      <a
+        href={props.url}
+        css={css`
+          ${props.articleSharing ? `border: none !important;` : null}
+        `}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
           css={css`
+            ${props.articleSharing ? `fill: ${theme.color.rawUmber};` : null}
             width: ${theme.space[4]}px;
             height: ${theme.space[4]}px;
             transition: 0.3s ease all;

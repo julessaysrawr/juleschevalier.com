@@ -49,7 +49,7 @@ const buttonVariableWidth = css`
   ${buttonFixedWidth}
   width: auto;
   height: auto;
-  padding: 10px 15px;
+  padding: 8px 18px;
 `
 
 const buttonVariableWidthPrimary = css`
