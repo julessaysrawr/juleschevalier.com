@@ -8,7 +8,7 @@ topic: 'Technology'
 Here are a few helpful tricks that I enjoy while using git.  You can read more about the [basics](https://rogerdudler.github.io/git-guide/) if you haven't used git before.
 
 ## What changes have I added?
-You probably know about `git diff` which lets you look at unstanged changes, but did you know that you can look at your staged changes as well?  🙌 Game changer!
+You probably know about `git diff` which lets you look at unstaged changes, but did you know that you can look at your staged changes as well?  🙌 Game changer!
 ```
 git diff --staged
 ```
