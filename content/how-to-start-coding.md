@@ -1,5 +1,5 @@
 ---
-path: '/articles/how-to-start-coding'
+path: '/how-to-start-coding'
 date: '2020-03-03'
 title: 'How To Start Coding'
 topic: 'Technology'

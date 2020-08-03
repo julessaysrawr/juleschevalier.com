@@ -1,5 +1,5 @@
 ---
-path: '/articles/fear'
+path: '/fear'
 date: '2019-12-29'
 title: 'Fear'
 topic: 'Emotional Wellbeing'

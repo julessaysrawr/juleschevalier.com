@@ -1,5 +1,5 @@
 ---
-path: '/articles/rest'
+path: '/rest'
 date: '2020-01-21'
 title: 'Rest'
 topic: 'Intentional Living'

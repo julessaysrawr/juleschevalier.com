@@ -1,5 +1,5 @@
 ---
-path: '/articles/coming-out'
+path: '/coming-out'
 date: '2020-02-08'
 title: 'Coming Out'
 topic: 'Personal Essays'

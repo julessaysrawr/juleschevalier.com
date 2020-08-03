@@ -1,5 +1,5 @@
 ---
-path: '/articles/financial-wellness'
+path: '/financial-wellness'
 date: '2019-07-01'
 title: 'Financial Wellness'
 topic: 'Intentional Living'

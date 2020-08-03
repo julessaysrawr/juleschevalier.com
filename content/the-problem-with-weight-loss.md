@@ -1,5 +1,5 @@
 ---
-path: "/articles/the-problem-with-weight-loss"
+path: "/the-problem-with-weight-loss"
 date: "2020-01-05"
 title: "The Problem With Weight Loss"
 topic: 'Intentional Living'

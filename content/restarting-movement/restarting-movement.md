@@ -1,5 +1,5 @@
 ---
-path: '/articles/restarting-exercise'
+path: '/restarting-exercise'
 date: '2020-04-23'
 title: 'Restarting An Exercise Routine'
 topic: 'Intentional Living'

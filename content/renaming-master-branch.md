@@ -1,5 +1,5 @@
 ---
-path: '/articles/renaming-master-branch'
+path: '/renaming-master-branch'
 date: '2020-06-21'
 title: 'Renaming Master Branch'
 topic: 'Technology'

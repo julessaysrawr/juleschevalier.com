@@ -1,5 +1,5 @@
 ---
-path: '/articles/what-to-do-instead-of-fixing'
+path: '/what-to-do-instead-of-fixing'
 date: '2020-03-22'
 title: 'What To Do Instead Of Fixing'
 topic: 'Emotional Wellbeing'
@@ -63,7 +63,7 @@ So the next time you find yourself in a conversation that you feel the desire to
 - Are you looking for comfort or for feedback?
 - How can I best support you?
 
-Learning how to be present and [Hold Space](/articles/holding-space/) for someone is what to shift towards instead of fixing.
+Learning how to be present and [Hold Space](/holding-space/) for someone is what to shift towards instead of fixing.
 
 Attempting to fix people limits them from learning how to do things on their own and limits their growth.  The challenges of others are not your problems to solve and if you feel the need to take on their problems, that is usually a sign that you need better boundaries.  Put your energy into your own inner work, which is the most important work we can do for ourselves.  Give yourself some patience and grace as you navigate your own growth.
 

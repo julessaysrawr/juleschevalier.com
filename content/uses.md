@@ -1,5 +1,5 @@
 ---
-path: "/articles/uses"
+path: "/uses"
 date: "2020-05-09"
 title: "Uses"
 topic: 'Technology'

@@ -1,5 +1,5 @@
 ---
-path: '/articles/busy'
+path: '/busy'
 date: '2019-07-12'
 title: 'Busy'
 topic: 'Emotional Wellbeing'

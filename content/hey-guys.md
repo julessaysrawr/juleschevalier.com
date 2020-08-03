@@ -1,5 +1,5 @@
 ---
-path: '/articles/inclusive-ways-to-say-hey-guys'
+path: '/inclusive-ways-to-say-hey-guys'
 date: '2020-07-06'
 title: 'Inclusive Ways To Say "Hey Guys"'
 topic: 'Inclusion'

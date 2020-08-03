@@ -1,5 +1,5 @@
 ---
-path: '/articles/git'
+path: '/git'
 date: '2020-02-04'
 title: 'Git Favorites'
 topic: 'Technology'
@@ -34,6 +34,6 @@ git branch -d feature other-feature bug-fix moar-fixes
 
     git push -f origin feature-branch
 
-*2020 update: I now use main for the default branch.  You can do that yourself by following [these three steps](/articles/renaming-master-branch)*.
+*2020 update: I now use main for the default branch.  You can do that yourself by following [these three steps](/renaming-master-branch)*.
 
 If you want to read more about rebasing and reasons to use it over merge, this is a great [explanation](https://dev.to/maxwell_dev/the-git-rebase-introduction-i-wish-id-had).

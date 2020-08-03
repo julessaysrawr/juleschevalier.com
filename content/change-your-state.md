@@ -1,5 +1,5 @@
 ---
-path: '/articles/change-your-state'
+path: '/change-your-state'
 date: '2019-07-12'
 title: 'Change Your State'
 topic: 'Emotional Wellbeing'

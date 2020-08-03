@@ -1,5 +1,5 @@
 ---
-path: "/articles/simple-meals"
+path: "/simple-meals"
 date: "2018-08-10"
 title: "Simple Meals"
 topic: "Intentional Living"

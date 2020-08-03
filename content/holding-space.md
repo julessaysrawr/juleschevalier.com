@@ -1,5 +1,5 @@
 ---
-path: "/articles/holding-space"
+path: "/holding-space"
 date: "2019-12-29"
 title: 'Holding Space'
 topic: 'Emotional Wellbeing'
@@ -18,7 +18,7 @@ Holding space is a non-judgmental place for someone to express their emotions an
 - Be fully present.  
 - Open your heart; listen to understand.  Softness is encouraged.
 - Let go of judgment and have unconditional positive regard for the other person.
-- Do not try to [fix them](/articles/what-to-do-instead-of-fixing) or their situation.
+- Do not try to [fix them](/what-to-do-instead-of-fixing) or their situation.
 - Create a safe place for complex emotions, fear, trauma, etc.
 - Trust the other person's intuition and wisdom.
 - Allow them to make different decisions and have different experiences than you would.

@@ -1,5 +1,5 @@
 ---
-path: '/articles/priority-guides'
+path: '/priority-guides'
 date: '2020-02-09'
 title: 'Priority Guides: A Content First Approach'
 topic: 'Design'

@@ -1,5 +1,5 @@
 ---
-path: "/articles/lightning"
+path: "/lightning"
 date: "2018-05-25"
 title: "Lightning"
 topic: "Personal Essays"

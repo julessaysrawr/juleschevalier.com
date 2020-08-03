@@ -1,5 +1,5 @@
 ---
-path: "/articles/new-beginnings"
+path: "/new-beginnings"
 date: "2018-07-17"
 title: "New Beginnings"
 topic: "Personal Essays"

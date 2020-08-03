@@ -1,5 +1,5 @@
 ---
-path: "/articles/favorite-things"
+path: "/favorite-things"
 date: "2020-05-10"
 title: "Favorite Things"
 topic: 'Intentional Living'

@@ -1,5 +1,5 @@
 ---
-path: "/articles/upset"
+path: "/upset"
 date: "2018-07-31"
 title: "When I Feel Stuck And Upset"
 topic: 'Emotional Wellbeing'

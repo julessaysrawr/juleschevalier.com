@@ -1,5 +1,5 @@
 ---
-path: '/articles/intentional-living'
+path: '/intentional-living'
 date: '2019-07-02'
 title: 'Intentional Living'
 topic: 'Intentional Living'

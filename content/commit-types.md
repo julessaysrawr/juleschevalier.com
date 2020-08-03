@@ -1,5 +1,5 @@
 ---
-path: '/articles/commit-types'
+path: '/commit-types'
 date: '2020-03-21'
 title: 'Commit Types'
 topic: 'Technology'

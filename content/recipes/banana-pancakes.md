@@ -1,5 +1,5 @@
 ---
-path: '/articles/banana-pancakes'
+path: '/banana-pancakes'
 date: '2020-05-03'
 title: 'Banana Pancakes'
 topic: 'Recipes'
