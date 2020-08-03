@@ -5,7 +5,6 @@ module.exports = {
     siteUrl: `https://juleschevalier.com/`
   },
   plugins: [
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`, // this sources the files from the filesystem
       options: {
