@@ -9,6 +9,7 @@ import GetInTouch from '../components/get-in-touch'
 import ArticleShare from '../components/article-share'
 import { bpPhone, bpTabletSM, bpTabletLG, bpMonitorSM } from '../lib/breakpoints'
 import placeholderImage from '../images/Jules-and-Grievy.png'
+import PaperBackground from '../components/paper-background'
 
 export default function articleTemplate({
   data // this prop will be injected by the GraphQL query below.
@@ -18,7 +19,7 @@ export default function articleTemplate({
   return (
     <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`}>
       <main>
-        <div
+        {/* <div
           css={css`
           background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)), url(${paper});
           background-repeat: repeat;
@@ -49,7 +50,8 @@ export default function articleTemplate({
             padding-top: 30%;
           }
         `}
-        >
+        > */}
+        <PaperBackground>
           <PageContent>
             <img
               src={placeholderImage}
@@ -221,7 +223,8 @@ export default function articleTemplate({
             </article>
           </PageContent>
           <GetInTouch />
-        </div>
+          {/* </div> */}
+        </PaperBackground>
       </main>
     </LayoutMain>
   )

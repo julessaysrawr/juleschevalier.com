@@ -27,26 +27,14 @@ import herKids from '../images/landscape/08.jpg'
 import metro from '../images/landscape/12.jpg'
 
 import GetInTouch from '../components/get-in-touch'
+import PaperBackground from '../components/paper-background'
 
 const Photography = () => (
   <LayoutMain
     title={'📸 Photography | Jules Chevalier'}
     description={'Photography by Jules Chevalier'}
   >
-    <div
-      css={css`
-        background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
-          url(${paper});
-        background-repeat: repeat;
-        height: ${theme.contentWidths.paperHeight}px;
-        max-width: ${theme.contentWidths.maxPaperWidth}px;
-        border: 2px solid rgba(136, 128, 113, 0.25);
-        border-top: 0;
-        margin: 0 auto;
-
-        padding-top: 214px;
-      `}
-    >
+    <PaperBackground>
       <PageContent>
         <h1
           css={css`
@@ -262,7 +250,7 @@ const Photography = () => (
         </div>
       </PageContent>
       <GetInTouch />
-    </div>
+    </PaperBackground>
     {/* <div className="photo-gallery-wrap">
       <ContainerLightbox />
     </div> */}

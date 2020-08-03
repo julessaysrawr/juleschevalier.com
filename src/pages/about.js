@@ -3,45 +3,18 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../theme'
-import paper from '../images/lightpaperfibers_@2x.png'
-// import Emoji from '../components/emoji'
 import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
 import PageContent from '../components/page-content'
 import aboutImage from '../images/beach-path.jpg'
 import GetInTouch from '../components/get-in-touch'
-import { bpPhone, bpTabletSM, bpTabletLG, bpMonitorSM, bpMonitorLG } from '../lib/breakpoints'
+import { bpTabletSM, bpMonitorSM } from '../lib/breakpoints'
+import PaperBackground from '../components/paper-background'
 
 const About = () => (
   <LayoutMain title={'About | Jules Chevalier'} description={'About Jules Chevalier'}>
     <main>
-      <div
-        css={css`
-          background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
-            url(${paper});
-          background-repeat: repeat;
-          height: ${theme.contentWidths.paperHeight}px;
-          max-width: ${theme.contentWidths.maxPaperWidth}px;
-          border: 2px solid rgba(136, 128, 113, 0.25);
-          border-top: 0;
-          margin: 0 auto;
-
-          padding-top: 214px;
-
-          ${bpTabletLG} {
-            padding-top: 15%;
-            border-right: none;
-            border-left: none;
-          }
-          ${bpTabletSM} {
-            padding-top: 20%;
-          }
-
-          ${bpPhone} {
-            padding-top: 30%;
-          }
-        `}
-      >
+      <PaperBackground>
         <PageContent>
           <img
             src={aboutImage}
@@ -137,7 +110,7 @@ const About = () => (
           </div>
         </PageContent>
         <GetInTouch />
-      </div>
+      </PaperBackground>
     </main>
   </LayoutMain>
 )
