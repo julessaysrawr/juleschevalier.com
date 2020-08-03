@@ -108,6 +108,15 @@ export default function articleTemplate({
                   }
                 }
 
+                // remove underline from autolink headers
+                .anchor {
+                  border: none;
+
+                  &:hover {
+                    border: none;
+                  }
+                }
+
                 .gatsby-resp-image-link {
                   border: 2px solid transparent;
                   transition: 0.3s ease all;
