@@ -7,6 +7,7 @@ import IconInstagram from './social-links/instagram'
 import IconTwitter from './social-links/twitter'
 import IconGithub from './social-links/github'
 import IconLinkedIn from './social-links/linkedin'
+import { bpPhone, bpTabletSM } from '../lib/breakpoints'
 
 const GetInTouch = () => {
   return (
@@ -18,6 +19,12 @@ const GetInTouch = () => {
         margin: 0 auto calc(${theme.space[2]}px * 18);
         background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
           url(${paper});
+
+        ${bpTabletSM} {
+          border-right: none;
+          border-left: none;
+          margin-bottom: 0;
+        }
       `}
     >
       <h2
@@ -37,6 +44,10 @@ const GetInTouch = () => {
           max-width: 500px;
           text-align: center;
           margin: 0 auto calc(${theme.space[2]}px*6);
+
+          ${bpPhone} {
+            padding: 0 24px;
+          }
         `}
       >
         Like something I wrote? Want to create portraits together? Have cat photos you want to

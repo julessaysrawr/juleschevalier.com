@@ -28,6 +28,10 @@ const textSizes = {
   h2: '32px',
   h3: '24px',
   h4: '20px',
+  h1Mobile: '36px',
+  h2Mobile: '30px',
+  h3Mobile: '24px',
+  h4Mobile: '20px',
   paragraph: '18px',
   code: '16px'
 }

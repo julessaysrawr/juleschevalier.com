@@ -8,6 +8,8 @@ import Link from '../components/link'
 import GetInTouch from '../components/get-in-touch'
 import nowImage from '../images/Jules-and-Grievy.png'
 import PageContent from '../components/page-content'
+import { bpPhone, bpTabletSM, bpTabletLG, bpMonitorSM } from '../lib/breakpoints'
+import PaperBackground from '../components/paper-background'
 
 const Now = () => (
   <LayoutMain
@@ -15,7 +17,7 @@ const Now = () => (
     description={`What I'm currently up to. Now page for Jules Chevalier`}
   >
     <main>
-      <div
+      {/* <div
         css={css`
           background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
             url(${paper});
@@ -27,8 +29,22 @@ const Now = () => (
           margin: 0 auto;
 
           padding-top: 214px;
+
+          ${bpTabletLG} {
+            padding-top: 15%;
+            border-right: none;
+            border-left: none;
+          }
+          ${bpTabletSM} {
+            padding-top: 20%;
+          }
+
+          ${bpPhone} {
+            padding-top: 30%;
+          }
         `}
-      >
+      > */}
+      <PaperBackground>
         {/* <div
         css={css`
           background-color: ${theme.color.white};
@@ -50,6 +66,15 @@ const Now = () => (
               border: 2px solid rgba(136, 128, 113, 0.25);
               object-fit: cover;
               margin-bottom: 80px;
+
+              ${bpMonitorSM} {
+                width: 100%;
+                height: auto;
+              }
+
+              ${bpTabletSM} {
+                margin-bottom: 10%;
+              }
             `}
           />
           <div
@@ -101,13 +126,6 @@ const Now = () => (
                 </li>
               </ul>
             </div>
-
-            {/* <p>
-          Grateful to be a part of the team behind:{' '}
-          <Link type={'basic'} href="https://be-ingoodcompany.com/">
-            In Good Company
-          </Link>
-        </p> */}
             <Link
               type="inline"
               hrefLocal="/about"
@@ -115,21 +133,13 @@ const Now = () => (
             >
               Learn More About Me &gt;
             </Link>
-
-            {/* <p>
-            Thanks to{' '}
-            <Link type={'basic'} href="https://sivers.org/">
-              Derek Sivers
-            </Link>{' '}
-            for the{' '}
-            <Link type={'basic'} href="https://nownownow.com/about">
-              now page idea
-            </Link>
-          </p> */}
           </div>
         </PageContent>
+
         <GetInTouch />
-      </div>
+      </PaperBackground>
+
+      {/* </div> */}
     </main>
   </LayoutMain>
 )

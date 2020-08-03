@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import { Global, css } from '@emotion/core'
 import Nav from '../components/nav.js'
 import theme from '../theme'
+import { bpPhone } from '../lib/breakpoints'
 
 const LayoutMain = props => {
   return (
@@ -32,24 +33,38 @@ const LayoutMain = props => {
             line-height: 50px;
             font-weight: 400;
             letter-spacing: -1px;
+            text-transform: capitalize;
+
+            ${bpPhone} {
+              font-size: ${theme.textSizes.h1Mobile};
+            }
           }
 
           h2 {
             font-size: ${theme.textSizes.h2};
             font-weight: 400;
             line-height: 38px;
+            text-transform: capitalize;
+            ${bpPhone} {
+              font-size: ${theme.textSizes.h2Mobile};
+            }
           }
 
           h3 {
             font-size: ${theme.textSizes.h3};
             font-weight: 400;
             line-height: 30px;
+            text-transform: capitalize;
+            ${bpPhone} {
+              font-size: ${theme.textSizes.h3Mobile};
+            }
           }
 
           h4 {
             font-size: ${theme.textSizes.h4}; // TODO confirm - this is a change from design (18px)
             font-weight: 400;
             line-height: 1.7;
+            text-transform: capitalize;
           }
 
           p,

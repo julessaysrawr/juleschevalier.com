@@ -7,6 +7,8 @@ import LayoutMain from '../components/layout-main'
 import PageContent from '../components/page-content'
 import GetInTouch from '../components/get-in-touch'
 import ArticleShare from '../components/article-share'
+import { bpPhone, bpTabletSM, bpTabletLG, bpMonitorSM } from '../lib/breakpoints'
+import placeholderImage from '../images/Jules-and-Grievy.png'
 
 export default function articleTemplate({
   data // this prop will be injected by the GraphQL query below.
@@ -33,17 +35,60 @@ export default function articleTemplate({
           padding-top: 214px;
           border-bottom: 2px solid rgba(136, 128, 113, 0.25);
           height: 860px;
+
+          ${bpTabletLG} {
+            padding-top: 15%;
+            border-right: none;
+            border-left: none;
+          }
+          ${bpTabletSM} {
+            padding-top: 20%;
+          }
+
+          ${bpPhone} {
+            padding-top: 30%;
+          }
         `}
         >
           <PageContent>
-            <div
+            <img
+              src={placeholderImage}
+              alt=""
+              css={css`
+                width: 865px;
+                height: 468px;
+                border: 2px solid rgba(136, 128, 113, 0.25);
+                object-fit: cover;
+                margin: 0 auto 80px;
+
+                ${bpMonitorSM} {
+                  width: 100%;
+                  height: auto;
+                }
+
+                ${bpTabletSM} {
+                  margin-bottom: 10%;
+                }
+              `}
+            />
+            {/* <div
+              // this is a placeholder for photos
               css={css`
                 width: 865px;
                 height: 488px;
                 background-color: ${theme.color.rawUmber};
                 margin: 0 auto 80px;
+
+                ${bpMonitorSM} {
+                  width: 100%;
+                  height: auto;
+                }
+
+                ${bpTabletSM} {
+                  margin-bottom: 10%;
+                }
               `}
-            />
+            /> */}
 
             <article
               css={css`

@@ -6,8 +6,9 @@ import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
 import Emoji from '../components/emoji'
 import image404 from '../images/404-Error-Cute.svg'
+import { bpTabletSM } from '../lib/breakpoints'
 
-export default function FourOhFour() {
+const FourOhFour = () => (
   <LayoutMain>
     <main>
       <div
@@ -19,6 +20,10 @@ export default function FourOhFour() {
           // padding-top: 100px;
           padding-top: ${theme.space[6]}px;
           border-bottom: 2px solid rgba(136, 128, 113, 0.25);
+
+          // ${bpTabletSM} {
+          //   height: 100vh;
+          // }
         `}
       >
         <div
@@ -35,13 +40,20 @@ export default function FourOhFour() {
             css={css`
               width: ${theme.contentWidths.copyWidth}px;
               margin: 0 auto;
+              ${bpTabletSM} {
+                width: 90%;
+              }
             `}
           />
-          <Link type="buttonVariableWidth" hrefLocal="/">
-            Return To Homepage
-          </Link>
+          <div>
+            <Link type="buttonVariableWidth" hrefLocal="/">
+              Return To Homepage
+            </Link>
+          </div>
         </div>
       </div>
     </main>
   </LayoutMain>
-}
+)
+
+export default FourOhFour

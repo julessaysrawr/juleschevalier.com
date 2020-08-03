@@ -3,6 +3,7 @@ import React from 'react'
 // import { Link } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../theme'
+import { bpPhone, bpTabletSM, bpTabletLG, bpMonitorSM } from '../lib/breakpoints'
 
 const PageContent = props => {
   return (
@@ -15,6 +16,27 @@ const PageContent = props => {
         border: 2px solid rgba(136, 128, 113, 0.25);
         padding: 88px 109px;
         // height: 100%;
+
+        ${bpMonitorSM} {
+          width: 90%;
+        }
+
+        ${bpTabletLG} {
+          width: 100%;
+          padding: 12% 6%;
+          border-right: none;
+          border-left: none;
+        }
+
+        ${bpTabletSM} {
+          border-bottom: none;
+          margin-bottom: 0;
+        }
+
+        ${bpPhone} {
+          border-bottom: none;
+          margin-bottom: 0;
+        }
       `}
     >
       {props.children}

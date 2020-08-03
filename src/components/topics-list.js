@@ -2,17 +2,35 @@ import React from 'react'
 import { css } from '@emotion/core'
 import theme from '../theme'
 import Link from '../components/link'
+import { bpPhone } from '../lib/breakpoints'
 
 const TopicsList = () => {
   return (
     <div
       css={css`
         display: flex;
-        justify-content: space-between;
-        width: 450px;
-        height: 300px;
+        // justify-content: space-between;
+        // justify-content: center;
+        justify-content: space-evenly;
+        max-width: 476px; //TODO negative margin to really center this
+        // height: 300px;
         flex-wrap: wrap;
         margin: 0 auto;
+
+        ${bpPhone} {
+          justify-content: flex-start;
+          // align-items: flex-start;
+          padding-left: 24px;
+
+          a {
+            margin-right: 12px;
+          }
+        }
+
+        a {
+          // margin-right: 12px;
+          margin-top: 12px;
+        }
       `}
     >
       <Link type="buttonFixedWidth" hrefLocal="/topics/personal-essays/" description="">

@@ -9,7 +9,7 @@ import PageContent from '../components/page-content'
 // portrait orientation
 import mike from '../images/photography/01.jpg'
 import robin from '../images/photography/03.jpg'
-import ash from '../images/photography/05.jpg'
+// import ash from '../images/photography/05.jpg'
 import david from '../images/photography/07.jpg'
 import kayt from '../images/portrait/IMG_5784.jpg'
 import lighthouse from '../images/portrait/11.jpg'
@@ -59,7 +59,10 @@ const Photography = () => (
         </h1>
         <p
           css={css`
+            margin: 0 auto;
             margin-bottom: ${theme.space[6]}px;
+            max-width: ${theme.contentWidths.copyWidth}px;
+            text-align: center;
           `}
         >
           One of my favorite things to do is just wonder with a camera and see what beauty I can

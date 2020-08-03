@@ -3,21 +3,21 @@ import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../theme'
 import paper from '../images/lightpaperfibers_@2x.png'
-import PostLink from '../components/post-link'
 import LayoutMain from '../components/layout-main'
 import GetInTouch from '../components/get-in-touch'
 import TopicsNav from '../components/topics-nav'
 import ArticleCard from '../components/article-card'
 import Masonry from 'react-masonry-component'
+import { bpPhone, bpTabletLG } from '../lib/breakpoints'
 
 const BlogPage = ({
   data: {
     allMarkdownRemark: { edges }
   }
 }) => {
-  const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+  // const Posts = edges
+  //   .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+  //   .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
   const Articles = edges.map(edge => (
     <ArticleCard
@@ -60,12 +60,20 @@ const BlogPage = ({
               // display: flex;
               // flex-wrap: wrap;
               // justify-content: space-between;
+
+              ${bpTabletLG} {
+                width: 424px;
+              }
+
+              ${bpPhone} {
+                width: 300px;
+              }
             `}
           >
             <Masonry
               css={css`
                 // background-color: 'tomato';
-                width: 880px;
+                // width: 880px;
                 // width: 864px;
                 // width: ${theme.contentWidths.contentWidth}px;
                 // max-width: ${theme.contentWidths.contentWidth}px;

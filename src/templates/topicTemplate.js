@@ -9,6 +9,7 @@ import TopicsNav from '../components/topics-nav'
 import Masonry from 'react-masonry-component'
 import ArticleCard from '../components/article-card'
 import GetInTouch from '../components/get-in-touch'
+import { bpPhone, bpTabletSM, bpTabletLG } from '../lib/breakpoints'
 
 const Topic = ({ pageContext, data }) => {
   const { topic } = pageContext
@@ -39,6 +40,18 @@ const Topic = ({ pageContext, data }) => {
             padding-top: ${theme.space[8]}px;
             border-bottom: 2px solid rgba(136, 128, 113, 0.25);
             margin-bottom: calc(${theme.space[2]}px*13);
+
+            ${bpTabletLG} {
+              padding-top: 20%;
+            }
+
+            ${bpTabletSM} {
+              padding-top: 25%;
+            }
+
+            ${bpPhone} {
+              padding-top: 30%;
+            }
           `}
         >
           <h1
@@ -57,12 +70,20 @@ const Topic = ({ pageContext, data }) => {
               // display: flex;
               // flex-wrap: wrap;
               // justify-content: space-between;
+
+              ${bpTabletLG} {
+                width: 424px;
+              }
+
+              ${bpPhone} {
+                width: 300px;
+              }
             `}
           >
             <Masonry
               css={css`
                 // background-color: 'tomato';
-                width: 880px;
+                // width: 880px;
                 // width: 864px;
                 // width: ${theme.contentWidths.contentWidth}px;
                 // max-width: ${theme.contentWidths.contentWidth}px;

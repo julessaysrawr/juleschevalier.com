@@ -7,6 +7,8 @@ import theme from '../theme'
 import paper from '../images/lightpaperfibers_@2x.png'
 import Link from '../components/link'
 import PageContent from '../components/page-content'
+import { bpPhone, bpTabletSM, bpTabletLG } from '../lib/breakpoints'
+import GetInTouch from '../components/get-in-touch'
 
 const TopicssPage = ({
   data: {
@@ -24,6 +26,18 @@ const TopicssPage = ({
             padding-top: ${theme.space[8]}px;
             border-bottom: 2px solid rgba(136, 128, 113, 0.25);
             margin-bottom: calc(${theme.space[2]}px*13);
+
+            ${bpTabletLG} {
+              padding-top: 20%;
+            }
+
+            ${bpTabletSM} {
+              padding-top: 25%;
+            }
+
+            ${bpPhone} {
+              padding-top: 30%;
+            }
           `}
         >
           <h1
@@ -63,6 +77,7 @@ const TopicssPage = ({
             </div>
           </PageContent>
         </div>
+        <GetInTouch />
       </main>
     </LayoutMain>
   )

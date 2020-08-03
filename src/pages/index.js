@@ -12,6 +12,7 @@ import image2 from '../images/homepage/IMG_6182.png'
 import image3 from '../images/homepage/IMG_6463.png'
 import GetInTouch from '../components/get-in-touch'
 import TopicsList from '../components/topics-list'
+import { bpPhone, bpTabletSM, bpTabletLG } from '../lib/breakpoints'
 
 class Index extends Component {
   render() {
@@ -21,6 +22,15 @@ class Index extends Component {
       border: 2px solid rgba(136, 128, 113, 0.25);
       // margin-right: ${theme.space[3]}px;
       object-fit: cover;
+
+      ${bpTabletLG} {
+        width: 80%;
+        height: auto;
+      }
+
+      ${bpTabletSM} {
+        width: 90%;
+      }
     `
     return (
       <LayoutMain title={'🏡 | Jules Chevalier ▲ Progress Not Perfection'}>
@@ -38,11 +48,16 @@ class Index extends Component {
               margin: 0 auto;
 
               padding-top: calc(${theme.space[2]}px*29);
+
+              ${bpPhone} {
+                height: 900px;
+                padding-top: calc(${theme.space[2]}px*20);
+              }
             `}
           >
             <div
               css={css`
-                max-width: 1000px;
+                // max-width: 1000px;
                 margin: 0 auto;
               `}
             >
@@ -51,15 +66,25 @@ class Index extends Component {
                   max-width: 500px;
                   text-align: center;
                   margin: 0 auto ${theme.space[4]}px;
+
+                  ${bpPhone} {
+                    text-align: left;
+                    padding: 0 ${theme.space[4]}px;
+                  }
                 `}
               >
                 Designer, Engineer & Growth Catalyst
               </h1>
               <p
                 css={css`
-                  max-width: 643px;
+                  max-width: ${theme.contentWidths.copyWidth}px;
                   text-align: center;
                   margin: 0 auto ${theme.space[6]}px;
+
+                  ${bpPhone} {
+                    text-align: left;
+                    padding: 0 ${theme.space[4]}px;
+                  }
                 `}
               >
                 My mission is to energize people&apos;s courage to take action so they can achieve
@@ -73,6 +98,13 @@ class Index extends Component {
                   justify-content: space-between;
                   max-width: 450px;
                   margin: 0 auto;
+
+                  ${bpPhone} {
+                    text-align: left;
+                    padding: 0 ${theme.space[4]}px;
+                    flex-direction: column;
+                    margin: 0;
+                  }
                 `}
               >
                 <Link type="buttonFixedWidth" hrefLocal="/about" description="Get To Know Me">
@@ -81,6 +113,10 @@ class Index extends Component {
                 <div
                   css={css`
                     padding-top: ${theme.space[3]}px;
+
+                    ${bpPhone} {
+                      margin-top: calc(${theme.space[2]}px*6);
+                    }
                   `}
                 >
                   <Link
@@ -100,7 +136,7 @@ class Index extends Component {
           <div
             css={css`
               background-color: ${theme.color.white};
-              height: 800px;
+              // height: 800px;
               max-width: 1000px;
               border: 2px solid rgba(136, 128, 113, 0.25);
               margin: -80px auto 0;
@@ -112,6 +148,11 @@ class Index extends Component {
                 text-align: center;
                 margin: 0 auto ${theme.space[4]}px;
                 max-width: 500px;
+
+                ${bpPhone} {
+                  text-align: left;
+                  padding: 0 ${theme.space[4]}px;
+                }
               `}
             >
               I Write About What Inspires & Interests Me
@@ -119,8 +160,13 @@ class Index extends Component {
             <p
               css={css`
                 text-align: center;
-                max-width: 643px;
+                max-width: ${theme.contentWidths.copyWidth}px;
                 margin: 0 auto calc(${theme.space[5]}px*1.5);
+
+                ${bpPhone} {
+                  text-align: left;
+                  padding: 0 ${theme.space[4]}px;
+                }
               `}
             >
               Phasellus eu dui id ex consectetur volutpat. Donec molestie velit in magna bibendum,
@@ -177,15 +223,30 @@ class Index extends Component {
                 text-align: center;
                 margin: 0 auto ${theme.space[4]}px;
                 max-width: 500px;
+
+                ${bpPhone} {
+                  text-align: left;
+                  padding: 0 ${theme.space[4]}px;
+                  margin: 0 0 ${theme.space[4]}px;
+                }
               `}
             >
               Explore What I See
             </h1>
             <p
               css={css`
-                max-width: 643px;
+                max-width: ${theme.contentWidths.copyWidth}px;
                 margin: 0 auto ${theme.space[6]}px;
                 text-align: center;
+
+                ${bpTabletSM} {
+                  padding: 0 ${theme.space[4]}px;
+                }
+
+                ${bpPhone} {
+                  text-align: left;
+                  padding: 0 ${theme.space[4]}px;
+                }
               `}
             >
               One of my favorite things to do is just wonder with a camera and see what beauty I can
@@ -198,11 +259,30 @@ class Index extends Component {
                 display: flex;
                 flex-direction: column;
                 margin: 0 auto;
+
+                ${bpPhone} {
+                  margin: 0;
+                  padding: 0 ${theme.space[4]}px;
+                }
               `}
             >
-              <Link type="buttonFixedWidth" hrefLocal="/" description="">
-                View Portfolio
-              </Link>
+              <div
+                css={css`
+                  // width: 300px;
+                  // height: auto;
+                  a {
+                    display: block;
+
+                    ${bpPhone} {
+                      display: inline;
+                    }
+                  }
+                `}
+              >
+                <Link type="buttonFixedWidth" hrefLocal="/" description="">
+                  View Portfolio
+                </Link>
+              </div>
             </div>
             <div
               css={css`
@@ -219,6 +299,10 @@ class Index extends Component {
                   ${photoStyles}
                   margin-right: ${theme.space[3]}px;
                   // TODO remove this below laptop size or when begins to wrap
+
+                  ${bpTabletLG} {
+                    margin: 0;
+                  }
                 `}
               />
               <img
@@ -227,6 +311,10 @@ class Index extends Component {
                 css={css`
                 ${photoStyles}
                   margin-right: ${theme.space[3]}px;
+
+                  ${bpTabletLG} {
+                    margin: 0;
+                  }
                 `}
               />
               <img

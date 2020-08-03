@@ -2,6 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 import theme from '../theme'
 import Link from '../components/link'
+import { bpTabletSM } from '../lib/breakpoints'
 
 const TopicsNav = () => {
   return (
@@ -18,6 +19,10 @@ const TopicsNav = () => {
           margin-right: 12px;
           margin-top: 12px;
           font-size: 16px;
+        }
+
+        ${bpTabletSM} {
+          padding-left: 12px;
         }
       `}
     >
