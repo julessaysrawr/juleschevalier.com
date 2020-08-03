@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 // import Img from 'gatsby-image'
 import { css } from '@emotion/core'
-import theme from '../theme'
+import theme from '../lib/theme'
 
 import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
@@ -174,41 +174,6 @@ class Index extends Component {
               mattis dignissim diam id rhoncus.
             </p>
             <TopicsList />
-            {/* <div
-              css={css`
-                display: flex;
-                justify-content: space-between;
-                width: 450px;
-                height: 300px;
-                flex-wrap: wrap;
-                margin: 0 auto;
-              `}
-            >
-              <Link type="buttonFixedWidth" hrefLocal="/topics/personal-essays/" description="">
-                Personal Essays
-              </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/topics/emotional-wellbeing/" description="">
-                Emotional Wellbeing
-              </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/topics/intentional-living/" description="">
-                Intentional Living
-              </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/topics/recipes/" description="">
-                Recipes
-              </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/topics/design/" description="">
-                Design
-              </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/topics/technology/" description="">
-                Technology
-              </Link>
-              <Link type="buttonFixedWidth" hrefLocal="/topics/inclusion/" description="">
-                Inclusion
-              </Link>
-              <Link type="buttonFixedWidthPrimary" hrefLocal="/articles" description="">
-                All Topics
-              </Link>
-            </div> */}
           </div>
           <div
             css={css`
@@ -279,7 +244,7 @@ class Index extends Component {
                   }
                 `}
               >
-                <Link type="buttonFixedWidth" hrefLocal="/" description="">
+                <Link type="buttonFixedWidth" hrefLocal="/photography" description="">
                   View Portfolio
                 </Link>
               </div>

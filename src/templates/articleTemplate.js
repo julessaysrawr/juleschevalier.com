@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
-import theme from '../theme'
-import paper from '../images/lightpaperfibers_@2x.png'
+import theme from '../lib/theme'
 import LayoutMain from '../components/layout-main'
 import PageContent from '../components/page-content'
 import GetInTouch from '../components/get-in-touch'
@@ -19,38 +18,6 @@ export default function articleTemplate({
   return (
     <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`}>
       <main>
-        {/* <div
-          css={css`
-          background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)), url(${paper});
-          background-repeat: repeat;
-          // padding-top: ${theme.space[7]}px;
-          background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
-          url(${paper});
-        background-repeat: repeat;
-        height: ${theme.contentWidths.paperHeight}px;
-        max-width: ${theme.contentWidths.maxPaperWidth}px;
-        border: 2px solid rgba(136, 128, 113, 0.25);
-        border-top: 0;
-        margin: 0 auto;
-
-          padding-top: 214px;
-          border-bottom: 2px solid rgba(136, 128, 113, 0.25);
-          height: 860px;
-
-          ${bpTabletLG} {
-            padding-top: 15%;
-            border-right: none;
-            border-left: none;
-          }
-          ${bpTabletSM} {
-            padding-top: 20%;
-          }
-
-          ${bpPhone} {
-            padding-top: 30%;
-          }
-        `}
-        > */}
         <PaperBackground>
           <PageContent>
             <img

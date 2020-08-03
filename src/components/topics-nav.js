@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import theme from '../theme'
+import theme from '../lib/theme'
 import Link from '../components/link'
 import { bpTabletSM } from '../lib/breakpoints'
 

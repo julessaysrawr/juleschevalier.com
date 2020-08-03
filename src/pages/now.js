@@ -1,8 +1,7 @@
 import React from 'react'
 import LayoutMain from '../components/layout-main'
 import { css } from '@emotion/core'
-import theme from '../theme'
-import paper from '../images/lightpaperfibers_@2x.png'
+import theme from '../lib/theme'
 // import Emoji from '../components/emoji'
 import Link from '../components/link'
 import GetInTouch from '../components/get-in-touch'
@@ -17,44 +16,7 @@ const Now = () => (
     description={`What I'm currently up to. Now page for Jules Chevalier`}
   >
     <main>
-      {/* <div
-        css={css`
-          background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
-            url(${paper});
-          background-repeat: repeat;
-          height: ${theme.contentWidths.paperHeight}px;
-          max-width: ${theme.contentWidths.maxPaperWidth}px;
-          border: 2px solid rgba(136, 128, 113, 0.25);
-          border-top: 0;
-          margin: 0 auto;
-
-          padding-top: 214px;
-
-          ${bpTabletLG} {
-            padding-top: 15%;
-            border-right: none;
-            border-left: none;
-          }
-          ${bpTabletSM} {
-            padding-top: 20%;
-          }
-
-          ${bpPhone} {
-            padding-top: 30%;
-          }
-        `}
-      > */}
       <PaperBackground>
-        {/* <div
-        css={css`
-          background-color: ${theme.color.white};
-          max-width: 1083px;
-          margin: -646px auto calc(${theme.space[2]}px*13);  // if height of paper is 860, and the white starts 214px down, need negative margin of 646px
-          // margin-bottom: calc(${theme.space[2]}px*13);
-          border: 2px solid rgba(136, 128, 113, 0.25);
-          padding: 88px 109px;
-        `}
-      > */}
         <PageContent>
           <img
             src={nowImage}
@@ -135,11 +97,8 @@ const Now = () => (
             </Link>
           </div>
         </PageContent>
-
         <GetInTouch />
       </PaperBackground>
-
-      {/* </div> */}
     </main>
   </LayoutMain>
 )

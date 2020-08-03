@@ -2,7 +2,7 @@ import React from 'react'
 // import Link from './link'
 // import { Link } from 'gatsby'
 import { css } from '@emotion/core'
-import theme from '../theme'
+import theme from '../lib/theme'
 import { bpPhone, bpTabletSM, bpTabletLG, bpMonitorSM } from '../lib/breakpoints'
 
 const PageContent = props => {

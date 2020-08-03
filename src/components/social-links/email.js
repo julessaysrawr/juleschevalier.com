@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import theme from '../../theme'
+import theme from '../../lib/theme'
 
 /** Renders a link with the email icon
  * @param {object} props

@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
-import theme from '../theme'
+import theme from '../lib/theme'
 import paper from '../images/lightpaperfibers_@2x.png'
 import LayoutMain from '../components/layout-main'
 import GetInTouch from '../components/get-in-touch'

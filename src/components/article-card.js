@@ -2,7 +2,7 @@ import React from 'react'
 // import Link from './link'
 import { Link } from 'gatsby'
 import { css } from '@emotion/core'
-import theme from '../theme'
+import theme from '../lib/theme'
 import { bpPhone } from '../lib/breakpoints'
 
 /** Renders an article card component with link to the article page

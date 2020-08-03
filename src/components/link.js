@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link as GatsbyLink } from 'gatsby'
 import { css } from '@emotion/core'
-import theme from '../theme'
+import theme from '../lib/theme'
 import { bpPhone } from '../lib/breakpoints'
 
 const buttonFixedWidth = css`

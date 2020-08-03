@@ -1,8 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import theme from '../theme'
-import paper from '../images/lightpaperfibers_@2x.png'
-import ContainerLightbox from '../components/container-lightbox'
+import theme from '../lib/theme'
+// import ContainerLightbox from '../components/container-lightbox'
 import LayoutMain from '../components/layout-main'
 import PageContent from '../components/page-content'
 

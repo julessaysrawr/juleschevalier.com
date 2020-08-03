@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { css } from '@emotion/core'
-import theme from '../theme'
+import theme from '../lib/theme'
 import { Link } from 'gatsby'
 import IconInstagram from './social-links/instagram'
 import IconEmail from './social-links/email'

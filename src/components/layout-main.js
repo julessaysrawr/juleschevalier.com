@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Global, css } from '@emotion/core'
 import Nav from '../components/nav.js'
-import theme from '../theme'
+import theme from '../lib/theme'
 import { bpPhone } from '../lib/breakpoints'
 
 const LayoutMain = props => {

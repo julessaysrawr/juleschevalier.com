@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import theme from '../theme'
+import theme from '../lib/theme'
 import paper from '../images/lightpaperfibers_@2x.png'
 import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
