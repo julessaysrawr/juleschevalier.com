@@ -1,36 +1,36 @@
 import React from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import { css } from '@emotion/core'
 import theme from '../lib/theme'
 // import ContainerLightbox from '../components/container-lightbox'
 import LayoutMain from '../components/layout-main'
 import PageContent from '../components/page-content'
 
-// portrait orientation
-import mike from '../images/photography/01.jpg'
-import robin from '../images/photography/03.jpg'
-// import ash from '../images/photography/05.jpg'
-import david from '../images/photography/07.jpg'
-import kayt from '../images/portrait/IMG_5784.jpg'
-import lighthouse from '../images/portrait/11.jpg'
-import honeyBadger from '../images/portrait/13.jpg'
-import susana from '../images/portrait/15.jpg'
-import timmy from '../images/portrait/21.jpg'
-import gizmo from '../images/portrait/23.jpg'
-import james from '../images/portrait/27.jpg'
-
-// landscape orientation
-import jennaMike from '../images/photography/02.jpg'
-import jeanjean from '../images/photography/04.jpg'
-import serengeti from '../images/landscape/22.jpg'
-import herKids from '../images/landscape/08.jpg'
-import metro from '../images/landscape/12.jpg'
-
 import GetInTouch from '../components/get-in-touch'
 import PaperBackground from '../components/paper-background'
 
-const Photography = () => (
+const PortraitStyles = css`
+  // width: 424px;
+  width: 49%;
+  // height: 505px;
+  border: 2px solid rgba(136, 128, 113, 0.25);
+  margin-bottom: 16px;
+  object-fit: cover;
+`
+
+const LandscapeStyles = css`
+  // width: 864px;
+  width: 100%;
+  // height: 505px;
+  border: 2px solid rgba(136, 128, 113, 0.25);
+  margin-bottom: 16px;
+  object-fit: cover;
+`
+
+const Photography = ({ data }) => (
   <LayoutMain
-    title={'📸 Photography | Jules Chevalier'}
+    title={'Photography | Jules Chevalier'}
     description={'Photography by Jules Chevalier'}
   >
     <PaperBackground>
@@ -53,9 +53,8 @@ const Photography = () => (
           `}
         >
           One of my favorite things to do is just wonder with a camera and see what beauty I can
-          discover. Portraits are my way of showing someone the beauty that lives within them.
-          Occasionally I will work with someone to create portraits that show. These days I am
-          inspired by the beauty of nature and the spark of life within each of us.
+          discover. Portraits are my way of showing someone the beauty that lives within them. These
+          days I am inspired by the beauty of nature and the spark of life within each of us.
         </p>
         {/* <ContainerLightbox /> */}
         <div
@@ -66,185 +65,93 @@ const Photography = () => (
             justify-content: space-between;
           `}
         >
-          <img
-            src={david}
-            alt=""
-            css={css`
-              // width: 424px;
-              width: 49%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.honeyBadger.childImageSharp.fluid}
+            alt="Silhouette of a man with beard against an orange backlight stone wall"
+            css={PortraitStyles}
           />
-          <img
-            src={kayt}
-            alt=""
-            css={css`
-              // width: 424px;
-              width: 49%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.robin.childImageSharp.fluid}
+            alt="Portrait of woman with lace shadows on her face"
+            css={PortraitStyles}
           />
-          <img
-            src={serengeti}
-            alt=""
-            css={css`
-              // width: 864px;
-              width: 100%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.serengeti.childImageSharp.fluid}
+            alt="Nantucket Serengeti at sunrise"
+            css={LandscapeStyles}
           />
-          <img
-            src={honeyBadger}
-            alt=""
-            css={css`
-              // width: 424px;
-              width: 49%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.david.childImageSharp.fluid}
+            alt="Black and white portrait of man with beard in patterned button down shirt"
+            css={PortraitStyles}
           />
-          <img
-            src={robin}
-            alt=""
-            css={css`
-              // width: 424px;
-              width: 49%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.kayt.childImageSharp.fluid}
+            alt="Woman with pale purple hair in light grey motorcycle jacket standing in front of a green wall of ivy."
+            css={PortraitStyles}
           />
-          <img
-            src={metro}
-            alt=""
-            css={css`
-              // width: 864px;
-              width: 100%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.metro.childImageSharp.fluid}
+            alt="Wide view of Washington DC metro station with an emphasis on the leading lines of the ceiling"
+            css={LandscapeStyles}
           />
-          <img
-            src={mike}
-            alt=""
-            css={css`
-              // width: 424px;
-              width: 49%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+
+          <Img
+            fluid={data.mike.childImageSharp.fluid}
+            alt="Gloomy black and white image of a man standing outside with his hands in his pockets"
+            css={PortraitStyles}
           />
-          <img
-            src={lighthouse}
-            alt=""
-            css={css`
-              // width: 424px;
-              width: 49%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.lighthouse.childImageSharp.fluid}
+            alt="Sankaty Lighthouse at night"
+            css={PortraitStyles}
           />
-          <img
-            src={jeanjean}
-            alt=""
-            css={css`
-              // width: 864px;
-              width: 100%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.jeanjean.childImageSharp.fluid}
+            alt="Man standing on frozen lake with dog on his shoulders"
+            css={LandscapeStyles}
           />
-          <img
-            src={timmy}
-            alt=""
-            css={css`
-              // width: 424px;
-              width: 49%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+
+          <Img
+            fluid={data.timmy.childImageSharp.fluid}
+            alt="Man smiling standing in front of nascar car collection"
+            css={PortraitStyles}
           />
-          <img
-            src={james}
-            alt=""
-            css={css`
-              // width: 424px;
-              width: 49%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.james.childImageSharp.fluid}
+            alt="Silhouette of person in front of a misty lake"
+            css={PortraitStyles}
           />
-          <img
-            src={herKids}
-            alt=""
-            css={css`
-              // width: 864px;
-              width: 100%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.herKids.childImageSharp.fluid}
+            alt="Mother and daughter at home in living room, smiling and looking at camera"
+            css={LandscapeStyles}
           />
-          <img
-            src={gizmo}
-            alt=""
-            css={css`
-              // width: 424px;
-              width: 49%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+
+          <Img
+            fluid={data.gizmo.childImageSharp.fluid}
+            alt="White and orange tabby cat lying on front paws while looking at camera"
+            css={PortraitStyles}
           />
-          <img
-            src={susana}
-            alt=""
-            css={css`
-              // width: 424px;
-              width: 49%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.susana.childImageSharp.fluid}
+            alt="Woman with blue shawl draped over one shoulder who is smiling while standing in front of green plants"
+            css={PortraitStyles}
           />
-          <img
-            src={jennaMike}
-            alt=""
-            css={css`
-              // width: 864px;
-              width: 100%;
-              // height: 505px;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              margin-bottom: 16px;
-              object-fit: cover;
-            `}
+          <Img
+            fluid={data.jennaMike.childImageSharp.fluid}
+            alt="Couple sitting on low stone wall overlooking peaceful lake with rolling hills in the background"
+            css={LandscapeStyles}
+          />
+          <Img
+            fluid={data.ash.childImageSharp.fluid}
+            alt="Woman with curly hair sitting in front of red brick wall"
+            css={PortraitStyles}
+          />
+          <Img
+            fluid={data.moxie.childImageSharp.fluid}
+            alt="Man wearing Orange Moxie t-shirt"
+            css={PortraitStyles}
           />
         </div>
       </PageContent>
@@ -257,3 +164,127 @@ const Photography = () => (
 )
 
 export default Photography
+
+export const query = graphql`
+  query {
+    david: file(relativePath: { eq: "portrait/07.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    kayt: file(relativePath: { eq: "portrait/kayt.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    serengeti: file(relativePath: { eq: "landscape/22.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    mike: file(relativePath: { eq: "01.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    lighthouse: file(relativePath: { eq: "portrait/11.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    honeyBadger: file(relativePath: { eq: "portrait/13.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    robin: file(relativePath: { eq: "portrait/03.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    metro: file(relativePath: { eq: "landscape/12.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    jeanjean: file(relativePath: { eq: "landscape/04.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    timmy: file(relativePath: { eq: "portrait/21.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    james: file(relativePath: { eq: "portrait/27.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    herKids: file(relativePath: { eq: "landscape/08.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    gizmo: file(relativePath: { eq: "portrait/23.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    susana: file(relativePath: { eq: "portrait/15.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    jennaMike: file(relativePath: { eq: "landscape/02.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ash: file(relativePath: { eq: "portrait/05.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    moxie: file(relativePath: { eq: "portrait/17.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 75) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

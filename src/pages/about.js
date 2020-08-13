@@ -1,5 +1,5 @@
 import React from 'react'
-// import Img from 'gatsby-image'
+import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../lib/theme'
@@ -11,12 +11,32 @@ import GetInTouch from '../components/get-in-touch'
 import { bpTabletSM, bpMonitorSM } from '../lib/breakpoints'
 import PaperBackground from '../components/paper-background'
 
-const About = () => (
+const About = ({ data }) => (
   <LayoutMain title={'About | Jules Chevalier'} description={'About Jules Chevalier'}>
     <main>
       <PaperBackground>
         <PageContent>
-          <img
+          <Img
+            fluid={data.file.childImageSharp.fluid}
+            css={css`
+              width: 865px;
+              height: 468px;
+              margin: 0 auto;
+              border: 2px solid rgba(136, 128, 113, 0.25);
+              object-fit: cover;
+              margin-bottom: 80px;
+
+              ${bpMonitorSM} {
+                width: 100%;
+                height: auto;
+              }
+
+              ${bpTabletSM} {
+                margin-bottom: 10%;
+              }
+            `}
+          />
+          {/* <img
             src={aboutImage}
             alt=""
             css={css`
@@ -36,7 +56,7 @@ const About = () => (
                 margin-bottom: 10%;
               }
             `}
-          />
+          /> */}
           <div
             css={css`
               max-width: ${theme.contentWidths.copyWidth}px;
@@ -119,9 +139,9 @@ export default About
 
 export const query = graphql`
   query {
-    imageOne: file(relativePath: { eq: "jules2019.JPG" }) {
+    file(relativePath: { eq: "beach-path.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000) {
+        fluid(maxWidth: 860) {
           ...GatsbyImageSharpFluid
         }
       }

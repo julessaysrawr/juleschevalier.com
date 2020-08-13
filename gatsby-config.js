@@ -18,7 +18,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`, // this sources the files from the filesystem
       options: {
         name: 'lightbox',
-        path: `${__dirname}/src/images/photography`
+        path: `${__dirname}/src/images/photography` //TODO: revist this when reintroducing lightbox
       }
     },
     {

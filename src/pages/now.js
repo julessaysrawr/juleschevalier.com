@@ -1,4 +1,7 @@
 import React from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
 import LayoutMain from '../components/layout-main'
 import { css } from '@emotion/core'
 import theme from '../lib/theme'
@@ -10,7 +13,7 @@ import PageContent from '../components/page-content'
 import { bpPhone, bpTabletSM, bpTabletLG, bpMonitorSM } from '../lib/breakpoints'
 import PaperBackground from '../components/paper-background'
 
-const Now = () => (
+const Now = ({ data }) => (
   <LayoutMain
     title={`What I'm Doing Now | Jules Chevalier`}
     description={`What I'm currently up to. Now page for Jules Chevalier`}
@@ -18,7 +21,7 @@ const Now = () => (
     <main>
       <PaperBackground>
         <PageContent>
-          <img
+          {/* <img
             src={nowImage}
             alt=""
             css={css`
@@ -32,6 +35,32 @@ const Now = () => (
               ${bpMonitorSM} {
                 width: 100%;
                 height: auto;
+              }
+
+              ${bpTabletSM} {
+                margin-bottom: 10%;
+              }
+            `}
+          /> */}
+          <Img
+            fluid={data.file.childImageSharp.fluid}
+            alt="Jules with their cat General Grievious on their shoulders"
+            css={css`
+              width: 865px;
+              max-width: 865px;
+              height: 468px;
+              margin: 0 auto;
+              border: 2px solid rgba(136, 128, 113, 0.25);
+              object-fit: cover;
+              margin-bottom: 80px;
+
+              ${bpMonitorSM} {
+                width: 100%;
+                // height: 70%;
+                // need width / 1.77
+                object-fit: cover;
+
+                // height: auto;
               }
 
               ${bpTabletSM} {
@@ -65,7 +94,13 @@ const Now = () => (
                 Updated on: July 12th, 2020
               </p>
 
-              <ul>
+              <ul
+                css={css`
+                  li {
+                    margin-left: ${theme.space[3]}px;
+                  }
+                `}
+              >
                 <li>
                   Refreshing this site thanks to the design effort of this{' '}
                   <Link type="inline" href="https://dchevalier.io">
@@ -104,3 +139,15 @@ const Now = () => (
 )
 
 export default Now
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "now.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 865) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

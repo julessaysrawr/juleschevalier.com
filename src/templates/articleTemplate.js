@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import { css } from '@emotion/core'
 import theme from '../lib/theme'
 import LayoutMain from '../components/layout-main'
@@ -20,9 +21,9 @@ export default function articleTemplate({
       <main>
         <PaperBackground>
           <PageContent>
-            <img
-              src={placeholderImage}
-              alt=""
+            <Img
+              alt={frontmatter.title}
+              fluid={frontmatter.featuredImage.childImageSharp.fluid}
               css={css`
                 width: 865px;
                 height: 468px;
@@ -173,6 +174,12 @@ export default function articleTemplate({
                   color: ${theme.color.rawUmber};
                   margin-bottom: ${theme.space[5]}px;
                 }
+
+                img {
+                  ${bpPhone} {
+                    width: 100%;
+                  }
+                }
               `}
             >
               <h1>{frontmatter.title}</h1>
@@ -215,6 +222,13 @@ export const pageQuery = graphql`
         path
         title
         topic
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 860) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
