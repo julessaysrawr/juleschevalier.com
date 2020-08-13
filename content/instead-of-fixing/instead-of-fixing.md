@@ -2,6 +2,7 @@
 path: '/what-to-do-instead-of-fixing'
 date: '2020-03-22'
 title: 'What To Do Instead Of Fixing'
+featuredImage: 'IMG_1090.jpg'
 topic: 'Emotional Wellbeing'
 ---
 

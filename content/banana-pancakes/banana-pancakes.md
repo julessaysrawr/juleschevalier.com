@@ -1,6 +1,6 @@
 ---
 path: '/banana-pancakes'
-photoPath: './banana-pancakes.jpeg'
+featuredImage: 'banana-pancakes.jpeg'
 date: '2020-05-03'
 title: 'Banana Pancakes'
 topic: 'Recipes'

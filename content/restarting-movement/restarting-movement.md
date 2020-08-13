@@ -2,6 +2,7 @@
 path: '/restarting-exercise'
 date: '2020-04-23'
 title: 'Restarting An Exercise Routine'
+featuredImage: "_MG_2433.jpg"
 topic: 'Intentional Living'
 ---
 
