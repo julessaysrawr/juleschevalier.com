@@ -1,4 +1,5 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { Global, css } from '@emotion/core'
 import Nav from '../components/nav.js'
@@ -6,6 +7,21 @@ import theme from '../lib/theme'
 import { bpPhone } from '../lib/breakpoints'
 
 const LayoutMain = props => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            siteUrl
+            thumbnail
+            description
+          }
+        }
+      }
+    `
+  )
+
   return (
     <div>
       <Global
@@ -24,26 +40,29 @@ const LayoutMain = props => {
           h2,
           h3,
           h4 {
-            font-family: 'IBM Plex Serif', serif; //TODO confirm font-family for h4 - different from design
+            font-family: 'IBM Plex Serif', serif;
             color: ${theme.color.black};
           }
 
           h1 {
             font-size: ${theme.textSizes.h1};
-            line-height: 50px;
+            // line-height: 50px;
+            line-height: 1.2;
             font-weight: 400;
             letter-spacing: -1px;
             text-transform: capitalize;
 
             ${bpPhone} {
               font-size: ${theme.textSizes.h1Mobile};
+              line-height: 1.2;
             }
           }
 
           h2 {
             font-size: ${theme.textSizes.h2};
             font-weight: 400;
-            line-height: 38px;
+            // line-height: 38px;
+            line-height: 1.2;
             text-transform: capitalize;
             ${bpPhone} {
               font-size: ${theme.textSizes.h2Mobile};
@@ -53,7 +72,8 @@ const LayoutMain = props => {
           h3 {
             font-size: ${theme.textSizes.h3};
             font-weight: 400;
-            line-height: 30px;
+            // line-height: 30px;
+            line-height: 1.2;
             text-transform: capitalize;
             ${bpPhone} {
               font-size: ${theme.textSizes.h3Mobile};
@@ -83,6 +103,13 @@ const LayoutMain = props => {
             font-size: 16px;
             font-size: ${theme.textSizes.code};
             color: ${theme.color.black};
+            line-height: 1.5;
+          }
+
+          ::selection {
+            // color: red;
+            background: ${theme.color.rawUmberLight};
+            // color: ${theme.color.white};
           }
 
           html,
@@ -114,30 +141,21 @@ const LayoutMain = props => {
         `}
       />
       <Helmet>
-        <title> {props.title || 'Jules Chevalier ▲ Progress Not Perfection'}</title>
+        <title> {props.title || data.site.siteMetadata.title}</title>
         <meta
           name="description"
-          content={
-            props.description ||
-            `Jules Chevalier is an artist who creates using design, code, writing, and photography.`
-          }
+          content={props.description || data.site.siteMetadata.description}
         />
         {/* Facebook */}
-        <meta property="og:title" content="Jules Chevalier ▲ Progress Not Perfection" />
-        <meta property="og:site_name" content="Jules Chevalier ▲ Progress Not Perfection" />
-        <meta
-          property="og:description"
-          content="Jules Chevalier is an artist who creates using design, code, writing, and photography."
-        />
-        <meta property="og:image" content="https://juleschevalier.com/thumbnail.jpg" />
-        <meta property="og:url" content="https://juleschevalier.com/" />
+        <meta property="og:title" content={data.site.siteMetadata.title} />
+        <meta property="og:site_name" content={data.site.siteMetadata.title} />
+        <meta property="og:description" content={data.site.siteMetadata.description} />
+        <meta property="og:image" content={data.site.siteMetadata.thumbnail} />
+        <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
         {/* Twitter */}
-        <meta name="twitter:title" content="Jules Chevalier ▲ Progress Not Perfection" />
-        <meta
-          name="twitter:description"
-          content="Jules Chevalier is an artist who creates using design, code, writing, and photography."
-        />
-        <meta name="twitter:image" content="https://juleschevalier.com/thumbnail.jpg" />
+        <meta name="twitter:title" content={data.site.siteMetadata.title} />
+        <meta name="twitter:description" content={data.site.siteMetadata.description} />
+        <meta name="twitter:image" content={data.site.siteMetadata.thumbnail} />
         <meta name="twitter:card" content="summary_large_image" />
         <html lang="en" />
       </Helmet>

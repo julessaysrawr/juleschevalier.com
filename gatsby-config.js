@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Jules Chevalier`,
-    description: `Jules Chevalier is an artist who creates using design, code, writing, and photography.`,
-    siteUrl: `https://juleschevalier.com/`
+    author: `Jules Chevalier`,
+    title: `Jules Chevalier | Designer, Engineer, Growth Catalyst`,
+    description: `Jules Chevalier is a designer & engineer who writes about emotional wellness, intentional living and inclusion.`,
+    siteUrl: `https://juleschevalier.com/`,
+    thumbnail: `https://juleschevalier.com/thumbnail.png`
   },
   plugins: [
     {
@@ -34,6 +36,9 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-external-links`
+          },
+          {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
               isIconAfterHeader: true
@@ -64,7 +69,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://juleschevalier.com',
-        policy: [{ userAgent: '*', disallow: ['/habits', '/read'] }]
+        policy: [{ userAgent: '*', disallow: ['/topics', '/topics/', '/read', '/read/'] }]
       }
     },
     `gatsby-plugin-emotion`
