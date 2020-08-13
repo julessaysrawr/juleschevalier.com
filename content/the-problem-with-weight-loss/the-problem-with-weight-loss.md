@@ -13,7 +13,7 @@ Somewhere, we stopped asking ourselves how we feel.  Are you hungry?  Then you s
 
 <p>&nbsp;</p>
 
-![Determinants of health by @holisticallygrace](../../images/instagram/determinants_of_health.jpg 'Determinants of health by @holisticallygrace on Instagram')
+![Determinants of health by @holisticallygrace](determinants_of_health.jpg 'Determinants of health by @holisticallygrace on Instagram')
 
 
 [Source: Maria Sosa, MS, MFT, Therapist on Instagram](https://www.instagram.com/p/B5LOCnaAqID/?utm_source=ig_web_copy_link)
@@ -28,7 +28,7 @@ Dieting leads to disordered eating.  Following rules or restrictions outside of 
 
 <p>&nbsp;</p>
 
-![The Dieting Paradox by @zaonutrition](../../images/instagram/the-dieting-paradox.jpg 'The Dieting Paradox by @zaonutrition on Instagram')
+![The Dieting Paradox by @zaonutrition](the-dieting-paradox.jpg 'The Dieting Paradox by @zaonutrition on Instagram')
 
 [Source: Grace Rockwell | Nutritionist](https://www.instagram.com/p/B6vaULylXmd/?utm_source=ig_web_copy_link)
 
