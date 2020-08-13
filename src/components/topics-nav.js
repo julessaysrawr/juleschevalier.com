@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 import theme from '../lib/theme'
 import Link from '../components/link'
-import { bpTabletSM } from '../lib/breakpoints'
+import { bpPhone, bpTabletSM } from '../lib/breakpoints'
 
 const TopicsNav = () => {
   return (
@@ -24,28 +24,34 @@ const TopicsNav = () => {
         ${bpTabletSM} {
           padding-left: 12px;
         }
+
+        ${bpPhone} {
+          margin: 24px auto 36px;
+          justify-content: flex-start;
+          padding-left: 24px;
+        }
       `}
     >
-      <Link hrefLocal="/topics/design/" type="buttonVariableWidth">
-        Design
-      </Link>
       <Link hrefLocal="/topics/emotional-wellbeing/" type="buttonVariableWidth">
         Emotional Wellbeing
       </Link>
-      <Link hrefLocal="/topics/inclusion/" type="buttonVariableWidth">
-        Inclusion
+      <Link hrefLocal="/topics/technology/" type="buttonVariableWidth">
+        Technology
       </Link>
       <Link hrefLocal="/topics/intentional-living/" type="buttonVariableWidth">
         Intentional Living
       </Link>
-      <Link hrefLocal="/topics/personal-essays/" type="buttonVariableWidth">
-        Personal Essays
+      <Link hrefLocal="/topics/design/" type="buttonVariableWidth">
+        Design
+      </Link>
+      <Link hrefLocal="/topics/inclusion/" type="buttonVariableWidth">
+        Inclusion
       </Link>
       <Link hrefLocal="/topics/recipes/" type="buttonVariableWidth">
         Recipes
       </Link>
-      <Link hrefLocal="/topics/technology/" type="buttonVariableWidth">
-        Technology
+      <Link hrefLocal="/topics/personal-essays/" type="buttonVariableWidth">
+        Personal Essays
       </Link>
       <Link hrefLocal="/articles" type="buttonVariableWidthPrimary">
         All Articles
