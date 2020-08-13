@@ -50,6 +50,7 @@ const ArticleCard = props => {
 
             ${bpPhone} {
               width: 300px;
+              padding: 0 12px;
             }
           `}
         >

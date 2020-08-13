@@ -5,6 +5,7 @@ import theme from '../lib/theme'
 import { bpPhone } from '../lib/breakpoints'
 
 const buttonFixedWidth = css`
+  display: inline-block;
   background-color: ${theme.color.black};
   text-align: center;
   padding: 15px 0;
@@ -20,10 +21,11 @@ const buttonFixedWidth = css`
   }
 
   ${bpPhone} {
-    ${buttonFixedWidth}
+    ${buttonVariableWidth}
     width: auto;
-    height: auto;
-    padding: 8px 18px;
+    // height: auto;
+    height: 58px;
+    padding: 14px 18px;
   }
 `
 const buttonFixedWidthPrimary = css`

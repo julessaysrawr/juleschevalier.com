@@ -31,7 +31,7 @@ const BlogPage = ({
   return (
     <LayoutMain
       title={'All Articles | Jules Chevalier'}
-      description={'Articles written by Jules Chevalier'}
+      description={'Read articles written by Jules Chevalier'}
     >
       <main>
         <div
@@ -41,13 +41,27 @@ const BlogPage = ({
             background-repeat: repeat;
             padding-top: ${theme.space[8]}px;
             border-bottom: 2px solid rgba(136, 128, 113, 0.25);
+            border-right: 2px solid rgba(136, 128, 113, 0.25);
+            border-left: 2px solid rgba(136, 128, 113, 0.25);
+            margin: 0 auto;
             margin-bottom: calc(${theme.space[2]}px*13);
+            max-width: ${theme.contentWidths.maxPaperWidth}px;
+
+            ${bpPhone} {
+              // margin-bottom: ${theme.space[4]}px;
+              padding-top: 156px;
+            }
           `}
         >
           <h1
             css={css`
               margin: 0 auto;
               text-align: center;
+
+              ${bpPhone} {
+                text-align: left;
+                padding-left: 24px;
+              }
             `}
           >
             All Articles

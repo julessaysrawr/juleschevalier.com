@@ -77,7 +77,7 @@ const ArticleShare = props => {
           }
         `}
       >
-        {props.topic} Articles &gt;
+        All {props.topic} Articles &gt;
       </Link>
     </div>
   )

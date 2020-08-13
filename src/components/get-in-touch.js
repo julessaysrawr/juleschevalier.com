@@ -30,7 +30,8 @@ const GetInTouch = () => {
       <h2
         css={css`
           text-align: center;
-          margin: calc(${theme.space[6]}px*1.5) auto ${theme.space[4]}px;
+          // margin: calc(${theme.space[6]}px*1.5) auto ${theme.space[4]}px;
+          margin: calc(${theme.space[2]}px*7) auto ${theme.space[4]}px;
           font-size: ${theme.textSizes.h1};
           line-height: 50px;
           font-weight: 400;
@@ -58,7 +59,7 @@ const GetInTouch = () => {
           max-width: 246px;
           display: flex;
           justify-content: space-between;
-          margin: 0 auto calc(${theme.space[2]}px*9);
+          margin: 0 auto calc(${theme.space[2]}px*7);
         `}
       >
         <IconEmail url={'mailto:hellothere@juleschevalier.com'} />
