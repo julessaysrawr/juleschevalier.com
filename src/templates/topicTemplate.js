@@ -39,7 +39,12 @@ const Topic = ({ pageContext, data }) => {
             background-repeat: repeat;
             padding-top: ${theme.space[8]}px;
             border-bottom: 2px solid rgba(136, 128, 113, 0.25);
+            border-right: 2px solid rgba(136, 128, 113, 0.25);
+            border-left: 2px solid rgba(136, 128, 113, 0.25);
+            margin: 0 auto;
             margin-bottom: calc(${theme.space[2]}px*13);
+            max-width: ${theme.contentWidths.maxPaperWidth}px;
+
 
             ${bpTabletLG} {
               padding-top: 20%;
@@ -58,6 +63,11 @@ const Topic = ({ pageContext, data }) => {
             css={css`
               margin: 0 auto;
               text-align: center;
+
+              ${bpPhone} {
+                text-align: left;
+                padding-left: 24px;
+              }
             `}
           >
             {pageHeader}
@@ -103,24 +113,6 @@ const Topic = ({ pageContext, data }) => {
             </Masonry>
           </div>
         </div>
-
-        {/* <ul>
-          {edges.map(({ node }) => {
-            const { path, title } = node.frontmatter
-            return (
-              <li
-                key={path}
-                css={css`
-                  padding-bottom: ${theme.space[3]}px;
-                `}
-              >
-                <Link type={'navigation'} hrefLocal={path}>
-                  {title}
-                </Link>
-              </li>
-            )
-          })}
-        </ul> */}
         <GetInTouch />
       </main>
     </LayoutMain>
