@@ -4,6 +4,20 @@ import { css } from '@emotion/core'
 import theme from '../lib/theme'
 import { bpPhone } from '../lib/breakpoints'
 
+const inline = css`
+  text-decoration: none;
+  background-color: ${theme.color.transparent};
+  border-bottom: 1px solid ${theme.color.rawUmber};
+  color: ${theme.color.rawUmber};
+  font-weight: 500;
+  transition: 0.3s ease all;
+  &:hover {
+    color: ${theme.color.rawUmberLight};
+    border-bottom: 1px solid ${theme.color.rawUmberLight};
+    transition: 0.3s ease all;
+  }
+`
+
 const buttonFixedWidth = css`
   display: inline-block;
   background-color: ${theme.color.black};
@@ -28,6 +42,35 @@ const buttonFixedWidth = css`
     padding: 14px 18px;
   }
 `
+
+const buttonInline = css`
+  display: inline-block;
+  ${inline}
+  transition: 0.3s ease all;
+
+  &:hover {
+    background-color: ${theme.color.rawUmberLight};
+    color: ${theme.color.white};
+  }
+
+  &::after {
+    content: ' >';
+  }
+
+  ${bpPhone} {
+    background-color: ${theme.color.rawUmber};
+    color: ${theme.color.white};
+    width: auto;
+    // height: auto;
+    height: 58px;
+    padding: 14px 18px;
+
+    &::after {
+      content: '';
+    }
+  }
+`
+
 const buttonFixedWidthPrimary = css`
   ${buttonFixedWidth}
   background-color: ${theme.color.rawUmber};
@@ -45,20 +88,6 @@ const buttonVariableWidthPrimary = css`
   background-color: ${theme.color.rawUmber};
 `
 
-const inline = css`
-  text-decoration: none;
-  background-color: ${theme.color.transparent};
-  border-bottom: 1px solid ${theme.color.rawUmber};
-  color: ${theme.color.rawUmber};
-  font-weight: 500;
-  transition: 0.3s ease all;
-  &:hover {
-    color: ${theme.color.rawUmberLight};
-    border-bottom: 1px solid ${theme.color.rawUmberLight};
-    transition: 0.3s ease all;
-  }
-`
-
 /**
  * @param {object} props
  * @param { `inline` | `buttonFixedWidth` | `buttonVariableWidth` }  props.type - The type of link styles
@@ -68,13 +97,26 @@ const inline = css`
  */
 
 const CustomLink = props => {
-
   // BUTTONS
   if (props.type === 'buttonFixedWidth') {
     return (
       <GatsbyLink
         to={props.hrefLocal}
         css={buttonFixedWidth}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  if (props.type === 'buttonInline') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={buttonInline}
         aria-label={props.description}
         tabIndex="0"
         onClick={props.onClick}

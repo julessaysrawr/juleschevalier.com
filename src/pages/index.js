@@ -46,7 +46,7 @@ const Index = ({ data }) => {
             padding-top: calc(${theme.space[2]}px*29);
 
             ${bpPhone} {
-              height: 900px;
+              // height: 900px;
               padding-top: calc(${theme.space[2]}px*20);
               border-left: none;
               border-right: none;
@@ -99,15 +99,17 @@ const Index = ({ data }) => {
               css={css`
                 display: flex;
                 justify-content: space-between;
-                max-width: 450px;
+                max-width: 441px;
                 margin: 0 auto;
 
                 ${bpPhone} {
+                  max-width: 300px;
                   text-align: left;
                   padding: 0 ${theme.space[4]}px;
                   // flex-direction: column;
                   flex-wrap: wrap;
                   margin: 0;
+                  // justify-content: space-around;
                 }
               `}
             >
@@ -116,16 +118,16 @@ const Index = ({ data }) => {
               </Link>
               <div
                 css={css`
-                    // padding-top: ${theme.space[3]}px;  //this was used for inline link styling
+                    padding-top: 14px;  //this was used for inline link styling
 
                     ${bpPhone} {
                       // margin-top: calc(${theme.space[2]}px*6);  //this was used for inline link styling
-                      margin-top: 16px;
+                      // margin-top: 16px;
                     }
                   `}
               >
                 <Link
-                  type="buttonFixedWidthPrimary"
+                  type="buttonInline"
                   hrefLocal="/now"
                   description="What I'm Doing Now"
                   css={css`
@@ -176,6 +178,10 @@ const Index = ({ data }) => {
               max-width: ${theme.contentWidths.copyWidth}px;
               margin: 0 auto calc(${theme.space[5]}px*1.5);
 
+              ${bpTabletSM} {
+                padding: 0 ${theme.space[4]}px;
+              }
+
               ${bpPhone} {
                 text-align: left;
                 padding: 0 ${theme.space[4]}px;
@@ -195,7 +201,10 @@ const Index = ({ data }) => {
 
             ${bpPhone} {
               display: block;
-              background-color: ${theme.color.border};
+              border-top: 2px solid ${theme.color.border};
+              border-left: none;
+              border-right: none;
+              border-bottom: none;
               max-width: 85%;
               margin: 0 auto;
             }
@@ -283,6 +292,7 @@ const Index = ({ data }) => {
 
               ${bpPhone} {
                 margin-top: 72px;
+                width: 100%;
               }
             `}
           >
