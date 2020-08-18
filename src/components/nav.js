@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { css } from '@emotion/core'
+import useWindowSize from '../hooks/useWindowSize'
 import theme from '../lib/theme'
 import { Link } from 'gatsby'
 import IconInstagram from './social-links/instagram'
@@ -12,6 +13,8 @@ import { bpTabletLG } from '../lib/breakpoints'
 const Nav = () => {
   const [open, setOpen] = useState(false)
 
+  const windowSize = useWindowSize()
+
   const pageLink = css`
     text-decoration: none;
     // margin: ${theme.space[2]}px ${theme.space[4]}px 0;
@@ -21,10 +24,45 @@ const Nav = () => {
     padding-top: 10px;
     font-weight: 400;
     font-size: 20px;
+    // transition: 0.3s ease all;
+    // transition: 3s ease all;
+    // border: none;
 
-    // line-height: 2;
-    &:hover {
-      text-decoration: underline;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: ${theme.color.black};
+      height: 2px;
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+
+    &:hover::before {
+      // text-decoration: underline;
+      // border-bottom: 1px solid ${theme.color.black};
+      // transition: 0.3s ease all;
+    // transition: 3s ease all;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+
     }
 
     ${bpTabletLG} {
@@ -46,6 +84,7 @@ const Nav = () => {
         display: flex;
         justify-content: space-between;
         padding: ${theme.space[6]}px;
+        padding-top: 48px;
         position: absolute;
         top: 0;
 
@@ -54,12 +93,11 @@ const Nav = () => {
         max-width: 1440px;
 
         ${bpTabletLG} {
-
           padding: ${theme.space[5]}px ${theme.space[4]}px;
         }
-
         ${open === true
-          ? 'position: absolute; top: 0; left: 0; background-color: white; height: 100vh; width: 100vw; flex-direction: column; z-index: 1;'
+          ? `position: absolute; top: 0; left: 0; background-color: ${theme.color.paperBeige};
+          height: ${windowSize.height}px; width: 100vw; flex-direction: column; z-index: 1; position: fixed;`
           : ''}
       `}
     >
@@ -141,6 +179,7 @@ const Nav = () => {
             position: absolute;
             // background: #8e44ad;
             padding: 10px;
+            padding-top: 9px;
             height: 40px;
             cursor: pointer;
             right: 16px;
