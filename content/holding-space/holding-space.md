@@ -2,7 +2,7 @@
 path: "/holding-space"
 date: "2019-12-29"
 title: 'Holding Space'
-featuredImage: "_MG_1356.jpg"
+featuredImage: "IMG_1356.jpg"
 topic: 'Emotional Wellbeing'
 ---
 

@@ -2,7 +2,7 @@
 path: '/change-your-state'
 date: '2019-07-12'
 title: 'Change Your State'
-featuredImage: "_DSC5524.jpg"
+featuredImage: "DSC5524.jpg"
 topic: 'Emotional Wellbeing'
 ---
 

@@ -2,7 +2,7 @@
 path: '/affirm-yourself'
 date: '2020-06-23'
 title: 'Affirm Yourself'
-featuredImage: "_DSC1751.jpg"
+featuredImage: "DSC1751.jpg"
 topic: 'Emotional Wellbeing'
 ---
 

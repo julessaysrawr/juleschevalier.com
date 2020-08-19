@@ -2,7 +2,7 @@
 path: '/inclusive-ways-to-say-hey-guys'
 date: '2020-07-06'
 title: 'Inclusive Ways To Say "Hey Guys"'
-featuredImage: "_MG_0559.jpg"
+featuredImage: "IMG_0559.jpg"
 topic: 'Inclusion'
 ---
 
