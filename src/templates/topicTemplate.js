@@ -45,7 +45,6 @@ const Topic = ({ pageContext, data }) => {
             margin-bottom: calc(${theme.space[2]}px*13);
             max-width: ${theme.contentWidths.maxPaperWidth}px;
 
-
             ${bpTabletLG} {
               padding-top: 20%;
             }
@@ -55,7 +54,8 @@ const Topic = ({ pageContext, data }) => {
             }
 
             ${bpPhone} {
-              padding-top: 30%;
+              // padding-top: 30%;
+              padding-top: 156px;
             }
           `}
         >

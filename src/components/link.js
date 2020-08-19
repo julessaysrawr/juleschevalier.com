@@ -35,7 +35,6 @@ const buttonFixedWidth = css`
   }
 
   ${bpPhone} {
-    ${buttonVariableWidth}
     width: auto;
     // height: auto;
     height: 58px;
@@ -49,8 +48,7 @@ const buttonInline = css`
   transition: 0.3s ease all;
 
   &:hover {
-    background-color: ${theme.color.rawUmberLight};
-    color: ${theme.color.white};
+    color: ${theme.color.rawUmberLight};
   }
 
   &::after {

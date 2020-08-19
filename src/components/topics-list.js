@@ -53,7 +53,7 @@ const TopicsList = () => {
         Personal Essays
       </Link>
       <Link type="buttonFixedWidthPrimary" hrefLocal="/articles" description="">
-        All Topics
+        All Articles
       </Link>
     </div>
   )

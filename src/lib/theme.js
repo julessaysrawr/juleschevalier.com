@@ -6,6 +6,7 @@ const color = {
   rawUmberLight: '#A98B58',
   border: 'rgba(136, 128, 113, 0.25)',
   paperMixin: 'rgba(148, 112, 62, 0.05)',
+  paperBeige: '#F9F6F2',
   primary: '#315937',
   primaryMedium: '#69866D',
   primaryLight: '#A1B3A4',
@@ -64,6 +65,11 @@ const contentWidths = {
   paperHeight: 800
 }
 
+const iconSizes = {
+  small: 24,
+  medium: 32
+}
+
 const characterCodes = {
   apostrophe: '&apos;',
   caret: '&gt;'
@@ -75,5 +81,6 @@ export default {
   buttonPadding,
   space,
   contentWidths,
+  iconSizes,
   characterCodes
 }

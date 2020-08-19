@@ -8,7 +8,7 @@ import GetInTouch from '../components/get-in-touch'
 import TopicsNav from '../components/topics-nav'
 import ArticleCard from '../components/article-card'
 import Masonry from 'react-masonry-component'
-import { bpPhone, bpTabletLG } from '../lib/breakpoints'
+import { bpPhone, bpTabletLG, bpTabletSM } from '../lib/breakpoints'
 
 const BlogPage = ({
   data: {
@@ -47,6 +47,13 @@ const BlogPage = ({
             margin-bottom: calc(${theme.space[2]}px*13);
             max-width: ${theme.contentWidths.maxPaperWidth}px;
 
+            ${bpTabletLG} {
+              padding-top: 20%;
+            }
+
+            ${bpTabletSM} {
+              padding-top: 25%;
+            }
             ${bpPhone} {
               // margin-bottom: ${theme.space[4]}px;
               padding-top: 156px;

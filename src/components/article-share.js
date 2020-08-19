@@ -51,7 +51,7 @@ const ArticleShare = props => {
       >
         <IconEmail
           articleSharing={true}
-          url={`mailto:?body=I thought you might enjoy this post: ${props.title}, ${baseUrl}${props.slug}`}
+          url={`mailto:?body=I thought you might enjoy this article: ${props.title}, ${baseUrl}${props.slug}`}
         />
         {/* ?body=I thought you might enjoy this post: J.Crew Sale Picks,
         https://blog.natalieborton.com/j-crew-sale-picks/ */}

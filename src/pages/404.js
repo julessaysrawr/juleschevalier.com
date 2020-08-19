@@ -6,7 +6,7 @@ import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
 import Emoji from '../components/emoji'
 import image404 from '../images/404-Error-Cute.svg'
-import { bpTabletSM } from '../lib/breakpoints'
+import { bpTabletSM, bpPhone } from '../lib/breakpoints'
 
 const FourOhFour = () => (
   <LayoutMain>
@@ -21,6 +21,9 @@ const FourOhFour = () => (
           padding-top: ${theme.space[6]}px;
           border-bottom: 2px solid rgba(136, 128, 113, 0.25);
 
+          ${bpPhone} {
+            background-size: 100%; // this fixes the background image being pixelated on mobile
+          }
           // ${bpTabletSM} {
           //   height: 100vh;
           // }
