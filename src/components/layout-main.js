@@ -115,8 +115,10 @@ const LayoutMain = props => {
           html,
           body {
             box-sizing: border-box;
+            -moz-osx-font-smoothing: grayscale;
             -webkit-font-smoothing: antialiased;
             -moz-font-smoothing: antialiased;
+            -font-smoothing: antialiased;
             background-color: ${theme.color.white};
           }
 
