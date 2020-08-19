@@ -37,6 +37,7 @@ const TopicssPage = ({
 
             ${bpPhone} {
               padding-top: 30%;
+              background-size: 100%; // this fixes the background image being pixelated on mobile
             }
           `}
         >

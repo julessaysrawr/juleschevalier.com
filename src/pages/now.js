@@ -48,7 +48,7 @@ const Now = ({ data }) => (
             css={css`
               width: 865px;
               max-width: 865px;
-              height: 468px;
+              // height: 468px;
               margin: 0 auto;
               border: 2px solid rgba(136, 128, 113, 0.25);
               object-fit: cover;
@@ -142,7 +142,7 @@ export default Now
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "now.jpg" }) {
+    file(relativePath: { eq: "now2020.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 865) {
           ...GatsbyImageSharpFluid

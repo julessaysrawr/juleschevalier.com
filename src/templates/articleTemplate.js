@@ -26,7 +26,7 @@ export default function articleTemplate({
               fluid={frontmatter.featuredImage.childImageSharp.fluid}
               css={css`
                 width: 865px;
-                height: 468px;
+                // height: 468px;
                 border: 2px solid rgba(136, 128, 113, 0.25);
                 object-fit: cover;
                 margin: 0 auto 80px;
@@ -224,7 +224,7 @@ export const pageQuery = graphql`
         topic
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 860) {
+            fluid(maxWidth: 860, quality: 75) {
               ...GatsbyImageSharpFluid
             }
           }

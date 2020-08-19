@@ -188,7 +188,7 @@ export const query = graphql`
         }
       }
     }
-    mike: file(relativePath: { eq: "01.jpg" }) {
+    mike: file(relativePath: { eq: "portrait/01.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500, quality: 75) {
           ...GatsbyImageSharpFluid

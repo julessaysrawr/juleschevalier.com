@@ -47,6 +47,7 @@ const Index = ({ data }) => {
 
             ${bpPhone} {
               // height: 900px;
+              background-size: 100%; // this fixes the background image being pixelated on mobile
               padding-top: calc(${theme.space[2]}px*20);
               border-left: none;
               border-right: none;

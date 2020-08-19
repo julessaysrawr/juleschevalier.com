@@ -8,7 +8,7 @@ import Link from '../components/link'
 import PageContent from '../components/page-content'
 import aboutImage from '../images/beach-path.jpg'
 import GetInTouch from '../components/get-in-touch'
-import { bpTabletSM, bpMonitorSM } from '../lib/breakpoints'
+import { bpTabletSM, bpMonitorSM, bpPhone } from '../lib/breakpoints'
 import PaperBackground from '../components/paper-background'
 
 const About = ({ data }) => (
@@ -20,7 +20,7 @@ const About = ({ data }) => (
             fluid={data.file.childImageSharp.fluid}
             css={css`
               width: 865px;
-              height: 468px;
+              // height: 468px;
               margin: 0 auto;
               border: 2px solid rgba(136, 128, 113, 0.25);
               object-fit: cover;
@@ -75,7 +75,7 @@ const About = ({ data }) => (
                 margin-bottom: 48px;
               `}
             >
-              Hello there, My name is Jules. I am a designer and engineer living in western
+              Hello there, My name is Jules. I am a Designer and Engineer living in Western
               Massachusetts. My pronouns are they/them. Creating experiences that humans enjoy and
               learn from is my passion. Lifting up and empowering others is my calling. Expanding
               the ideas of what&apos;s possible and what you are capable of is what I love my
@@ -139,9 +139,9 @@ export default About
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "beach-path.jpg" }) {
+    file(relativePath: { eq: "jules2020.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 860) {
+        fluid(maxWidth: 860, quality: 75) {
           ...GatsbyImageSharpFluid
         }
       }
