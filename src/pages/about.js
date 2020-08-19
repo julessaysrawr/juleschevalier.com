@@ -75,8 +75,8 @@ const About = ({ data }) => (
                 margin-bottom: 48px;
               `}
             >
-              Hello there, My name is Jules. I am a Designer and Engineer living in Western
-              Massachusetts. My pronouns are they/them. Creating experiences that humans enjoy and
+              Hello there, my name is Jules and my pronouns are they/them. I am a Designer and
+              Engineer living in Western Massachusetts. Creating experiences that humans enjoy and
               learn from is my passion. Lifting up and empowering others is my calling. Expanding
               the ideas of what&apos;s possible and what you are capable of is what I love my
               calling. Being able to provide resources to someone who feels stuck or restrained
