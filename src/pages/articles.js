@@ -49,6 +49,8 @@ const BlogPage = ({
 
             ${bpTabletLG} {
               padding-top: 20%;
+              border-right: none;
+              border-left: none;
             }
 
             ${bpTabletSM} {
