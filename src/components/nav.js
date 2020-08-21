@@ -24,14 +24,13 @@ const Nav = () => {
     padding-top: 10px;
     font-weight: 400;
     font-size: 20px;
-    // transition: 0.3s ease all;
-    // transition: 3s ease all;
-    // border: none;
 
     display: inline-block;
     vertical-align: middle;
+
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
+
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
@@ -39,28 +38,32 @@ const Nav = () => {
     &::before {
       content: "";
       position: absolute;
-      z-index: -1;
+      // z-index: -1;
       left: 0;
       right: 0;
       bottom: 0;
       background: ${theme.color.black};
       height: 2px;
+
+      -ms-transform: translateY(4px);
       -webkit-transform: translateY(4px);
+      -moz-transform: translateY(4px);
       transform: translateY(4px);
+
       -webkit-transition-property: transform;
       transition-property: transform;
+
       -webkit-transition-duration: 0.3s;
       transition-duration: 0.3s;
+
       -webkit-transition-timing-function: ease-out;
       transition-timing-function: ease-out;
     }
 
     &:hover::before {
-      // text-decoration: underline;
-      // border-bottom: 1px solid ${theme.color.black};
-      // transition: 0.3s ease all;
-    // transition: 3s ease all;
+      -ms-transform: translateY(0);
       -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
       transform: translateY(0);
 
     }
