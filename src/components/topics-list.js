@@ -9,8 +9,12 @@ const TopicsList = () => {
     <div
       css={css`
         display: flex;
-        justify-content: space-evenly;
-        max-width: 476px; //TODO negative margin to really center this
+        justify-content: space-around;
+        // justify-content: space-evenly;  // this doesn't work in edge with flexbox, so controlling by width instead
+
+        // max-width: 476px; //TODO negative margin to really center this
+        max-width: 452px; //TODO negative margin to really center this
+
         flex-wrap: wrap;
         margin: 0 auto;
 
@@ -30,7 +34,6 @@ const TopicsList = () => {
         }
       `}
     >
-
       <Link type="buttonFixedWidth" hrefLocal="/topics/emotional-wellbeing/" description="">
         Emotional Wellbeing
       </Link>

@@ -163,9 +163,6 @@ const LayoutMain = props => {
       </Helmet>
       <div
         css={css`
-          // margin: 0 auto;
-          // display: block;
-          // position: relative;
           display: flex;
           justify-content: center;
           align-items: center;
