@@ -1,203 +1,230 @@
-import React from 'react'
-import Link from './link'
-import '../styles/main.scss'
+import React, { useState } from 'react'
+import { css } from '@emotion/core'
+import useWindowSize from '../hooks/useWindowSize'
+import theme from '../lib/theme'
+import { Link } from 'gatsby'
+import IconInstagram from './social-links/instagram'
+import IconEmail from './social-links/email'
+import IconTwitter from './social-links/twitter'
+import IconGithub from './social-links/github'
+import IconLinkedIn from './social-links/linkedin'
+import { bpTabletLG } from '../lib/breakpoints'
 
 const Nav = () => {
+  const [open, setOpen] = useState(false)
+
+  const windowSize = useWindowSize()
+
+  const pageLink = css`
+    text-decoration: none;
+    margin: 0 ${theme.space[4]}px;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: ${theme.color.black};
+      height: 2px;
+
+      -ms-transform: translateY(4px);
+      -webkit-transform: translateY(4px);
+      -moz-transform: translateY(4px);
+      transform: translateY(4px);
+
+      -webkit-transition-property: transform;
+      transition-property: transform;
+
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+
+    &:hover::before {
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+
+    ${bpTabletLG} {
+      // text-align: center;
+      // margin: 0 auto;
+      font-size: ${theme.textSizes.h1Mobile};
+
+      ${open === true
+        ? 'display: flex; justify-content: center; text-align: center; margin: 0 auto;'
+        : ''}
+    }
+  `
+
   return (
-    <div>
-      <Link hrefLocal="/">
-        <header className="center space-above space-below">
-          <h1 className="name-plate">Jules Chevalier</h1>
-          <h3 className="tag-line">Progress not perfection</h3>
+    <div
+      css={css`
+        display: flex;
+        justify-content: space-between;
+        padding: ${theme.space[6]}px;
+        padding-top: 48px;
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+        max-width: 1440px;
+
+        ${bpTabletLG} {
+          padding: ${theme.space[5]}px ${theme.space[4]}px;
+        }
+        ${open === true
+          ? `position: absolute; top: 0; left: 0; background-color: ${theme.color.paperBeige};
+          height: ${windowSize.height}px; width: 100vw; flex-direction: column; z-index: 1; position: fixed;`
+          : ''}
+      `}
+    >
+      <Link
+        to="/"
+        css={css`
+          text-decoration: none;
+        `}
+      >
+        <header>
+          <p
+            css={css`
+              font-family: 'IBM Plex Serif';
+              font-size: 30px;
+              font-weight: 700;
+              margin-bottom: 0;
+              letter-spacing: -1px;
+            `}
+          >
+            Jules Chevalier
+          </p>
         </header>
       </Link>
-      <div style={{ display: 'flex' }}>
-        <nav className="nav">
-          <ul>
-            <li>
-              <Link type={'navigation'} hrefLocal={'/articles'}>
-                Writing
-              </Link>
-            </li>
-            <li>
-              <Link type={'navigation'} hrefLocal={'/photography'}>
-                Photography
-              </Link>
-            </li>
-            <li>
-              <Link type={'navigation'} hrefLocal={'/about'}>
-                About
-              </Link>
-            </li>
-          </ul>
-        </nav>
+      <nav
+        css={css`
+          display: flex;
+          // margin: 0 336px;
+
+          ${bpTabletLG} {
+            display: none;
+
+            ${open === true
+              ? 'display: flex; flex-direction: column; justify-content: center;'
+              : ''}
+          }
+        `}
+      >
+        <Link to="/articles" css={pageLink} aria-label="Go to all articles">
+          Writing
+        </Link>
+        <Link to="/photography" css={pageLink} aria-label="Go to photography page">
+          Photography
+        </Link>
+        <Link to="/about" css={pageLink} aria-label="Go to about page">
+          About
+        </Link>
+      </nav>
+      <div
+        css={css`
+          display: flex;
+          justify-content: space-between;
+          width: 184px;
+          padding-top: calc(${theme.space[2]}px*1.5);
+          padding-top: 15px;
+          // padding-top: 13px;
+
+          ${bpTabletLG} {
+            display: none;
+
+            ${open === true
+              ? 'display: flex; justify-content: space-between; margin: 0 auto; align-self: flex-end;'
+              : ''}
+          }
+        `}
+      >
+        <IconEmail url={'mailto:hellothere@juleschevalier.com'} />
+        <IconInstagram />
+        <IconTwitter url={'https://twitter.com/julessaysrawr'} />
+        <IconGithub />
+        <IconLinkedIn url={'https://www.linkedin.com/in/jules-chevalier-35587337'} />
+      </div>
+      <div
+        // MOBILE NAV ICON
+        css={css`
+          display: none;
+
+          ${bpTabletLG} {
+            display: block;
+            position: absolute;
+            padding: 10px;
+            padding-top: 9px;
+            height: 40px;
+            cursor: pointer;
+            right: 16px;
+          }
+        `}
+        onClick={() => setOpen(!open)}
+      >
+        <div
+          css={css`
+            width: 35px;
+            height: 3px;
+            background-color: ${theme.color.black};
+            margin: 6px 0;
+            transition: 0.4s;
+            border-radius: 5px;
+
+            // if menu is open
+            // -webkit-transform: rotate(-45deg) translate(-9px, 5px);
+            // transform: rotate(-45deg) translate(-9px, 5px);
+            ${open === true
+              ? '-webkit-transform: rotate(-45deg) translate(-9px, 5px); transform: rotate(-45deg) translate(-9px, 5px);'
+              : ''}
+          `}
+        />
+        <div
+          css={css`
+            width: 35px;
+            height: 3px;
+            background-color: ${theme.color.black};
+            margin: 6px 0;
+            transition: 0.4s;
+            border-radius: 5px;
+            ${open === true ? 'opacity: 0;' : ''}
+          `}
+        />
+        <div
+          css={css`
+            width: 35px;
+            height: 3px;
+            background-color: ${theme.color.black};
+            margin: 6px 0;
+            transition: 0.4s;
+            border-radius: 5px;
+            ${open === true
+              ? '-webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px);'
+              : ''}
+          `}
+        />
       </div>
     </div>
   )
 }
 
 export default Nav
-
-// import React from 'react'
-// import Link from './link'
-// import { Link as GatsbyLink } from 'gatsby'
-// import { css } from '@emotion/core'
-// import nameplate from '../images/juleschevalier.svg'
-// import theme from '../theme'
-// import device from '../device'
-
-// const Nav = () => {
-//   return (
-//     <div>
-//       <div
-//         css={css`
-//           display: flex;
-//           margin: ${theme.space[3]}px auto ${theme.space[5]}px;
-//           width: 900px;
-//           justify-content: space-between;
-
-//           ${device.tabletPro} {
-//             width: 90%;
-//           }
-
-//           ${device.phone} {
-//             flex-direction: column;
-//           }
-//         `}
-//       >
-//         <GatsbyLink to={'/'}>
-//           <p
-//             css={css`
-//               font-size: ${theme.headingSizes.h3};
-//               font-family: ${theme.fontFamily.raleway};
-//               padding: 0;
-//               margin: 0;
-//             `}
-//           >
-//             Jules Chevalier
-//           </p>
-//         </GatsbyLink>
-//         <nav
-//           css={css`
-//             display: flex;
-//             width: 400px;
-
-//             ${device.tabletPro} {
-//               width: 55%;
-//             }
-
-//             ${device.phone} {
-//               width: 100%;
-//             }
-//           `}
-//         >
-//           <ul
-//             css={css`
-//               position: relative;
-//               list-style: none;
-//               display: flex;
-//               justify-content: space-between;
-//               width: 100%;
-//               flex-wrap: wrap;
-
-//               li {
-//                 font-size: ${theme.textSizes.paragraph};
-//                 padding-top: calc(${theme.space[2]}px * 1.8);
-//               }
-//             `}
-//           >
-//             <li
-//               css={css`
-//                 postion: relative;
-//                 display: inline-block;
-//                 &:hover ul {
-//                   display: block;
-//                 }
-//               `}
-//             >
-//               <Link type={'navigation'} hrefLocal={'/topics'}>
-//                 Articles{' '}
-//                 <svg
-//                   version="1.1"
-//                   id="Capa_1"
-//                   xmlns="http://www.w3.org/2000/svg"
-//                   x="0px"
-//                   y="0px"
-//                   width="10px"
-//                   height="10px"
-//                   viewBox="0 0 451.847 451.847"
-//                 >
-//                   <g>
-//                     <path
-//                       fill={`${theme.color.greyDark}`}
-//                       d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
-// 		c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
-// 		c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"
-//                     />
-//                   </g>
-//                 </svg>
-//               </Link>
-//               <ul
-//                 css={css`
-//                   display: none;
-//                   position: absolute;
-//                   z-index: 1;
-//                   background-color: ${theme.color.white};
-//                   // opacity: 0.9;
-//                   // margin-left: -${theme.space[3]}px;
-//                   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-//                   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-
-//                   padding: 0 ${theme.space[3]}px ${theme.space[3]}px;
-//                 `}
-//               >
-//                 <li>
-//                   <Link type="navigation" hrefLocal={'/articles/intentional-living/'}>
-//                     Intentional Living
-//                   </Link>
-//                 </li>
-//                 <li>
-//                   <Link type="navigation" hrefLocal={'/articles/design/'}>
-//                     Design
-//                   </Link>
-//                 </li>
-//                 <li>
-//                   <Link type="navigation" hrefLocal={'/articles/technology/'}>
-//                     Technology
-//                   </Link>
-//                 </li>
-//                 <li>
-//                   <Link type="navigation" hrefLocal={'/articles/emotional-wellbeing/'}>
-//                     Emotional Wellbeing
-//                   </Link>
-//                 </li>
-//                 <li>
-//                   <Link type="navigation" hrefLocal={'/articles/personal-essays/'}>
-//                     Personal Essays
-//                   </Link>
-//                 </li>
-//                 <li>
-//                   <Link type="navigation" hrefLocal={'/articles'}>
-//                     All
-//                   </Link>
-//                 </li>
-//               </ul>
-//             </li>
-//             <li>
-//               <Link type={'navigation'} hrefLocal={'/photography'}>
-//                 Photography
-//               </Link>
-//             </li>
-//             <li>
-//               <Link type={'navigation'} hrefLocal={'/about'}>
-//                 About
-//               </Link>
-//             </li>
-//           </ul>
-//         </nav>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Nav

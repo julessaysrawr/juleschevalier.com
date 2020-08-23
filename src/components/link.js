@@ -1,59 +1,178 @@
 import React from 'react'
 import { Link as GatsbyLink } from 'gatsby'
 import { css } from '@emotion/core'
-import theme from '../theme'
+import theme from '../lib/theme'
+import { bpPhone } from '../lib/breakpoints'
 
-const basic = css`
-  border-bottom: 1px solid ${theme.color.greyDark};
+const inline = css`
+  text-decoration: none;
+  background-color: ${theme.color.transparent};
+  border-bottom: 1px solid ${theme.color.rawUmber};
+  color: ${theme.color.rawUmber};
+  font-weight: 500;
   transition: 0.3s ease all;
-  &:hover,
-  &:focus {
-    padding-bottom: 3px;
+  &:hover {
+    color: ${theme.color.rawUmberLight};
+    border-bottom: 1px solid ${theme.color.rawUmberLight};
     transition: 0.3s ease all;
   }
 `
 
-const navigation = css`
-  border-bottom: 0.1rem solid ${theme.color.transparent};
-  transition: border 0.3s ease-in;
+const buttonFixedWidth = css`
+  display: inline-block;
+  background-color: ${theme.color.black};
+  text-align: center;
+  padding: 15px 0;
+  color: ${theme.color.white};
+  font-weight: 500;
   text-decoration: none;
+  width: 214px;
+  height: 58px;
+  transition: 0.3s ease all;
   &:hover {
-    border-bottom: 0.1rem solid ${theme.color.greyDark};
-    padding-bottom: 3px;
-    transition: border 0.3s ease-in;
+    background-color: ${theme.color.rawUmberLight};
+    transition: 0.3s ease all;
+  }
+
+  ${bpPhone} {
+    width: auto;
+    height: 58px;
+    padding: 14px 18px;
   }
 `
 
-const button = css`
-  padding: ${theme.buttonPadding.tag};
-  background-color: ${theme.color.primary};
-  color: ${theme.color.white} !important;
-  border-radius: ${theme.borderRadius.rounded};
+const buttonInline = css`
+  display: inline-block;
+  ${inline}
+  transition: 0.3s ease all;
+
+  &:hover {
+    color: ${theme.color.rawUmberLight};
+  }
+
+  &::after {
+    content: ' >';
+  }
+
+  ${bpPhone} {
+    background-color: ${theme.color.rawUmber};
+    color: ${theme.color.white};
+    width: auto;
+    height: 58px;
+    padding: 14px 18px;
+
+    &::after {
+      content: '';
+    }
+  }
 `
 
-const list = css`
-  text-decoration: none;
+const buttonFixedWidthPrimary = css`
+  ${buttonFixedWidth}
+  background-color: ${theme.color.rawUmber};
+`
+
+const buttonVariableWidth = css`
+  ${buttonFixedWidth}
+  width: auto;
+  height: auto;
+  padding: 8px 18px;
+`
+
+const buttonVariableWidthPrimary = css`
+  ${buttonVariableWidth}
+  background-color: ${theme.color.rawUmber};
 `
 
 /**
  * @param {object} props
- * @param { `basic` | `button` | `navigation` }  props.type - The type of link []
- * @param {`primary` | `invert` | `ghost` | `white`} props.color - Button color
+ * @param { `inline` | `buttonFixedWidth` |`buttonFixedWidthPrimary` | `buttonInline` | `buttonVariableWidth` | `buttonVariableWidthPrimary`}  props.type - The type of link styles
  * @param {string} props.href - External site to redirect to
  * @param {string} props.hrefLocal - Page within site to redirect to
  * @param {string} props.description - Detail description of where link takes you
  */
 
 const CustomLink = props => {
-  // BASIC LINK
-  if (props.type === 'basic') {
+  // BUTTONS
+  if (props.type === 'buttonFixedWidth') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={buttonFixedWidth}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  if (props.type === 'buttonInline') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={buttonInline}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  if (props.type === 'buttonFixedWidthPrimary') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={buttonFixedWidthPrimary}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  if (props.type === 'buttonVariableWidth') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={buttonVariableWidth}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  if (props.type === 'buttonVariableWidthPrimary') {
+    return (
+      <GatsbyLink
+        to={props.hrefLocal}
+        css={buttonVariableWidthPrimary}
+        aria-label={props.description}
+        tabIndex="0"
+        onClick={props.onClick}
+      >
+        {props.children}
+      </GatsbyLink>
+    )
+  }
+
+  // Inline
+  if (props.type === 'inline') {
     if (props.hrefLocal) {
       return (
         <GatsbyLink
           to={props.hrefLocal}
-          css={basic}
+          css={inline}
           aria-label={props.description}
-          tab-index="0"
+          tabIndex="0"
           onClick={props.onClick}
         >
           {props.children}
@@ -65,7 +184,7 @@ const CustomLink = props => {
         href={props.href}
         target={'_blank'}
         rel="noopener noreferrer"
-        css={basic}
+        css={inline}
         aria-label={props.description}
         tabIndex="0"
         onClick={props.onClick}
@@ -75,58 +194,12 @@ const CustomLink = props => {
     )
   }
 
-  // NAVIGATION
-
-  if (props.type === 'navigation') {
-    return (
-      <GatsbyLink
-        to={props.hrefLocal}
-        css={navigation}
-        aria-label={props.description}
-        tabIndex="0"
-        onClick={props.onClick}
-      >
-        {props.children}
-      </GatsbyLink>
-    )
-  }
-
-  // BUTTON
-  if (props.type === 'button') {
-    return (
-      <GatsbyLink
-        to={props.hrefLocal}
-        css={button}
-        aria-label={props.description}
-        tabIndex="0"
-        onClick={props.onClick}
-      >
-        {props.children}
-      </GatsbyLink>
-    )
-  }
-
-  // Articles List
-  if (props.type === 'list') {
-    return (
-      <GatsbyLink
-        to={props.hrefLocal}
-        css={list}
-        aria-label={props.description}
-        tabIndex="0"
-        onClick={props.onClick}
-      >
-        {props.children}
-      </GatsbyLink>
-    )
-  }
-
   // Default local
   if (props.hrefLocal) {
     return (
       <GatsbyLink
         to={props.hrefLocal}
-        css={basic}
+        css={inline}
         aria-label={props.description}
         tabIndex="0"
         onClick={props.onClick}
@@ -142,7 +215,7 @@ const CustomLink = props => {
       href={props.href}
       target={'_blank'}
       rel="noopener noreferrer"
-      css={basic}
+      css={inline}
       aria-label={props.description}
       tabIndex="0"
       onClick={props.onClick}

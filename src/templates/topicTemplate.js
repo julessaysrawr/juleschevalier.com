@@ -2,51 +2,101 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
 import LayoutMain from '../components/layout-main'
-import Link from '../components/link'
-import theme from '../theme'
+import theme from '../lib/theme'
+import paper from '../images/lightpaperfibers_@2x.png'
+import TopicsNav from '../components/topics-nav'
+import Masonry from 'react-masonry-component'
+import ArticleCard from '../components/article-card'
+import GetInTouch from '../components/get-in-touch'
+import { bpPhone, bpTabletSM, bpTabletLG } from '../lib/breakpoints'
 
 const Topic = ({ pageContext, data }) => {
   const { topic } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   // const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
-  const pageHeader = `Articles about ${topic}`
+  const pageHeader = `${topic} Articles`
+
+  const Articles = edges.map(edge => (
+    <ArticleCard
+      key={edge.node.frontmatter.title}
+      title={edge.node.frontmatter.title}
+      topic={edge.node.frontmatter.topic}
+      to={edge.node.frontmatter.path}
+    />
+  ))
 
   return (
-    <LayoutMain>
-      <main className="non-flex-container">
-        <h2
-          css={css`
-            padding-bottom: ${theme.space[4]}px;
-          `}
-        >
-          {pageHeader}
-        </h2>
-        <ul>
-          {edges.map(({ node }) => {
-            const { path, title } = node.frontmatter
-            return (
-              <li
-                key={path}
-                css={css`
-                  padding-bottom: ${theme.space[3]}px;
-                `}
-              >
-                <Link type={'navigation'} hrefLocal={path}>
-                  {title}
-                </Link>
-              </li>
-            )
-          })}
-        </ul>
+    <LayoutMain
+      title={`${topic} Articles | Jules Chevalier`}
+      description={`${topic} Articles Written By Jules Chevalier`}
+    >
+      <main>
         <div
           css={css`
-            margin-top: ${theme.space[6]}px;
+            background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
+              url(${paper});
+            background-repeat: repeat;
+            padding-top: ${theme.space[8]}px;
+            border-bottom: 2px solid ${theme.color.border};
+            border-right: 2px solid ${theme.color.border};
+            border-left: 2px solid ${theme.color.border};
+            margin: 0 auto;
+            margin-bottom: calc(${theme.space[2]}px*13);
+            max-width: ${theme.contentWidths.maxPaperWidth}px;
+
+            ${bpTabletLG} {
+              padding-top: 20%;
+              border-right: none;
+              border-left: none;
+            }
+
+            ${bpTabletSM} {
+              padding-top: 25%;
+            }
+
+            ${bpPhone} {
+              padding-top: 156px;
+            }
           `}
         >
-          <Link type={'navigation'} hrefLocal="/articles">
-            All articles
-          </Link>
+          <h1
+            css={css`
+              margin: 0 auto;
+              text-align: center;
+
+              ${bpPhone} {
+                text-align: left;
+                padding-left: 24px;
+              }
+            `}
+          >
+            {pageHeader}
+          </h1>
+          <TopicsNav />
+          <div
+            css={css`
+              max-width: 880px;
+              margin: 0 auto 150px;
+
+              ${bpTabletLG} {
+                width: 424px;
+              }
+
+              ${bpPhone} {
+                width: 300px;
+              }
+            `}
+          >
+            <Masonry
+              css={css`
+                margin-left: -8px; // to center the div, based on added margin to the cards
+              `}
+            >
+              {Articles}
+            </Masonry>
+          </div>
         </div>
+        <GetInTouch />
       </main>
     </LayoutMain>
   )
@@ -66,6 +116,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            topic
           }
         }
       }
