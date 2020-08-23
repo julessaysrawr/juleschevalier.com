@@ -23,7 +23,6 @@ export const bpMonitorMD = `@media (max-width: ${maxMonitorMD}px)`
 export const bpMonitorLG = `@media (max-width: ${maxMonitorLG}px)`
 export const bpMonitorXL = `@media (max-width: ${maxMonitorXL}px)`
 
-
 // export const bpPhone = `@media (min-width: ${maxPhone}px)`
 // export const bpTabletSM = `@media (min-width: ${maxTabletSM}px)`
 // export const bpTabletLG = `@media (min-width: ${maxTabletLG}px)`
@@ -31,35 +30,3 @@ export const bpMonitorXL = `@media (max-width: ${maxMonitorXL}px)`
 // export const bpMonitorMD = `@media (min-width: ${maxMonitorMD}px)`
 // export const bpMonitorLG = `@media (min-width: ${maxMonitorLG}px)`
 // export const bpMonitorXL = `@media (min-width: ${maxMonitorXL}px)`
-
-// Joe's approach
-// const minSM = 545
-// const minMD = 768
-// const minLG = 992
-// const minXL = 1200
-// const minXXL = 1920
-
-// export const bpMinSM = `@media (min-width: ${minSM}px)`
-// export const bpMinMD = `@media (min-width: ${minMD}px)`
-// export const bpMinLG = `@media (min-width: ${minLG}px)`
-// export const bpMinXL = `@media (min-width: ${minXL}px)`
-// export const bpMinXXL = `@media (min-width: ${minXXL}px)`
-
-// export const bpMaxXS = `@media (max-width: ${minSM - 1}px)`
-// export const bpMaxSM = `@media (max-width: ${minMD - 1}px)`
-// export const bpMaxMD = `@media (max-width: ${minLG - 1}px)`
-// export const bpMaxLG = `@media (max-width: ${minXL - 1}px)`
-
-//Kent's approach
-// const maxXS = 320
-// const maxSM = 767
-// const maxMD = 1023
-
-// export const bpMaxXS = `@media (max-width: ${maxXS}px)`
-// export const bpMaxSM = `@media (max-width: ${maxSM}px)`
-// export const bpMaxMD = `@media (max-width: ${maxMD}px)`
-
-// export const bpTabletOnly = `@media (min-width: ${
-//   maxSM + 1
-// }px) and (max-width: ${maxMD}px)`
-// export const bpDesktopOnly = `@media (min-width: ${maxMD + 1}px)`

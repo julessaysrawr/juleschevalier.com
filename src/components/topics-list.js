@@ -20,7 +20,6 @@ const TopicsList = () => {
 
         ${bpPhone} {
           justify-content: flex-start;
-          // align-items: flex-start;
           padding-left: 24px;
 
           a {
@@ -29,33 +28,60 @@ const TopicsList = () => {
         }
 
         a {
-          // margin-right: 12px;
           margin-top: 12px;
         }
       `}
     >
-      <Link type="buttonFixedWidth" hrefLocal="/topics/emotional-wellbeing/" description="">
+      <Link
+        type="buttonFixedWidth"
+        hrefLocal="/topics/emotional-wellbeing/"
+        description="Go to articles about Emotional Wellbeing"
+      >
         Emotional Wellbeing
       </Link>
-      <Link type="buttonFixedWidth" hrefLocal="/topics/technology/" description="">
+      <Link
+        type="buttonFixedWidth"
+        hrefLocal="/topics/technology/"
+        description="Go to articles about Technology"
+      >
         Technology
       </Link>
-      <Link type="buttonFixedWidth" hrefLocal="/topics/intentional-living/" description="">
+      <Link
+        type="buttonFixedWidth"
+        hrefLocal="/topics/intentional-living/"
+        description="Go to articles about Intentional Living"
+      >
         Intentional Living
       </Link>
-      <Link type="buttonFixedWidth" hrefLocal="/topics/design/" description="">
+      <Link
+        type="buttonFixedWidth"
+        hrefLocal="/topics/design/"
+        description="Go to articles about Design"
+      >
         Design
       </Link>
-      <Link type="buttonFixedWidth" hrefLocal="/topics/inclusion/" description="">
+      <Link
+        type="buttonFixedWidth"
+        hrefLocal="/topics/inclusion/"
+        description="Go to articles about Inclusion"
+      >
         Inclusion
       </Link>
-      <Link type="buttonFixedWidth" hrefLocal="/topics/recipes/" description="">
+      <Link
+        type="buttonFixedWidth"
+        hrefLocal="/topics/recipes/"
+        description="Go to articles about Recipes"
+      >
         Recipes
       </Link>
-      <Link type="buttonFixedWidth" hrefLocal="/topics/personal-essays/" description="">
+      <Link
+        type="buttonFixedWidth"
+        hrefLocal="/topics/personal-essays/"
+        description="o to articles about Personal Essays"
+      >
         Personal Essays
       </Link>
-      <Link type="buttonFixedWidthPrimary" hrefLocal="/articles" description="">
+      <Link type="buttonFixedWidthPrimary" hrefLocal="/articles" description="Go to all articles">
         All Articles
       </Link>
     </div>

@@ -1,14 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-
 import LayoutMain from '../components/layout-main'
 import { css } from '@emotion/core'
 import theme from '../lib/theme'
-// import Emoji from '../components/emoji'
 import Link from '../components/link'
 import GetInTouch from '../components/get-in-touch'
-import nowImage from '../images/Jules-and-Grievy.png'
 import PageContent from '../components/page-content'
 import { bpPhone, bpTabletSM, bpTabletLG, bpMonitorSM } from '../lib/breakpoints'
 import PaperBackground from '../components/paper-background'
@@ -21,34 +18,13 @@ const Now = ({ data }) => (
     <main>
       <PaperBackground>
         <PageContent>
-          {/* <img
-            src={nowImage}
-            alt=""
-            css={css`
-              width: 865px;
-              height: 468px;
-              margin: 0 auto;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              object-fit: cover;
-              margin-bottom: 80px;
-
-              ${bpMonitorSM} {
-                width: 100%;
-                height: auto;
-              }
-
-              ${bpTabletSM} {
-                margin-bottom: 10%;
-              }
-            `}
-          /> */}
           <Img
             fluid={data.file.childImageSharp.fluid}
-            alt="Jules with their cat General Grievious on their shoulders"
+            alt="Jules with their cat General Grievous on their shoulders"
             css={css`
               width: 865px;
               max-width: 865px;
-              // height: 468px;
+              // height: 468px;  //if we wanted photo heights to be consistent
               margin: 0 auto;
               border: 2px solid rgba(136, 128, 113, 0.25);
               object-fit: cover;
@@ -59,8 +35,6 @@ const Now = ({ data }) => (
                 // height: 70%;
                 // need width / 1.77
                 object-fit: cover;
-
-                // height: auto;
               }
 
               ${bpTabletSM} {

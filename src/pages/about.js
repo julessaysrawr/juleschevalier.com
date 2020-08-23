@@ -6,7 +6,6 @@ import theme from '../lib/theme'
 import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
 import PageContent from '../components/page-content'
-import aboutImage from '../images/beach-path.jpg'
 import GetInTouch from '../components/get-in-touch'
 import { bpTabletSM, bpMonitorSM, bpPhone } from '../lib/breakpoints'
 import PaperBackground from '../components/paper-background'
@@ -20,7 +19,6 @@ const About = ({ data }) => (
             fluid={data.file.childImageSharp.fluid}
             css={css`
               width: 865px;
-              // height: 468px;
               margin: 0 auto;
               border: 2px solid rgba(136, 128, 113, 0.25);
               object-fit: cover;
@@ -36,27 +34,6 @@ const About = ({ data }) => (
               }
             `}
           />
-          {/* <img
-            src={aboutImage}
-            alt=""
-            css={css`
-              width: 865px;
-              height: 468px;
-              margin: 0 auto;
-              border: 2px solid rgba(136, 128, 113, 0.25);
-              object-fit: cover;
-              margin-bottom: 80px;
-
-              ${bpMonitorSM} {
-                width: 100%;
-                height: auto;
-              }
-
-              ${bpTabletSM} {
-                margin-bottom: 10%;
-              }
-            `}
-          /> */}
           <div
             css={css`
               max-width: ${theme.contentWidths.copyWidth}px;
@@ -89,7 +66,11 @@ const About = ({ data }) => (
               General Grievous, or enjoying a quite moment of lap cuddles with our shy cat Mr.
               Gizmo.
             </p>
-            <Link type="inline" hrefLocal="/now">
+            <Link
+              type="inline"
+              hrefLocal="/now"
+              description="Go to Now page to learn what I'm doing lately"
+            >
               What I&apos;m Doing Now &gt;
             </Link>
             <h2

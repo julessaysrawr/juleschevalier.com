@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-// import Link from './link'
 import { css } from '@emotion/core'
 import theme from '../lib/theme'
 import IconEmail from './social-links/email'
@@ -10,7 +9,7 @@ import IconReddit from './social-links/reddit'
 import IconPinterest from './social-links/pinterest'
 import _ from 'lodash'
 
-/** Renders a component that does a thing - TODO: change this description
+/** Renders a component that allows articles to be shared on various social platforms
  * @param {object} props
  * @param {string} props.title - title of article
  * @param {string} props.slug - slug of article
@@ -28,7 +27,7 @@ const ArticleShare = props => {
   const pinterest = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(
     baseUrl
   )}${encodeURIComponent(props.slug)}&media=${encodeURIComponent(
-    'https://juleschevalier.com/thumbnail.jpg'
+    'https://juleschevalier.com/thumbnail.png'
   )}&description=${encodeURIComponent(props.title)}`
 
   return (
@@ -53,8 +52,6 @@ const ArticleShare = props => {
           articleSharing={true}
           url={`mailto:?body=I thought you might enjoy this article: ${props.title}, ${baseUrl}${props.slug}`}
         />
-        {/* ?body=I thought you might enjoy this post: J.Crew Sale Picks,
-        https://blog.natalieborton.com/j-crew-sale-picks/ */}
         <IconTwitter articleSharing={true} url={twitter} />
         <IconReddit url={reddit} />
         <IconPinterest url={pinterest} />
@@ -67,7 +64,6 @@ const ArticleShare = props => {
           border: none !important;
           font-weight: 500;
           color: ${theme.color.white} !important;
-          // color: red !important;
           width: auto;
           height: auto;
           padding: 8px 18px;

@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
 import LayoutMain from '../components/layout-main'
-// import Link from '../components/link'
 import theme from '../lib/theme'
 import paper from '../images/lightpaperfibers_@2x.png'
 import TopicsNav from '../components/topics-nav'
@@ -38,9 +37,9 @@ const Topic = ({ pageContext, data }) => {
               url(${paper});
             background-repeat: repeat;
             padding-top: ${theme.space[8]}px;
-            border-bottom: 2px solid rgba(136, 128, 113, 0.25);
-            border-right: 2px solid rgba(136, 128, 113, 0.25);
-            border-left: 2px solid rgba(136, 128, 113, 0.25);
+            border-bottom: 2px solid ${theme.color.border};
+            border-right: 2px solid ${theme.color.border};
+            border-left: 2px solid ${theme.color.border};
             margin: 0 auto;
             margin-bottom: calc(${theme.space[2]}px*13);
             max-width: ${theme.contentWidths.maxPaperWidth}px;
@@ -56,7 +55,6 @@ const Topic = ({ pageContext, data }) => {
             }
 
             ${bpPhone} {
-              // padding-top: 30%;
               padding-top: 156px;
             }
           `}
@@ -79,9 +77,6 @@ const Topic = ({ pageContext, data }) => {
             css={css`
               max-width: 880px;
               margin: 0 auto 150px;
-              // display: flex;
-              // flex-wrap: wrap;
-              // justify-content: space-between;
 
               ${bpTabletLG} {
                 width: 424px;
@@ -94,22 +89,8 @@ const Topic = ({ pageContext, data }) => {
           >
             <Masonry
               css={css`
-                // background-color: 'tomato';
-                // width: 880px;
-                // width: 864px;
-                // width: ${theme.contentWidths.contentWidth}px;
-                // max-width: ${theme.contentWidths.contentWidth}px;
-                // display: flex;
-                // justify-content: space-between;
-                margin-left: -8px;  // to center the div, based on added margin to the cards
+                margin-left: -8px; // to center the div, based on added margin to the cards
               `}
-              // gutter={'50px'}
-              // className={'my-gallery-class'} // default ''
-              // elementType={'ul'} // default 'div'
-              // options={masonryOptions} // default {}
-              // disableImagesLoaded={false} // default false
-              // updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-              // imagesLoadedOptions={imagesLoadedOptions} // default {}
             >
               {Articles}
             </Masonry>

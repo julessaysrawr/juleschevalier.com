@@ -36,7 +36,6 @@ const buttonFixedWidth = css`
 
   ${bpPhone} {
     width: auto;
-    // height: auto;
     height: 58px;
     padding: 14px 18px;
   }
@@ -59,7 +58,6 @@ const buttonInline = css`
     background-color: ${theme.color.rawUmber};
     color: ${theme.color.white};
     width: auto;
-    // height: auto;
     height: 58px;
     padding: 14px 18px;
 
@@ -88,7 +86,7 @@ const buttonVariableWidthPrimary = css`
 
 /**
  * @param {object} props
- * @param { `inline` | `buttonFixedWidth` | `buttonVariableWidth` }  props.type - The type of link styles
+ * @param { `inline` | `buttonFixedWidth` |`buttonFixedWidthPrimary` | `buttonInline` | `buttonVariableWidth` | `buttonVariableWidthPrimary`}  props.type - The type of link styles
  * @param {string} props.href - External site to redirect to
  * @param {string} props.hrefLocal - Page within site to redirect to
  * @param {string} props.description - Detail description of where link takes you

@@ -46,7 +46,6 @@ const LayoutMain = props => {
 
           h1 {
             font-size: ${theme.textSizes.h1};
-            // line-height: 50px;
             line-height: 1.2;
             font-weight: 400;
             letter-spacing: -1px;
@@ -61,7 +60,6 @@ const LayoutMain = props => {
           h2 {
             font-size: ${theme.textSizes.h2};
             font-weight: 400;
-            // line-height: 38px;
             line-height: 1.2;
             text-transform: capitalize;
             ${bpPhone} {
@@ -72,7 +70,6 @@ const LayoutMain = props => {
           h3 {
             font-size: ${theme.textSizes.h3};
             font-weight: 400;
-            // line-height: 30px;
             line-height: 1.2;
             text-transform: capitalize;
             ${bpPhone} {
@@ -107,9 +104,7 @@ const LayoutMain = props => {
           }
 
           ::selection {
-            // color: red;
             background: ${theme.color.rawUmberLight};
-            // color: ${theme.color.white};
           }
 
           html,

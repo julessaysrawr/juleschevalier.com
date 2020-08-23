@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../lib/theme'
-
 import LayoutMain from '../components/layout-main'
 import Link from '../components/link'
 import paper from '../images/lightpaperfibers_@2x.png'
@@ -13,22 +12,15 @@ import { bpPhone, bpTabletSM, bpTabletLG, bpMonitorMD } from '../lib/breakpoints
 
 const Index = ({ data }) => {
   const photoStyles = css`
-      width: 424px;
-      height: 296px;
-      border: 2px solid rgba(136, 128, 113, 0.25);
-      // margin-right: ${theme.space[3]}px;
-      object-fit: cover;
+    width: 424px;
+    height: 296px;
+    border: 2px solid ${theme.color.border};
+    object-fit: cover;
 
-      ${bpMonitorMD} {
-        margin-bottom: ${theme.space[3]}px;
-        // width: 80%;
-        // height: auto;
-      }
-
-      ${bpTabletSM} {
-        // width: 90%;
-      }
-    `
+    ${bpMonitorMD} {
+      margin-bottom: ${theme.space[3]}px;
+    }
+  `
   return (
     <LayoutMain>
       <main>
@@ -39,14 +31,13 @@ const Index = ({ data }) => {
             background-repeat: repeat;
             height: ${theme.contentWidths.paperHeight}px;
             max-width: ${theme.contentWidths.maxPaperWidth}px;
-            border: 2px solid rgba(136, 128, 113, 0.25);
+            border: 2px solid ${theme.color.border};
             border-top: 0;
             margin: 0 auto;
 
             padding-top: calc(${theme.space[2]}px*29);
 
             ${bpPhone} {
-              // height: 900px;
               background-size: 100%; // this fixes the background image being pixelated on mobile
               padding-top: calc(${theme.space[2]}px*20);
               border-left: none;
@@ -56,7 +47,6 @@ const Index = ({ data }) => {
         >
           <div
             css={css`
-              // max-width: 1000px;
               margin: 0 auto;
             `}
           >
@@ -86,8 +76,7 @@ const Index = ({ data }) => {
                 ${bpPhone} {
                   text-align: left;
                   padding: 0 ${theme.space[4]}px;
-                  margin-bottom: 48px;
-                  // margin-bottom: ${theme.space[4]}px;
+                  margin-bottom: calc(${theme.space[2]}px*6);
                 }
               `}
             >
@@ -107,10 +96,8 @@ const Index = ({ data }) => {
                   max-width: 300px;
                   text-align: left;
                   padding: 0 ${theme.space[4]}px;
-                  // flex-direction: column;
                   flex-wrap: wrap;
                   margin: 0;
-                  // justify-content: space-around;
                 }
               `}
             >
@@ -119,23 +106,10 @@ const Index = ({ data }) => {
               </Link>
               <div
                 css={css`
-                    padding-top: 14px;  //this was used for inline link styling
-
-                    ${bpPhone} {
-                      // margin-top: calc(${theme.space[2]}px*6);  //this was used for inline link styling
-                      // margin-top: 16px;
-                    }
-                  `}
+                  padding-top: 14px; //this was used for inline link styling
+                `}
               >
-                <Link
-                  type="buttonInline"
-                  hrefLocal="/now"
-                  description="What I'm Doing Now"
-                  css={css`
-                    // padding-top: 15px !important;
-                  `}
-                >
-                  {/* What I&apos;m Doing Now &gt; */}
+                <Link type="buttonInline" hrefLocal="/now" description="What I'm Doing Now">
                   What I&apos;m Doing Now
                 </Link>
               </div>
@@ -145,9 +119,8 @@ const Index = ({ data }) => {
         <div
           css={css`
             background-color: ${theme.color.white};
-            // height: 800px;
             max-width: 1000px;
-            border: 2px solid rgba(136, 128, 113, 0.25);
+            border: 2px solid ${theme.color.border};
             margin: -80px auto 0;
             padding: calc(${theme.space[2]}px*13) 0 calc(${theme.space[2]}px*13);
 
@@ -264,7 +237,6 @@ const Index = ({ data }) => {
           <div
             css={css`
               display: flex;
-              // flex-direction: column;
               margin: 0 auto;
 
               ${bpPhone} {
@@ -286,7 +258,6 @@ const Index = ({ data }) => {
             css={css`
               margin: calc(${theme.space[2]}px*17) auto 0;
               text-align: center;
-              // max-width: 1304px;
               display: flex;
               flex-wrap: wrap;
               justify-content: center;
@@ -303,73 +274,31 @@ const Index = ({ data }) => {
               css={css`
                   ${photoStyles}
                   margin-right: ${theme.space[3]}px;
-                  // TODO remove this below laptop size or when begins to wrap
 
                   ${bpTabletSM} {
                     margin-right: 0;
-                    // margin-bottom: ${theme.space[4]}px;
                   }
                 `}
             />
-            {/* <img
-              src={image1}
-              alt=""
-              css={css`
-                  ${photoStyles}
-                  margin-right: ${theme.space[3]}px;
-                  // TODO remove this below laptop size or when begins to wrap
-
-                  ${bpTabletLG} {
-                    margin: 0;
-                  }
-                `}
-            /> */}
             <Img
               fluid={data.jt.childImageSharp.fluid}
               alt="Joshua Trees"
               css={css`
                   ${photoStyles}
                   margin-right: ${theme.space[3]}px;
-                  // TODO remove this below laptop size or when begins to wrap
 
                   ${bpTabletSM} {
                     margin-right: 0;
-                    // margin-bottom: ${theme.space[4]}px;
                   }
                 `}
             />
-            {/* <img
-              src={image2}
-              alt=""
-              css={css`
-                ${photoStyles}
-                  margin-right: ${theme.space[3]}px;
-
-                  ${bpTabletLG} {
-                    margin: 0;
-                  }
-                `}
-            /> */}
             <Img
               fluid={data.dune.childImageSharp.fluid}
               alt="Sand dune with small green bush growing out the slope"
               css={css`
-                  ${photoStyles}
-                  // margin-right: ${theme.space[3]}px;
-                  // // TODO remove this below laptop size or when begins to wrap
-
-                  // ${bpTabletLG} {
-                  //   margin: 0;
-                  // }
-                `}
-            />
-            {/* <img
-              src={image3}
-              alt=""
-              css={css`
                 ${photoStyles}
               `}
-            /> */}
+            />
           </div>
         </div>
         <GetInTouch />
@@ -382,20 +311,6 @@ export default Index
 
 export const query = graphql`
   query {
-    peonies: file(relativePath: { eq: "peonies.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    beach: file(relativePath: { eq: "beach-path.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     dv: file(relativePath: { eq: "homepage/IMG_6336.png" }) {
       childImageSharp {
         fluid(maxWidth: 450) {

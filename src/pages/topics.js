@@ -10,7 +10,7 @@ import PageContent from '../components/page-content'
 import { bpPhone, bpTabletSM, bpTabletLG } from '../lib/breakpoints'
 import GetInTouch from '../components/get-in-touch'
 
-const TopicssPage = ({
+const TopicsPage = ({
   data: {
     allMarkdownRemark: { group }
   }
@@ -24,7 +24,7 @@ const TopicssPage = ({
               url(${paper});
             background-repeat: repeat;
             padding-top: ${theme.space[8]}px;
-            border-bottom: 2px solid rgba(136, 128, 113, 0.25);
+            border-bottom: 2px solid ${theme.color.border};
             margin-bottom: calc(${theme.space[2]}px*13);
 
             ${bpTabletLG} {
@@ -84,7 +84,7 @@ const TopicssPage = ({
   )
 }
 
-export default TopicssPage
+export default TopicsPage
 
 export const pageQuery = graphql`
   query {

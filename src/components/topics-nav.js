@@ -1,6 +1,5 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import theme from '../lib/theme'
 import Link from '../components/link'
 import { bpPhone, bpTabletSM } from '../lib/breakpoints'
 
@@ -32,28 +31,60 @@ const TopicsNav = () => {
         }
       `}
     >
-      <Link hrefLocal="/topics/emotional-wellbeing/" type="buttonVariableWidth">
+      <Link
+        hrefLocal="/topics/emotional-wellbeing/"
+        type="buttonVariableWidth"
+        description="Go to articles about Emotional Wellbeing"
+      >
         Emotional Wellbeing
       </Link>
-      <Link hrefLocal="/topics/technology/" type="buttonVariableWidth">
+      <Link
+        hrefLocal="/topics/technology/"
+        type="buttonVariableWidth"
+        description="Go to articles about Technology"
+      >
         Technology
       </Link>
-      <Link hrefLocal="/topics/intentional-living/" type="buttonVariableWidth">
+      <Link
+        hrefLocal="/topics/intentional-living/"
+        type="buttonVariableWidth"
+        description="Go to articles about Intentional Living"
+      >
         Intentional Living
       </Link>
-      <Link hrefLocal="/topics/design/" type="buttonVariableWidth">
+      <Link
+        hrefLocal="/topics/design/"
+        type="buttonVariableWidth"
+        description="Go to articles about Design"
+      >
         Design
       </Link>
-      <Link hrefLocal="/topics/inclusion/" type="buttonVariableWidth">
+      <Link
+        hrefLocal="/topics/inclusion/"
+        type="buttonVariableWidth"
+        description="Go to articles about Inclusion"
+      >
         Inclusion
       </Link>
-      <Link hrefLocal="/topics/recipes/" type="buttonVariableWidth">
+      <Link
+        hrefLocal="/topics/recipes/"
+        type="buttonVariableWidth"
+        description="Go to articles about Recipes"
+      >
         Recipes
       </Link>
-      <Link hrefLocal="/topics/personal-essays/" type="buttonVariableWidth">
+      <Link
+        hrefLocal="/topics/personal-essays/"
+        type="buttonVariableWidth"
+        description="o to articles about Personal Essays"
+      >
         Personal Essays
       </Link>
-      <Link hrefLocal="/articles" type="buttonVariableWidthPrimary">
+      <Link
+        hrefLocal="/articles"
+        type="buttonVariableWidthPrimary"
+        description="Go to all articles"
+      >
         All Articles
       </Link>
     </div>

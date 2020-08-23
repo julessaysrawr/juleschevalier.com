@@ -1,5 +1,4 @@
 import React from 'react'
-// import Link from './link'
 import { Link } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../lib/theme'
@@ -22,23 +21,19 @@ const ArticleCard = props => {
     >
       <div
         css={css`
-          // flex: auto;
           background-color: ${theme.color.white};
           width: 424px;
-          // height: 182px;
           height: auto;
-          border: 2px solid rgba(136, 128, 113, 0.25);
+          border: 2px solid ${theme.color.border};
           margin-bottom: 16px;
           margin-right: 16px;
           transition: 0.3s;
           &:hover {
-            // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 1px 4px 15px rgba(136, 128, 113, 0.25); //todo use border color
+            box-shadow: 1px 4px 15px ${theme.color.border};
           }
 
           ${bpPhone} {
             width: 100%;
-            // min-width: 320px;
           }
         `}
       >
@@ -55,7 +50,6 @@ const ArticleCard = props => {
           `}
         >
           {props.title}
-          {/*   TODO: Add link to title */}
         </h3>
 
         <p
@@ -67,7 +61,6 @@ const ArticleCard = props => {
           `}
         >
           {props.topic}
-          {/*   TODO: Add link to topic */}
         </p>
       </div>
     </Link>

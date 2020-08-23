@@ -16,17 +16,12 @@ const FourOhFour = () => (
           background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
             url(${paper});
           background-repeat: repeat;
-          // height: 100%;
-          // padding-top: 100px;
           padding-top: ${theme.space[6]}px;
           border-bottom: 2px solid rgba(136, 128, 113, 0.25);
 
           ${bpPhone} {
             background-size: 100%; // this fixes the background image being pixelated on mobile
           }
-          // ${bpTabletSM} {
-          //   height: 100vh;
-          // }
         `}
       >
         <div

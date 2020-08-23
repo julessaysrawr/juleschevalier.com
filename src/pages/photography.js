@@ -14,7 +14,7 @@ const PortraitStyles = css`
   // width: 424px;
   width: 49%;
   // height: 505px;
-  border: 2px solid rgba(136, 128, 113, 0.25);
+  border: 2px solid ${theme.color.border};
   margin-bottom: 16px;
   object-fit: cover;
 `
@@ -23,7 +23,7 @@ const LandscapeStyles = css`
   // width: 864px;
   width: 100%;
   // height: 505px;
-  border: 2px solid rgba(136, 128, 113, 0.25);
+  border: 2px solid ${theme.color.border};
   margin-bottom: 16px;
   object-fit: cover;
 `

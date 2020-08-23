@@ -13,9 +13,8 @@ const GetInTouch = () => {
   return (
     <div
       css={css`
-        border: 2px solid rgba(136, 128, 113, 0.25);
+        border: 2px solid ${theme.color.border};
         max-width: 800px;
-        // height: 346px;
         margin: 0 auto calc(${theme.space[2]}px * 18);
         background: linear-gradient(0deg, rgba(148, 112, 62, 0.05), rgba(148, 112, 62, 0.05)),
           url(${paper});
@@ -30,7 +29,6 @@ const GetInTouch = () => {
       <h2
         css={css`
           text-align: center;
-          // margin: calc(${theme.space[6]}px*1.5) auto ${theme.space[4]}px;
           margin: calc(${theme.space[2]}px*7) auto ${theme.space[4]}px;
           font-size: ${theme.textSizes.h1};
           line-height: 50px;

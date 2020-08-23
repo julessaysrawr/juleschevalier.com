@@ -7,19 +7,7 @@ const color = {
   border: 'rgba(136, 128, 113, 0.25)',
   paperMixin: 'rgba(148, 112, 62, 0.05)',
   paperBeige: '#F9F6F2',
-  primary: '#315937',
-  primaryMedium: '#69866D',
-  primaryLight: '#A1B3A4',
-  greyLight: '#E9E9E8',
-  greyMedium: '#9A9B94',
-  greyDark: '#52524E',
-  errorRed: '#8E2800',
-  errorRedLight: '#CDA198',
-  transparent: 'transparent',
-  primaryOpacity50: 'rgba(49,89,55, 0.5)',
-  primaryLightOpacity25: 'rgba(161, 179, 164, 0.25)',
-  primaryLightOpacity50: 'rgba(161, 179, 164, 0.5)',
-  primaryLightOpacity75: 'rgba(161, 179, 164, 0.75)'
+  transparent: 'transparent'
 }
 
 // border is //#888071  @ 25%

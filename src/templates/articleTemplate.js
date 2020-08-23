@@ -8,7 +8,6 @@ import PageContent from '../components/page-content'
 import GetInTouch from '../components/get-in-touch'
 import ArticleShare from '../components/article-share'
 import { bpPhone, bpTabletSM, bpTabletLG, bpMonitorSM } from '../lib/breakpoints'
-import placeholderImage from '../images/Jules-and-Grievy.png'
 import PaperBackground from '../components/paper-background'
 
 export default function articleTemplate({
@@ -26,8 +25,8 @@ export default function articleTemplate({
               fluid={frontmatter.featuredImage.childImageSharp.fluid}
               css={css`
                 width: 865px;
-                // height: 468px;
-                border: 2px solid rgba(136, 128, 113, 0.25);
+                // height: 468px; // If we wanted to have consistent photo heights
+                border: 2px solid ${theme.color.border};
                 object-fit: cover;
                 margin: 0 auto 80px;
 
@@ -41,25 +40,6 @@ export default function articleTemplate({
                 }
               `}
             />
-            {/* <div
-              // this is a placeholder for photos
-              css={css`
-                width: 865px;
-                height: 488px;
-                background-color: ${theme.color.rawUmber};
-                margin: 0 auto 80px;
-
-                ${bpMonitorSM} {
-                  width: 100%;
-                  height: auto;
-                }
-
-                ${bpTabletSM} {
-                  margin-bottom: 10%;
-                }
-              `}
-            /> */}
-
             <article
               css={css`
                 max-width: ${theme.contentWidths.copyWidth}px;
@@ -71,10 +51,6 @@ export default function articleTemplate({
                 h4 {
                   margin-bottom: ${theme.space[4]}px;
                 }
-
-                // li h4 {
-                //   display: inline;
-                // }
 
                 ol,
                 ul {
@@ -149,8 +125,8 @@ export default function articleTemplate({
                   word-wrap: break-word;
 
                   code {
-                    background-color: rgba(148, 112, 62, 0.05);
-                    border: 2px solid rgba(136, 128, 113, 0.25);
+                    background-color: ${theme.color.paperMixin};
+                    border: 2px solid ${theme.color.border};
                     padding: ${theme.space[5]}px;
                     display: block;
                     margin-bottom: ${theme.space[4]}px;
@@ -159,8 +135,8 @@ export default function articleTemplate({
 
                 p {
                   code {
-                    background-color: rgba(148, 112, 62, 0.05);
-                    border: 2px solid rgba(136, 128, 113, 0.25);
+                    background-color: ${theme.color.paperMixin};
+                    border: 2px solid ${theme.color.border};
                     padding: 4px;
                     word-break: keep-all;
                   }
@@ -190,13 +166,7 @@ export default function articleTemplate({
               >
                 {frontmatter.date}
               </p>
-              <div
-                // css={css`
-                //   max-width: ${theme.contentWidths.copyWidth}px;
-                //   margin: 0 auto;
-                // `}
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
+              <div dangerouslySetInnerHTML={{ __html: html }} />
               <ArticleShare
                 props={frontmatter}
                 title={frontmatter.title}
@@ -206,7 +176,6 @@ export default function articleTemplate({
             </article>
           </PageContent>
           <GetInTouch />
-          {/* </div> */}
         </PaperBackground>
       </main>
     </LayoutMain>

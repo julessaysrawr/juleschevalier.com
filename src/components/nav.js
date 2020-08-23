@@ -17,10 +17,7 @@ const Nav = () => {
 
   const pageLink = css`
     text-decoration: none;
-    // margin: ${theme.space[2]}px ${theme.space[4]}px 0;
     margin: 0 ${theme.space[4]}px;
-    // padding-top: calc(${theme.space[2]}px*1.5);
-    // padding-top: 13px;
     padding-top: 10px;
     font-weight: 400;
     font-size: 20px;
@@ -36,9 +33,8 @@ const Nav = () => {
     overflow: hidden;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
-      // z-index: -1;
       left: 0;
       right: 0;
       bottom: 0;
@@ -65,7 +61,6 @@ const Nav = () => {
       -webkit-transform: translateY(0);
       -moz-transform: translateY(0);
       transform: translateY(0);
-
     }
 
     ${bpTabletLG} {
@@ -73,11 +68,9 @@ const Nav = () => {
       // margin: 0 auto;
       font-size: ${theme.textSizes.h1Mobile};
 
-      ${
-        open === true
-          ? 'display: flex; justify-content: center; text-align: center; margin: 0 auto;'
-          : ''
-      }
+      ${open === true
+        ? 'display: flex; justify-content: center; text-align: center; margin: 0 auto;'
+        : ''}
     }
   `
 
@@ -91,7 +84,6 @@ const Nav = () => {
         position: absolute;
         top: 0;
 
-        // width: 1440px;
         width: 100%;
         max-width: 1440px;
 
@@ -138,13 +130,13 @@ const Nav = () => {
           }
         `}
       >
-        <Link to="/articles" css={pageLink}>
+        <Link to="/articles" css={pageLink} aria-label="Go to all articles">
           Writing
         </Link>
-        <Link to="/photography" css={pageLink}>
+        <Link to="/photography" css={pageLink} aria-label="Go to photography page">
           Photography
         </Link>
-        <Link to="/about" css={pageLink}>
+        <Link to="/about" css={pageLink} aria-label="Go to about page">
           About
         </Link>
       </nav>
@@ -180,7 +172,6 @@ const Nav = () => {
           ${bpTabletLG} {
             display: block;
             position: absolute;
-            // background: #8e44ad;
             padding: 10px;
             padding-top: 9px;
             height: 40px;
@@ -215,9 +206,6 @@ const Nav = () => {
             margin: 6px 0;
             transition: 0.4s;
             border-radius: 5px;
-
-            // if menu is open
-            // opacity: 0;
             ${open === true ? 'opacity: 0;' : ''}
           `}
         />
@@ -229,10 +217,6 @@ const Nav = () => {
             margin: 6px 0;
             transition: 0.4s;
             border-radius: 5px;
-
-            // if menu is open
-            // -webkit-transform: rotate(45deg) translate(-8px, -4px);
-            // transform: rotate(45deg) translate(-8px, -4px);
             ${open === true
               ? '-webkit-transform: rotate(45deg) translate(-8px, -4px); transform: rotate(45deg) translate(-8px, -4px);'
               : ''}
