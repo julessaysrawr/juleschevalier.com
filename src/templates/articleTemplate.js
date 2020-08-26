@@ -70,6 +70,11 @@ export default function articleTemplate({
                   }
                 }
 
+                // for nested uls/lis
+                li ul {
+                  margin-bottom: 0;
+                }
+
                 //should be kept in sync with inline link.js styles
                 a {
                   text-decoration: none;
