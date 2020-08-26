@@ -2,7 +2,7 @@
 path: '/banana-pancakes'
 featuredImage: 'banana-pancakes.jpeg'
 date: '2020-05-03'
-title: 'Banana Pancakes'
+title: 'Paleo Banana Pancakes'
 topic: 'Recipes'
 ---
 
