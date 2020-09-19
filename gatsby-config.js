@@ -78,7 +78,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Jules Chevalier`,
-        short_name: `julechevalier`,
+        short_name: `Jules Chevalier`,
         description: `Jules Chevalier is a designer & engineer who writes about emotional wellness, intentional living and inclusion.`,
         start_url: '/',
         background_color: '#ffffff',
