@@ -6,7 +6,7 @@ featuredImage: "IMG_3321.jpg"
 topic: 'Inclusion'
 ---
 
-I purchased the land my home sits on, but but two hundred years before our home was built, this land was not for sale.  This land was stolen from the people that lived here: the Nipmuck, Pocumtuc and Agawam peoples.  The settlers, immigrants and colonizers fought, killed and spread small pox to the original inhabitants of this land.
+I purchased the land my home sits on, but but two hundred years before our home was built, this land was not for sale.  This land was not stolen, but conquered from the people that lived here: the [Nipmuck](https://en.wikipedia.org/wiki/Nipmuc), [Pocumtuc](https://en.wikipedia.org/wiki/Pocomtuc) and [Agawam](https://en.wikipedia.org/wiki/Agawam_people) peoples.  The settlers, immigrants and colonizers fought, killed and spread small pox to the original inhabitants of this land.
 
 Before the first Europeans came to Plymouth Massachusetts, there was Christopher Columbus.  While he never set foot in North America, he gets credited for “discovering” America.  There is a US federal holiday that celebrates his legacy.
 
