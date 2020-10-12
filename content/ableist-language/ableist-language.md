@@ -29,15 +29,15 @@ As I started shifting away from the phrase ["Hey Guys"](/inclusive-ways-to-say-h
 
 **Crippled** => *frozen by, completely stuck*
 
-**Blind / Blind Spot / Blinders** => *ignorant about*
+**Blind / Blind Spot / Blinders** => *shortcoming, deficiency, failure, defect, ignorant about*
 
-**Deaf** => *ignorant about*
+**Deaf** => *insensitive, oblivious, ignorant about*
 
-**Tone Deaf** => *willfully ignorant about*
+**Tone Deaf** => *tackless, out of touch, out of context, read the room, willfully ignorant about*
 
 
 **Disabled Person** => *Person with a disability*
-<p style="margin-top: -24px;">They are people first, and they have a disability.  Their disability is not their entire identity.  They are children, siblings, parents, spouses, successful and many more identities.  Don’t make their disability the most important thing about someone. </p>
+<p style="margin-top: -24px;">They are people first and they have a disability.  Their disability is not their entire identity.  They are children, siblings, parents, spouses, successful and many more identities.  Don’t make their disability the most important thing about someone. </p>
 
 <br />
 
