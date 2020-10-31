@@ -34,6 +34,8 @@ topic: 'Design'
 
 [Metal Gradients](https://www.eggradients.com/category/metal-gradient)
 
+[CSS Gradient](https://cssgradient.io)
+
 <br >
 
 <br >
@@ -81,6 +83,22 @@ topic: 'Design'
 [unDraw](https://undraw.co)
 
 [Isometric](https://isometric.online)
+
+<br >
+
+<br >
+
+## Background Pattens
+
+[Trianglify](https://trianglify.io)
+
+[Subtle Patterns](https://www.toptal.com/designers/subtlepatterns/)
+
+[Wow Patterns](https://www.wowpatterns.com)
+
+[The Pattern Library](http://thepatternlibrary.com)
+
+[Pattern Generator](https://patterncooler.com/)
 
 <br >
 
