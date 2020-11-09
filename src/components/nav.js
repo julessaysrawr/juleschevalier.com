@@ -162,7 +162,7 @@ const Nav = () => {
         <IconInstagram />
         <IconTwitter url={'https://twitter.com/julessaysrawr'} />
         <IconGithub />
-        <IconLinkedIn url={'www.linkedin.com/in/jules-chevalier-they-them-35587337'} />
+        <IconLinkedIn url={'https://www.linkedin.com/in/jules-chevalier'} />
       </div>
       <div
         // MOBILE NAV ICON
