@@ -1,0 +1,1 @@
+require('./src/lib/global-styles.css')

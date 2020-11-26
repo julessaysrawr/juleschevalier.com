@@ -34,13 +34,13 @@ const LayoutMain = props => {
             box-sizing: border-box;
           }
 
-          @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Serif:wght@400;700&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Serif:wght@400;700&display=block');
 
           h1,
           h2,
           h3,
           h4 {
-            font-family: 'IBM Plex Serif', serif;
+            font-family: 'IBM Plex Serif', Georgia, serif;
             color: ${theme.color.black};
           }
 
@@ -87,7 +87,7 @@ const LayoutMain = props => {
           p,
           a,
           li {
-            font-family: 'IBM Plex Sans', sans-serif;
+            font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
             color: ${theme.color.black};
             font-size: ${theme.textSizes.paragraph};
             font-weight: 300;
@@ -95,7 +95,7 @@ const LayoutMain = props => {
           }
 
           code {
-            font-family: 'IBM Plex Mono', monospace;
+            font-family: 'IBM Plex Mono', Monaco, Courier, monospace;
             font-weight: 300;
             font-size: 16px;
             font-size: ${theme.textSizes.code};
