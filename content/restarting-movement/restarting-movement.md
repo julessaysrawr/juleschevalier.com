@@ -17,7 +17,7 @@ Really give yourself permission to rest.  If things have gone down, you  probabl
 Part of restarting a movement habit is just restarting self care.  Movement is self-care: for mind, body and spirit.  Start by taking some extra time for yourself.  Take a few minutes to mindfully put some lotion on, do a face mask, journal or whatever is your favorite flavor of self-care.
 
 #### Stretch
-If you have had to take a break from movement, your body is probably tight and holding onto something.  Make time to just casually stretch and move within your body without any exceptions or outcomes in mind.  Be present and do what feels good.
+If you have had to take a break from movement, your body is probably tight and holding onto something.  Make time to just casually stretch and move within your body without any expectations or outcomes in mind.  Be present and do what feels good.
 
 #### Orgasm
 Solo or with a partner.  If you’ve been stressed, set that aside and let yourself come back into your body.  Orgasms can be a great way to relax and recover when things are out of balance.  If you have had to set aside movement, it means things have gotten out of balance for a while and this reset is about being kind to yourself and bringing things back into balance.
