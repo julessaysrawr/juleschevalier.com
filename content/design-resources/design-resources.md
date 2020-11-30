@@ -205,6 +205,8 @@ Ideally a multi-player platform where everyone can make changes in real time
 
 [Jonas Schmedtmann](http://www.codingheroes.io/resources/)
 
+[Free Frontend](https://freefrontend.com/css-code-examples/)
+
 [can I use?](https://caniuse.com)
 
 [Design Resources by Invision](https://www.invisionapp.com/inside-design/design-resources/)
