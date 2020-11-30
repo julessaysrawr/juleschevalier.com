@@ -66,6 +66,8 @@ topic: 'Design'
 
 [Streamline Icons](https://streamlineicons.com)
 
+[Radix Icons 15x15](https://icons.modulz.app)
+
 <br >
 
 <br >
@@ -107,6 +109,10 @@ topic: 'Design'
 ## Hover Effects
 [Hover.css](http://ianlunn.github.io/Hover/)
 
+[Icon hover effects](https://tympanus.net/Development/IconHoverEffects/)
+
+[Shake](https://elrumordelaluz.github.io/csshake/)
+
 <br >
 
 <br >
@@ -115,7 +121,13 @@ topic: 'Design'
 
 [Animate.css](https://animate.style/)
 
+[Animista](https://animista.net/play/basic)
+
 [Easing Functions](https://easings.net/)
+
+[Little Snippets](https://www.littlesnippets.net)
+
+[Animate on Scroll (AOS)](https://michalsnik.github.io/aos/)
 
 <br >
 
@@ -152,6 +164,14 @@ topic: 'Design'
 [UX Kits](https://uxkits.com)
 
 [Sketch simple wireframe kit by Nicolaj Reck](https://www.sketchappsources.com/free-source/2749-simple-wireframe-kit-sketch-freebie-resource.html)
+
+<br >
+
+<br >
+
+## Layout Examples
+
+[Tailwind](https://tailwindui.com/components#product-application-ui)
 
 <br >
 
