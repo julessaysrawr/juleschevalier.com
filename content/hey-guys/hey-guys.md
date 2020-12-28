@@ -36,10 +36,13 @@ So much of our language centers on gender, which is assumed to be cisgender. Cis
 
 - #### Hey friends
 
+- #### Hey fam
 - #### Hey mates
 - #### Companions! (This is my love of fantasy and D&D coming out)
 - #### Hello fellow evolved primates
 - #### Hey peeps
+- #### Epic humans
+- #### Beautiful people
 
 ## One more thing: replace other gendered phrasing
 

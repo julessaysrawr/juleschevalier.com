@@ -70,6 +70,12 @@ const Read = () => (
               <li>
                 <Link href="https://www.swyx.io">swyx</Link>
               </li>
+              <li>
+                <Link href="https://www.joshwcomeau.com">Josh Comeau</Link>
+              </li>
+              <li>
+                <Link href="https://www.ladybug.dev">Ladybug Podcast</Link>
+              </li>
             </ul>
             <h2
               css={css`
