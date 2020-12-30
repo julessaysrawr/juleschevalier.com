@@ -13,4 +13,4 @@ topic: 'Inclusion'
 > “Hey friend, I’m going through all my friends / colleagues / any group to make sure I am using the right pronouns.  Mine are they/them, what are yours?
 
 
-You should always share yours first, to show that you are both sharing so the focus isn’t all on the trans person.
+You should always share yours first, so it makes the discomfort around sharing pronouns and gender more equal for everyone. 

@@ -62,12 +62,3 @@ Instead, you can say
 - #### That’s my person / human / friend / mate
 - #### My persons / humans / friends / mates
 
-### Gender neutral way to say Mr/Mrs/Ms/Miss
-
-**Mx** pronounced “mix”
-
-### Gender neutral ways to say Sir/Madame
-
-- Excuse me
-- Pardon me
-- Hello there
