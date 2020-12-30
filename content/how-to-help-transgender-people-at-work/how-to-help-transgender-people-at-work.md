@@ -48,3 +48,5 @@ This will help to take some of the burden off the trans person to do all of the 
 It’s time to retire phrases like “Ladies and Gentlemen” or “[Hey Guys](/inclusive-ways-to-say-hey-guys)”.  Or at least expand them to be more inclusive, but “Ladies, Gentlemen and Persons” is a lot to say.  Normalize using “everyone”, “folks”, “people” and “y’all” (the best contribution from the American south to the English language).
 
 Here are some other ways you can use [gender neutral language](/gender-neutral-language).
+
+Lastly, here is [how to support someone when they come out as trans](https://www.huffpost.com/entry/how-to-support-coming-out-trans_l_5fc6d621c5b64c880a7e2ffd).
