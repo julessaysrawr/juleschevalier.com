@@ -40,6 +40,20 @@ I am proud of myself
 
 <br>
 
+I have something to offer the world
+
+Growth isn't always comfortable, but I am showing up anyways
+
+Even though I am scared, I am still showing up
+
+Why not me?
+
+I welcome all of the ways the universe wants to bless me
+
+<br>
+
+<br>
+
 There is enough for everyone
 
 I believe I am truly enough
