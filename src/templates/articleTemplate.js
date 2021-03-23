@@ -15,8 +15,12 @@ export default function articleTemplate({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
+
+  const { featuredImage } = frontmatter
+  const ogImagePath = featuredImage && featuredImage.childImageSharp.fluid.src // this was fixed
+
   return (
-    <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`}>
+    <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`} image={ogImagePath}>
       <main>
         <PaperBackground>
           <PageContent>
@@ -50,6 +54,10 @@ export default function articleTemplate({
                 h3,
                 h4 {
                   margin-bottom: ${theme.space[4]}px;
+                }
+
+                h2 {
+                  margin: ${theme.space[6]}px 0 ${theme.space[4]}px;
                 }
 
                 ol,

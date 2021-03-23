@@ -144,15 +144,15 @@ const LayoutMain = props => {
           content={props.description || data.site.siteMetadata.description}
         />
         {/* Facebook */}
-        <meta property="og:title" content={data.site.siteMetadata.title} />
+        <meta property="og:title" content={props.title || data.site.siteMetadata.title} />
         <meta property="og:site_name" content={data.site.siteMetadata.title} />
         <meta property="og:description" content={data.site.siteMetadata.description} />
-        <meta property="og:image" content={data.site.siteMetadata.thumbnail} />
+        <meta property="og:image" content={props.image || data.site.siteMetadata.thumbnail} />
         <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
         {/* Twitter */}
-        <meta name="twitter:title" content={data.site.siteMetadata.title} />
+        <meta name="twitter:title" content={props.title || data.site.siteMetadata.title} />
         <meta name="twitter:description" content={data.site.siteMetadata.description} />
-        <meta name="twitter:image" content={data.site.siteMetadata.thumbnail} />
+        <meta name="twitter:image" content={props.image || data.site.siteMetadata.thumbnail} />
         <meta name="twitter:card" content="summary_large_image" />
         <html lang="en" />
       </Helmet>
