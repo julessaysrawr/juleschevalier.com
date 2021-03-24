@@ -13,14 +13,18 @@ import PaperBackground from '../components/paper-background'
 export default function articleTemplate({
   data // this prop will be injected by the GraphQL query below.
 }) {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark
+  const { BlogPostByPath } = data // data.markdownRemark holds our post data
+  const { frontmatter, html } = BlogPostByPath
 
   const { featuredImage } = frontmatter
-  const ogImagePath = featuredImage && featuredImage.childImageSharp.fluid.src // this was fixed
+  // const ogImagePath = featuredImage && featuredImage.childImageSharp.fluid.src // this was fixed
+
+  const socialShareImage = data.SocialImage.frontmatter.featuredImage.childImageSharp.fixed.src
+  // eslint-disable-next-line
+  // console.log('data: ', data.SocialImage.frontmatter.featuredImage.childImageSharp.fixed.src);
 
   return (
-    <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`} image={ogImagePath}>
+    <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`} image={socialShareImage}>
       <main>
         <PaperBackground>
           <PageContent>
@@ -195,9 +199,30 @@ export default function articleTemplate({
   )
 }
 
+// export const pageQuery = graphql`
+//   query BlogPostByPath($path: String!) {
+//     markdownRemark(frontmatter: { path: { eq: $path } }) {
+//       html
+//       frontmatter {
+//         date(formatString: "MMMM Do, YYYY")
+//         path
+//         title
+//         topic
+//         featuredImage {
+//           childImageSharp {
+//             fluid(maxWidth: 860, quality: 75) {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
+
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query($path: String!) {
+    BlogPostByPath: markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         date(formatString: "MMMM Do, YYYY")
@@ -208,6 +233,17 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 860, quality: 75) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    SocialImage: markdownRemark(frontmatter: { path: { eq: $path } }) {
+      frontmatter {
+        featuredImage {
+          childImageSharp {
+            fixed(width: 1200, height: 600, quality: 75) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
