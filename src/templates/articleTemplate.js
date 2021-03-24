@@ -242,7 +242,7 @@ export const pageQuery = graphql`
       frontmatter {
         featuredImage {
           childImageSharp {
-            fixed(width: 1200, height: 600, quality: 75) {
+            fixed(width: 1200, height: 630, cropFocus: CENTER, quality: 50) {
               ...GatsbyImageSharpFixed
             }
           }
