@@ -2,7 +2,7 @@
 path: '/restarting-exercise'
 date: '2021-03-22'
 title: 'Restarting An Exercise Routine'
-summary: 'When struggling to restart a movement habit, lower the expectations so low they seem too easy: that is how you can gain momentum.'
+summary: 'When struggling to restart a movement habit, lower the expectations so much that they seem too easy: that is how you can gain momentum.'
 featuredImage: 'IMG_2433.jpg'
 topic: 'Intentional Living'
 ---
@@ -41,7 +41,7 @@ Solo or with a partner. If you’ve been stressed, set that aside and let yourse
 
 If you have had to take a break from movement, your body is probably tight and holding onto something. Make time to just casually stretch and move within your body without any expectations or outcomes in mind. Be present and do what feels good.
 
-## Gaining Momentum
+## Inching Forward
 
 ### Dance
 
@@ -75,15 +75,21 @@ The intent here is to just move each muscle group. Even 5 reps of each exercise 
 
 I use [this free app](https://apps.apple.com/us/app/7-minute-workout-fitness-app/id806995720) and start with the **7M Classic** routine
 
-## Full Speed Ahead
+## Gaining Momentum
 
-### Break the seal
+### Pretend you're just starting out
 
-If it's been more than a couple of weeks, I find it really hard to bust back into the strength routine. Inertia is like an invisible barrier that must be pierced before it will bend to your will. If you've been making repeated progress with the [Gaining Momentum](/restarting-exercise/#gaining-momentum) section above, then take the usual routine and do 1-2 sets of 5 reps for each exercise. It will feel like the win you need, but with a more manageable effort.
+If it's been more than a couple of weeks, I find it really hard to break the seal back into the strength routine. Inertia is like an invisible barrier that must be pierced before it will bend to your will. If you've been making repeated progress with the [Inching Forward](/restarting-exercise#inching-forward) section above, then try going through the routine more casually. It will feel like the win you need, but with a more manageable effort.
+
+- 1-2 sets of 5 reps with no or minimal weight
+- 3 sets of 5 reps with half weight
+- 1-2 sets of 5 reps with full weight
+
+<br />
 
 ### Return to Regular strength flow
 
-Only after I have gotten a few easier workouts in, do I move forward and jump back into the full routine. This is the [bodyweight routine](https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine) that I can do at home and still get a full body workout.
+Only after I have gotten a few easier workouts in, do I feel enough inertia to move forward and jump back into the full routine. This is the [bodyweight routine](https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine) that I can do at home and still get a full body workout.
 
 ## Final thoughts
 
