@@ -1,8 +1,9 @@
 ---
-path: "/upset"
-date: "2018-07-31"
-title: "When I Feel Stuck And Upset"
-featuredImage: "IMG_0545.jpg"
+path: '/upset'
+date: '2018-07-31'
+title: 'When I Feel Stuck And Upset'
+summary: 'How to navigate when feelings when you're not sure what's missing'
+featuredImage: 'IMG_0545.jpg'
 topic: 'Emotional Wellbeing'
 ---
 
@@ -22,12 +23,10 @@ Change happens little by little, just like habits you build over time.
 
 Sometimes you need to slow down, that’s okay.
 
-_In order to do any of this, you need to take care of yourself first.  Everything else can wait._
-
-<!-- ![Jules in a white dress, sitting on the wooden floor in a hallway](./IMG_2194.jpg) -->
-
+_In order to do any of this, you need to take care of yourself first. Everything else can wait._
 
 ## Here are ways I change my state:
+
 Have you eaten in the last 3 hours?
 
 Have you showered today?
@@ -41,13 +40,13 @@ Do you need a nap?
 Go get some sunshine.
 
 Practice gratitude..
-  - For how far you’ve come
-  - For the many privileges you have
-  - For the blessings of your current life
-  - For your health
-  - For your relationships
-  - For your passions
-  - For the many ways you’ve grown
-  - For the ways you’ve contributed to others
-  - For yourself, and the things you like about yourself
 
+- For how far you’ve come
+- For the many privileges you have
+- For the blessings of your current life
+- For your health
+- For your relationships
+- For your passions
+- For the many ways you’ve grown
+- For the ways you’ve contributed to others
+- For yourself, and the things you like about yourself

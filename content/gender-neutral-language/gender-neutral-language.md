@@ -2,7 +2,8 @@
 path: '/gender-neutral-language'
 date: '2020-12-30'
 title: 'A Collection of Gender Neutral Language'
-featuredImage: "IMG_2603-2-HDR.jpg"
+summary: 'Examples of gender neutral language including pronouns, honorifics, greetings, relationship titles and more.'
+featuredImage: 'IMG_2603-2-HDR.jpg'
 topic: 'Inclusion'
 ---
 
@@ -19,7 +20,6 @@ They/Them/Theirs
 > That backpack is **theirs**.
 >
 > They can take care of **themselves**.
-
 
 #### Neo Pronouns
 
@@ -38,7 +38,9 @@ Sie/Hir/Hir
 <br>
 
 ## Honorific
+
 `Mx` pronounced “mix”
+
 > Mx Jules Chevalier
 
 > Mx Right 😉
@@ -134,6 +136,7 @@ My persons / humans / friends / mates
 <br>
 
 ## Family relationships
+
 **Mother/Father** => Parent, Renny, Baba, Dama, Mada, Maddy, Mapa
 
 **Brother/Sister** => Sibling, Sib, Sibster
@@ -185,7 +188,6 @@ My Liege
 <br>
 
 <br>
-
 
 ## Other Considerations
 

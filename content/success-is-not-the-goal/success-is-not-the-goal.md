@@ -2,6 +2,7 @@
 path: '/success-is-not-the-goal'
 date: '2019-06-30'
 title: 'Success Is Not The Goal'
+summary: 'If you think you must be successful in order to be happy, you are denying the happiness you can have right now.'
 featuredImage: 'IMG_5881.jpg'
 topic: 'Intentional Living'
 ---

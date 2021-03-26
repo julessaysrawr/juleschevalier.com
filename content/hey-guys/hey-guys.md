@@ -2,7 +2,8 @@
 path: '/inclusive-ways-to-say-hey-guys'
 date: '2020-07-06'
 title: 'Inclusive Ways To Say "Hey Guys"'
-featuredImage: "IMG_0559.jpg"
+summary: 'Why you shouldn't say "Hey Guys" and some inclusive alternatives.'
+featuredImage: 'IMG_0559.jpg'
 topic: 'Inclusion'
 ---
 
@@ -61,4 +62,3 @@ Instead, you can say
 - #### You’re my person / human / friend / mate
 - #### That’s my person / human / friend / mate
 - #### My persons / humans / friends / mates
-

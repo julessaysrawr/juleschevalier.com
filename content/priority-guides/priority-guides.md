@@ -2,7 +2,8 @@
 path: '/priority-guides'
 date: '2020-02-09'
 title: 'Priority Guides: A Content First Approach'
-featuredImage: "IMG_2730.jpg"
+summary: 'What are priority guides and how they can help when you are designing a website or app.'
+featuredImage: 'IMG_2730.jpg'
 topic: 'Design'
 ---
 
@@ -13,11 +14,13 @@ When starting a new design project, there is a lot of research and ideation that
 Enter priority guides. [Drew Clemmins introduced this concept](https://www.smashingmagazine.com/2012/05/design-process-responsive-age/) as a solution to challenges of responsive design. Even though today, it is mostly assumed that responsive design is the default, the concept of priority guides seem more relevant than ever.
 
 ## How it works
+
 ![The core structure of a priority guide](https://alistapart.com/wp-content/uploads/2018/05/core-structure.png?w=960)
 
-You start with a mobile sized screen and section out the most important content at the top of the page.  Each page has a goal, and a hierarchy of most important to least important content, according the user of the site or app.
+You start with a mobile sized screen and section out the most important content at the top of the page. Each page has a goal, and a hierarchy of most important to least important content, according the user of the site or app.
 
 Other tips include
+
 - don't include layout elements
 - leave the menu out
 - use annotations to explain functionality and behavior
@@ -25,13 +28,15 @@ Other tips include
 ## Advantages
 
 ### Business Value
+
 With each page or screen having a goal, it is clearly communicated what the user's need is and the business objectives we offer as solutions.
 
 ### Speed
+
 Once you content is settled, your developers can get started getting content to display on the page without having to wait for visual design.
 
 ### Brings Copy and Design Together
-Priority guides provide a clear and logical structure that can help get you started if you need to create content.
 
+Priority guides provide a clear and logical structure that can help get you started if you need to create content.
 
 If you are interested [this is an excellent in-depth guide to get you started](https://alistapart.com/article/priority-guides-a-content-first-alternative-to-wireframes/)

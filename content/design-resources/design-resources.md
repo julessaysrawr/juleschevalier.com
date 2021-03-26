@@ -2,7 +2,8 @@
 path: '/design-resources'
 date: '2020-10-31'
 title: 'Curated Design Resources'
-featuredImage: "./IMG_8051.png"
+summary: 'Resources for color, icons, typefaces, photography, illustration, hover effects, animations, css generators, wireframing, and much more.'
+featuredImage: './IMG_8051.png'
 topic: 'Design'
 ---
 
@@ -41,6 +42,7 @@ topic: 'Design'
 <br >
 
 ## Typefaces
+
 [Google Fonts](https://fonts.google.com)
 
 [Dafont](https://www.dafont.com)
@@ -50,6 +52,7 @@ topic: 'Design'
 <br >
 
 ## Icons
+
 [Noun Project](https://thenounproject.com/)
 
 [Mono Icons](https://icons.mono.company/)
@@ -73,6 +76,7 @@ topic: 'Design'
 <br >
 
 ## Photography
+
 [Unsplash](https://unsplash.com)
 
 [Pexels](https://www.pexels.com)
@@ -82,6 +86,7 @@ topic: 'Design'
 <br >
 
 ## Illustration
+
 [unDraw](https://undraw.co)
 
 [Isometric](https://isometric.online)
@@ -107,6 +112,7 @@ topic: 'Design'
 <br >
 
 ## Hover Effects
+
 [Hover.css](http://ianlunn.github.io/Hover/)
 
 [Icon hover effects](https://tympanus.net/Development/IconHoverEffects/)
@@ -134,6 +140,7 @@ topic: 'Design'
 <br >
 
 ## Generators
+
 [Hero Generator](https://hero-generator.netlify.app)
 
 [Drop Shadow Generator](https://www.cssmatic.com/box-shadow)
@@ -147,6 +154,7 @@ topic: 'Design'
 <br >
 
 ## User Experience (UX)
+
 [Laws of UX](https://lawsofux.com/)
 
 [Nielsen Norman Group](https://www.nngroup.com)
@@ -212,4 +220,3 @@ Ideally a multi-player platform where everyone can make changes in real time
 [Design Resources by Invision](https://www.invisionapp.com/inside-design/design-resources/)
 
 [Screely](https://www.screely.com/)
-

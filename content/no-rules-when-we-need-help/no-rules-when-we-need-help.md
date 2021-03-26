@@ -2,13 +2,14 @@
 path: '/no-rules-when-we-need-help'
 date: '2021-01-31'
 title: 'There are no rules when we need help'
+summary: 'When you are struggling day to day, focus on the easiest way to get things done, not the "right way".'
 featuredImage: 'DSC3706.jpg'
 topic: 'Emotional Wellbeing'
 ---
 
 If you’re having a hard time doing simple things, I want you to know it’s okay. You have to meet yourself where you are and do things outside the box. If the goal is to get to the finish line, maybe you usually take one path to get there, but there is nothing wrong with taking a shortcut when you need it the most. You owe it to yourself not to do everything on hard mode. This is especially true if you are neurodivergent.
 
-If you’re struggling to tackle an overflowing amount of dishes that you have been procrastinating for days: normal rules do not apply. Load the dishwasher just as they are, without rising and scrubbing. Run it just like that. If the dishes aren’t clean, run again. There is no rule that says you can’t just run the machine twice, or even thrice. When you’re struggling with something, it’s okay to ask for assistance or make it easier on yourself. 
+If you’re struggling to tackle an overflowing amount of dishes that you have been procrastinating for days: normal rules do not apply. Load the dishwasher just as they are, without rising and scrubbing. Run it just like that. If the dishes aren’t clean, run again. There is no rule that says you can’t just run the machine twice, or even thrice. When you’re struggling with something, it’s okay to ask for assistance or make it easier on yourself.
 
 If you’re finding it hard to feed yourself, eat your version of lunchables for dinner.
 

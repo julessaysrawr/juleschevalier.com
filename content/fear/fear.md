@@ -2,7 +2,8 @@
 path: '/fear'
 date: '2019-12-29'
 title: 'Fear'
-featuredImage: "IMG_5505.jpg"
+summary: 'What I remind myself with when I am afraid'
+featuredImage: 'IMG_5505.jpg'
 topic: 'Emotional Wellbeing'
 ---
 
@@ -22,11 +23,12 @@ topic: 'Emotional Wellbeing'
 >
 > Where the fear has gone there will be nothing. Only I will remain.
 
-*Frank Herbert, author of the Dune Series*
+_Frank Herbert, author of the Dune Series_
 
-You cannot let your fear control you, or it will box you in and you will not grow.  You must push past the fear into the discomfort of the unknown.  
+You cannot let your fear control you, or it will box you in and you will not grow. You must push past the fear into the discomfort of the unknown.
 
 ### Ask yourself:
+
 - What is the worst that could happen?
 
 and

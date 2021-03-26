@@ -1,9 +1,10 @@
 ---
-path: "/simple-meals"
-date: "2018-08-10"
-title: "Simple Meals"
-featuredImage: "IMG_6751.jpg"
-topic: "Intentional Living"
+path: '/simple-meals'
+date: '2018-08-10'
+title: 'Simple Meals'
+summary: 'Breaking down meals into their core parts so that you can simplify your mental model to make it easier to plan what to buy and eat.'
+featuredImage: 'IMG_6751.jpg'
+topic: 'Intentional Living'
 ---
 
 ### Start each meal with:
@@ -20,9 +21,7 @@ Enjoy and feel good!
 
 <br></br>
 
-
 ### Example foods:
-
 
 **Veggies I tend to cycle through:**
 
@@ -30,7 +29,7 @@ Kale, spinach, arugula, swiss chard, collard greens, broccoli
 
 **Protein sources I use:**
 
-Chicken, Turkey, Beef, Eggs.  All are well sourced, meaning pasture raised, no hormones or antibiotics.  _I used to eat wild caught Salmon and Tuna until I discovered I had mercury poisoning._
+Chicken, Turkey, Beef, Eggs. All are well sourced, meaning pasture raised, no hormones or antibiotics. _I used to eat wild caught Salmon and Tuna until I discovered I had mercury poisoning._
 
 **Oils & fats:**
 
@@ -44,11 +43,10 @@ Salt and pepper, lemon/lime juice, coconut aminos (similar to soy sauce), vinega
 
 ### Tips:
 
+Forget about eating certain foods for certain meals. If I want eggs, I eat them for any meal. If I have chicken and spinach cooked, I eat that for my first meal of the day.
 
-Forget about eating certain foods for certain meals.  If I want eggs, I eat them for any meal.  If I have chicken and spinach cooked, I eat that for my first meal of the day.
-
-Figure out what your body does best with.  How many meals does your body need?  Snacks?  Eating window?
+Figure out what your body does best with. How many meals does your body need? Snacks? Eating window?
 
 If you’re having any kind of food difficulties, I recommend an elimination diet to find out what your body doesn’t like.
 
-Do what works for you!  _Ignore this completely if it doesn’t work for you._
+Do what works for you! _Ignore this completely if it doesn’t work for you._
