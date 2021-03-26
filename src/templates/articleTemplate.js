@@ -24,7 +24,11 @@ export default function articleTemplate({
   // console.log('data: ', data.SocialImage.frontmatter.featuredImage.childImageSharp.fixed.src);
 
   return (
-    <LayoutMain title={`${frontmatter.title} | By Jules Chevalier`} image={socialShareImage}>
+    <LayoutMain
+      title={`${frontmatter.title} | By Jules Chevalier`}
+      image={socialShareImage}
+      description={frontmatter.summary}
+    >
       <main>
         <PaperBackground>
           <PageContent>
@@ -228,6 +232,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM Do, YYYY")
         path
         title
+        summary
         topic
         featuredImage {
           childImageSharp {

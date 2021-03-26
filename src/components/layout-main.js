@@ -146,7 +146,10 @@ const LayoutMain = props => {
         {/* Facebook */}
         <meta property="og:title" content={props.title || data.site.siteMetadata.title} />
         <meta property="og:site_name" content={data.site.siteMetadata.title} />
-        <meta property="og:description" content={data.site.siteMetadata.description} />
+        <meta
+          property="og:description"
+          content={props.description || data.site.siteMetadata.description}
+        />
         <meta
           property="og:image"
           content={
@@ -158,7 +161,10 @@ const LayoutMain = props => {
         <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
         {/* Twitter */}
         <meta name="twitter:title" content={props.title || data.site.siteMetadata.title} />
-        <meta name="twitter:description" content={data.site.siteMetadata.description} />
+        <meta
+          name="twitter:description"
+          content={props.description || data.site.siteMetadata.description}
+        />
         <meta
           name="twitter:image"
           content={
