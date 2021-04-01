@@ -43,7 +43,8 @@ topic: 'Intentional Living'
 
 ## What A good apology looks like
 
-> **I apologize for** > <br />
+> **I apologize for**
+> <br />
 >
 > <br />
 >
@@ -62,7 +63,7 @@ Focus on identifying
 
 <br/>
 
-## Intent
+## Intent & Impact
 
 If the person accepts your apology, only then can you consider mentioning intent.
 
