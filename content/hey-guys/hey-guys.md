@@ -2,8 +2,8 @@
 path: '/inclusive-ways-to-say-hey-guys'
 date: '2020-07-06'
 title: 'Inclusive Ways To Say "Hey Guys"'
-summary: 'Why you shouldn't say "Hey Guys" and some inclusive alternatives.'
-featuredImage: 'IMG_0559.jpg'
+summary: 'Why you shouldn''t say "Hey Guys" and some inclusive alternatives to use instead.'
+featuredImage: './IMG_0559.jpg'
 topic: 'Inclusion'
 ---
 
