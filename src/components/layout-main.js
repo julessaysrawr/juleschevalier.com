@@ -144,6 +144,9 @@ const LayoutMain = props => {
           content={props.description || data.site.siteMetadata.description}
         />
         {/* Facebook */}
+        <meta property="og:type" content={props.pageType || 'website'} />
+
+        {/* {props.pageType === 'author' ? <meta property="og:ar"} */}
         <meta property="og:title" content={props.title || data.site.siteMetadata.title} />
         <meta property="og:site_name" content={data.site.siteMetadata.title} />
         <meta
@@ -158,7 +161,10 @@ const LayoutMain = props => {
               : data.site.siteMetadata.thumbnail
           }
         />
-        <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
+        <meta
+          property="og:url"
+          content={`https://juleschevalier.com${props.uri}` || data.site.siteMetadata.siteUrl}
+        />
         {/* Twitter */}
         <meta name="twitter:title" content={props.title || data.site.siteMetadata.title} />
         <meta

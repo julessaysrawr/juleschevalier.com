@@ -2,7 +2,7 @@
 path: '/social-cards-with-gatsby'
 date: '2021-03-31'
 title: 'Custom Social Sharing Cards With Gatsby'
-summary: ''
+summary: 'How to set up large custom previews when you share your links on social platforms.'
 featuredImage: 'IMG_0815.jpg'
 topic: 'Technology'
 ---
@@ -23,7 +23,7 @@ Observations
 
 ## Approach
 
-I'm going to tackle this piece by piece. First I did some research to understand what is ahead so I can make a plan.  Here are the options I found:
+I'm going to tackle this piece by piece. First I did some research to understand what is ahead so I can make a plan. Here are the options I found:
 
 ### Option 1: No custom photos, but programmatically generated text to image
 
@@ -200,6 +200,10 @@ So of course I pushed to production 🙈 to test. ¯\\\_(ツ)\_/¯
 - [linkedin post inspector](https://www.linkedin.com/post-inspector/)
 
 ⚠️ you need an account and to be logged in for these to work (except iframely)
+
+## Adjustments
+
+I realized that I had been missing a few open graph tags when testing on facebook and linkedin. I added `og:type` for `article` and updated the `og:url` to link to the specific article and not the homepage.
 
 I had trouble with LinkedIn showing the updates, apparently they cache previews for 7 days.
 

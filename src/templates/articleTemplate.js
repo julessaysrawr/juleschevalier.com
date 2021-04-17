@@ -25,9 +25,11 @@ export default function articleTemplate({
 
   return (
     <LayoutMain
-      title={`${frontmatter.title} | By Jules Chevalier`}
+      title={`${frontmatter.title}`}
       image={socialShareImage}
       description={frontmatter.summary}
+      pageType={'article'}
+      uri={frontmatter.path}
     >
       <main>
         <PaperBackground>
