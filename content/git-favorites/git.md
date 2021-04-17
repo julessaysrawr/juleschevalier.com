@@ -4,6 +4,7 @@ date: '2020-02-04'
 title: 'Git Favorites'
 summary: 'A few git commands that I use all the time that are beyond the basics.'
 featuredImage: 'LFBM5337.jpg'
+featuredImageAlt: 'A close up of orange tulips with and tall city buildings in the background that are out of focus.'
 topic: 'Technology'
 ---
 

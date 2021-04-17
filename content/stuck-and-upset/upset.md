@@ -2,8 +2,9 @@
 path: '/upset'
 date: '2018-07-31'
 title: 'When I Feel Stuck And Upset'
-summary: 'How to navigate when feelings when you're not sure what's missing'
+summary: 'How to navigate when feelings when you''re not sure what''s missing'
 featuredImage: 'IMG_0545.jpg'
+featuredImageAlt: 'A seagull standing with their feet in dry sand, appearing like they are pondering their next move.'
 topic: 'Emotional Wellbeing'
 ---
 

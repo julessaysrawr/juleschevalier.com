@@ -4,6 +4,7 @@ date: '2020-12-28'
 title: 'How To Ask Someone For Their Pronouns'
 summary: 'How To Ask Someone For Their Pronouns'
 featuredImage: 'IMG_1545.JPG'
+featuredImageAlt: 'Two cats on a small table; one looks to be thinking about something.'
 topic: 'Inclusion'
 ---
 

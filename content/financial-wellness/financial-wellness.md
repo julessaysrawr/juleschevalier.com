@@ -4,6 +4,7 @@ date: '2019-07-01'
 title: 'Financial Wellness'
 summary: 'What I wish I was taught about financial wellness'
 featuredImage: 'IMG_0322-2.jpg'
+featuredImageAlt: 'An abstract view of looking up at a green leafy tree through a wet sunroof of a car.'
 topic: 'Intentional Living'
 ---
 

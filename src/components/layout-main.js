@@ -143,6 +143,9 @@ const LayoutMain = props => {
           name="description"
           content={props.description || data.site.siteMetadata.description}
         />
+
+        <meta name="author" content="Jules Chevalier" />
+        <meta property="article:author" content="Jules Chevalier" />
         {/* Facebook */}
         <meta property="og:type" content={props.pageType || 'website'} />
 
@@ -161,10 +164,12 @@ const LayoutMain = props => {
               : data.site.siteMetadata.thumbnail
           }
         />
+        <meta property="og:image:alt" content={props.imageAlt || ''} />
         <meta
           property="og:url"
           content={`https://juleschevalier.com${props.uri}` || data.site.siteMetadata.siteUrl}
         />
+        <meta property="og:locale" content="en_US"></meta>
         {/* Twitter */}
         <meta name="twitter:title" content={props.title || data.site.siteMetadata.title} />
         <meta

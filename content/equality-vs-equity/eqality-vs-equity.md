@@ -4,6 +4,7 @@ date: '2020-11-26'
 title: 'Equality vs Equity'
 summary: 'The difference between equality & equity and what is needed for everyone to be able to enjoy life.'
 featuredImage: './IMG_7580.jpg'
+featuredImageAlt: 'The rising run peeking through tall beach grasses.'
 topic: 'Inclusion'
 ---
 

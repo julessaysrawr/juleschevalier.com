@@ -4,6 +4,7 @@ date: '2021-01-31'
 title: 'There are no rules when we need help'
 summary: 'When you are struggling day to day, focus on the easiest way to get things done, not the "right way".'
 featuredImage: 'DSC3706.jpg'
+featuredImageAlt: 'An up-close and abstract view of a chain link fence with a darkening blue sky behind it.'
 topic: 'Emotional Wellbeing'
 ---
 

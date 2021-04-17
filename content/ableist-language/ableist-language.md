@@ -4,6 +4,7 @@ date: '2020-09-19'
 title: 'Ableist Language And What You Can Say Instead'
 summary: 'To be more inclusive of people with disabilities, stop saying these words'
 featuredImage: 'IMG_1217.jpg'
+featuredImageAlt: 'A close up view of green leaves overlapping each other to create a shadow area.'
 topic: 'Inclusion'
 ---
 

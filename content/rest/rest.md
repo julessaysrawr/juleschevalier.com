@@ -4,6 +4,7 @@ date: '2020-01-21'
 title: 'Rest'
 summary: 'This is your permission slip to rest'
 featuredImage: 'IMG_2772.JPG'
+featuredImageAlt: 'A sleeping kitty looking content while curled up on themselves in shrimp pose.'
 topic: 'Intentional Living'
 ---
 

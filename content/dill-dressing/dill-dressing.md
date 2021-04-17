@@ -1,6 +1,7 @@
 ---
 path: '/dill-dressing'
 featuredImage: 'IMG_7586.jpg'
+featuredImageAlt: 'A white plate with baby carrots and a dipping container filled with Dill Dressing.'
 date: '2020-08-25'
 title: 'Dill Dressing'
 summary: 'Recipe for a creamy dressing that is low FODMAP and has no garlic and onion.'

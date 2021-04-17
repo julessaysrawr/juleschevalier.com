@@ -4,6 +4,7 @@ date: '2019-07-12'
 title: 'Busy'
 summary: 'Feeling busy or rushed is often a feeling that things are out of balance.  Reconnect with yourself to find calm.'
 featuredImage: 'IMG_1371.jpg'
+featuredImageAlt: 'Inside a green leafy bush, looking up at the sunlight peeking between the leaves.'
 topic: 'Emotional Wellbeing'
 ---
 

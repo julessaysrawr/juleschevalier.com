@@ -4,6 +4,7 @@ date: '2020-05-10'
 title: 'Favorite Things'
 summary: 'A collection of items that have made big difference in my life.'
 featuredImage: 'IMG_1319.jpg'
+featuredImageAlt: 'White peony flowers against a light grey background'
 topic: 'Intentional Living'
 ---
 

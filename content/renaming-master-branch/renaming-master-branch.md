@@ -4,6 +4,7 @@ date: '2020-06-21'
 title: 'Renaming Master Branch'
 summary: 'How to change the name of the primary branch in github'
 featuredImage: 'IMG_0631.jpg'
+featuredImageAlt: 'A red and white lighthouse as seen in between tall grasses on an overcast day.'
 topic: 'Technology'
 ---
 

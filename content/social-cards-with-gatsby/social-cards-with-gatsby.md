@@ -4,6 +4,7 @@ date: '2021-03-31'
 title: 'Custom Social Sharing Cards With Gatsby'
 summary: 'How to set up large custom previews when you share your links on social platforms.'
 featuredImage: 'IMG_0815.jpg'
+featuredImageAlt: 'A unique rock with naturally occurring line markings that is sitting surrounded by sand.'
 topic: 'Technology'
 ---
 
@@ -204,6 +205,8 @@ So of course I pushed to production 🙈 to test. ¯\\\_(ツ)\_/¯
 ## Adjustments
 
 I realized that I had been missing a few open graph tags when testing on facebook and linkedin. I added `og:type` for `article` and updated the `og:url` to link to the specific article and not the homepage.
+
+This is an excellent reference for the html [head tag](https://htmlhead.dev)
 
 I had trouble with LinkedIn showing the updates, apparently they cache previews for 7 days.
 

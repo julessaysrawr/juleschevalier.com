@@ -4,6 +4,7 @@ date: '2020-03-21'
 title: 'Commit Types'
 summary: 'Bring more meaning to your commit messages by using commit types prefixes.'
 featuredImage: 'IMG_2236.jpg'
+featuredImageAlt: 'Up close view of thin red bricks laid out in a herringbone zigzag pattern.'
 topic: 'Technology'
 ---
 

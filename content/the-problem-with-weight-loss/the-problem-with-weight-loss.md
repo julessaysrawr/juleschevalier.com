@@ -4,6 +4,7 @@ date: '2020-01-05'
 title: 'The Problem With Weight Loss'
 summary: 'We have been sold that weight equals health, yet not only is that false, but the factors that contribute to health are more complex than we realize.'
 featuredImage: 'IMG_0695.jpg'
+featuredImageAlt: 'A narrow sandy path through tall green grasses: it is unclear where the path leads.'
 topic: 'Intentional Living'
 ---
 

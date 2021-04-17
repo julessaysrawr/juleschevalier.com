@@ -4,6 +4,7 @@ date: '2019-07-02'
 title: 'Intentional Living'
 summary: 'What intentional living means to me.'
 featuredImage: 'IMG_6336.jpg'
+featuredImageAlt: 'Multicolored sand and rock formations against a blue sky.'
 topic: 'Intentional Living'
 ---
 

@@ -4,6 +4,7 @@ date: '2020-10-12'
 title: 'Whose Land Am I On?'
 summary: 'If you live in America, the land you are on belonged to someone else first. How you can find out whose land you are on.'
 featuredImage: 'IMG_3321.jpg'
+featuredImageAlt: 'Rolling hills with fall foliage that are set against a blue sky.'
 topic: 'Inclusion'
 ---
 

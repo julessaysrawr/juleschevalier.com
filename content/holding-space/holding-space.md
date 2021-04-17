@@ -4,6 +4,7 @@ date: '2019-12-29'
 title: 'Holding Space'
 summary: 'How to be present when you are emotionally supporting someone.'
 featuredImage: 'IMG_1356.jpg'
+featuredImageAlt: 'A backlit couple holding hands'
 topic: 'Emotional Wellbeing'
 ---
 

@@ -1,9 +1,10 @@
 ---
 path: '/dont-limit-whats-possible'
 date: '2020-11-29'
-title: 'Don't limit what's possible'
-summary: 'Reflections on how we self-impose limits and encouragement to move past those.'
+title: 'Don''t limit what''s possible'
+summary: "Reflections on how we self-impose limits and encouragement to move past those."
 featuredImage: 'DSC1226.jpg'
+featuredImageAlt: 'A german shepard dog standing on a snow covered lake with mountains in the background.'
 topic: 'Intentional Living'
 ---
 

@@ -4,6 +4,7 @@ date: '2021-02-28'
 title: 'How to Apologize Without Centering on Yourself'
 summary: 'How to effectively apologize so that the person who experienced harm can have the space to share how they were impacted.'
 featuredImage: 'IMG_3439.jpg'
+featuredImageAlt: 'An up-close view of a hand with the finger and thumb closing around the sun setting in the distance.'
 topic: 'Intentional Living'
 ---
 

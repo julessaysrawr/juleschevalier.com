@@ -4,6 +4,7 @@ date: '2020-02-08'
 title: 'Coming Out'
 summary: 'Both of my personal coming out stories.'
 featuredImage: 'IMG_7569.JPG'
+featuredImageAlt: 'Sunrise over a beach with trails in the sand from the retreating tide.'
 topic: 'Personal Essays'
 ---
 

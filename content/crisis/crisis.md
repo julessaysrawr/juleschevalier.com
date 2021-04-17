@@ -4,6 +4,7 @@ date: '2019-07-10'
 title: 'Finding Your Way Out Of Crisis'
 summary: 'Creating a plan to get out of emotional crisis will make it easier to navigate when it happens.'
 featuredImage: 'IMG_1226.jpg'
+featuredImageAlt: 'A sandy shore with gently breaking waves.'
 topic: 'Emotional Wellbeing'
 ---
 

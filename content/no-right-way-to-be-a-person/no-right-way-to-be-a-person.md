@@ -4,6 +4,7 @@ date: '2020-10-31'
 title: 'There Is No Right Way To Be A Man, Woman or Person'
 summary: 'Reflections on being the best version of you and letting go of gender stereotypes.'
 featuredImage: './IMG_5771.JPG'
+featuredImageAlt: 'A surfer walks at the edge of the water with their surfboard with the sun setting behind them.'
 topic: 'Inclusion'
 ---
 

@@ -4,6 +4,7 @@ date: '2020-10-31'
 title: 'Curated Design Resources'
 summary: 'Resources for color, icons, typefaces, photography, illustration, hover effects, animations, css generators, wireframing, and much more.'
 featuredImage: './IMG_8051.png'
+featuredImageAlt: 'A wide view of a green forest with green ferns growing on the forest floor with a blue sky visible beyond the tops of the trees.'
 topic: 'Design'
 ---
 

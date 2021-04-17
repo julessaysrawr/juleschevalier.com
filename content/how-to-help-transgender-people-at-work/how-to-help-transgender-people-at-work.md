@@ -4,6 +4,7 @@ date: '2020-12-30'
 title: 'How To Help Transgender and Non-Binary People At Work'
 summary: 'What you can do be support Transgender and Non-Binary people at work, including how to make it more equal for everyone.'
 featuredImage: 'IMG_7425.jpg'
+featuredImageAlt: 'Two vines, one alive and one dead overlapping against a yellow-painted brick wall.'
 topic: 'Inclusion'
 ---
 

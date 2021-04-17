@@ -4,6 +4,7 @@ date: '2018-08-10'
 title: 'Simple Meals'
 summary: 'Breaking down meals into their core parts so that you can simplify your mental model to make it easier to plan what to buy and eat.'
 featuredImage: 'IMG_6751.jpg'
+featuredImageAlt: 'A white plate with scrambled eggs, spinach and tomato.'
 topic: 'Intentional Living'
 ---
 

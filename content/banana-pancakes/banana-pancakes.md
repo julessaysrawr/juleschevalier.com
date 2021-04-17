@@ -1,6 +1,7 @@
 ---
 path: '/banana-pancakes'
 featuredImage: 'banana-pancakes.jpeg'
+featuredImageAlt: 'A large banana pancake on a white plate resting on a wooden table.'
 date: '2020-05-03'
 title: 'Paleo Banana Pancakes'
 summary: 'Recipe for banana pancakes that is Paleo, low FODMAP, and AIP'

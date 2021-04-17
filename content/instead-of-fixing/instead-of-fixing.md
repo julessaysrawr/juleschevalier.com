@@ -4,6 +4,7 @@ date: '2020-03-22'
 title: 'What To Do Instead Of Fixing'
 summary: 'Ways to be a better listener and not give unwanted advice.'
 featuredImage: 'IMG_1090.jpg'
+featuredImageAlt: 'A landscape of cloudy skies with light breaking though over dune grasses.'
 topic: 'Emotional Wellbeing'
 ---
 

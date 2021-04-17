@@ -4,6 +4,7 @@ date: '2019-12-29'
 title: 'Fear'
 summary: 'What I remind myself with when I am afraid'
 featuredImage: 'IMG_5505.jpg'
+featuredImageAlt: 'A dog sits on a dark leather couch with their head lit up by the light from the TV.'
 topic: 'Emotional Wellbeing'
 ---
 

@@ -4,6 +4,7 @@ date: '2020-06-23'
 title: 'Affirm Yourself'
 summary: 'Affirmations can be powerful to redirect negative thoughts.  Here are some I have found to be helpful.'
 featuredImage: 'DSC1751.jpg'
+featuredImageAlt: 'Purple orchids backlight against a white background.'
 topic: 'Emotional Wellbeing'
 ---
 

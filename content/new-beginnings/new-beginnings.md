@@ -4,6 +4,7 @@ date: '2018-07-17'
 title: 'New Beginnings'
 summary: 'Reflections on new beginnings'
 featuredImage: 'IMG_3127.jpg'
+featuredImageAlt: 'A landscape of three strange trees backlit against the rising sun.'
 topic: 'Personal Essays'
 ---
 

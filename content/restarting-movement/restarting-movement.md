@@ -4,6 +4,7 @@ date: '2021-03-22'
 title: 'Restarting An Exercise Routine'
 summary: 'When struggling to restart a movement habit, lower the expectations so that they seem too easy: that is how you can gain momentum.'
 featuredImage: 'IMG_2433.jpg'
+featuredImageAlt: 'A corgi on a beach about to take a step.'
 topic: 'Intentional Living'
 ---
 

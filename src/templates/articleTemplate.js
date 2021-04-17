@@ -27,6 +27,7 @@ export default function articleTemplate({
     <LayoutMain
       title={`${frontmatter.title}`}
       image={socialShareImage}
+      imageAlt={frontmatter.featuredImageAlt}
       description={frontmatter.summary}
       pageType={'article'}
       uri={frontmatter.path}
@@ -35,7 +36,7 @@ export default function articleTemplate({
         <PaperBackground>
           <PageContent>
             <Img
-              alt={frontmatter.title}
+              alt={frontmatter.featuredImageAlt}
               fluid={frontmatter.featuredImage.childImageSharp.fluid}
               css={css`
                 width: 865px;
@@ -236,6 +237,7 @@ export const pageQuery = graphql`
         title
         summary
         topic
+        featuredImageAlt
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 860, quality: 75) {

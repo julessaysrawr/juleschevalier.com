@@ -4,6 +4,7 @@ date: '2020-05-09'
 title: 'Uses'
 summary: 'Details of the setups, gear, and software used by Jules Chevalier.'
 featuredImage: 'IMG_0408.jpg'
+featuredImageAlt: 'An abstract view of water droplets on a pane of glass with half in shadow and half in light.'
 topic: 'Technology'
 ---
 

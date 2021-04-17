@@ -4,6 +4,7 @@ date: '2020-12-30'
 title: 'A Collection of Gender Neutral Language'
 summary: 'Examples of gender neutral language including pronouns, honorifics, greetings, relationship titles and more.'
 featuredImage: 'IMG_2603-2-HDR.jpg'
+featuredImageAlt: 'A green meadow with blue sky, white clouds and trees in the distance.'
 topic: 'Inclusion'
 ---
 

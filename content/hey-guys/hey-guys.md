@@ -4,6 +4,7 @@ date: '2020-07-06'
 title: 'Inclusive Ways To Say "Hey Guys"'
 summary: 'Why you shouldn''t say "Hey Guys" and some inclusive alternatives to use instead.'
 featuredImage: './IMG_0559.jpg'
+featuredImageAlt: 'A white and orange cat looking up as if trying to tell you something.'
 topic: 'Inclusion'
 ---
 

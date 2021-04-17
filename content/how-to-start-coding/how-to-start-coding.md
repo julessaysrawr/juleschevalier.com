@@ -4,6 +4,7 @@ date: '2020-03-03'
 title: 'How To Start Coding'
 summary: 'A learning roadmap for getting started writing code.'
 featuredImage: 'IMG_3178.jpg'
+featuredImageAlt: 'A flat spiral of woven rope, wrapping out around itself.'
 topic: 'Technology'
 ---
 

@@ -2,8 +2,9 @@
 path: '/change-your-state'
 date: '2019-07-12'
 title: 'Change Your State'
-summary: 'Ideas for how to change your state of mind when you feel stuck, can't focus, or are having negative thoughts.'
+summary: 'Ideas for how to change your state of mind when you feel stuck, can''t focus, or are having negative thoughts.'
 featuredImage: 'DSC5524.jpg'
+featuredImageAlt: 'Up close flame against a black background.'
 topic: 'Emotional Wellbeing'
 ---
 

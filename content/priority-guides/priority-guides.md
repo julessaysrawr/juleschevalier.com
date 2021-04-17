@@ -4,6 +4,7 @@ date: '2020-02-09'
 title: 'Priority Guides: A Content First Approach'
 summary: 'What are priority guides and how they can help when you are designing a website or app.'
 featuredImage: 'IMG_2730.jpg'
+featuredImageAlt: 'An up-close view of trails in sand with a focus on a tiny cylindrical pebble.'
 topic: 'Design'
 ---
 
