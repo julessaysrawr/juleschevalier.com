@@ -143,13 +143,12 @@ const LayoutMain = props => {
           name="description"
           content={props.description || data.site.siteMetadata.description}
         />
-
         <meta name="author" content="Jules Chevalier" />
-        <meta property="article:author" content="Jules Chevalier" />
-        {/* Facebook */}
-        <meta property="og:type" content={props.pageType || 'website'} />
+        <html lang="en" />
 
-        {/* {props.pageType === 'author' ? <meta property="og:ar"} */}
+        {/* ----- Facebook Open Graph ----- */}
+        <meta property="og:type" content={props.pageType || 'website'} />
+        <meta property="article:author" content="Jules Chevalier" />
         <meta property="og:title" content={props.title || data.site.siteMetadata.title} />
         <meta property="og:site_name" content={data.site.siteMetadata.title} />
         <meta
@@ -170,11 +169,16 @@ const LayoutMain = props => {
           content={`https://juleschevalier.com${props.uri}` || data.site.siteMetadata.siteUrl}
         />
         <meta property="og:locale" content="en_US"></meta>
-        {/* Twitter */}
+
+        {/* ----- Twitter ----- */}
         <meta name="twitter:title" content={props.title || data.site.siteMetadata.title} />
         <meta
           name="twitter:description"
           content={props.description || data.site.siteMetadata.description}
+        />
+        <meta
+          name="twitter:url"
+          content={`https://juleschevalier.com${props.uri}` || data.site.siteMetadata.siteUrl}
         />
         <meta
           name="twitter:image"
@@ -184,8 +188,8 @@ const LayoutMain = props => {
               : data.site.siteMetadata.thumbnail
           }
         />
+        <meta name="twitter:image:alt" content={props.imageAlt || ''} />
         <meta name="twitter:card" content="summary_large_image" />
-        <html lang="en" />
       </Helmet>
       <div
         css={css`

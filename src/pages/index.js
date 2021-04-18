@@ -22,7 +22,7 @@ const Index = ({ data }) => {
     }
   `
   return (
-    <LayoutMain>
+    <LayoutMain uri={''}>
       <main>
         <div
           css={css`

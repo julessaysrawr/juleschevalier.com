@@ -14,6 +14,7 @@ const Now = ({ data }) => (
   <LayoutMain
     title={`What I'm Doing Now | Jules Chevalier`}
     description={`What I'm currently up to. Now page for Jules Chevalier`}
+    uri={'/now'}
   >
     <main>
       <PaperBackground>

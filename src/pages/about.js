@@ -11,7 +11,11 @@ import { bpTabletSM, bpMonitorSM, bpPhone } from '../lib/breakpoints'
 import PaperBackground from '../components/paper-background'
 
 const About = ({ data }) => (
-  <LayoutMain title={'About | Jules Chevalier'} description={'About Jules Chevalier'}>
+  <LayoutMain
+    title={'About | Jules Chevalier'}
+    description={'About Jules Chevalier'}
+    uri={'/about'}
+  >
     <main>
       <PaperBackground>
         <PageContent>

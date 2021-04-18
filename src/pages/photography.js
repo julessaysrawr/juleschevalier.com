@@ -32,6 +32,7 @@ const Photography = ({ data }) => (
   <LayoutMain
     title={'Photography | Jules Chevalier'}
     description={'Photography by Jules Chevalier'}
+    uri={'/photography'}
   >
     <PaperBackground>
       <PageContent>

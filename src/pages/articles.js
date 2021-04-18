@@ -32,6 +32,7 @@ const BlogPage = ({
     <LayoutMain
       title={'All Articles | Jules Chevalier'}
       description={'Read articles written by Jules Chevalier'}
+      uri={'/articles'}
     >
       <main>
         <div

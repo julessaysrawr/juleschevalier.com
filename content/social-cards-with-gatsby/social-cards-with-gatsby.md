@@ -215,3 +215,33 @@ I had trouble with LinkedIn showing the updates, apparently they cache previews 
 ![Result of completed feature](./result.png)
 
 Now each time I share an article, the image is what a reader will see when they click the link. Additionally the card has a correct title and description, so they have a sense of what the link will show them.
+
+Here is the final tags I used:
+
+Facebook
+```
+<meta property="og:type" content="article" />
+<meta property="article:author" content="" />
+<meta property="og:title" content="" />
+<meta property="og:site_name" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://example.com/image.jpg"/>
+<meta property="og:image:alt" content="A description of what is in the image (not a caption)" />
+<meta property="og:url" content="https://example.com/page.html" />
+<meta property="og:locale" content="en_US" />
+
+```
+
+Twitter
+```
+<meta name="twitter:title" content="" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="https://example.com/image.jpg" />
+<meta name="twitter:image:alt" content="A description of what is in the image (not a caption)" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://example.com/page.html">
+
+```
+
+
+
