@@ -208,8 +208,6 @@ I realized that I had been missing a few open graph tags when testing on faceboo
 
 This is an excellent reference for the html [head tag](https://htmlhead.dev)
 
-I had trouble with LinkedIn showing the updates, apparently they cache previews for 7 days.
-
 ## Result
 
 ![Result of completed feature](./result.png)

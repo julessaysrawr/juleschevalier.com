@@ -64,7 +64,7 @@ If you're like me and you sit a lot, working the hamstrings and the glutes is a 
 
 ### Light weights
 
-The intent here is to just move each muscle group. Even 5 reps of each exercise counts. Or 3 sets of 8 reps with two 3lbs hand weights.
+The intent here is to just move each muscle group. Doing the movements is more important than the number of times or the amount of weight. Moving your body is the goal. Even 5 reps of each exercise counts. Or 3 sets of 8 reps with two 3lbs hand weights.
 
 - Shoulders: front raise, lateral raise, overhead press, reverse fly
 - Arms: biceps & triceps
