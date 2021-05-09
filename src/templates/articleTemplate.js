@@ -176,9 +176,7 @@ export default function articleTemplate({
                 }
 
                 img {
-                  ${bpPhone} {
-                    width: 100%;
-                  }
+                  width: 100%;
                 }
               `}
             >

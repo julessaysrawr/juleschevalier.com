@@ -8,7 +8,7 @@ featuredImageAlt: 'A green meadow with blue sky, white clouds and trees in the d
 topic: 'Inclusion'
 ---
 
-## Pronouns
+## Gender Neutral Pronouns
 
 They/Them/Theirs
 
@@ -38,13 +38,15 @@ Sie/Hir/Hir
 
 <br>
 
-## Honorific
+## Gender Neutral Honorifics
 
-`Mx` pronounced “mix”
+`Mx` pronounced “mix”, `M`, `Ind`, `Misc`
 
 > Mx Jules Chevalier
-
+>
 > Mx Right 😉
+>
+> Mx and Mr Chevalier
 
 <br>
 
@@ -62,47 +64,27 @@ Hello there
 
 <br>
 
-## Greetings for a group of people
+## Gender Neutral Greetings for a group of people
 
-Hey y’all / you all
-
-Hello there
+Hey y’all
 
 Hey folks
 
-Hey people / persons
+Hey people
 
-Hey humans
+Hey everybody
 
-Hey everybody / Welcome everybody
-
-Hey somebodies
-
-Hey crew / squad / team
+Hey team
 
 Hey friends
 
-Hey fam
-
-Hey mates
-
-Companions! (This is my love of fantasy and D&D coming out)
-
-Hello fellow evolved primates
-
-Hey peeps
-
-Epic humans
-
-Beautiful people
-
-Gentlethems and Theydies
+[What not to say: "hey guys"](/inclusive-ways-to-say-hey-guys)
 
 <br>
 
 <br>
 
-## Formal Greetings for a Group of People
+## Gender Neutral Formal Greetings for a Group
 
 My fellow persons
 
@@ -120,7 +102,7 @@ Gentlefolk
 
 <br>
 
-## Girl & Boy
+## Gender Neutral replacements for Girl & Boy
 
 Hey person / human / friend / mate
 
@@ -136,7 +118,7 @@ My persons / humans / friends / mates
 
 <br>
 
-## Family relationships
+## Gender Neutral Family relationships
 
 **Mother/Father** => Parent, Renny, Baba, Dama, Mada, Maddy, Mapa
 
@@ -154,7 +136,7 @@ My persons / humans / friends / mates
 
 <br>
 
-## Dating/Relationships
+## Gender Neutral Dating/Relationship titles
 
 **Boyfriend/Girlfriend** => Datemate, Personfriend, Sweetie, Sweetheart, Bothfriend, Steady
 
@@ -164,9 +146,7 @@ My persons / humans / friends / mates
 
 <br>
 
-## Royalty
-
-These are alternatives or maybe additions to saying **kings/queens**:
+## Gender Neutral Royalty titles
 
 Majesty / Their Royal Majesty / The Royal Majesty
 
@@ -188,6 +168,26 @@ My Liege
 
 <br>
 
+### Gender neutral forms of Yas Queen/King
+
+Go off, your eminence
+
+Get it, your majesty
+
+Fuck em up, your grace 
+
+Send it, your highness
+
+Pop off, my liege 
+
+Slay, esteemed sovereign
+
+Snap, your excellency
+
+Tell em, my thane
+
+I love it, O Esteemed Being! 
+
 <br>
 
 ## Other Considerations
@@ -198,6 +198,6 @@ My Liege
 
 **Freshman** => First-Year Student
 
-**Man-made** => artificial
+**Man-made** => Artificial
 
 Every person for themselves
