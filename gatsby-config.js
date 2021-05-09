@@ -56,7 +56,8 @@ module.exports = {
               showCaptions: false,
               quality: 85
             }
-          }
+          },
+          `gatsby-remark-static-images` // must come after `gatsby-remark-images`
         ]
       }
     },
