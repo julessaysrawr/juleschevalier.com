@@ -18,7 +18,7 @@ const Read = () => (
           >
             Read
           </h1>
-          <h3
+          {/* <h3
             css={css`
               margin-bottom: ${theme.space[4]}px;
             `}
@@ -31,7 +31,7 @@ const Read = () => (
             `}
           >
             Up Next: Stillness is the Key
-          </h3>
+          </h3> */}
 
           <div>
             <h2
@@ -76,8 +76,30 @@ const Read = () => (
               <li>
                 <Link href="https://www.ladybug.dev">Ladybug Podcast</Link>
               </li>
+              <li>
+                <Link href="https://inquisitivehuman.com/blogs">Inquisitive Human</Link>
+              </li>
             </ul>
             <h2
+              css={css`
+                margin: ${theme.space[6]}px 0 ${theme.space[5]}px;
+              `}
+            >
+              Web Comics
+            </h2>
+            <ul
+              css={css`
+                list-style-type: none;
+              `}
+            >
+              <li>
+                <Link href="http://www.lunarbaboon.com">LUNARBABOON</Link>
+              </li>
+              <li>
+                <Link href="https://www.nathanwpyle.art">Strange Planet (go to instagram)</Link>
+              </li>
+            </ul>
+            {/* <h2
               css={css`
                 margin: ${theme.space[6]}px 0 ${theme.space[5]}px;
               `}
@@ -98,7 +120,7 @@ const Read = () => (
               <li>
                 <Link href="http://www.un-fancy.com">Unfancy</Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </PageContent>
       </PaperBackground>
