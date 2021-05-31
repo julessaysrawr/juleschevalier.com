@@ -10,8 +10,6 @@ topic: 'Design'
 
 <br >
 
-<br >
-
 ## Colors and Color Palettes
 
 [Adobe Color](https://color.adobe.com/)
@@ -22,11 +20,17 @@ topic: 'Design'
 
 [Colorco](https://colourco.de)
 
+#### Color Contrast
+
 [Accessible Colors](https://accessible-colors.com)
+
+[Colorable](https://colorable.jxnblk.com)
 
 [Adobe Color Accessibility Tools](https://color.adobe.com/create/color-accessibility)
 
-<br >
+[Text on background image](http://www.brandwood.com/a11y/)
+
+[Color Safe](http://colorsafe.co)
 
 <br >
 
@@ -40,6 +44,12 @@ topic: 'Design'
 
 <br >
 
+## CSS Layouts
+
+[Flexbox Froggy](https://flexboxfroggy.com)
+
+[Grid Garden](https://cssgridgarden.com)
+
 <br >
 
 ## Typefaces
@@ -47,8 +57,6 @@ topic: 'Design'
 [Google Fonts](https://fonts.google.com)
 
 [Dafont](https://www.dafont.com)
-
-<br >
 
 <br >
 
@@ -74,8 +82,6 @@ topic: 'Design'
 
 <br >
 
-<br >
-
 ## Photography
 
 [Unsplash](https://unsplash.com)
@@ -84,15 +90,11 @@ topic: 'Design'
 
 <br >
 
-<br >
-
 ## Illustration
 
 [unDraw](https://undraw.co)
 
 [Isometric](https://isometric.online)
-
-<br >
 
 <br >
 
@@ -110,8 +112,6 @@ topic: 'Design'
 
 <br >
 
-<br >
-
 ## Hover Effects
 
 [Hover.css](http://ianlunn.github.io/Hover/)
@@ -119,8 +119,6 @@ topic: 'Design'
 [Icon hover effects](https://tympanus.net/Development/IconHoverEffects/)
 
 [Shake](https://elrumordelaluz.github.io/csshake/)
-
-<br >
 
 <br >
 
@@ -138,8 +136,6 @@ topic: 'Design'
 
 <br >
 
-<br >
-
 ## Generators
 
 [Hero Generator](https://hero-generator.netlify.app)
@@ -152,15 +148,11 @@ topic: 'Design'
 
 <br >
 
-<br >
-
 ## User Experience (UX)
 
 [Laws of UX](https://lawsofux.com/)
 
 [Nielsen Norman Group](https://www.nngroup.com)
-
-<br >
 
 <br >
 
@@ -176,13 +168,9 @@ topic: 'Design'
 
 <br >
 
-<br >
-
 ## Layout Examples
 
 [Tailwind](https://tailwindui.com/components#product-application-ui)
-
-<br >
 
 <br >
 
@@ -206,13 +194,17 @@ Ideally a multi-player platform where everyone can make changes in real time
 
 <br >
 
-<br >
+## Collections by others
 
-## Many more awesome things
+[amelia.design](https://amelia.design/bookmarks)
 
 [spark-joy](https://github.com/sw-yx/spark-joy)
 
 [Jonas Schmedtmann](http://www.codingheroes.io/resources/)
+
+<br >
+
+## Odds and ends
 
 [Free Frontend](https://freefrontend.com/css-code-examples/)
 
@@ -220,4 +212,4 @@ Ideally a multi-player platform where everyone can make changes in real time
 
 [Design Resources by Invision](https://www.invisionapp.com/inside-design/design-resources/)
 
-[Screely](https://www.screely.com/)
+[Turn a screenshot into a browser mockup](https://www.screely.com/)
