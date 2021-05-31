@@ -223,7 +223,7 @@ Note: these are US-centric ethnicity choices
 
 ## Disabilities
 
-Collecting information about different abilities is a sensitive topic, so many organizations avoid collecting it. But if organizations commit to serving the full diversity of their communities, they must understand how they can meet the needs of those with different abilities and disabilities.
+Collecting information about different abilities is a sensitive topic, so many organizations avoid collecting it. But if organizations commit to serving the full diversity of their communities, they must understand how they can meet the needs of those with a range of abilities and disabilities.
 
 Asking questions about disability is a delicate topic, so first learn about the difference between identity-first and people-first language and what words to use when discussing disabilities that are respectful and inclusive.
 
@@ -235,9 +235,55 @@ Asking questions about disability is a delicate topic, so first learn about the 
 
 **Person first**: Person with disabilities
 
-From my research, person first is largely driven by the caretakers, not by the affected persons themselves.
+  *From my research, person first is largely driven by the caretakers, not by the affected persons themselves.*
 
-Not all disability/neurodivergent/mental health communities have the same consensus.
+  *Not all disability/neurodivergent/mental health communities have the same consensus.*
+
+```
+Do you identify as having a disability?
+
+- [ ] Yes
+- [ ] No
+- [ ] No, identify as culturally Deaf
+- [ ] Prefer not to answer
+```
+*What is [culturally Deaf](https://www.verywellhealth.com/deaf-culture-big-d-small-d-1046233)?*
+
+```
+What type of disability or disabilities do you identify as having? (Select all that apply.)
+
+- [ ] Blind/low vision
+- [ ] Deaf/hard of hearing
+- [ ] Cognitive disability/neurodivergent
+- [ ] Physical disability/reduced mobility
+- [ ] Prefer to self-describe ________________
+- [ ] Prefer not to answer
+```
+
+```
+Do you use any assistive technologies when using phones or computers?
+
+- [ ] Yes
+- [ ] No
+- [ ] Not sure
+- [ ] Prefer not to answer
+
+(If Yes or Not sure) What assistive technologies might you use? (Select all that apply.)
+
+- [ ] Screen reader (like JAWS, NVDA, VoiceOver, TalkBack, ChromeVox)
+- [ ] Screen magnification (like ZoomText, Magic, browser zoom)
+- [ ] High contrast mode
+- [ ] Voice recognition software (like Dragon Naturally Speaking)
+- [ ] Switch access device
+- [ ] Adaptive or alternative keyboard
+- [ ] Keyboard-only use
+- [ ] Eye gaze control
+- [ ] Not listed (please specify) ________________
+- [ ] None of the above
+- [ ] Prefer not to answer
+```
+
+
 
 ## Conclusion
 
@@ -264,3 +310,5 @@ If you see something here that should be added, changed or removed please [email
 [https://www.keshetonline.org/resources/lgbtq-terminology/](https://www.keshetonline.org/resources/lgbtq-terminology/)
 
 [https://2020census.gov/en/about-questions.html](https://2020census.gov/en/about-questions.html)
+
+This is a great series about inclusive research, and focuses on disability inclusion: [https://medium.com/inclusive-research](https://medium.com/inclusive-research)
