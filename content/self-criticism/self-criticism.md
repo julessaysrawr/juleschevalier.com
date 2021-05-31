@@ -24,4 +24,11 @@ To do the activity you need a piece of paper and a pencil or pen.
 
 You can download the [printable template](https://juleschevalier.com/Challenging-Critical-Thoughts.pdf) I use.
 
-I’d love any feedback you have on this; if it works for you or if you use another type of activity to work through these types of emotions.
+I’d love any feedback you have; if it works for you or if you use another type of activity to work through these types of emotions.
+
+<br />
+
+<br />
+
+### Further Reading
+[7 Ways to Overcome Toxic Self-Criticism](https://www.psychologytoday.com/us/blog/what-mentally-strong-people-dont-do/201801/7-ways-overcome-toxic-self-criticism)
