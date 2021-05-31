@@ -42,10 +42,6 @@ As I started shifting away from the phrase ["Hey Guys"](/inclusive-ways-to-say-h
 
 **Tone Deaf** => _tackless, out of touch, out of context, read the room, willfully ignorant about_
 
-**Disabled Person** => _Person with a disability_
-
-<p style="margin-top: -24px;">They are people first and they have a disability.  Their disability is not their entire identity.  They are children, siblings, parents, spouses, successful and many more identities.  Don’t make their disability the most important thing about someone. </p>
-
 <br />
 
 What other words would you add to this list?
