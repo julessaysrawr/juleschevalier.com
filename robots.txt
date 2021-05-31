@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /topics
 Disallow: /topics/
 Disallow: /read
+Disallow: /article-images
 Disallow: /read/
 Sitemap: https://juleschevalier.com/sitemap.xml
 Host: https://juleschevalier.com
