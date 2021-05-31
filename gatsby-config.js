@@ -71,7 +71,12 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://juleschevalier.com',
-        policy: [{ userAgent: '*', disallow: ['/topics', '/topics/', '/read', '/read/'] }]
+        policy: [
+          {
+            userAgent: '*',
+            disallow: ['/topics', '/topics/', '/read', '/article-images', '/read/']
+          }
+        ]
       }
     },
     `gatsby-plugin-emotion`,
