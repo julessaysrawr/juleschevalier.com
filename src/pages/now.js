@@ -66,7 +66,7 @@ const Now = ({ data }) => (
                   font-weight: 400;
                 `}
               >
-                Updated on: July 12th, 2020
+                Updated on: June 7th, 2021
               </p>
 
               <ul
@@ -76,25 +76,34 @@ const Now = ({ data }) => (
                   }
                 `}
               >
+                <li>Reflecting on how I want to define masculinity for myself</li>
+                <li>Leaning into the cycles of nature like seasons and moons</li>
+                <li>Beginning to make small plans now that we are vaccinated</li>
+                <li>Discovering the depths of self to love and accept. </li>
+                <li>🔍 Working on dismantling: ableism</li>
                 <li>
-                  Refreshing this site thanks to the design effort of this{' '}
-                  <Link type="inline" href="https://dchevalier.io">
-                    talented human
+                  🎨 Creativity: I started drawing recently, you can{' '}
+                  <Link type={'inline'} href={'https://juleschevalier.myportfolio.com/drawings'}>
+                    take a look
+                  </Link>{' '}
+                  at what I&apos;ve been doing
+                </li>
+                <li>🎮 Playing: Zelda Breath of the Wild</li>
+                <li>
+                  📝 Learning:{' '}
+                  <Link type="inline" href="https://testingjavascript.com/">
+                    Testing Javascript
                   </Link>
-                  .
                 </li>
                 <li>
-                  Grateful for purchasing an exercise bike recently. Doing cardio is what is giving
-                  me the motivation to strength train (my favorite type of movement that brings me
-                  joy).
-                </li>
-                <li>
-                  Black Lives Matter: Learning how to practice allyship. Figuring out what my
-                  anti-racism lane looks like.
-                </li>
-                <li>
-                  Bringing in rituals as opportunities for intention setting. New & full moon
-                  ceremonies for now.
+                  💼 Working on the design systems at{' '}
+                  <Link
+                    type={'inline'}
+                    href={'https://www.massmutual.com/'}
+                    description="massmutual.com"
+                  >
+                    MassMutual
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -117,7 +126,7 @@ export default Now
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "now2020.jpg" }) {
+    file(relativePath: { eq: "now2021.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 865) {
           ...GatsbyImageSharpFluid

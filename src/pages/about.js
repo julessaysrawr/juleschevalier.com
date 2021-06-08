@@ -87,17 +87,12 @@ const About = ({ data }) => (
             <p>
               Problem solving is my favorite past time. On paper, I am a designer and full-stack
               developer, but really I am a learner and problem solver. I have a growth mindset and
-              am energized by what I don&apos;t know. Currently I work for{' '}
+              am energized by what I don&apos;t know. Currently I work on design systems at{' '}
               <Link type="inline" href="https://be-ingoodcompany.com/">
-                In Good Company
-              </Link>{' '}
-              which is a learning lab for{' '}
-              <Link type="inline" href="https://www.massmutual.com/">
                 MassMutual
-              </Link>
-              . Financial education is something I care deeply about and I feel great purpose to
-              help build this vision. I have had a previous career in medicine - but that changed
-              the moment I learned SQL (my gateway language!).
+              </Link>{' '}
+              . I have had a previous career in medicine - but that changed the moment I learned SQL
+              (my gateway language!).
             </p>
             <h2
               css={css`
