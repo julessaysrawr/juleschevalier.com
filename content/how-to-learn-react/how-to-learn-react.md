@@ -87,3 +87,5 @@ Once you get some confidence and get the hang of React, you'll need to figure ou
 
 ### Further Reading
 [The 7 Skills You Need To Know](https://www.freecodecamp.org/news/how-to-learn-react-skills-you-need-to-know/)
+
+[react patterns](https://reactpatterns.com/)
