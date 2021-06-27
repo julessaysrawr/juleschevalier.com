@@ -1,8 +1,8 @@
 ---
 path: '/'
 date: '2021-06-23'
-title: '' // 50-60 characters
-summary: '' // 160 max characters
+title: '-----50-60 characters-----'
+summary: '-----160 max characters-----'
 featuredImage: "example-image.jpg"
 featuredImageAlt: 'A description of what is in the image (not a caption)'
 topic: 'Emotional Wellbeing'
