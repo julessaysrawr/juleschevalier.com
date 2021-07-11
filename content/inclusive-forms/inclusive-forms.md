@@ -1,7 +1,7 @@
 ---
 path: '/inclusive-forms'
 date: '2021-04-30'
-title: 'How to make forms more inclusive'
+title: 'How To Make forms More Inclusive'
 summary: 'Examples of how to make forms more inclusive in areas like gender, pronouns, sexual orientation, race and ethnicity.'
 featuredImage: './IMG_2146.jpg'
 featuredImageAlt: 'Overlooking Central Park in New York City at sunset.'
