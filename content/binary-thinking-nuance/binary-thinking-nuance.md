@@ -22,6 +22,15 @@ As recently as five years ago, if you had told me I would be out at work and exp
 
 <br />
 
+**Ask for and use people's pronouns**
+- Introduce yourself with yours.  This makes the discomfort more equal for everyone.
+- Don't assume someone's pronouns based on their gender expression
+- If you make a mistake, just say "whoops, they" and move on.  Don't force us to reassure you.
+
+<br />
+
+<br />
+
 **Use inclusive language**
 - I feel seen when people avoid “hey guys” and use “folks” or “everyone” instead.
 - Decenter gender when referring to a group of people, and use “everyone”, “people” or “team”. Or saying “Men, Women and gender expansive folks.”
