@@ -1,0 +1,91 @@
+---
+path: '/react-testing-snippets'
+date: '2021-07-12'
+title: 'React Testing Snippets'
+summary: ' // 160 max characters'
+featuredImage: "example-image.jpg"
+featuredImageAlt: 'A description of what is in the image (not a caption)'
+topic: 'Technology'
+---
+
+Assumptions:
+
+Jest for a test runner and `@testing-library/react`
+
+## Render a component
+```
+import React from 'react'
+import { render, screen } from '@testing-library/react'
+import Login from '../login'
+
+test('should show login form', () => {
+  render(<Login />)
+  const input = screen.getByLabelText('Username')
+  // Events and assertions...
+})
+
+```
+
+## Check for props & prop changes
+rerender
+
+
+## Check if class exists
+
+## Debug
+```
+import { screen } from '@testing-library/dom'
+import NiceComponent from './nice-component'
+
+
+test('renders', () => {
+  const {debug} = render(<NiceComponent />)
+	debug()
+})
+
+// or
+
+document.body.innerHTML = `
+  <button>test</button>
+  <span>multi-test</span>
+  <div>multi-test</div>
+`
+
+// debug document
+screen.debug()
+// debug single element
+screen.debug(screen.getByText('test'))
+// debug multiple elements
+screen.debug(screen.getAllByText('multi-test'))
+```
+
+## Inputs
+- label exists
+- id matches
+- input type
+- placeholder
+
+
+## Events
+
+## `getBy` vs `queryBy`
+
+`getBy` is what you should use by default.  It gives helpful error messages to help you fix broken tests.  It will return with an error.
+
+`queryBy` is what to use when you are testing is something is *NOT* rendered.  It returns null if the element is not found.
+
+tl;dr use `getBy` unless you mean are testing something isn't rendered.
+
+## Accessibility testing
+
+## Extending expect
+Jest gives you expect
+- @testing-library/extend-expect
+- @jest-axe/extend-expect
+
+
+
+## How to Mock
+- your functions
+- api calls / data fetching
+- 3rd party packages or components
