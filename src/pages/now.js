@@ -66,7 +66,7 @@ const Now = ({ data }) => (
                   font-weight: 400;
                 `}
               >
-                Updated on: June 7th, 2021
+                Updated on: December 2nd, 2021
               </p>
 
               <ul
@@ -76,26 +76,13 @@ const Now = ({ data }) => (
                   }
                 `}
               >
-                <li>Reflecting on how I want to define masculinity for myself</li>
-                <li>Leaning into the cycles of nature like seasons and moons</li>
-                <li>Beginning to make small plans now that we are vaccinated</li>
-                <li>Discovering the depths of self to love and accept. </li>
-                <li>🔍 Working on dismantling: ableism</li>
+                <li>Perfecting the LED lights in my sensory room</li>
+                <li>Restarting my fitness from the ground up after major surgery</li>
                 <li>
-                  🎨 Creativity: I started drawing recently, you can{' '}
-                  <Link type={'inline'} href={'https://juleschevalier.myportfolio.com/drawings'}>
-                    take a look
-                  </Link>{' '}
-                  at what I&apos;ve been doing
+                  Getting back into personal coding after a 6 month break because life happens.
                 </li>
-                <li>🎮 Playing: Zelda Breath of the Wild</li>
-                <li>
-                  📝 Learning:{' '}
-                  <Link type="inline" href="https://testingjavascript.com/">
-                    Testing Javascript
-                  </Link>
-                </li>
-                <li>
+                <li>Getting my booster shot 💉</li>
+                {/* <li>
                   💼 Working on the design systems at{' '}
                   <Link
                     type={'inline'}
@@ -104,7 +91,7 @@ const Now = ({ data }) => (
                   >
                     MassMutual
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <Link
