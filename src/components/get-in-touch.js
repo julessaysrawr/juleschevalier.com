@@ -3,8 +3,6 @@ import { css } from '@emotion/core'
 import theme from '../lib/theme'
 import paper from '../images/lightpaperfibers_@2x.png'
 import IconEmail from './social-links/email'
-import IconInstagram from './social-links/instagram'
-import IconTwitter from './social-links/twitter'
 import IconGithub from './social-links/github'
 import IconLinkedIn from './social-links/linkedin'
 import { bpPhone, bpTabletSM } from '../lib/breakpoints'
@@ -54,15 +52,13 @@ const GetInTouch = () => {
       </p>
       <div
         css={css`
-          max-width: 246px;
+          max-width: 200px;
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           margin: 0 auto calc(${theme.space[2]}px*7);
         `}
       >
         <IconEmail url={'mailto:hellothere@juleschevalier.com'} />
-        <IconInstagram />
-        <IconTwitter url={'https://twitter.com/julessaysrawr'} />
         <IconGithub />
         <IconLinkedIn url={'https://www.linkedin.com/in/jules-chevalier'} />
       </div>

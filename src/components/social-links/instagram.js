@@ -6,7 +6,7 @@ const IconInstagram = () => {
   return (
     <>
       <a
-        href="https://www.instagram.com/jules.a.chevalier/"
+        href="https://www.instagram.com/username"
         target="_blank"
         rel="noopener noreferrer"
       >

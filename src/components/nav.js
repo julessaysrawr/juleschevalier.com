@@ -3,9 +3,7 @@ import { css } from '@emotion/core'
 import useWindowSize from '../hooks/useWindowSize'
 import theme from '../lib/theme'
 import { Link } from 'gatsby'
-import IconInstagram from './social-links/instagram'
 import IconEmail from './social-links/email'
-import IconTwitter from './social-links/twitter'
 import IconGithub from './social-links/github'
 import IconLinkedIn from './social-links/linkedin'
 import { bpTabletLG } from '../lib/breakpoints'
@@ -144,7 +142,7 @@ const Nav = () => {
         css={css`
           display: flex;
           justify-content: space-between;
-          width: 184px;
+          width: 130px;
           padding-top: calc(${theme.space[2]}px*1.5);
           padding-top: 15px;
           // padding-top: 13px;
@@ -159,8 +157,6 @@ const Nav = () => {
         `}
       >
         <IconEmail url={'mailto:hellothere@juleschevalier.com'} />
-        <IconInstagram />
-        <IconTwitter url={'https://twitter.com/julessaysrawr'} />
         <IconGithub />
         <IconLinkedIn url={'https://www.linkedin.com/in/jules-chevalier'} />
       </div>
