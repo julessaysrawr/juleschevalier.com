@@ -154,6 +154,8 @@ topic: 'Design'
 
 [Nielsen Norman Group](https://www.nngroup.com)
 
+[A Guide to UX Design and Design Thinking for Kids](https://praxent.com/blog/ux-design-thinking-for-kids-guide)
+
 <br >
 
 ## Wireframing
